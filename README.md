@@ -39,7 +39,7 @@ A forward rule with `lingua:implication false` is an inference fuse.
 
 Lingua also supports reasoning with backward rules described in RDF as
 ```
-_:ng1 lingua:hornb _:ng2.   # hornb is acronym for "head or not body"
+_:ng1 lingua:hornb _:ng2.   # hornb is an acronym for "head or not body"
 
 _:ng1 {
     RDF triples

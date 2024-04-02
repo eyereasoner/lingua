@@ -1,0 +1,19 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://eyereasoner.github.io/lingua/tests/backward.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+
+[] rdf:value 5; :moreInterestingThan 3 .
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+
+_:gn_1 {
+    [] rdf:value 5; math:greaterThan 3.
+}
+
+_:gn_2 {
+    [] rdf:value 5; :moreInterestingThan 3.
+}

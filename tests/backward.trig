@@ -1,0 +1,29 @@
+# ---------------------
+# Backward rule example
+# ---------------------
+#
+# See https://www.w3.org/2000/10/swap/doc/tutorial-1.pdf page 17
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+# something is more interesting if it is greater
+_:ng1 lingua:hornb _:ng2.
+
+_:ng1 {
+    var:X :moreInterestingThan var:Y.
+}
+
+_:ng2 {
+    var:X math:greaterThan var:Y.
+}
+
+# query
+_:ng3 lingua:query _:ng3.
+
+_:ng3 {
+    [] rdf:value 5; :moreInterestingThan 3.
+}

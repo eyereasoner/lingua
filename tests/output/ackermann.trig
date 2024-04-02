@@ -1,0 +1,649 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/ackermann.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+
+(0 0) :ackermann 1 .
+(0 6) :ackermann 7 .
+(1 2) :ackermann 4 .
+(1 7) :ackermann 9 .
+(2 2) :ackermann 7 .
+(2 9) :ackermann 21 .
+(3 4) :ackermann 125 .
+(3 14) :ackermann 131069 .
+(4 0) :ackermann 13 .
+(4 1) :ackermann 65533 .
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:gn_6.
+_:gn_7 lingua:explanation _:gn_8.
+_:gn_9 lingua:explanation _:gn_10.
+_:gn_11 lingua:explanation _:gn_12.
+_:gn_13 lingua:explanation _:gn_14.
+_:gn_15 lingua:explanation _:gn_16.
+_:gn_17 lingua:explanation _:gn_18.
+_:gn_19 lingua:explanation _:gn_20.
+_:gn_21 lingua:explanation _:gn_22.
+_:gn_23 lingua:explanation _:gn_24.
+_:gn_25 lingua:explanation _:gn_26.
+_:gn_27 lingua:explanation _:gn_28.
+_:gn_29 lingua:explanation _:gn_30.
+_:gn_31 lingua:explanation _:gn_32.
+_:gn_33 lingua:explanation _:gn_34.
+_:gn_35 lingua:explanation _:gn_36.
+_:gn_37 lingua:explanation _:gn_38.
+_:gn_39 lingua:explanation _:gn_40.
+_:gn_41 lingua:explanation _:gn_42.
+_:gn_43 lingua:explanation _:gn_44.
+_:gn_45 lingua:explanation _:gn_46.
+_:gn_47 lingua:explanation _:gn_48.
+_:gn_49 lingua:explanation _:gn_50.
+_:gn_51 lingua:explanation _:gn_52.
+_:gn_53 lingua:explanation _:gn_54.
+_:gn_55 lingua:explanation _:gn_56.
+_:gn_57 lingua:explanation _:gn_58.
+_:gn_59 lingua:explanation _:gn_60.
+_:gn_61 lingua:explanation _:gn_62.
+_:gn_63 lingua:explanation _:gn_64.
+_:gn_65 lingua:explanation _:gn_66.
+_:gn_67 lingua:explanation _:gn_68.
+_:gn_69 lingua:explanation _:gn_70.
+_:gn_71 lingua:explanation _:gn_72.
+_:gn_73 lingua:explanation _:gn_74.
+_:gn_75 lingua:explanation _:gn_76.
+_:gn_77 lingua:explanation _:gn_78.
+_:gn_79 lingua:explanation _:gn_80.
+_:gn_81 lingua:explanation _:gn_82.
+_:gn_83 lingua:explanation _:gn_84.
+_:gn_85 lingua:explanation _:gn_86.
+_:gn_87 lingua:explanation _:gn_88.
+_:gn_89 lingua:explanation _:gn_90.
+_:gn_91 lingua:explanation _:gn_92.
+_:gn_93 lingua:explanation _:gn_94.
+_:gn_95 lingua:explanation _:gn_96.
+_:gn_97 lingua:explanation _:gn_98.
+_:gn_25 lingua:explanation _:gn_99.
+_:gn_100 lingua:explanation _:gn_101.
+_:gn_102 lingua:explanation _:gn_103.
+_:gn_104 lingua:explanation _:gn_105.
+_:gn_106 lingua:explanation _:gn_107.
+_:gn_108 lingua:explanation _:gn_109.
+_:gn_110 lingua:explanation _:gn_111.
+
+_:gn_1 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (3 1) math:sum 4.
+}
+
+_:gn_2 {
+    (0 3 2) :ackermann 4.
+}
+
+_:gn_3 {
+    (0 3) math:sum 3 .
+    (0 3 2) :ackermann 4 .
+    (4 3) math:difference 1.
+}
+
+_:gn_4 {
+    (0 0) :ackermann 1.
+}
+
+_:gn_5 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (9 1) math:sum 10.
+}
+
+_:gn_6 {
+    (0 9 2) :ackermann 10.
+}
+
+_:gn_7 {
+    (6 3) math:sum 9 .
+    (0 9 2) :ackermann 10 .
+    (10 3) math:difference 7.
+}
+
+_:gn_8 {
+    (0 6) :ackermann 7.
+}
+
+_:gn_9 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (5 2) math:sum 7.
+}
+
+_:gn_10 {
+    (1 5 2) :ackermann 7.
+}
+
+_:gn_11 {
+    (2 3) math:sum 5 .
+    (1 5 2) :ackermann 7 .
+    (7 3) math:difference 4.
+}
+
+_:gn_12 {
+    (1 2) :ackermann 4.
+}
+
+_:gn_13 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (10 2) math:sum 12.
+}
+
+_:gn_14 {
+    (1 10 2) :ackermann 12.
+}
+
+_:gn_15 {
+    (7 3) math:sum 10 .
+    (1 10 2) :ackermann 12 .
+    (12 3) math:difference 9.
+}
+
+_:gn_16 {
+    (1 7) :ackermann 9.
+}
+
+_:gn_17 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (5 2) math:product 10.
+}
+
+_:gn_18 {
+    (2 5 2) :ackermann 10.
+}
+
+_:gn_19 {
+    (2 3) math:sum 5 .
+    (2 5 2) :ackermann 10 .
+    (10 3) math:difference 7.
+}
+
+_:gn_20 {
+    (2 2) :ackermann 7.
+}
+
+_:gn_21 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (12 2) math:product 24.
+}
+
+_:gn_22 {
+    (2 12 2) :ackermann 24.
+}
+
+_:gn_23 {
+    (9 3) math:sum 12 .
+    (2 12 2) :ackermann 24 .
+    (24 3) math:difference 21.
+}
+
+_:gn_24 {
+    (2 9) :ackermann 21.
+}
+
+_:gn_25 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+}
+
+_:gn_26 {
+    (3 0 2) :ackermann 1.
+}
+
+_:gn_27 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (1 2) math:product 2.
+}
+
+_:gn_28 {
+    (2 1 2) :ackermann 2.
+}
+
+_:gn_29 {
+    (1 1) math:difference 0 .
+    (3 0 2) :ackermann 1 .
+    (3 1) math:difference 2 .
+    (2 1 2) :ackermann 2.
+}
+
+_:gn_30 {
+    (3 1 2) :ackermann 2.
+}
+
+_:gn_31 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (2 2) math:product 4.
+}
+
+_:gn_32 {
+    (2 2 2) :ackermann 4.
+}
+
+_:gn_33 {
+    (2 1) math:difference 1 .
+    (3 1 2) :ackermann 2 .
+    (3 1) math:difference 2 .
+    (2 2 2) :ackermann 4.
+}
+
+_:gn_34 {
+    (3 2 2) :ackermann 4.
+}
+
+_:gn_35 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (4 2) math:product 8.
+}
+
+_:gn_36 {
+    (2 4 2) :ackermann 8.
+}
+
+_:gn_37 {
+    (3 1) math:difference 2 .
+    (3 2 2) :ackermann 4 .
+    (3 1) math:difference 2 .
+    (2 4 2) :ackermann 8.
+}
+
+_:gn_38 {
+    (3 3 2) :ackermann 8.
+}
+
+_:gn_39 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (8 2) math:product 16.
+}
+
+_:gn_40 {
+    (2 8 2) :ackermann 16.
+}
+
+_:gn_41 {
+    (4 1) math:difference 3 .
+    (3 3 2) :ackermann 8 .
+    (3 1) math:difference 2 .
+    (2 8 2) :ackermann 16.
+}
+
+_:gn_42 {
+    (3 4 2) :ackermann 16.
+}
+
+_:gn_43 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (16 2) math:product 32.
+}
+
+_:gn_44 {
+    (2 16 2) :ackermann 32.
+}
+
+_:gn_45 {
+    (5 1) math:difference 4 .
+    (3 4 2) :ackermann 16 .
+    (3 1) math:difference 2 .
+    (2 16 2) :ackermann 32.
+}
+
+_:gn_46 {
+    (3 5 2) :ackermann 32.
+}
+
+_:gn_47 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (32 2) math:product 64.
+}
+
+_:gn_48 {
+    (2 32 2) :ackermann 64.
+}
+
+_:gn_49 {
+    (6 1) math:difference 5 .
+    (3 5 2) :ackermann 32 .
+    (3 1) math:difference 2 .
+    (2 32 2) :ackermann 64.
+}
+
+_:gn_50 {
+    (3 6 2) :ackermann 64.
+}
+
+_:gn_51 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (64 2) math:product 128.
+}
+
+_:gn_52 {
+    (2 64 2) :ackermann 128.
+}
+
+_:gn_53 {
+    (7 1) math:difference 6 .
+    (3 6 2) :ackermann 64 .
+    (3 1) math:difference 2 .
+    (2 64 2) :ackermann 128.
+}
+
+_:gn_54 {
+    (3 7 2) :ackermann 128.
+}
+
+_:gn_55 {
+    (4 3) math:sum 7 .
+    (3 7 2) :ackermann 128 .
+    (128 3) math:difference 125.
+}
+
+_:gn_56 {
+    (3 4) :ackermann 125.
+}
+
+_:gn_57 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (128 2) math:product 256.
+}
+
+_:gn_58 {
+    (2 128 2) :ackermann 256.
+}
+
+_:gn_59 {
+    (8 1) math:difference 7 .
+    (3 7 2) :ackermann 128 .
+    (3 1) math:difference 2 .
+    (2 128 2) :ackermann 256.
+}
+
+_:gn_60 {
+    (3 8 2) :ackermann 256.
+}
+
+_:gn_61 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (256 2) math:product 512.
+}
+
+_:gn_62 {
+    (2 256 2) :ackermann 512.
+}
+
+_:gn_63 {
+    (9 1) math:difference 8 .
+    (3 8 2) :ackermann 256 .
+    (3 1) math:difference 2 .
+    (2 256 2) :ackermann 512.
+}
+
+_:gn_64 {
+    (3 9 2) :ackermann 512.
+}
+
+_:gn_65 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (512 2) math:product 1024.
+}
+
+_:gn_66 {
+    (2 512 2) :ackermann 1024.
+}
+
+_:gn_67 {
+    (10 1) math:difference 9 .
+    (3 9 2) :ackermann 512 .
+    (3 1) math:difference 2 .
+    (2 512 2) :ackermann 1024.
+}
+
+_:gn_68 {
+    (3 10 2) :ackermann 1024.
+}
+
+_:gn_69 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (1024 2) math:product 2048.
+}
+
+_:gn_70 {
+    (2 1024 2) :ackermann 2048.
+}
+
+_:gn_71 {
+    (11 1) math:difference 10 .
+    (3 10 2) :ackermann 1024 .
+    (3 1) math:difference 2 .
+    (2 1024 2) :ackermann 2048.
+}
+
+_:gn_72 {
+    (3 11 2) :ackermann 2048.
+}
+
+_:gn_73 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (2048 2) math:product 4096.
+}
+
+_:gn_74 {
+    (2 2048 2) :ackermann 4096.
+}
+
+_:gn_75 {
+    (12 1) math:difference 11 .
+    (3 11 2) :ackermann 2048 .
+    (3 1) math:difference 2 .
+    (2 2048 2) :ackermann 4096.
+}
+
+_:gn_76 {
+    (3 12 2) :ackermann 4096.
+}
+
+_:gn_77 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (4096 2) math:product 8192.
+}
+
+_:gn_78 {
+    (2 4096 2) :ackermann 8192.
+}
+
+_:gn_79 {
+    (13 1) math:difference 12 .
+    (3 12 2) :ackermann 4096 .
+    (3 1) math:difference 2 .
+    (2 4096 2) :ackermann 8192.
+}
+
+_:gn_80 {
+    (3 13 2) :ackermann 8192.
+}
+
+_:gn_81 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (8192 2) math:product 16384.
+}
+
+_:gn_82 {
+    (2 8192 2) :ackermann 16384.
+}
+
+_:gn_83 {
+    (14 1) math:difference 13 .
+    (3 13 2) :ackermann 8192 .
+    (3 1) math:difference 2 .
+    (2 8192 2) :ackermann 16384.
+}
+
+_:gn_84 {
+    (3 14 2) :ackermann 16384.
+}
+
+_:gn_85 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (16384 2) math:product 32768.
+}
+
+_:gn_86 {
+    (2 16384 2) :ackermann 32768.
+}
+
+_:gn_87 {
+    (15 1) math:difference 14 .
+    (3 14 2) :ackermann 16384 .
+    (3 1) math:difference 2 .
+    (2 16384 2) :ackermann 32768.
+}
+
+_:gn_88 {
+    (3 15 2) :ackermann 32768.
+}
+
+_:gn_89 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (32768 2) math:product 65536.
+}
+
+_:gn_90 {
+    (2 32768 2) :ackermann 65536.
+}
+
+_:gn_91 {
+    (16 1) math:difference 15 .
+    (3 15 2) :ackermann 32768 .
+    (3 1) math:difference 2 .
+    (2 32768 2) :ackermann 65536.
+}
+
+_:gn_92 {
+    (3 16 2) :ackermann 65536.
+}
+
+_:gn_93 {
+    () log:equalTo ().
+    _:true log:callWithCut true.
+    (65536 2) math:product 131072.
+}
+
+_:gn_94 {
+    (2 65536 2) :ackermann 131072.
+}
+
+_:gn_95 {
+    (17 1) math:difference 16 .
+    (3 16 2) :ackermann 65536 .
+    (3 1) math:difference 2 .
+    (2 65536 2) :ackermann 131072.
+}
+
+_:gn_96 {
+    (3 17 2) :ackermann 131072.
+}
+
+_:gn_97 {
+    (14 3) math:sum 17 .
+    (3 17 2) :ackermann 131072 .
+    (131072 3) math:difference 131069.
+}
+
+_:gn_98 {
+    (3 14) :ackermann 131069.
+}
+
+_:gn_99 {
+    (4 0 2) :ackermann 1.
+}
+
+_:gn_100 {
+    (1 1) math:difference 0 .
+    (4 0 2) :ackermann 1 .
+    (4 1) math:difference 3 .
+    (3 1 2) :ackermann 2.
+}
+
+_:gn_101 {
+    (4 1 2) :ackermann 2.
+}
+
+_:gn_102 {
+    (2 1) math:difference 1 .
+    (4 1 2) :ackermann 2 .
+    (4 1) math:difference 3 .
+    (3 2 2) :ackermann 4.
+}
+
+_:gn_103 {
+    (4 2 2) :ackermann 4.
+}
+
+_:gn_104 {
+    (3 1) math:difference 2 .
+    (4 2 2) :ackermann 4 .
+    (4 1) math:difference 3 .
+    (3 4 2) :ackermann 16.
+}
+
+_:gn_105 {
+    (4 3 2) :ackermann 16.
+}
+
+_:gn_106 {
+    (0 3) math:sum 3 .
+    (4 3 2) :ackermann 16 .
+    (16 3) math:difference 13.
+}
+
+_:gn_107 {
+    (4 0) :ackermann 13.
+}
+
+_:gn_108 {
+    (4 1) math:difference 3 .
+    (4 3 2) :ackermann 16 .
+    (4 1) math:difference 3 .
+    (3 16 2) :ackermann 65536.
+}
+
+_:gn_109 {
+    (4 4 2) :ackermann 65536.
+}
+
+_:gn_110 {
+    (1 3) math:sum 4 .
+    (4 4 2) :ackermann 65536 .
+    (65536 3) math:difference 65533.
+}
+
+_:gn_111 {
+    (4 1) :ackermann 65533.
+}

@@ -1,0 +1,2 @@
+#!/bin/bash
+swipl -x $(dirname "$(readlink -f "$0")")/lingua.pvm -- "$@"

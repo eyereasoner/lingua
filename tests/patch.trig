@@ -1,0 +1,42 @@
+# -------------
+# Patch example
+# -------------
+#
+# Patching RDF data.
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix solid: <http://www.w3.org/ns/solid/terms#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+# sample data
+:pers001 :familyName "Garcia".
+:pers001 :givenName "Claudia".
+:pers002 :familyName "Cardinale".
+:pers002 :givenName "Claudia".
+
+# patch rule
+_:ng1 lingua:implication true.
+
+_:ng1 {
+    var:person :familyName "Garcia".
+    _:ng2 log:becomes _:ng3.
+}
+
+_:ng2 {
+    var:person :givenName "Claudia".
+}
+
+_:ng3 {
+    var:person :givenName "Alex".
+}
+
+# query
+_:ng4 lingua:query _:ng4.
+
+_:ng4 {
+    var:person :familyName var:fname.
+    var:person :givenName var:gname.
+}

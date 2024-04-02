@@ -1,0 +1,39 @@
+# ------------
+# Derived rule
+# ------------
+#
+# Proving a derived rule.
+
+@prefix string: <http://www.w3.org/2000/10/swap/string#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+:Alice a :Cat.
+:Minka a :Cat.
+:Charly a :Dog.
+
+_:ng1 lingua:implication _:ng2.
+
+_:ng1 {
+    var:cat a :Cat.
+}
+
+_:ng2 {
+    _:ng3 lingua:implication _:ng4.
+}
+
+_:ng3 {
+    var:dog a :Dog.
+}
+
+_:ng4 {
+    :test :is true.
+}
+
+# query
+_:ng5 lingua:query _:ng5.
+
+_:ng5 {
+    :test :is var:result.
+}

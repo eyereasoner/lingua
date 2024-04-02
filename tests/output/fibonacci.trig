@@ -1,0 +1,4571 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://eyereasoner.github.io/lingua/tests/fibonacci.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+
+[] rdf:value 0; :fibonacci 0 .
+[] rdf:value 1; :fibonacci 1 .
+[] rdf:value 6; :fibonacci 8 .
+[] rdf:value 91; :fibonacci 4660046610375530309 .
+[] rdf:value 283; :fibonacci 62232491515607091882574410635924603070626544377175485625797 .
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:gn_6.
+_:gn_7 lingua:explanation _:gn_8.
+_:gn_9 lingua:explanation _:gn_10.
+_:gn_11 lingua:explanation _:gn_12.
+_:gn_13 lingua:explanation _:gn_14.
+_:gn_14 lingua:explanation _:gn_15.
+_:gn_16 lingua:explanation _:gn_17.
+_:gn_18 lingua:explanation _:gn_19.
+_:gn_20 lingua:explanation _:gn_21.
+_:gn_22 lingua:explanation _:gn_23.
+_:gn_24 lingua:explanation _:gn_25.
+_:gn_26 lingua:explanation _:gn_27.
+_:gn_28 lingua:explanation _:gn_29.
+_:gn_30 lingua:explanation _:gn_31.
+_:gn_32 lingua:explanation _:gn_33.
+_:gn_34 lingua:explanation _:gn_35.
+_:gn_36 lingua:explanation _:gn_37.
+_:gn_38 lingua:explanation _:gn_39.
+_:gn_40 lingua:explanation _:gn_41.
+_:gn_42 lingua:explanation _:gn_43.
+_:gn_44 lingua:explanation _:gn_45.
+_:gn_46 lingua:explanation _:gn_47.
+_:gn_48 lingua:explanation _:gn_49.
+_:gn_50 lingua:explanation _:gn_51.
+_:gn_52 lingua:explanation _:gn_53.
+_:gn_54 lingua:explanation _:gn_55.
+_:gn_56 lingua:explanation _:gn_57.
+_:gn_58 lingua:explanation _:gn_59.
+_:gn_60 lingua:explanation _:gn_61.
+_:gn_62 lingua:explanation _:gn_63.
+_:gn_64 lingua:explanation _:gn_65.
+_:gn_66 lingua:explanation _:gn_67.
+_:gn_68 lingua:explanation _:gn_69.
+_:gn_70 lingua:explanation _:gn_71.
+_:gn_72 lingua:explanation _:gn_73.
+_:gn_74 lingua:explanation _:gn_75.
+_:gn_76 lingua:explanation _:gn_77.
+_:gn_78 lingua:explanation _:gn_79.
+_:gn_80 lingua:explanation _:gn_81.
+_:gn_82 lingua:explanation _:gn_83.
+_:gn_84 lingua:explanation _:gn_85.
+_:gn_86 lingua:explanation _:gn_87.
+_:gn_88 lingua:explanation _:gn_89.
+_:gn_90 lingua:explanation _:gn_91.
+_:gn_92 lingua:explanation _:gn_93.
+_:gn_94 lingua:explanation _:gn_95.
+_:gn_96 lingua:explanation _:gn_97.
+_:gn_98 lingua:explanation _:gn_99.
+_:gn_100 lingua:explanation _:gn_101.
+_:gn_102 lingua:explanation _:gn_103.
+_:gn_104 lingua:explanation _:gn_105.
+_:gn_106 lingua:explanation _:gn_107.
+_:gn_108 lingua:explanation _:gn_109.
+_:gn_110 lingua:explanation _:gn_111.
+_:gn_112 lingua:explanation _:gn_113.
+_:gn_114 lingua:explanation _:gn_115.
+_:gn_116 lingua:explanation _:gn_117.
+_:gn_118 lingua:explanation _:gn_119.
+_:gn_120 lingua:explanation _:gn_121.
+_:gn_122 lingua:explanation _:gn_123.
+_:gn_124 lingua:explanation _:gn_125.
+_:gn_126 lingua:explanation _:gn_127.
+_:gn_128 lingua:explanation _:gn_129.
+_:gn_130 lingua:explanation _:gn_131.
+_:gn_132 lingua:explanation _:gn_133.
+_:gn_134 lingua:explanation _:gn_135.
+_:gn_136 lingua:explanation _:gn_137.
+_:gn_138 lingua:explanation _:gn_139.
+_:gn_140 lingua:explanation _:gn_141.
+_:gn_142 lingua:explanation _:gn_143.
+_:gn_144 lingua:explanation _:gn_145.
+_:gn_146 lingua:explanation _:gn_147.
+_:gn_148 lingua:explanation _:gn_149.
+_:gn_150 lingua:explanation _:gn_151.
+_:gn_152 lingua:explanation _:gn_153.
+_:gn_154 lingua:explanation _:gn_155.
+_:gn_156 lingua:explanation _:gn_157.
+_:gn_158 lingua:explanation _:gn_159.
+_:gn_160 lingua:explanation _:gn_161.
+_:gn_162 lingua:explanation _:gn_163.
+_:gn_164 lingua:explanation _:gn_165.
+_:gn_166 lingua:explanation _:gn_167.
+_:gn_168 lingua:explanation _:gn_169.
+_:gn_170 lingua:explanation _:gn_171.
+_:gn_172 lingua:explanation _:gn_173.
+_:gn_174 lingua:explanation _:gn_175.
+_:gn_176 lingua:explanation _:gn_177.
+_:gn_178 lingua:explanation _:gn_179.
+_:gn_180 lingua:explanation _:gn_181.
+_:gn_182 lingua:explanation _:gn_183.
+_:gn_184 lingua:explanation _:gn_185.
+_:gn_186 lingua:explanation _:gn_187.
+_:gn_188 lingua:explanation _:gn_189.
+_:gn_190 lingua:explanation _:gn_191.
+_:gn_192 lingua:explanation _:gn_193.
+_:gn_194 lingua:explanation _:gn_195.
+_:gn_195 lingua:explanation _:gn_196.
+_:gn_197 lingua:explanation _:gn_198.
+_:gn_199 lingua:explanation _:gn_200.
+_:gn_201 lingua:explanation _:gn_202.
+_:gn_203 lingua:explanation _:gn_204.
+_:gn_205 lingua:explanation _:gn_206.
+_:gn_207 lingua:explanation _:gn_208.
+_:gn_209 lingua:explanation _:gn_210.
+_:gn_211 lingua:explanation _:gn_212.
+_:gn_213 lingua:explanation _:gn_214.
+_:gn_215 lingua:explanation _:gn_216.
+_:gn_217 lingua:explanation _:gn_218.
+_:gn_219 lingua:explanation _:gn_220.
+_:gn_221 lingua:explanation _:gn_222.
+_:gn_223 lingua:explanation _:gn_224.
+_:gn_225 lingua:explanation _:gn_226.
+_:gn_227 lingua:explanation _:gn_228.
+_:gn_229 lingua:explanation _:gn_230.
+_:gn_231 lingua:explanation _:gn_232.
+_:gn_233 lingua:explanation _:gn_234.
+_:gn_235 lingua:explanation _:gn_236.
+_:gn_237 lingua:explanation _:gn_238.
+_:gn_239 lingua:explanation _:gn_240.
+_:gn_241 lingua:explanation _:gn_242.
+_:gn_243 lingua:explanation _:gn_244.
+_:gn_245 lingua:explanation _:gn_246.
+_:gn_247 lingua:explanation _:gn_248.
+_:gn_249 lingua:explanation _:gn_250.
+_:gn_251 lingua:explanation _:gn_252.
+_:gn_253 lingua:explanation _:gn_254.
+_:gn_255 lingua:explanation _:gn_256.
+_:gn_257 lingua:explanation _:gn_258.
+_:gn_259 lingua:explanation _:gn_260.
+_:gn_261 lingua:explanation _:gn_262.
+_:gn_263 lingua:explanation _:gn_264.
+_:gn_265 lingua:explanation _:gn_266.
+_:gn_267 lingua:explanation _:gn_268.
+_:gn_269 lingua:explanation _:gn_270.
+_:gn_271 lingua:explanation _:gn_272.
+_:gn_273 lingua:explanation _:gn_274.
+_:gn_275 lingua:explanation _:gn_276.
+_:gn_277 lingua:explanation _:gn_278.
+_:gn_279 lingua:explanation _:gn_280.
+_:gn_281 lingua:explanation _:gn_282.
+_:gn_283 lingua:explanation _:gn_284.
+_:gn_285 lingua:explanation _:gn_286.
+_:gn_287 lingua:explanation _:gn_288.
+_:gn_289 lingua:explanation _:gn_290.
+_:gn_291 lingua:explanation _:gn_292.
+_:gn_293 lingua:explanation _:gn_294.
+_:gn_295 lingua:explanation _:gn_296.
+_:gn_297 lingua:explanation _:gn_298.
+_:gn_299 lingua:explanation _:gn_300.
+_:gn_301 lingua:explanation _:gn_302.
+_:gn_303 lingua:explanation _:gn_304.
+_:gn_305 lingua:explanation _:gn_306.
+_:gn_307 lingua:explanation _:gn_308.
+_:gn_309 lingua:explanation _:gn_310.
+_:gn_311 lingua:explanation _:gn_312.
+_:gn_313 lingua:explanation _:gn_314.
+_:gn_315 lingua:explanation _:gn_316.
+_:gn_317 lingua:explanation _:gn_318.
+_:gn_319 lingua:explanation _:gn_320.
+_:gn_321 lingua:explanation _:gn_322.
+_:gn_323 lingua:explanation _:gn_324.
+_:gn_325 lingua:explanation _:gn_326.
+_:gn_327 lingua:explanation _:gn_328.
+_:gn_329 lingua:explanation _:gn_330.
+_:gn_331 lingua:explanation _:gn_332.
+_:gn_333 lingua:explanation _:gn_334.
+_:gn_335 lingua:explanation _:gn_336.
+_:gn_337 lingua:explanation _:gn_338.
+_:gn_339 lingua:explanation _:gn_340.
+_:gn_341 lingua:explanation _:gn_342.
+_:gn_343 lingua:explanation _:gn_344.
+_:gn_345 lingua:explanation _:gn_346.
+_:gn_347 lingua:explanation _:gn_348.
+_:gn_349 lingua:explanation _:gn_350.
+_:gn_351 lingua:explanation _:gn_352.
+_:gn_353 lingua:explanation _:gn_354.
+_:gn_355 lingua:explanation _:gn_356.
+_:gn_357 lingua:explanation _:gn_358.
+_:gn_359 lingua:explanation _:gn_360.
+_:gn_361 lingua:explanation _:gn_362.
+_:gn_363 lingua:explanation _:gn_364.
+_:gn_365 lingua:explanation _:gn_366.
+_:gn_367 lingua:explanation _:gn_368.
+_:gn_369 lingua:explanation _:gn_370.
+_:gn_371 lingua:explanation _:gn_372.
+_:gn_373 lingua:explanation _:gn_374.
+_:gn_375 lingua:explanation _:gn_376.
+_:gn_377 lingua:explanation _:gn_378.
+_:gn_379 lingua:explanation _:gn_380.
+_:gn_381 lingua:explanation _:gn_382.
+_:gn_383 lingua:explanation _:gn_384.
+_:gn_385 lingua:explanation _:gn_386.
+_:gn_387 lingua:explanation _:gn_388.
+_:gn_389 lingua:explanation _:gn_390.
+_:gn_391 lingua:explanation _:gn_392.
+_:gn_393 lingua:explanation _:gn_394.
+_:gn_395 lingua:explanation _:gn_396.
+_:gn_397 lingua:explanation _:gn_398.
+_:gn_399 lingua:explanation _:gn_400.
+_:gn_401 lingua:explanation _:gn_402.
+_:gn_403 lingua:explanation _:gn_404.
+_:gn_405 lingua:explanation _:gn_406.
+_:gn_407 lingua:explanation _:gn_408.
+_:gn_409 lingua:explanation _:gn_410.
+_:gn_411 lingua:explanation _:gn_412.
+_:gn_413 lingua:explanation _:gn_414.
+_:gn_415 lingua:explanation _:gn_416.
+_:gn_417 lingua:explanation _:gn_418.
+_:gn_419 lingua:explanation _:gn_420.
+_:gn_421 lingua:explanation _:gn_422.
+_:gn_423 lingua:explanation _:gn_424.
+_:gn_425 lingua:explanation _:gn_426.
+_:gn_427 lingua:explanation _:gn_428.
+_:gn_429 lingua:explanation _:gn_430.
+_:gn_431 lingua:explanation _:gn_432.
+_:gn_433 lingua:explanation _:gn_434.
+_:gn_435 lingua:explanation _:gn_436.
+_:gn_437 lingua:explanation _:gn_438.
+_:gn_439 lingua:explanation _:gn_440.
+_:gn_441 lingua:explanation _:gn_442.
+_:gn_443 lingua:explanation _:gn_444.
+_:gn_445 lingua:explanation _:gn_446.
+_:gn_447 lingua:explanation _:gn_448.
+_:gn_449 lingua:explanation _:gn_450.
+_:gn_451 lingua:explanation _:gn_452.
+_:gn_453 lingua:explanation _:gn_454.
+_:gn_455 lingua:explanation _:gn_456.
+_:gn_457 lingua:explanation _:gn_458.
+_:gn_459 lingua:explanation _:gn_460.
+_:gn_461 lingua:explanation _:gn_462.
+_:gn_463 lingua:explanation _:gn_464.
+_:gn_465 lingua:explanation _:gn_466.
+_:gn_467 lingua:explanation _:gn_468.
+_:gn_469 lingua:explanation _:gn_470.
+_:gn_471 lingua:explanation _:gn_472.
+_:gn_473 lingua:explanation _:gn_474.
+_:gn_475 lingua:explanation _:gn_476.
+_:gn_477 lingua:explanation _:gn_478.
+_:gn_479 lingua:explanation _:gn_480.
+_:gn_481 lingua:explanation _:gn_482.
+_:gn_483 lingua:explanation _:gn_484.
+_:gn_485 lingua:explanation _:gn_486.
+_:gn_487 lingua:explanation _:gn_488.
+_:gn_489 lingua:explanation _:gn_490.
+_:gn_491 lingua:explanation _:gn_492.
+_:gn_493 lingua:explanation _:gn_494.
+_:gn_495 lingua:explanation _:gn_496.
+_:gn_497 lingua:explanation _:gn_498.
+_:gn_499 lingua:explanation _:gn_500.
+_:gn_501 lingua:explanation _:gn_502.
+_:gn_503 lingua:explanation _:gn_504.
+_:gn_505 lingua:explanation _:gn_506.
+_:gn_507 lingua:explanation _:gn_508.
+_:gn_509 lingua:explanation _:gn_510.
+_:gn_511 lingua:explanation _:gn_512.
+_:gn_513 lingua:explanation _:gn_514.
+_:gn_515 lingua:explanation _:gn_516.
+_:gn_517 lingua:explanation _:gn_518.
+_:gn_519 lingua:explanation _:gn_520.
+_:gn_521 lingua:explanation _:gn_522.
+_:gn_523 lingua:explanation _:gn_524.
+_:gn_525 lingua:explanation _:gn_526.
+_:gn_527 lingua:explanation _:gn_528.
+_:gn_529 lingua:explanation _:gn_530.
+_:gn_531 lingua:explanation _:gn_532.
+_:gn_533 lingua:explanation _:gn_534.
+_:gn_535 lingua:explanation _:gn_536.
+_:gn_537 lingua:explanation _:gn_538.
+_:gn_539 lingua:explanation _:gn_540.
+_:gn_541 lingua:explanation _:gn_542.
+_:gn_543 lingua:explanation _:gn_544.
+_:gn_545 lingua:explanation _:gn_546.
+_:gn_547 lingua:explanation _:gn_548.
+_:gn_549 lingua:explanation _:gn_550.
+_:gn_551 lingua:explanation _:gn_552.
+_:gn_553 lingua:explanation _:gn_554.
+_:gn_555 lingua:explanation _:gn_556.
+_:gn_557 lingua:explanation _:gn_558.
+_:gn_559 lingua:explanation _:gn_560.
+_:gn_561 lingua:explanation _:gn_562.
+_:gn_563 lingua:explanation _:gn_564.
+_:gn_565 lingua:explanation _:gn_566.
+_:gn_567 lingua:explanation _:gn_568.
+_:gn_569 lingua:explanation _:gn_570.
+_:gn_571 lingua:explanation _:gn_572.
+_:gn_573 lingua:explanation _:gn_574.
+_:gn_575 lingua:explanation _:gn_576.
+_:gn_577 lingua:explanation _:gn_578.
+_:gn_579 lingua:explanation _:gn_580.
+_:gn_581 lingua:explanation _:gn_582.
+_:gn_583 lingua:explanation _:gn_584.
+_:gn_585 lingua:explanation _:gn_586.
+_:gn_587 lingua:explanation _:gn_588.
+_:gn_589 lingua:explanation _:gn_590.
+_:gn_591 lingua:explanation _:gn_592.
+_:gn_593 lingua:explanation _:gn_594.
+_:gn_595 lingua:explanation _:gn_596.
+_:gn_597 lingua:explanation _:gn_598.
+_:gn_599 lingua:explanation _:gn_600.
+_:gn_601 lingua:explanation _:gn_602.
+_:gn_603 lingua:explanation _:gn_604.
+_:gn_605 lingua:explanation _:gn_606.
+_:gn_607 lingua:explanation _:gn_608.
+_:gn_609 lingua:explanation _:gn_610.
+_:gn_611 lingua:explanation _:gn_612.
+_:gn_613 lingua:explanation _:gn_614.
+_:gn_615 lingua:explanation _:gn_616.
+_:gn_617 lingua:explanation _:gn_618.
+_:gn_619 lingua:explanation _:gn_620.
+_:gn_621 lingua:explanation _:gn_622.
+_:gn_623 lingua:explanation _:gn_624.
+_:gn_625 lingua:explanation _:gn_626.
+_:gn_627 lingua:explanation _:gn_628.
+_:gn_629 lingua:explanation _:gn_630.
+_:gn_631 lingua:explanation _:gn_632.
+_:gn_633 lingua:explanation _:gn_634.
+_:gn_635 lingua:explanation _:gn_636.
+_:gn_637 lingua:explanation _:gn_638.
+_:gn_639 lingua:explanation _:gn_640.
+_:gn_641 lingua:explanation _:gn_642.
+_:gn_643 lingua:explanation _:gn_644.
+_:gn_645 lingua:explanation _:gn_646.
+_:gn_647 lingua:explanation _:gn_648.
+_:gn_649 lingua:explanation _:gn_650.
+_:gn_651 lingua:explanation _:gn_652.
+_:gn_653 lingua:explanation _:gn_654.
+_:gn_655 lingua:explanation _:gn_656.
+_:gn_657 lingua:explanation _:gn_658.
+_:gn_659 lingua:explanation _:gn_660.
+_:gn_661 lingua:explanation _:gn_662.
+_:gn_663 lingua:explanation _:gn_664.
+_:gn_665 lingua:explanation _:gn_666.
+_:gn_667 lingua:explanation _:gn_668.
+_:gn_669 lingua:explanation _:gn_670.
+_:gn_671 lingua:explanation _:gn_672.
+_:gn_673 lingua:explanation _:gn_674.
+_:gn_675 lingua:explanation _:gn_676.
+_:gn_677 lingua:explanation _:gn_678.
+_:gn_679 lingua:explanation _:gn_680.
+_:gn_681 lingua:explanation _:gn_682.
+_:gn_683 lingua:explanation _:gn_684.
+_:gn_685 lingua:explanation _:gn_686.
+_:gn_687 lingua:explanation _:gn_688.
+_:gn_689 lingua:explanation _:gn_690.
+_:gn_691 lingua:explanation _:gn_692.
+_:gn_693 lingua:explanation _:gn_694.
+_:gn_695 lingua:explanation _:gn_696.
+_:gn_697 lingua:explanation _:gn_698.
+_:gn_699 lingua:explanation _:gn_700.
+_:gn_701 lingua:explanation _:gn_702.
+_:gn_703 lingua:explanation _:gn_704.
+_:gn_705 lingua:explanation _:gn_706.
+_:gn_707 lingua:explanation _:gn_708.
+_:gn_709 lingua:explanation _:gn_710.
+_:gn_711 lingua:explanation _:gn_712.
+_:gn_713 lingua:explanation _:gn_714.
+_:gn_715 lingua:explanation _:gn_716.
+_:gn_717 lingua:explanation _:gn_718.
+_:gn_719 lingua:explanation _:gn_720.
+_:gn_721 lingua:explanation _:gn_722.
+_:gn_723 lingua:explanation _:gn_724.
+_:gn_725 lingua:explanation _:gn_726.
+_:gn_727 lingua:explanation _:gn_728.
+_:gn_729 lingua:explanation _:gn_730.
+_:gn_731 lingua:explanation _:gn_732.
+_:gn_733 lingua:explanation _:gn_734.
+_:gn_735 lingua:explanation _:gn_736.
+_:gn_737 lingua:explanation _:gn_738.
+_:gn_739 lingua:explanation _:gn_740.
+_:gn_741 lingua:explanation _:gn_742.
+_:gn_743 lingua:explanation _:gn_744.
+_:gn_745 lingua:explanation _:gn_746.
+_:gn_747 lingua:explanation _:gn_748.
+_:gn_749 lingua:explanation _:gn_750.
+_:gn_751 lingua:explanation _:gn_752.
+_:gn_753 lingua:explanation _:gn_754.
+_:gn_755 lingua:explanation _:gn_756.
+_:gn_757 lingua:explanation _:gn_758.
+_:gn_759 lingua:explanation _:gn_760.
+_:gn_760 lingua:explanation _:gn_761.
+
+_:gn_1 {
+    (0 0 1) :fib 0.
+}
+
+_:gn_2 {
+    [] rdf:value 0; :fibonacci 0.
+}
+
+_:gn_3 {
+    (1 0 1) :fib 1.
+}
+
+_:gn_4 {
+    [] rdf:value 1; :fibonacci 1.
+}
+
+_:gn_5 {
+    [] rdf:value 2; math:greaterThan 1 .
+    (2 1) math:difference 1 .
+    (3 5) math:sum 8 .
+    (1 5 8) :fib 8.
+}
+
+_:gn_6 {
+    (2 3 5) :fib 8.
+}
+
+_:gn_7 {
+    [] rdf:value 3; math:greaterThan 1 .
+    (3 1) math:difference 2 .
+    (2 3) math:sum 5 .
+    (2 3 5) :fib 8.
+}
+
+_:gn_8 {
+    (3 2 3) :fib 8.
+}
+
+_:gn_9 {
+    [] rdf:value 4; math:greaterThan 1 .
+    (4 1) math:difference 3 .
+    (1 2) math:sum 3 .
+    (3 2 3) :fib 8.
+}
+
+_:gn_10 {
+    (4 1 2) :fib 8.
+}
+
+_:gn_11 {
+    [] rdf:value 5; math:greaterThan 1 .
+    (5 1) math:difference 4 .
+    (1 1) math:sum 2 .
+    (4 1 2) :fib 8.
+}
+
+_:gn_12 {
+    (5 1 1) :fib 8.
+}
+
+_:gn_13 {
+    [] rdf:value 6; math:greaterThan 1 .
+    (6 1) math:difference 5 .
+    (0 1) math:sum 1 .
+    (5 1 1) :fib 8.
+}
+
+_:gn_14 {
+    (6 0 1) :fib 8.
+}
+
+_:gn_15 {
+    [] rdf:value 6; :fibonacci 8.
+}
+
+_:gn_16 {
+    [] rdf:value 2; math:greaterThan 1 .
+    (2 1) math:difference 1 .
+    (1779979416004714189 2880067194370816120) math:sum 4660046610375530309 .
+    (1 2880067194370816120 4660046610375530309) :fib 4660046610375530309.
+}
+
+_:gn_17 {
+    (2 1779979416004714189 2880067194370816120) :fib 4660046610375530309.
+}
+
+_:gn_18 {
+    [] rdf:value 3; math:greaterThan 1 .
+    (3 1) math:difference 2 .
+    (1100087778366101931 1779979416004714189) math:sum 2880067194370816120 .
+    (2 1779979416004714189 2880067194370816120) :fib 4660046610375530309.
+}
+
+_:gn_19 {
+    (3 1100087778366101931 1779979416004714189) :fib 4660046610375530309.
+}
+
+_:gn_20 {
+    [] rdf:value 4; math:greaterThan 1 .
+    (4 1) math:difference 3 .
+    (679891637638612258 1100087778366101931) math:sum 1779979416004714189 .
+    (3 1100087778366101931 1779979416004714189) :fib 4660046610375530309.
+}
+
+_:gn_21 {
+    (4 679891637638612258 1100087778366101931) :fib 4660046610375530309.
+}
+
+_:gn_22 {
+    [] rdf:value 5; math:greaterThan 1 .
+    (5 1) math:difference 4 .
+    (420196140727489673 679891637638612258) math:sum 1100087778366101931 .
+    (4 679891637638612258 1100087778366101931) :fib 4660046610375530309.
+}
+
+_:gn_23 {
+    (5 420196140727489673 679891637638612258) :fib 4660046610375530309.
+}
+
+_:gn_24 {
+    [] rdf:value 6; math:greaterThan 1 .
+    (6 1) math:difference 5 .
+    (259695496911122585 420196140727489673) math:sum 679891637638612258 .
+    (5 420196140727489673 679891637638612258) :fib 4660046610375530309.
+}
+
+_:gn_25 {
+    (6 259695496911122585 420196140727489673) :fib 4660046610375530309.
+}
+
+_:gn_26 {
+    [] rdf:value 7; math:greaterThan 1 .
+    (7 1) math:difference 6 .
+    (160500643816367088 259695496911122585) math:sum 420196140727489673 .
+    (6 259695496911122585 420196140727489673) :fib 4660046610375530309.
+}
+
+_:gn_27 {
+    (7 160500643816367088 259695496911122585) :fib 4660046610375530309.
+}
+
+_:gn_28 {
+    [] rdf:value 8; math:greaterThan 1 .
+    (8 1) math:difference 7 .
+    (99194853094755497 160500643816367088) math:sum 259695496911122585 .
+    (7 160500643816367088 259695496911122585) :fib 4660046610375530309.
+}
+
+_:gn_29 {
+    (8 99194853094755497 160500643816367088) :fib 4660046610375530309.
+}
+
+_:gn_30 {
+    [] rdf:value 9; math:greaterThan 1 .
+    (9 1) math:difference 8 .
+    (61305790721611591 99194853094755497) math:sum 160500643816367088 .
+    (8 99194853094755497 160500643816367088) :fib 4660046610375530309.
+}
+
+_:gn_31 {
+    (9 61305790721611591 99194853094755497) :fib 4660046610375530309.
+}
+
+_:gn_32 {
+    [] rdf:value 10; math:greaterThan 1 .
+    (10 1) math:difference 9 .
+    (37889062373143906 61305790721611591) math:sum 99194853094755497 .
+    (9 61305790721611591 99194853094755497) :fib 4660046610375530309.
+}
+
+_:gn_33 {
+    (10 37889062373143906 61305790721611591) :fib 4660046610375530309.
+}
+
+_:gn_34 {
+    [] rdf:value 11; math:greaterThan 1 .
+    (11 1) math:difference 10 .
+    (23416728348467685 37889062373143906) math:sum 61305790721611591 .
+    (10 37889062373143906 61305790721611591) :fib 4660046610375530309.
+}
+
+_:gn_35 {
+    (11 23416728348467685 37889062373143906) :fib 4660046610375530309.
+}
+
+_:gn_36 {
+    [] rdf:value 12; math:greaterThan 1 .
+    (12 1) math:difference 11 .
+    (14472334024676221 23416728348467685) math:sum 37889062373143906 .
+    (11 23416728348467685 37889062373143906) :fib 4660046610375530309.
+}
+
+_:gn_37 {
+    (12 14472334024676221 23416728348467685) :fib 4660046610375530309.
+}
+
+_:gn_38 {
+    [] rdf:value 13; math:greaterThan 1 .
+    (13 1) math:difference 12 .
+    (8944394323791464 14472334024676221) math:sum 23416728348467685 .
+    (12 14472334024676221 23416728348467685) :fib 4660046610375530309.
+}
+
+_:gn_39 {
+    (13 8944394323791464 14472334024676221) :fib 4660046610375530309.
+}
+
+_:gn_40 {
+    [] rdf:value 14; math:greaterThan 1 .
+    (14 1) math:difference 13 .
+    (5527939700884757 8944394323791464) math:sum 14472334024676221 .
+    (13 8944394323791464 14472334024676221) :fib 4660046610375530309.
+}
+
+_:gn_41 {
+    (14 5527939700884757 8944394323791464) :fib 4660046610375530309.
+}
+
+_:gn_42 {
+    [] rdf:value 15; math:greaterThan 1 .
+    (15 1) math:difference 14 .
+    (3416454622906707 5527939700884757) math:sum 8944394323791464 .
+    (14 5527939700884757 8944394323791464) :fib 4660046610375530309.
+}
+
+_:gn_43 {
+    (15 3416454622906707 5527939700884757) :fib 4660046610375530309.
+}
+
+_:gn_44 {
+    [] rdf:value 16; math:greaterThan 1 .
+    (16 1) math:difference 15 .
+    (2111485077978050 3416454622906707) math:sum 5527939700884757 .
+    (15 3416454622906707 5527939700884757) :fib 4660046610375530309.
+}
+
+_:gn_45 {
+    (16 2111485077978050 3416454622906707) :fib 4660046610375530309.
+}
+
+_:gn_46 {
+    [] rdf:value 17; math:greaterThan 1 .
+    (17 1) math:difference 16 .
+    (1304969544928657 2111485077978050) math:sum 3416454622906707 .
+    (16 2111485077978050 3416454622906707) :fib 4660046610375530309.
+}
+
+_:gn_47 {
+    (17 1304969544928657 2111485077978050) :fib 4660046610375530309.
+}
+
+_:gn_48 {
+    [] rdf:value 18; math:greaterThan 1 .
+    (18 1) math:difference 17 .
+    (806515533049393 1304969544928657) math:sum 2111485077978050 .
+    (17 1304969544928657 2111485077978050) :fib 4660046610375530309.
+}
+
+_:gn_49 {
+    (18 806515533049393 1304969544928657) :fib 4660046610375530309.
+}
+
+_:gn_50 {
+    [] rdf:value 19; math:greaterThan 1 .
+    (19 1) math:difference 18 .
+    (498454011879264 806515533049393) math:sum 1304969544928657 .
+    (18 806515533049393 1304969544928657) :fib 4660046610375530309.
+}
+
+_:gn_51 {
+    (19 498454011879264 806515533049393) :fib 4660046610375530309.
+}
+
+_:gn_52 {
+    [] rdf:value 20; math:greaterThan 1 .
+    (20 1) math:difference 19 .
+    (308061521170129 498454011879264) math:sum 806515533049393 .
+    (19 498454011879264 806515533049393) :fib 4660046610375530309.
+}
+
+_:gn_53 {
+    (20 308061521170129 498454011879264) :fib 4660046610375530309.
+}
+
+_:gn_54 {
+    [] rdf:value 21; math:greaterThan 1 .
+    (21 1) math:difference 20 .
+    (190392490709135 308061521170129) math:sum 498454011879264 .
+    (20 308061521170129 498454011879264) :fib 4660046610375530309.
+}
+
+_:gn_55 {
+    (21 190392490709135 308061521170129) :fib 4660046610375530309.
+}
+
+_:gn_56 {
+    [] rdf:value 22; math:greaterThan 1 .
+    (22 1) math:difference 21 .
+    (117669030460994 190392490709135) math:sum 308061521170129 .
+    (21 190392490709135 308061521170129) :fib 4660046610375530309.
+}
+
+_:gn_57 {
+    (22 117669030460994 190392490709135) :fib 4660046610375530309.
+}
+
+_:gn_58 {
+    [] rdf:value 23; math:greaterThan 1 .
+    (23 1) math:difference 22 .
+    (72723460248141 117669030460994) math:sum 190392490709135 .
+    (22 117669030460994 190392490709135) :fib 4660046610375530309.
+}
+
+_:gn_59 {
+    (23 72723460248141 117669030460994) :fib 4660046610375530309.
+}
+
+_:gn_60 {
+    [] rdf:value 24; math:greaterThan 1 .
+    (24 1) math:difference 23 .
+    (44945570212853 72723460248141) math:sum 117669030460994 .
+    (23 72723460248141 117669030460994) :fib 4660046610375530309.
+}
+
+_:gn_61 {
+    (24 44945570212853 72723460248141) :fib 4660046610375530309.
+}
+
+_:gn_62 {
+    [] rdf:value 25; math:greaterThan 1 .
+    (25 1) math:difference 24 .
+    (27777890035288 44945570212853) math:sum 72723460248141 .
+    (24 44945570212853 72723460248141) :fib 4660046610375530309.
+}
+
+_:gn_63 {
+    (25 27777890035288 44945570212853) :fib 4660046610375530309.
+}
+
+_:gn_64 {
+    [] rdf:value 26; math:greaterThan 1 .
+    (26 1) math:difference 25 .
+    (17167680177565 27777890035288) math:sum 44945570212853 .
+    (25 27777890035288 44945570212853) :fib 4660046610375530309.
+}
+
+_:gn_65 {
+    (26 17167680177565 27777890035288) :fib 4660046610375530309.
+}
+
+_:gn_66 {
+    [] rdf:value 27; math:greaterThan 1 .
+    (27 1) math:difference 26 .
+    (10610209857723 17167680177565) math:sum 27777890035288 .
+    (26 17167680177565 27777890035288) :fib 4660046610375530309.
+}
+
+_:gn_67 {
+    (27 10610209857723 17167680177565) :fib 4660046610375530309.
+}
+
+_:gn_68 {
+    [] rdf:value 28; math:greaterThan 1 .
+    (28 1) math:difference 27 .
+    (6557470319842 10610209857723) math:sum 17167680177565 .
+    (27 10610209857723 17167680177565) :fib 4660046610375530309.
+}
+
+_:gn_69 {
+    (28 6557470319842 10610209857723) :fib 4660046610375530309.
+}
+
+_:gn_70 {
+    [] rdf:value 29; math:greaterThan 1 .
+    (29 1) math:difference 28 .
+    (4052739537881 6557470319842) math:sum 10610209857723 .
+    (28 6557470319842 10610209857723) :fib 4660046610375530309.
+}
+
+_:gn_71 {
+    (29 4052739537881 6557470319842) :fib 4660046610375530309.
+}
+
+_:gn_72 {
+    [] rdf:value 30; math:greaterThan 1 .
+    (30 1) math:difference 29 .
+    (2504730781961 4052739537881) math:sum 6557470319842 .
+    (29 4052739537881 6557470319842) :fib 4660046610375530309.
+}
+
+_:gn_73 {
+    (30 2504730781961 4052739537881) :fib 4660046610375530309.
+}
+
+_:gn_74 {
+    [] rdf:value 31; math:greaterThan 1 .
+    (31 1) math:difference 30 .
+    (1548008755920 2504730781961) math:sum 4052739537881 .
+    (30 2504730781961 4052739537881) :fib 4660046610375530309.
+}
+
+_:gn_75 {
+    (31 1548008755920 2504730781961) :fib 4660046610375530309.
+}
+
+_:gn_76 {
+    [] rdf:value 32; math:greaterThan 1 .
+    (32 1) math:difference 31 .
+    (956722026041 1548008755920) math:sum 2504730781961 .
+    (31 1548008755920 2504730781961) :fib 4660046610375530309.
+}
+
+_:gn_77 {
+    (32 956722026041 1548008755920) :fib 4660046610375530309.
+}
+
+_:gn_78 {
+    [] rdf:value 33; math:greaterThan 1 .
+    (33 1) math:difference 32 .
+    (591286729879 956722026041) math:sum 1548008755920 .
+    (32 956722026041 1548008755920) :fib 4660046610375530309.
+}
+
+_:gn_79 {
+    (33 591286729879 956722026041) :fib 4660046610375530309.
+}
+
+_:gn_80 {
+    [] rdf:value 34; math:greaterThan 1 .
+    (34 1) math:difference 33 .
+    (365435296162 591286729879) math:sum 956722026041 .
+    (33 591286729879 956722026041) :fib 4660046610375530309.
+}
+
+_:gn_81 {
+    (34 365435296162 591286729879) :fib 4660046610375530309.
+}
+
+_:gn_82 {
+    [] rdf:value 35; math:greaterThan 1 .
+    (35 1) math:difference 34 .
+    (225851433717 365435296162) math:sum 591286729879 .
+    (34 365435296162 591286729879) :fib 4660046610375530309.
+}
+
+_:gn_83 {
+    (35 225851433717 365435296162) :fib 4660046610375530309.
+}
+
+_:gn_84 {
+    [] rdf:value 36; math:greaterThan 1 .
+    (36 1) math:difference 35 .
+    (139583862445 225851433717) math:sum 365435296162 .
+    (35 225851433717 365435296162) :fib 4660046610375530309.
+}
+
+_:gn_85 {
+    (36 139583862445 225851433717) :fib 4660046610375530309.
+}
+
+_:gn_86 {
+    [] rdf:value 37; math:greaterThan 1 .
+    (37 1) math:difference 36 .
+    (86267571272 139583862445) math:sum 225851433717 .
+    (36 139583862445 225851433717) :fib 4660046610375530309.
+}
+
+_:gn_87 {
+    (37 86267571272 139583862445) :fib 4660046610375530309.
+}
+
+_:gn_88 {
+    [] rdf:value 38; math:greaterThan 1 .
+    (38 1) math:difference 37 .
+    (53316291173 86267571272) math:sum 139583862445 .
+    (37 86267571272 139583862445) :fib 4660046610375530309.
+}
+
+_:gn_89 {
+    (38 53316291173 86267571272) :fib 4660046610375530309.
+}
+
+_:gn_90 {
+    [] rdf:value 39; math:greaterThan 1 .
+    (39 1) math:difference 38 .
+    (32951280099 53316291173) math:sum 86267571272 .
+    (38 53316291173 86267571272) :fib 4660046610375530309.
+}
+
+_:gn_91 {
+    (39 32951280099 53316291173) :fib 4660046610375530309.
+}
+
+_:gn_92 {
+    [] rdf:value 40; math:greaterThan 1 .
+    (40 1) math:difference 39 .
+    (20365011074 32951280099) math:sum 53316291173 .
+    (39 32951280099 53316291173) :fib 4660046610375530309.
+}
+
+_:gn_93 {
+    (40 20365011074 32951280099) :fib 4660046610375530309.
+}
+
+_:gn_94 {
+    [] rdf:value 41; math:greaterThan 1 .
+    (41 1) math:difference 40 .
+    (12586269025 20365011074) math:sum 32951280099 .
+    (40 20365011074 32951280099) :fib 4660046610375530309.
+}
+
+_:gn_95 {
+    (41 12586269025 20365011074) :fib 4660046610375530309.
+}
+
+_:gn_96 {
+    [] rdf:value 42; math:greaterThan 1 .
+    (42 1) math:difference 41 .
+    (7778742049 12586269025) math:sum 20365011074 .
+    (41 12586269025 20365011074) :fib 4660046610375530309.
+}
+
+_:gn_97 {
+    (42 7778742049 12586269025) :fib 4660046610375530309.
+}
+
+_:gn_98 {
+    [] rdf:value 43; math:greaterThan 1 .
+    (43 1) math:difference 42 .
+    (4807526976 7778742049) math:sum 12586269025 .
+    (42 7778742049 12586269025) :fib 4660046610375530309.
+}
+
+_:gn_99 {
+    (43 4807526976 7778742049) :fib 4660046610375530309.
+}
+
+_:gn_100 {
+    [] rdf:value 44; math:greaterThan 1 .
+    (44 1) math:difference 43 .
+    (2971215073 4807526976) math:sum 7778742049 .
+    (43 4807526976 7778742049) :fib 4660046610375530309.
+}
+
+_:gn_101 {
+    (44 2971215073 4807526976) :fib 4660046610375530309.
+}
+
+_:gn_102 {
+    [] rdf:value 45; math:greaterThan 1 .
+    (45 1) math:difference 44 .
+    (1836311903 2971215073) math:sum 4807526976 .
+    (44 2971215073 4807526976) :fib 4660046610375530309.
+}
+
+_:gn_103 {
+    (45 1836311903 2971215073) :fib 4660046610375530309.
+}
+
+_:gn_104 {
+    [] rdf:value 46; math:greaterThan 1 .
+    (46 1) math:difference 45 .
+    (1134903170 1836311903) math:sum 2971215073 .
+    (45 1836311903 2971215073) :fib 4660046610375530309.
+}
+
+_:gn_105 {
+    (46 1134903170 1836311903) :fib 4660046610375530309.
+}
+
+_:gn_106 {
+    [] rdf:value 47; math:greaterThan 1 .
+    (47 1) math:difference 46 .
+    (701408733 1134903170) math:sum 1836311903 .
+    (46 1134903170 1836311903) :fib 4660046610375530309.
+}
+
+_:gn_107 {
+    (47 701408733 1134903170) :fib 4660046610375530309.
+}
+
+_:gn_108 {
+    [] rdf:value 48; math:greaterThan 1 .
+    (48 1) math:difference 47 .
+    (433494437 701408733) math:sum 1134903170 .
+    (47 701408733 1134903170) :fib 4660046610375530309.
+}
+
+_:gn_109 {
+    (48 433494437 701408733) :fib 4660046610375530309.
+}
+
+_:gn_110 {
+    [] rdf:value 49; math:greaterThan 1 .
+    (49 1) math:difference 48 .
+    (267914296 433494437) math:sum 701408733 .
+    (48 433494437 701408733) :fib 4660046610375530309.
+}
+
+_:gn_111 {
+    (49 267914296 433494437) :fib 4660046610375530309.
+}
+
+_:gn_112 {
+    [] rdf:value 50; math:greaterThan 1 .
+    (50 1) math:difference 49 .
+    (165580141 267914296) math:sum 433494437 .
+    (49 267914296 433494437) :fib 4660046610375530309.
+}
+
+_:gn_113 {
+    (50 165580141 267914296) :fib 4660046610375530309.
+}
+
+_:gn_114 {
+    [] rdf:value 51; math:greaterThan 1 .
+    (51 1) math:difference 50 .
+    (102334155 165580141) math:sum 267914296 .
+    (50 165580141 267914296) :fib 4660046610375530309.
+}
+
+_:gn_115 {
+    (51 102334155 165580141) :fib 4660046610375530309.
+}
+
+_:gn_116 {
+    [] rdf:value 52; math:greaterThan 1 .
+    (52 1) math:difference 51 .
+    (63245986 102334155) math:sum 165580141 .
+    (51 102334155 165580141) :fib 4660046610375530309.
+}
+
+_:gn_117 {
+    (52 63245986 102334155) :fib 4660046610375530309.
+}
+
+_:gn_118 {
+    [] rdf:value 53; math:greaterThan 1 .
+    (53 1) math:difference 52 .
+    (39088169 63245986) math:sum 102334155 .
+    (52 63245986 102334155) :fib 4660046610375530309.
+}
+
+_:gn_119 {
+    (53 39088169 63245986) :fib 4660046610375530309.
+}
+
+_:gn_120 {
+    [] rdf:value 54; math:greaterThan 1 .
+    (54 1) math:difference 53 .
+    (24157817 39088169) math:sum 63245986 .
+    (53 39088169 63245986) :fib 4660046610375530309.
+}
+
+_:gn_121 {
+    (54 24157817 39088169) :fib 4660046610375530309.
+}
+
+_:gn_122 {
+    [] rdf:value 55; math:greaterThan 1 .
+    (55 1) math:difference 54 .
+    (14930352 24157817) math:sum 39088169 .
+    (54 24157817 39088169) :fib 4660046610375530309.
+}
+
+_:gn_123 {
+    (55 14930352 24157817) :fib 4660046610375530309.
+}
+
+_:gn_124 {
+    [] rdf:value 56; math:greaterThan 1 .
+    (56 1) math:difference 55 .
+    (9227465 14930352) math:sum 24157817 .
+    (55 14930352 24157817) :fib 4660046610375530309.
+}
+
+_:gn_125 {
+    (56 9227465 14930352) :fib 4660046610375530309.
+}
+
+_:gn_126 {
+    [] rdf:value 57; math:greaterThan 1 .
+    (57 1) math:difference 56 .
+    (5702887 9227465) math:sum 14930352 .
+    (56 9227465 14930352) :fib 4660046610375530309.
+}
+
+_:gn_127 {
+    (57 5702887 9227465) :fib 4660046610375530309.
+}
+
+_:gn_128 {
+    [] rdf:value 58; math:greaterThan 1 .
+    (58 1) math:difference 57 .
+    (3524578 5702887) math:sum 9227465 .
+    (57 5702887 9227465) :fib 4660046610375530309.
+}
+
+_:gn_129 {
+    (58 3524578 5702887) :fib 4660046610375530309.
+}
+
+_:gn_130 {
+    [] rdf:value 59; math:greaterThan 1 .
+    (59 1) math:difference 58 .
+    (2178309 3524578) math:sum 5702887 .
+    (58 3524578 5702887) :fib 4660046610375530309.
+}
+
+_:gn_131 {
+    (59 2178309 3524578) :fib 4660046610375530309.
+}
+
+_:gn_132 {
+    [] rdf:value 60; math:greaterThan 1 .
+    (60 1) math:difference 59 .
+    (1346269 2178309) math:sum 3524578 .
+    (59 2178309 3524578) :fib 4660046610375530309.
+}
+
+_:gn_133 {
+    (60 1346269 2178309) :fib 4660046610375530309.
+}
+
+_:gn_134 {
+    [] rdf:value 61; math:greaterThan 1 .
+    (61 1) math:difference 60 .
+    (832040 1346269) math:sum 2178309 .
+    (60 1346269 2178309) :fib 4660046610375530309.
+}
+
+_:gn_135 {
+    (61 832040 1346269) :fib 4660046610375530309.
+}
+
+_:gn_136 {
+    [] rdf:value 62; math:greaterThan 1 .
+    (62 1) math:difference 61 .
+    (514229 832040) math:sum 1346269 .
+    (61 832040 1346269) :fib 4660046610375530309.
+}
+
+_:gn_137 {
+    (62 514229 832040) :fib 4660046610375530309.
+}
+
+_:gn_138 {
+    [] rdf:value 63; math:greaterThan 1 .
+    (63 1) math:difference 62 .
+    (317811 514229) math:sum 832040 .
+    (62 514229 832040) :fib 4660046610375530309.
+}
+
+_:gn_139 {
+    (63 317811 514229) :fib 4660046610375530309.
+}
+
+_:gn_140 {
+    [] rdf:value 64; math:greaterThan 1 .
+    (64 1) math:difference 63 .
+    (196418 317811) math:sum 514229 .
+    (63 317811 514229) :fib 4660046610375530309.
+}
+
+_:gn_141 {
+    (64 196418 317811) :fib 4660046610375530309.
+}
+
+_:gn_142 {
+    [] rdf:value 65; math:greaterThan 1 .
+    (65 1) math:difference 64 .
+    (121393 196418) math:sum 317811 .
+    (64 196418 317811) :fib 4660046610375530309.
+}
+
+_:gn_143 {
+    (65 121393 196418) :fib 4660046610375530309.
+}
+
+_:gn_144 {
+    [] rdf:value 66; math:greaterThan 1 .
+    (66 1) math:difference 65 .
+    (75025 121393) math:sum 196418 .
+    (65 121393 196418) :fib 4660046610375530309.
+}
+
+_:gn_145 {
+    (66 75025 121393) :fib 4660046610375530309.
+}
+
+_:gn_146 {
+    [] rdf:value 67; math:greaterThan 1 .
+    (67 1) math:difference 66 .
+    (46368 75025) math:sum 121393 .
+    (66 75025 121393) :fib 4660046610375530309.
+}
+
+_:gn_147 {
+    (67 46368 75025) :fib 4660046610375530309.
+}
+
+_:gn_148 {
+    [] rdf:value 68; math:greaterThan 1 .
+    (68 1) math:difference 67 .
+    (28657 46368) math:sum 75025 .
+    (67 46368 75025) :fib 4660046610375530309.
+}
+
+_:gn_149 {
+    (68 28657 46368) :fib 4660046610375530309.
+}
+
+_:gn_150 {
+    [] rdf:value 69; math:greaterThan 1 .
+    (69 1) math:difference 68 .
+    (17711 28657) math:sum 46368 .
+    (68 28657 46368) :fib 4660046610375530309.
+}
+
+_:gn_151 {
+    (69 17711 28657) :fib 4660046610375530309.
+}
+
+_:gn_152 {
+    [] rdf:value 70; math:greaterThan 1 .
+    (70 1) math:difference 69 .
+    (10946 17711) math:sum 28657 .
+    (69 17711 28657) :fib 4660046610375530309.
+}
+
+_:gn_153 {
+    (70 10946 17711) :fib 4660046610375530309.
+}
+
+_:gn_154 {
+    [] rdf:value 71; math:greaterThan 1 .
+    (71 1) math:difference 70 .
+    (6765 10946) math:sum 17711 .
+    (70 10946 17711) :fib 4660046610375530309.
+}
+
+_:gn_155 {
+    (71 6765 10946) :fib 4660046610375530309.
+}
+
+_:gn_156 {
+    [] rdf:value 72; math:greaterThan 1 .
+    (72 1) math:difference 71 .
+    (4181 6765) math:sum 10946 .
+    (71 6765 10946) :fib 4660046610375530309.
+}
+
+_:gn_157 {
+    (72 4181 6765) :fib 4660046610375530309.
+}
+
+_:gn_158 {
+    [] rdf:value 73; math:greaterThan 1 .
+    (73 1) math:difference 72 .
+    (2584 4181) math:sum 6765 .
+    (72 4181 6765) :fib 4660046610375530309.
+}
+
+_:gn_159 {
+    (73 2584 4181) :fib 4660046610375530309.
+}
+
+_:gn_160 {
+    [] rdf:value 74; math:greaterThan 1 .
+    (74 1) math:difference 73 .
+    (1597 2584) math:sum 4181 .
+    (73 2584 4181) :fib 4660046610375530309.
+}
+
+_:gn_161 {
+    (74 1597 2584) :fib 4660046610375530309.
+}
+
+_:gn_162 {
+    [] rdf:value 75; math:greaterThan 1 .
+    (75 1) math:difference 74 .
+    (987 1597) math:sum 2584 .
+    (74 1597 2584) :fib 4660046610375530309.
+}
+
+_:gn_163 {
+    (75 987 1597) :fib 4660046610375530309.
+}
+
+_:gn_164 {
+    [] rdf:value 76; math:greaterThan 1 .
+    (76 1) math:difference 75 .
+    (610 987) math:sum 1597 .
+    (75 987 1597) :fib 4660046610375530309.
+}
+
+_:gn_165 {
+    (76 610 987) :fib 4660046610375530309.
+}
+
+_:gn_166 {
+    [] rdf:value 77; math:greaterThan 1 .
+    (77 1) math:difference 76 .
+    (377 610) math:sum 987 .
+    (76 610 987) :fib 4660046610375530309.
+}
+
+_:gn_167 {
+    (77 377 610) :fib 4660046610375530309.
+}
+
+_:gn_168 {
+    [] rdf:value 78; math:greaterThan 1 .
+    (78 1) math:difference 77 .
+    (233 377) math:sum 610 .
+    (77 377 610) :fib 4660046610375530309.
+}
+
+_:gn_169 {
+    (78 233 377) :fib 4660046610375530309.
+}
+
+_:gn_170 {
+    [] rdf:value 79; math:greaterThan 1 .
+    (79 1) math:difference 78 .
+    (144 233) math:sum 377 .
+    (78 233 377) :fib 4660046610375530309.
+}
+
+_:gn_171 {
+    (79 144 233) :fib 4660046610375530309.
+}
+
+_:gn_172 {
+    [] rdf:value 80; math:greaterThan 1 .
+    (80 1) math:difference 79 .
+    (89 144) math:sum 233 .
+    (79 144 233) :fib 4660046610375530309.
+}
+
+_:gn_173 {
+    (80 89 144) :fib 4660046610375530309.
+}
+
+_:gn_174 {
+    [] rdf:value 81; math:greaterThan 1 .
+    (81 1) math:difference 80 .
+    (55 89) math:sum 144 .
+    (80 89 144) :fib 4660046610375530309.
+}
+
+_:gn_175 {
+    (81 55 89) :fib 4660046610375530309.
+}
+
+_:gn_176 {
+    [] rdf:value 82; math:greaterThan 1 .
+    (82 1) math:difference 81 .
+    (34 55) math:sum 89 .
+    (81 55 89) :fib 4660046610375530309.
+}
+
+_:gn_177 {
+    (82 34 55) :fib 4660046610375530309.
+}
+
+_:gn_178 {
+    [] rdf:value 83; math:greaterThan 1 .
+    (83 1) math:difference 82 .
+    (21 34) math:sum 55 .
+    (82 34 55) :fib 4660046610375530309.
+}
+
+_:gn_179 {
+    (83 21 34) :fib 4660046610375530309.
+}
+
+_:gn_180 {
+    [] rdf:value 84; math:greaterThan 1 .
+    (84 1) math:difference 83 .
+    (13 21) math:sum 34 .
+    (83 21 34) :fib 4660046610375530309.
+}
+
+_:gn_181 {
+    (84 13 21) :fib 4660046610375530309.
+}
+
+_:gn_182 {
+    [] rdf:value 85; math:greaterThan 1 .
+    (85 1) math:difference 84 .
+    (8 13) math:sum 21 .
+    (84 13 21) :fib 4660046610375530309.
+}
+
+_:gn_183 {
+    (85 8 13) :fib 4660046610375530309.
+}
+
+_:gn_184 {
+    [] rdf:value 86; math:greaterThan 1 .
+    (86 1) math:difference 85 .
+    (5 8) math:sum 13 .
+    (85 8 13) :fib 4660046610375530309.
+}
+
+_:gn_185 {
+    (86 5 8) :fib 4660046610375530309.
+}
+
+_:gn_186 {
+    [] rdf:value 87; math:greaterThan 1 .
+    (87 1) math:difference 86 .
+    (3 5) math:sum 8 .
+    (86 5 8) :fib 4660046610375530309.
+}
+
+_:gn_187 {
+    (87 3 5) :fib 4660046610375530309.
+}
+
+_:gn_188 {
+    [] rdf:value 88; math:greaterThan 1 .
+    (88 1) math:difference 87 .
+    (2 3) math:sum 5 .
+    (87 3 5) :fib 4660046610375530309.
+}
+
+_:gn_189 {
+    (88 2 3) :fib 4660046610375530309.
+}
+
+_:gn_190 {
+    [] rdf:value 89; math:greaterThan 1 .
+    (89 1) math:difference 88 .
+    (1 2) math:sum 3 .
+    (88 2 3) :fib 4660046610375530309.
+}
+
+_:gn_191 {
+    (89 1 2) :fib 4660046610375530309.
+}
+
+_:gn_192 {
+    [] rdf:value 90; math:greaterThan 1 .
+    (90 1) math:difference 89 .
+    (1 1) math:sum 2 .
+    (89 1 2) :fib 4660046610375530309.
+}
+
+_:gn_193 {
+    (90 1 1) :fib 4660046610375530309.
+}
+
+_:gn_194 {
+    [] rdf:value 91; math:greaterThan 1 .
+    (91 1) math:difference 90 .
+    (0 1) math:sum 1 .
+    (90 1 1) :fib 4660046610375530309.
+}
+
+_:gn_195 {
+    (91 0 1) :fib 4660046610375530309.
+}
+
+_:gn_196 {
+    [] rdf:value 91; :fibonacci 4660046610375530309.
+}
+
+_:gn_197 {
+    [] rdf:value 2; math:greaterThan 1 .
+    (2 1) math:difference 1 .
+    (23770696554372451866815101694984845480039225387896643963981 38461794961234640015759308940939757590587318989278841661816) math:sum 62232491515607091882574410635924603070626544377175485625797 .
+    (1 38461794961234640015759308940939757590587318989278841661816 62232491515607091882574410635924603070626544377175485625797) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_198 {
+    (2 23770696554372451866815101694984845480039225387896643963981 38461794961234640015759308940939757590587318989278841661816) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_199 {
+    [] rdf:value 3; math:greaterThan 1 .
+    (3 1) math:difference 2 .
+    (14691098406862188148944207245954912110548093601382197697835 23770696554372451866815101694984845480039225387896643963981) math:sum 38461794961234640015759308940939757590587318989278841661816 .
+    (2 23770696554372451866815101694984845480039225387896643963981 38461794961234640015759308940939757590587318989278841661816) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_200 {
+    (3 14691098406862188148944207245954912110548093601382197697835 23770696554372451866815101694984845480039225387896643963981) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_201 {
+    [] rdf:value 4; math:greaterThan 1 .
+    (4 1) math:difference 3 .
+    (9079598147510263717870894449029933369491131786514446266146 14691098406862188148944207245954912110548093601382197697835) math:sum 23770696554372451866815101694984845480039225387896643963981 .
+    (3 14691098406862188148944207245954912110548093601382197697835 23770696554372451866815101694984845480039225387896643963981) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_202 {
+    (4 9079598147510263717870894449029933369491131786514446266146 14691098406862188148944207245954912110548093601382197697835) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_203 {
+    [] rdf:value 5; math:greaterThan 1 .
+    (5 1) math:difference 4 .
+    (5611500259351924431073312796924978741056961814867751431689 9079598147510263717870894449029933369491131786514446266146) math:sum 14691098406862188148944207245954912110548093601382197697835 .
+    (4 9079598147510263717870894449029933369491131786514446266146 14691098406862188148944207245954912110548093601382197697835) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_204 {
+    (5 5611500259351924431073312796924978741056961814867751431689 9079598147510263717870894449029933369491131786514446266146) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_205 {
+    [] rdf:value 6; math:greaterThan 1 .
+    (6 1) math:difference 5 .
+    (3468097888158339286797581652104954628434169971646694834457 5611500259351924431073312796924978741056961814867751431689) math:sum 9079598147510263717870894449029933369491131786514446266146 .
+    (5 5611500259351924431073312796924978741056961814867751431689 9079598147510263717870894449029933369491131786514446266146) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_206 {
+    (6 3468097888158339286797581652104954628434169971646694834457 5611500259351924431073312796924978741056961814867751431689) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_207 {
+    [] rdf:value 7; math:greaterThan 1 .
+    (7 1) math:difference 6 .
+    (2143402371193585144275731144820024112622791843221056597232 3468097888158339286797581652104954628434169971646694834457) math:sum 5611500259351924431073312796924978741056961814867751431689 .
+    (6 3468097888158339286797581652104954628434169971646694834457 5611500259351924431073312796924978741056961814867751431689) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_208 {
+    (7 2143402371193585144275731144820024112622791843221056597232 3468097888158339286797581652104954628434169971646694834457) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_209 {
+    [] rdf:value 8; math:greaterThan 1 .
+    (8 1) math:difference 7 .
+    (1324695516964754142521850507284930515811378128425638237225 2143402371193585144275731144820024112622791843221056597232) math:sum 3468097888158339286797581652104954628434169971646694834457 .
+    (7 2143402371193585144275731144820024112622791843221056597232 3468097888158339286797581652104954628434169971646694834457) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_210 {
+    (8 1324695516964754142521850507284930515811378128425638237225 2143402371193585144275731144820024112622791843221056597232) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_211 {
+    [] rdf:value 9; math:greaterThan 1 .
+    (9 1) math:difference 8 .
+    (818706854228831001753880637535093596811413714795418360007 1324695516964754142521850507284930515811378128425638237225) math:sum 2143402371193585144275731144820024112622791843221056597232 .
+    (8 1324695516964754142521850507284930515811378128425638237225 2143402371193585144275731144820024112622791843221056597232) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_212 {
+    (9 818706854228831001753880637535093596811413714795418360007 1324695516964754142521850507284930515811378128425638237225) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_213 {
+    [] rdf:value 10; math:greaterThan 1 .
+    (10 1) math:difference 9 .
+    (505988662735923140767969869749836918999964413630219877218 818706854228831001753880637535093596811413714795418360007) math:sum 1324695516964754142521850507284930515811378128425638237225 .
+    (9 818706854228831001753880637535093596811413714795418360007 1324695516964754142521850507284930515811378128425638237225) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_214 {
+    (10 505988662735923140767969869749836918999964413630219877218 818706854228831001753880637535093596811413714795418360007) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_215 {
+    [] rdf:value 11; math:greaterThan 1 .
+    (11 1) math:difference 10 .
+    (312718191492907860985910767785256677811449301165198482789 505988662735923140767969869749836918999964413630219877218) math:sum 818706854228831001753880637535093596811413714795418360007 .
+    (10 505988662735923140767969869749836918999964413630219877218 818706854228831001753880637535093596811413714795418360007) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_216 {
+    (11 312718191492907860985910767785256677811449301165198482789 505988662735923140767969869749836918999964413630219877218) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_217 {
+    [] rdf:value 12; math:greaterThan 1 .
+    (12 1) math:difference 11 .
+    (193270471243015279782059101964580241188515112465021394429 312718191492907860985910767785256677811449301165198482789) math:sum 505988662735923140767969869749836918999964413630219877218 .
+    (11 312718191492907860985910767785256677811449301165198482789 505988662735923140767969869749836918999964413630219877218) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_218 {
+    (12 193270471243015279782059101964580241188515112465021394429 312718191492907860985910767785256677811449301165198482789) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_219 {
+    [] rdf:value 13; math:greaterThan 1 .
+    (13 1) math:difference 12 .
+    (119447720249892581203851665820676436622934188700177088360 193270471243015279782059101964580241188515112465021394429) math:sum 312718191492907860985910767785256677811449301165198482789 .
+    (12 193270471243015279782059101964580241188515112465021394429 312718191492907860985910767785256677811449301165198482789) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_220 {
+    (13 119447720249892581203851665820676436622934188700177088360 193270471243015279782059101964580241188515112465021394429) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_221 {
+    [] rdf:value 14; math:greaterThan 1 .
+    (14 1) math:difference 13 .
+    (73822750993122698578207436143903804565580923764844306069 119447720249892581203851665820676436622934188700177088360) math:sum 193270471243015279782059101964580241188515112465021394429 .
+    (13 119447720249892581203851665820676436622934188700177088360 193270471243015279782059101964580241188515112465021394429) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_222 {
+    (14 73822750993122698578207436143903804565580923764844306069 119447720249892581203851665820676436622934188700177088360) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_223 {
+    [] rdf:value 15; math:greaterThan 1 .
+    (15 1) math:difference 14 .
+    (45624969256769882625644229676772632057353264935332782291 73822750993122698578207436143903804565580923764844306069) math:sum 119447720249892581203851665820676436622934188700177088360 .
+    (14 73822750993122698578207436143903804565580923764844306069 119447720249892581203851665820676436622934188700177088360) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_224 {
+    (15 45624969256769882625644229676772632057353264935332782291 73822750993122698578207436143903804565580923764844306069) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_225 {
+    [] rdf:value 16; math:greaterThan 1 .
+    (16 1) math:difference 15 .
+    (28197781736352815952563206467131172508227658829511523778 45624969256769882625644229676772632057353264935332782291) math:sum 73822750993122698578207436143903804565580923764844306069 .
+    (15 45624969256769882625644229676772632057353264935332782291 73822750993122698578207436143903804565580923764844306069) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_226 {
+    (16 28197781736352815952563206467131172508227658829511523778 45624969256769882625644229676772632057353264935332782291) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_227 {
+    [] rdf:value 17; math:greaterThan 1 .
+    (17 1) math:difference 16 .
+    (17427187520417066673081023209641459549125606105821258513 28197781736352815952563206467131172508227658829511523778) math:sum 45624969256769882625644229676772632057353264935332782291 .
+    (16 28197781736352815952563206467131172508227658829511523778 45624969256769882625644229676772632057353264935332782291) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_228 {
+    (17 17427187520417066673081023209641459549125606105821258513 28197781736352815952563206467131172508227658829511523778) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_229 {
+    [] rdf:value 18; math:greaterThan 1 .
+    (18 1) math:difference 17 .
+    (10770594215935749279482183257489712959102052723690265265 17427187520417066673081023209641459549125606105821258513) math:sum 28197781736352815952563206467131172508227658829511523778 .
+    (17 17427187520417066673081023209641459549125606105821258513 28197781736352815952563206467131172508227658829511523778) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_230 {
+    (18 10770594215935749279482183257489712959102052723690265265 17427187520417066673081023209641459549125606105821258513) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_231 {
+    [] rdf:value 19; math:greaterThan 1 .
+    (19 1) math:difference 18 .
+    (6656593304481317393598839952151746590023553382130993248 10770594215935749279482183257489712959102052723690265265) math:sum 17427187520417066673081023209641459549125606105821258513 .
+    (18 10770594215935749279482183257489712959102052723690265265 17427187520417066673081023209641459549125606105821258513) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_232 {
+    (19 6656593304481317393598839952151746590023553382130993248 10770594215935749279482183257489712959102052723690265265) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_233 {
+    [] rdf:value 20; math:greaterThan 1 .
+    (20 1) math:difference 19 .
+    (4114000911454431885883343305337966369078499341559272017 6656593304481317393598839952151746590023553382130993248) math:sum 10770594215935749279482183257489712959102052723690265265 .
+    (19 6656593304481317393598839952151746590023553382130993248 10770594215935749279482183257489712959102052723690265265) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_234 {
+    (20 4114000911454431885883343305337966369078499341559272017 6656593304481317393598839952151746590023553382130993248) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_235 {
+    [] rdf:value 21; math:greaterThan 1 .
+    (21 1) math:difference 20 .
+    (2542592393026885507715496646813780220945054040571721231 4114000911454431885883343305337966369078499341559272017) math:sum 6656593304481317393598839952151746590023553382130993248 .
+    (20 4114000911454431885883343305337966369078499341559272017 6656593304481317393598839952151746590023553382130993248) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_236 {
+    (21 2542592393026885507715496646813780220945054040571721231 4114000911454431885883343305337966369078499341559272017) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_237 {
+    [] rdf:value 22; math:greaterThan 1 .
+    (22 1) math:difference 21 .
+    (1571408518427546378167846658524186148133445300987550786 2542592393026885507715496646813780220945054040571721231) math:sum 4114000911454431885883343305337966369078499341559272017 .
+    (21 2542592393026885507715496646813780220945054040571721231 4114000911454431885883343305337966369078499341559272017) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_238 {
+    (22 1571408518427546378167846658524186148133445300987550786 2542592393026885507715496646813780220945054040571721231) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_239 {
+    [] rdf:value 23; math:greaterThan 1 .
+    (23 1) math:difference 22 .
+    (971183874599339129547649988289594072811608739584170445 1571408518427546378167846658524186148133445300987550786) math:sum 2542592393026885507715496646813780220945054040571721231 .
+    (22 1571408518427546378167846658524186148133445300987550786 2542592393026885507715496646813780220945054040571721231) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_240 {
+    (23 971183874599339129547649988289594072811608739584170445 1571408518427546378167846658524186148133445300987550786) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_241 {
+    [] rdf:value 24; math:greaterThan 1 .
+    (24 1) math:difference 23 .
+    (600224643828207248620196670234592075321836561403380341 971183874599339129547649988289594072811608739584170445) math:sum 1571408518427546378167846658524186148133445300987550786 .
+    (23 971183874599339129547649988289594072811608739584170445 1571408518427546378167846658524186148133445300987550786) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_242 {
+    (24 600224643828207248620196670234592075321836561403380341 971183874599339129547649988289594072811608739584170445) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_243 {
+    [] rdf:value 25; math:greaterThan 1 .
+    (25 1) math:difference 24 .
+    (370959230771131880927453318055001997489772178180790104 600224643828207248620196670234592075321836561403380341) math:sum 971183874599339129547649988289594072811608739584170445 .
+    (24 600224643828207248620196670234592075321836561403380341 971183874599339129547649988289594072811608739584170445) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_244 {
+    (25 370959230771131880927453318055001997489772178180790104 600224643828207248620196670234592075321836561403380341) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_245 {
+    [] rdf:value 26; math:greaterThan 1 .
+    (26 1) math:difference 25 .
+    (229265413057075367692743352179590077832064383222590237 370959230771131880927453318055001997489772178180790104) math:sum 600224643828207248620196670234592075321836561403380341 .
+    (25 370959230771131880927453318055001997489772178180790104 600224643828207248620196670234592075321836561403380341) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_246 {
+    (26 229265413057075367692743352179590077832064383222590237 370959230771131880927453318055001997489772178180790104) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_247 {
+    [] rdf:value 27; math:greaterThan 1 .
+    (27 1) math:difference 26 .
+    (141693817714056513234709965875411919657707794958199867 229265413057075367692743352179590077832064383222590237) math:sum 370959230771131880927453318055001997489772178180790104 .
+    (26 229265413057075367692743352179590077832064383222590237 370959230771131880927453318055001997489772178180790104) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_248 {
+    (27 141693817714056513234709965875411919657707794958199867 229265413057075367692743352179590077832064383222590237) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_249 {
+    [] rdf:value 28; math:greaterThan 1 .
+    (28 1) math:difference 27 .
+    (87571595343018854458033386304178158174356588264390370 141693817714056513234709965875411919657707794958199867) math:sum 229265413057075367692743352179590077832064383222590237 .
+    (27 141693817714056513234709965875411919657707794958199867 229265413057075367692743352179590077832064383222590237) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_250 {
+    (28 87571595343018854458033386304178158174356588264390370 141693817714056513234709965875411919657707794958199867) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_251 {
+    [] rdf:value 29; math:greaterThan 1 .
+    (29 1) math:difference 28 .
+    (54122222371037658776676579571233761483351206693809497 87571595343018854458033386304178158174356588264390370) math:sum 141693817714056513234709965875411919657707794958199867 .
+    (28 87571595343018854458033386304178158174356588264390370 141693817714056513234709965875411919657707794958199867) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_252 {
+    (29 54122222371037658776676579571233761483351206693809497 87571595343018854458033386304178158174356588264390370) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_253 {
+    [] rdf:value 30; math:greaterThan 1 .
+    (30 1) math:difference 29 .
+    (33449372971981195681356806732944396691005381570580873 54122222371037658776676579571233761483351206693809497) math:sum 87571595343018854458033386304178158174356588264390370 .
+    (29 54122222371037658776676579571233761483351206693809497 87571595343018854458033386304178158174356588264390370) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_254 {
+    (30 33449372971981195681356806732944396691005381570580873 54122222371037658776676579571233761483351206693809497) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_255 {
+    [] rdf:value 31; math:greaterThan 1 .
+    (31 1) math:difference 30 .
+    (20672849399056463095319772838289364792345825123228624 33449372971981195681356806732944396691005381570580873) math:sum 54122222371037658776676579571233761483351206693809497 .
+    (30 33449372971981195681356806732944396691005381570580873 54122222371037658776676579571233761483351206693809497) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_256 {
+    (31 20672849399056463095319772838289364792345825123228624 33449372971981195681356806732944396691005381570580873) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_257 {
+    [] rdf:value 32; math:greaterThan 1 .
+    (32 1) math:difference 31 .
+    (12776523572924732586037033894655031898659556447352249 20672849399056463095319772838289364792345825123228624) math:sum 33449372971981195681356806732944396691005381570580873 .
+    (31 20672849399056463095319772838289364792345825123228624 33449372971981195681356806732944396691005381570580873) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_258 {
+    (32 12776523572924732586037033894655031898659556447352249 20672849399056463095319772838289364792345825123228624) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_259 {
+    [] rdf:value 33; math:greaterThan 1 .
+    (33 1) math:difference 32 .
+    (7896325826131730509282738943634332893686268675876375 12776523572924732586037033894655031898659556447352249) math:sum 20672849399056463095319772838289364792345825123228624 .
+    (32 12776523572924732586037033894655031898659556447352249 20672849399056463095319772838289364792345825123228624) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_260 {
+    (33 7896325826131730509282738943634332893686268675876375 12776523572924732586037033894655031898659556447352249) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_261 {
+    [] rdf:value 34; math:greaterThan 1 .
+    (34 1) math:difference 33 .
+    (4880197746793002076754294951020699004973287771475874 7896325826131730509282738943634332893686268675876375) math:sum 12776523572924732586037033894655031898659556447352249 .
+    (33 7896325826131730509282738943634332893686268675876375 12776523572924732586037033894655031898659556447352249) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_262 {
+    (34 4880197746793002076754294951020699004973287771475874 7896325826131730509282738943634332893686268675876375) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_263 {
+    [] rdf:value 35; math:greaterThan 1 .
+    (35 1) math:difference 34 .
+    (3016128079338728432528443992613633888712980904400501 4880197746793002076754294951020699004973287771475874) math:sum 7896325826131730509282738943634332893686268675876375 .
+    (34 4880197746793002076754294951020699004973287771475874 7896325826131730509282738943634332893686268675876375) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_264 {
+    (35 3016128079338728432528443992613633888712980904400501 4880197746793002076754294951020699004973287771475874) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_265 {
+    [] rdf:value 36; math:greaterThan 1 .
+    (36 1) math:difference 35 .
+    (1864069667454273644225850958407065116260306867075373 3016128079338728432528443992613633888712980904400501) math:sum 4880197746793002076754294951020699004973287771475874 .
+    (35 3016128079338728432528443992613633888712980904400501 4880197746793002076754294951020699004973287771475874) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_266 {
+    (36 1864069667454273644225850958407065116260306867075373 3016128079338728432528443992613633888712980904400501) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_267 {
+    [] rdf:value 37; math:greaterThan 1 .
+    (37 1) math:difference 36 .
+    (1152058411884454788302593034206568772452674037325128 1864069667454273644225850958407065116260306867075373) math:sum 3016128079338728432528443992613633888712980904400501 .
+    (36 1864069667454273644225850958407065116260306867075373 3016128079338728432528443992613633888712980904400501) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_268 {
+    (37 1152058411884454788302593034206568772452674037325128 1864069667454273644225850958407065116260306867075373) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_269 {
+    [] rdf:value 38; math:greaterThan 1 .
+    (38 1) math:difference 37 .
+    (712011255569818855923257924200496343807632829750245 1152058411884454788302593034206568772452674037325128) math:sum 1864069667454273644225850958407065116260306867075373 .
+    (37 1152058411884454788302593034206568772452674037325128 1864069667454273644225850958407065116260306867075373) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_270 {
+    (38 712011255569818855923257924200496343807632829750245 1152058411884454788302593034206568772452674037325128) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_271 {
+    [] rdf:value 39; math:greaterThan 1 .
+    (39 1) math:difference 38 .
+    (440047156314635932379335110006072428645041207574883 712011255569818855923257924200496343807632829750245) math:sum 1152058411884454788302593034206568772452674037325128 .
+    (38 712011255569818855923257924200496343807632829750245 1152058411884454788302593034206568772452674037325128) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_272 {
+    (39 440047156314635932379335110006072428645041207574883 712011255569818855923257924200496343807632829750245) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_273 {
+    [] rdf:value 40; math:greaterThan 1 .
+    (40 1) math:difference 39 .
+    (271964099255182923543922814194423915162591622175362 440047156314635932379335110006072428645041207574883) math:sum 712011255569818855923257924200496343807632829750245 .
+    (39 440047156314635932379335110006072428645041207574883 712011255569818855923257924200496343807632829750245) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_274 {
+    (40 271964099255182923543922814194423915162591622175362 440047156314635932379335110006072428645041207574883) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_275 {
+    [] rdf:value 41; math:greaterThan 1 .
+    (41 1) math:difference 40 .
+    (168083057059453008835412295811648513482449585399521 271964099255182923543922814194423915162591622175362) math:sum 440047156314635932379335110006072428645041207574883 .
+    (40 271964099255182923543922814194423915162591622175362 440047156314635932379335110006072428645041207574883) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_276 {
+    (41 168083057059453008835412295811648513482449585399521 271964099255182923543922814194423915162591622175362) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_277 {
+    [] rdf:value 42; math:greaterThan 1 .
+    (42 1) math:difference 41 .
+    (103881042195729914708510518382775401680142036775841 168083057059453008835412295811648513482449585399521) math:sum 271964099255182923543922814194423915162591622175362 .
+    (41 168083057059453008835412295811648513482449585399521 271964099255182923543922814194423915162591622175362) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_278 {
+    (42 103881042195729914708510518382775401680142036775841 168083057059453008835412295811648513482449585399521) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_279 {
+    [] rdf:value 43; math:greaterThan 1 .
+    (43 1) math:difference 42 .
+    (64202014863723094126901777428873111802307548623680 103881042195729914708510518382775401680142036775841) math:sum 168083057059453008835412295811648513482449585399521 .
+    (42 103881042195729914708510518382775401680142036775841 168083057059453008835412295811648513482449585399521) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_280 {
+    (43 64202014863723094126901777428873111802307548623680 103881042195729914708510518382775401680142036775841) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_281 {
+    [] rdf:value 44; math:greaterThan 1 .
+    (44 1) math:difference 43 .
+    (39679027332006820581608740953902289877834488152161 64202014863723094126901777428873111802307548623680) math:sum 103881042195729914708510518382775401680142036775841 .
+    (43 64202014863723094126901777428873111802307548623680 103881042195729914708510518382775401680142036775841) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_282 {
+    (44 39679027332006820581608740953902289877834488152161 64202014863723094126901777428873111802307548623680) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_283 {
+    [] rdf:value 45; math:greaterThan 1 .
+    (45 1) math:difference 44 .
+    (24522987531716273545293036474970821924473060471519 39679027332006820581608740953902289877834488152161) math:sum 64202014863723094126901777428873111802307548623680 .
+    (44 39679027332006820581608740953902289877834488152161 64202014863723094126901777428873111802307548623680) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_284 {
+    (45 24522987531716273545293036474970821924473060471519 39679027332006820581608740953902289877834488152161) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_285 {
+    [] rdf:value 46; math:greaterThan 1 .
+    (46 1) math:difference 45 .
+    (15156039800290547036315704478931467953361427680642 24522987531716273545293036474970821924473060471519) math:sum 39679027332006820581608740953902289877834488152161 .
+    (45 24522987531716273545293036474970821924473060471519 39679027332006820581608740953902289877834488152161) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_286 {
+    (46 15156039800290547036315704478931467953361427680642 24522987531716273545293036474970821924473060471519) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_287 {
+    [] rdf:value 47; math:greaterThan 1 .
+    (47 1) math:difference 46 .
+    (9366947731425726508977331996039353971111632790877 15156039800290547036315704478931467953361427680642) math:sum 24522987531716273545293036474970821924473060471519 .
+    (46 15156039800290547036315704478931467953361427680642 24522987531716273545293036474970821924473060471519) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_288 {
+    (47 9366947731425726508977331996039353971111632790877 15156039800290547036315704478931467953361427680642) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_289 {
+    [] rdf:value 48; math:greaterThan 1 .
+    (48 1) math:difference 47 .
+    (5789092068864820527338372482892113982249794889765 9366947731425726508977331996039353971111632790877) math:sum 15156039800290547036315704478931467953361427680642 .
+    (47 9366947731425726508977331996039353971111632790877 15156039800290547036315704478931467953361427680642) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_290 {
+    (48 5789092068864820527338372482892113982249794889765 9366947731425726508977331996039353971111632790877) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_291 {
+    [] rdf:value 49; math:greaterThan 1 .
+    (49 1) math:difference 48 .
+    (3577855662560905981638959513147239988861837901112 5789092068864820527338372482892113982249794889765) math:sum 9366947731425726508977331996039353971111632790877 .
+    (48 5789092068864820527338372482892113982249794889765 9366947731425726508977331996039353971111632790877) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_292 {
+    (49 3577855662560905981638959513147239988861837901112 5789092068864820527338372482892113982249794889765) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_293 {
+    [] rdf:value 50; math:greaterThan 1 .
+    (50 1) math:difference 49 .
+    (2211236406303914545699412969744873993387956988653 3577855662560905981638959513147239988861837901112) math:sum 5789092068864820527338372482892113982249794889765 .
+    (49 3577855662560905981638959513147239988861837901112 5789092068864820527338372482892113982249794889765) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_294 {
+    (50 2211236406303914545699412969744873993387956988653 3577855662560905981638959513147239988861837901112) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_295 {
+    [] rdf:value 51; math:greaterThan 1 .
+    (51 1) math:difference 50 .
+    (1366619256256991435939546543402365995473880912459 2211236406303914545699412969744873993387956988653) math:sum 3577855662560905981638959513147239988861837901112 .
+    (50 2211236406303914545699412969744873993387956988653 3577855662560905981638959513147239988861837901112) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_296 {
+    (51 1366619256256991435939546543402365995473880912459 2211236406303914545699412969744873993387956988653) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_297 {
+    [] rdf:value 52; math:greaterThan 1 .
+    (52 1) math:difference 51 .
+    (844617150046923109759866426342507997914076076194 1366619256256991435939546543402365995473880912459) math:sum 2211236406303914545699412969744873993387956988653 .
+    (51 1366619256256991435939546543402365995473880912459 2211236406303914545699412969744873993387956988653) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_298 {
+    (52 844617150046923109759866426342507997914076076194 1366619256256991435939546543402365995473880912459) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_299 {
+    [] rdf:value 53; math:greaterThan 1 .
+    (53 1) math:difference 52 .
+    (522002106210068326179680117059857997559804836265 844617150046923109759866426342507997914076076194) math:sum 1366619256256991435939546543402365995473880912459 .
+    (52 844617150046923109759866426342507997914076076194 1366619256256991435939546543402365995473880912459) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_300 {
+    (53 522002106210068326179680117059857997559804836265 844617150046923109759866426342507997914076076194) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_301 {
+    [] rdf:value 54; math:greaterThan 1 .
+    (54 1) math:difference 53 .
+    (322615043836854783580186309282650000354271239929 522002106210068326179680117059857997559804836265) math:sum 844617150046923109759866426342507997914076076194 .
+    (53 522002106210068326179680117059857997559804836265 844617150046923109759866426342507997914076076194) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_302 {
+    (54 322615043836854783580186309282650000354271239929 522002106210068326179680117059857997559804836265) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_303 {
+    [] rdf:value 55; math:greaterThan 1 .
+    (55 1) math:difference 54 .
+    (199387062373213542599493807777207997205533596336 322615043836854783580186309282650000354271239929) math:sum 522002106210068326179680117059857997559804836265 .
+    (54 322615043836854783580186309282650000354271239929 522002106210068326179680117059857997559804836265) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_304 {
+    (55 199387062373213542599493807777207997205533596336 322615043836854783580186309282650000354271239929) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_305 {
+    [] rdf:value 56; math:greaterThan 1 .
+    (56 1) math:difference 55 .
+    (123227981463641240980692501505442003148737643593 199387062373213542599493807777207997205533596336) math:sum 322615043836854783580186309282650000354271239929 .
+    (55 199387062373213542599493807777207997205533596336 322615043836854783580186309282650000354271239929) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_306 {
+    (56 123227981463641240980692501505442003148737643593 199387062373213542599493807777207997205533596336) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_307 {
+    [] rdf:value 57; math:greaterThan 1 .
+    (57 1) math:difference 56 .
+    (76159080909572301618801306271765994056795952743 123227981463641240980692501505442003148737643593) math:sum 199387062373213542599493807777207997205533596336 .
+    (56 123227981463641240980692501505442003148737643593 199387062373213542599493807777207997205533596336) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_308 {
+    (57 76159080909572301618801306271765994056795952743 123227981463641240980692501505442003148737643593) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_309 {
+    [] rdf:value 58; math:greaterThan 1 .
+    (58 1) math:difference 57 .
+    (47068900554068939361891195233676009091941690850 76159080909572301618801306271765994056795952743) math:sum 123227981463641240980692501505442003148737643593 .
+    (57 76159080909572301618801306271765994056795952743 123227981463641240980692501505442003148737643593) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_310 {
+    (58 47068900554068939361891195233676009091941690850 76159080909572301618801306271765994056795952743) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_311 {
+    [] rdf:value 59; math:greaterThan 1 .
+    (59 1) math:difference 58 .
+    (29090180355503362256910111038089984964854261893 47068900554068939361891195233676009091941690850) math:sum 76159080909572301618801306271765994056795952743 .
+    (58 47068900554068939361891195233676009091941690850 76159080909572301618801306271765994056795952743) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_312 {
+    (59 29090180355503362256910111038089984964854261893 47068900554068939361891195233676009091941690850) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_313 {
+    [] rdf:value 60; math:greaterThan 1 .
+    (60 1) math:difference 59 .
+    (17978720198565577104981084195586024127087428957 29090180355503362256910111038089984964854261893) math:sum 47068900554068939361891195233676009091941690850 .
+    (59 29090180355503362256910111038089984964854261893 47068900554068939361891195233676009091941690850) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_314 {
+    (60 17978720198565577104981084195586024127087428957 29090180355503362256910111038089984964854261893) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_315 {
+    [] rdf:value 61; math:greaterThan 1 .
+    (61 1) math:difference 60 .
+    (11111460156937785151929026842503960837766832936 17978720198565577104981084195586024127087428957) math:sum 29090180355503362256910111038089984964854261893 .
+    (60 17978720198565577104981084195586024127087428957 29090180355503362256910111038089984964854261893) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_316 {
+    (61 11111460156937785151929026842503960837766832936 17978720198565577104981084195586024127087428957) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_317 {
+    [] rdf:value 62; math:greaterThan 1 .
+    (62 1) math:difference 61 .
+    (6867260041627791953052057353082063289320596021 11111460156937785151929026842503960837766832936) math:sum 17978720198565577104981084195586024127087428957 .
+    (61 11111460156937785151929026842503960837766832936 17978720198565577104981084195586024127087428957) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_318 {
+    (62 6867260041627791953052057353082063289320596021 11111460156937785151929026842503960837766832936) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_319 {
+    [] rdf:value 63; math:greaterThan 1 .
+    (63 1) math:difference 62 .
+    (4244200115309993198876969489421897548446236915 6867260041627791953052057353082063289320596021) math:sum 11111460156937785151929026842503960837766832936 .
+    (62 6867260041627791953052057353082063289320596021 11111460156937785151929026842503960837766832936) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_320 {
+    (63 4244200115309993198876969489421897548446236915 6867260041627791953052057353082063289320596021) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_321 {
+    [] rdf:value 64; math:greaterThan 1 .
+    (64 1) math:difference 63 .
+    (2623059926317798754175087863660165740874359106 4244200115309993198876969489421897548446236915) math:sum 6867260041627791953052057353082063289320596021 .
+    (63 4244200115309993198876969489421897548446236915 6867260041627791953052057353082063289320596021) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_322 {
+    (64 2623059926317798754175087863660165740874359106 4244200115309993198876969489421897548446236915) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_323 {
+    [] rdf:value 65; math:greaterThan 1 .
+    (65 1) math:difference 64 .
+    (1621140188992194444701881625761731807571877809 2623059926317798754175087863660165740874359106) math:sum 4244200115309993198876969489421897548446236915 .
+    (64 2623059926317798754175087863660165740874359106 4244200115309993198876969489421897548446236915) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_324 {
+    (65 1621140188992194444701881625761731807571877809 2623059926317798754175087863660165740874359106) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_325 {
+    [] rdf:value 66; math:greaterThan 1 .
+    (66 1) math:difference 65 .
+    (1001919737325604309473206237898433933302481297 1621140188992194444701881625761731807571877809) math:sum 2623059926317798754175087863660165740874359106 .
+    (65 1621140188992194444701881625761731807571877809 2623059926317798754175087863660165740874359106) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_326 {
+    (66 1001919737325604309473206237898433933302481297 1621140188992194444701881625761731807571877809) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_327 {
+    [] rdf:value 67; math:greaterThan 1 .
+    (67 1) math:difference 66 .
+    (619220451666590135228675387863297874269396512 1001919737325604309473206237898433933302481297) math:sum 1621140188992194444701881625761731807571877809 .
+    (66 1001919737325604309473206237898433933302481297 1621140188992194444701881625761731807571877809) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_328 {
+    (67 619220451666590135228675387863297874269396512 1001919737325604309473206237898433933302481297) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_329 {
+    [] rdf:value 68; math:greaterThan 1 .
+    (68 1) math:difference 67 .
+    (382699285659014174244530850035136059033084785 619220451666590135228675387863297874269396512) math:sum 1001919737325604309473206237898433933302481297 .
+    (67 619220451666590135228675387863297874269396512 1001919737325604309473206237898433933302481297) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_330 {
+    (68 382699285659014174244530850035136059033084785 619220451666590135228675387863297874269396512) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_331 {
+    [] rdf:value 69; math:greaterThan 1 .
+    (69 1) math:difference 68 .
+    (236521166007575960984144537828161815236311727 382699285659014174244530850035136059033084785) math:sum 619220451666590135228675387863297874269396512 .
+    (68 382699285659014174244530850035136059033084785 619220451666590135228675387863297874269396512) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_332 {
+    (69 236521166007575960984144537828161815236311727 382699285659014174244530850035136059033084785) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_333 {
+    [] rdf:value 70; math:greaterThan 1 .
+    (70 1) math:difference 69 .
+    (146178119651438213260386312206974243796773058 236521166007575960984144537828161815236311727) math:sum 382699285659014174244530850035136059033084785 .
+    (69 236521166007575960984144537828161815236311727 382699285659014174244530850035136059033084785) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_334 {
+    (70 146178119651438213260386312206974243796773058 236521166007575960984144537828161815236311727) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_335 {
+    [] rdf:value 71; math:greaterThan 1 .
+    (71 1) math:difference 70 .
+    (90343046356137747723758225621187571439538669 146178119651438213260386312206974243796773058) math:sum 236521166007575960984144537828161815236311727 .
+    (70 146178119651438213260386312206974243796773058 236521166007575960984144537828161815236311727) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_336 {
+    (71 90343046356137747723758225621187571439538669 146178119651438213260386312206974243796773058) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_337 {
+    [] rdf:value 72; math:greaterThan 1 .
+    (72 1) math:difference 71 .
+    (55835073295300465536628086585786672357234389 90343046356137747723758225621187571439538669) math:sum 146178119651438213260386312206974243796773058 .
+    (71 90343046356137747723758225621187571439538669 146178119651438213260386312206974243796773058) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_338 {
+    (72 55835073295300465536628086585786672357234389 90343046356137747723758225621187571439538669) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_339 {
+    [] rdf:value 73; math:greaterThan 1 .
+    (73 1) math:difference 72 .
+    (34507973060837282187130139035400899082304280 55835073295300465536628086585786672357234389) math:sum 90343046356137747723758225621187571439538669 .
+    (72 55835073295300465536628086585786672357234389 90343046356137747723758225621187571439538669) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_340 {
+    (73 34507973060837282187130139035400899082304280 55835073295300465536628086585786672357234389) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_341 {
+    [] rdf:value 74; math:greaterThan 1 .
+    (74 1) math:difference 73 .
+    (21327100234463183349497947550385773274930109 34507973060837282187130139035400899082304280) math:sum 55835073295300465536628086585786672357234389 .
+    (73 34507973060837282187130139035400899082304280 55835073295300465536628086585786672357234389) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_342 {
+    (74 21327100234463183349497947550385773274930109 34507973060837282187130139035400899082304280) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_343 {
+    [] rdf:value 75; math:greaterThan 1 .
+    (75 1) math:difference 74 .
+    (13180872826374098837632191485015125807374171 21327100234463183349497947550385773274930109) math:sum 34507973060837282187130139035400899082304280 .
+    (74 21327100234463183349497947550385773274930109 34507973060837282187130139035400899082304280) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_344 {
+    (75 13180872826374098837632191485015125807374171 21327100234463183349497947550385773274930109) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_345 {
+    [] rdf:value 76; math:greaterThan 1 .
+    (76 1) math:difference 75 .
+    (8146227408089084511865756065370647467555938 13180872826374098837632191485015125807374171) math:sum 21327100234463183349497947550385773274930109 .
+    (75 13180872826374098837632191485015125807374171 21327100234463183349497947550385773274930109) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_346 {
+    (76 8146227408089084511865756065370647467555938 13180872826374098837632191485015125807374171) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_347 {
+    [] rdf:value 77; math:greaterThan 1 .
+    (77 1) math:difference 76 .
+    (5034645418285014325766435419644478339818233 8146227408089084511865756065370647467555938) math:sum 13180872826374098837632191485015125807374171 .
+    (76 8146227408089084511865756065370647467555938 13180872826374098837632191485015125807374171) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_348 {
+    (77 5034645418285014325766435419644478339818233 8146227408089084511865756065370647467555938) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_349 {
+    [] rdf:value 78; math:greaterThan 1 .
+    (78 1) math:difference 77 .
+    (3111581989804070186099320645726169127737705 5034645418285014325766435419644478339818233) math:sum 8146227408089084511865756065370647467555938 .
+    (77 5034645418285014325766435419644478339818233 8146227408089084511865756065370647467555938) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_350 {
+    (78 3111581989804070186099320645726169127737705 5034645418285014325766435419644478339818233) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_351 {
+    [] rdf:value 79; math:greaterThan 1 .
+    (79 1) math:difference 78 .
+    (1923063428480944139667114773918309212080528 3111581989804070186099320645726169127737705) math:sum 5034645418285014325766435419644478339818233 .
+    (78 3111581989804070186099320645726169127737705 5034645418285014325766435419644478339818233) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_352 {
+    (79 1923063428480944139667114773918309212080528 3111581989804070186099320645726169127737705) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_353 {
+    [] rdf:value 80; math:greaterThan 1 .
+    (80 1) math:difference 79 .
+    (1188518561323126046432205871807859915657177 1923063428480944139667114773918309212080528) math:sum 3111581989804070186099320645726169127737705 .
+    (79 1923063428480944139667114773918309212080528 3111581989804070186099320645726169127737705) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_354 {
+    (80 1188518561323126046432205871807859915657177 1923063428480944139667114773918309212080528) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_355 {
+    [] rdf:value 81; math:greaterThan 1 .
+    (81 1) math:difference 80 .
+    (734544867157818093234908902110449296423351 1188518561323126046432205871807859915657177) math:sum 1923063428480944139667114773918309212080528 .
+    (80 1188518561323126046432205871807859915657177 1923063428480944139667114773918309212080528) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_356 {
+    (81 734544867157818093234908902110449296423351 1188518561323126046432205871807859915657177) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_357 {
+    [] rdf:value 82; math:greaterThan 1 .
+    (82 1) math:difference 81 .
+    (453973694165307953197296969697410619233826 734544867157818093234908902110449296423351) math:sum 1188518561323126046432205871807859915657177 .
+    (81 734544867157818093234908902110449296423351 1188518561323126046432205871807859915657177) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_358 {
+    (82 453973694165307953197296969697410619233826 734544867157818093234908902110449296423351) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_359 {
+    [] rdf:value 83; math:greaterThan 1 .
+    (83 1) math:difference 82 .
+    (280571172992510140037611932413038677189525 453973694165307953197296969697410619233826) math:sum 734544867157818093234908902110449296423351 .
+    (82 453973694165307953197296969697410619233826 734544867157818093234908902110449296423351) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_360 {
+    (83 280571172992510140037611932413038677189525 453973694165307953197296969697410619233826) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_361 {
+    [] rdf:value 84; math:greaterThan 1 .
+    (84 1) math:difference 83 .
+    (173402521172797813159685037284371942044301 280571172992510140037611932413038677189525) math:sum 453973694165307953197296969697410619233826 .
+    (83 280571172992510140037611932413038677189525 453973694165307953197296969697410619233826) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_362 {
+    (84 173402521172797813159685037284371942044301 280571172992510140037611932413038677189525) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_363 {
+    [] rdf:value 85; math:greaterThan 1 .
+    (85 1) math:difference 84 .
+    (107168651819712326877926895128666735145224 173402521172797813159685037284371942044301) math:sum 280571172992510140037611932413038677189525 .
+    (84 173402521172797813159685037284371942044301 280571172992510140037611932413038677189525) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_364 {
+    (85 107168651819712326877926895128666735145224 173402521172797813159685037284371942044301) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_365 {
+    [] rdf:value 86; math:greaterThan 1 .
+    (86 1) math:difference 85 .
+    (66233869353085486281758142155705206899077 107168651819712326877926895128666735145224) math:sum 173402521172797813159685037284371942044301 .
+    (85 107168651819712326877926895128666735145224 173402521172797813159685037284371942044301) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_366 {
+    (86 66233869353085486281758142155705206899077 107168651819712326877926895128666735145224) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_367 {
+    [] rdf:value 87; math:greaterThan 1 .
+    (87 1) math:difference 86 .
+    (40934782466626840596168752972961528246147 66233869353085486281758142155705206899077) math:sum 107168651819712326877926895128666735145224 .
+    (86 66233869353085486281758142155705206899077 107168651819712326877926895128666735145224) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_368 {
+    (87 40934782466626840596168752972961528246147 66233869353085486281758142155705206899077) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_369 {
+    [] rdf:value 88; math:greaterThan 1 .
+    (88 1) math:difference 87 .
+    (25299086886458645685589389182743678652930 40934782466626840596168752972961528246147) math:sum 66233869353085486281758142155705206899077 .
+    (87 40934782466626840596168752972961528246147 66233869353085486281758142155705206899077) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_370 {
+    (88 25299086886458645685589389182743678652930 40934782466626840596168752972961528246147) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_371 {
+    [] rdf:value 89; math:greaterThan 1 .
+    (89 1) math:difference 88 .
+    (15635695580168194910579363790217849593217 25299086886458645685589389182743678652930) math:sum 40934782466626840596168752972961528246147 .
+    (88 25299086886458645685589389182743678652930 40934782466626840596168752972961528246147) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_372 {
+    (89 15635695580168194910579363790217849593217 25299086886458645685589389182743678652930) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_373 {
+    [] rdf:value 90; math:greaterThan 1 .
+    (90 1) math:difference 89 .
+    (9663391306290450775010025392525829059713 15635695580168194910579363790217849593217) math:sum 25299086886458645685589389182743678652930 .
+    (89 15635695580168194910579363790217849593217 25299086886458645685589389182743678652930) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_374 {
+    (90 9663391306290450775010025392525829059713 15635695580168194910579363790217849593217) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_375 {
+    [] rdf:value 91; math:greaterThan 1 .
+    (91 1) math:difference 90 .
+    (5972304273877744135569338397692020533504 9663391306290450775010025392525829059713) math:sum 15635695580168194910579363790217849593217 .
+    (90 9663391306290450775010025392525829059713 15635695580168194910579363790217849593217) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_376 {
+    (91 5972304273877744135569338397692020533504 9663391306290450775010025392525829059713) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_377 {
+    [] rdf:value 92; math:greaterThan 1 .
+    (92 1) math:difference 91 .
+    (3691087032412706639440686994833808526209 5972304273877744135569338397692020533504) math:sum 9663391306290450775010025392525829059713 .
+    (91 5972304273877744135569338397692020533504 9663391306290450775010025392525829059713) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_378 {
+    (92 3691087032412706639440686994833808526209 5972304273877744135569338397692020533504) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_379 {
+    [] rdf:value 93; math:greaterThan 1 .
+    (93 1) math:difference 92 .
+    (2281217241465037496128651402858212007295 3691087032412706639440686994833808526209) math:sum 5972304273877744135569338397692020533504 .
+    (92 3691087032412706639440686994833808526209 5972304273877744135569338397692020533504) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_380 {
+    (93 2281217241465037496128651402858212007295 3691087032412706639440686994833808526209) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_381 {
+    [] rdf:value 94; math:greaterThan 1 .
+    (94 1) math:difference 93 .
+    (1409869790947669143312035591975596518914 2281217241465037496128651402858212007295) math:sum 3691087032412706639440686994833808526209 .
+    (93 2281217241465037496128651402858212007295 3691087032412706639440686994833808526209) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_382 {
+    (94 1409869790947669143312035591975596518914 2281217241465037496128651402858212007295) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_383 {
+    [] rdf:value 95; math:greaterThan 1 .
+    (95 1) math:difference 94 .
+    (871347450517368352816615810882615488381 1409869790947669143312035591975596518914) math:sum 2281217241465037496128651402858212007295 .
+    (94 1409869790947669143312035591975596518914 2281217241465037496128651402858212007295) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_384 {
+    (95 871347450517368352816615810882615488381 1409869790947669143312035591975596518914) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_385 {
+    [] rdf:value 96; math:greaterThan 1 .
+    (96 1) math:difference 95 .
+    (538522340430300790495419781092981030533 871347450517368352816615810882615488381) math:sum 1409869790947669143312035591975596518914 .
+    (95 871347450517368352816615810882615488381 1409869790947669143312035591975596518914) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_386 {
+    (96 538522340430300790495419781092981030533 871347450517368352816615810882615488381) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_387 {
+    [] rdf:value 97; math:greaterThan 1 .
+    (97 1) math:difference 96 .
+    (332825110087067562321196029789634457848 538522340430300790495419781092981030533) math:sum 871347450517368352816615810882615488381 .
+    (96 538522340430300790495419781092981030533 871347450517368352816615810882615488381) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_388 {
+    (97 332825110087067562321196029789634457848 538522340430300790495419781092981030533) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_389 {
+    [] rdf:value 98; math:greaterThan 1 .
+    (98 1) math:difference 97 .
+    (205697230343233228174223751303346572685 332825110087067562321196029789634457848) math:sum 538522340430300790495419781092981030533 .
+    (97 332825110087067562321196029789634457848 538522340430300790495419781092981030533) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_390 {
+    (98 205697230343233228174223751303346572685 332825110087067562321196029789634457848) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_391 {
+    [] rdf:value 99; math:greaterThan 1 .
+    (99 1) math:difference 98 .
+    (127127879743834334146972278486287885163 205697230343233228174223751303346572685) math:sum 332825110087067562321196029789634457848 .
+    (98 205697230343233228174223751303346572685 332825110087067562321196029789634457848) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_392 {
+    (99 127127879743834334146972278486287885163 205697230343233228174223751303346572685) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_393 {
+    [] rdf:value 100; math:greaterThan 1 .
+    (100 1) math:difference 99 .
+    (78569350599398894027251472817058687522 127127879743834334146972278486287885163) math:sum 205697230343233228174223751303346572685 .
+    (99 127127879743834334146972278486287885163 205697230343233228174223751303346572685) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_394 {
+    (100 78569350599398894027251472817058687522 127127879743834334146972278486287885163) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_395 {
+    [] rdf:value 101; math:greaterThan 1 .
+    (101 1) math:difference 100 .
+    (48558529144435440119720805669229197641 78569350599398894027251472817058687522) math:sum 127127879743834334146972278486287885163 .
+    (100 78569350599398894027251472817058687522 127127879743834334146972278486287885163) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_396 {
+    (101 48558529144435440119720805669229197641 78569350599398894027251472817058687522) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_397 {
+    [] rdf:value 102; math:greaterThan 1 .
+    (102 1) math:difference 101 .
+    (30010821454963453907530667147829489881 48558529144435440119720805669229197641) math:sum 78569350599398894027251472817058687522 .
+    (101 48558529144435440119720805669229197641 78569350599398894027251472817058687522) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_398 {
+    (102 30010821454963453907530667147829489881 48558529144435440119720805669229197641) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_399 {
+    [] rdf:value 103; math:greaterThan 1 .
+    (103 1) math:difference 102 .
+    (18547707689471986212190138521399707760 30010821454963453907530667147829489881) math:sum 48558529144435440119720805669229197641 .
+    (102 30010821454963453907530667147829489881 48558529144435440119720805669229197641) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_400 {
+    (103 18547707689471986212190138521399707760 30010821454963453907530667147829489881) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_401 {
+    [] rdf:value 104; math:greaterThan 1 .
+    (104 1) math:difference 103 .
+    (11463113765491467695340528626429782121 18547707689471986212190138521399707760) math:sum 30010821454963453907530667147829489881 .
+    (103 18547707689471986212190138521399707760 30010821454963453907530667147829489881) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_402 {
+    (104 11463113765491467695340528626429782121 18547707689471986212190138521399707760) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_403 {
+    [] rdf:value 105; math:greaterThan 1 .
+    (105 1) math:difference 104 .
+    (7084593923980518516849609894969925639 11463113765491467695340528626429782121) math:sum 18547707689471986212190138521399707760 .
+    (104 11463113765491467695340528626429782121 18547707689471986212190138521399707760) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_404 {
+    (105 7084593923980518516849609894969925639 11463113765491467695340528626429782121) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_405 {
+    [] rdf:value 106; math:greaterThan 1 .
+    (106 1) math:difference 105 .
+    (4378519841510949178490918731459856482 7084593923980518516849609894969925639) math:sum 11463113765491467695340528626429782121 .
+    (105 7084593923980518516849609894969925639 11463113765491467695340528626429782121) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_406 {
+    (106 4378519841510949178490918731459856482 7084593923980518516849609894969925639) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_407 {
+    [] rdf:value 107; math:greaterThan 1 .
+    (107 1) math:difference 106 .
+    (2706074082469569338358691163510069157 4378519841510949178490918731459856482) math:sum 7084593923980518516849609894969925639 .
+    (106 4378519841510949178490918731459856482 7084593923980518516849609894969925639) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_408 {
+    (107 2706074082469569338358691163510069157 4378519841510949178490918731459856482) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_409 {
+    [] rdf:value 108; math:greaterThan 1 .
+    (108 1) math:difference 107 .
+    (1672445759041379840132227567949787325 2706074082469569338358691163510069157) math:sum 4378519841510949178490918731459856482 .
+    (107 2706074082469569338358691163510069157 4378519841510949178490918731459856482) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_410 {
+    (108 1672445759041379840132227567949787325 2706074082469569338358691163510069157) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_411 {
+    [] rdf:value 109; math:greaterThan 1 .
+    (109 1) math:difference 108 .
+    (1033628323428189498226463595560281832 1672445759041379840132227567949787325) math:sum 2706074082469569338358691163510069157 .
+    (108 1672445759041379840132227567949787325 2706074082469569338358691163510069157) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_412 {
+    (109 1033628323428189498226463595560281832 1672445759041379840132227567949787325) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_413 {
+    [] rdf:value 110; math:greaterThan 1 .
+    (110 1) math:difference 109 .
+    (638817435613190341905763972389505493 1033628323428189498226463595560281832) math:sum 1672445759041379840132227567949787325 .
+    (109 1033628323428189498226463595560281832 1672445759041379840132227567949787325) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_414 {
+    (110 638817435613190341905763972389505493 1033628323428189498226463595560281832) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_415 {
+    [] rdf:value 111; math:greaterThan 1 .
+    (111 1) math:difference 110 .
+    (394810887814999156320699623170776339 638817435613190341905763972389505493) math:sum 1033628323428189498226463595560281832 .
+    (110 638817435613190341905763972389505493 1033628323428189498226463595560281832) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_416 {
+    (111 394810887814999156320699623170776339 638817435613190341905763972389505493) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_417 {
+    [] rdf:value 112; math:greaterThan 1 .
+    (112 1) math:difference 111 .
+    (244006547798191185585064349218729154 394810887814999156320699623170776339) math:sum 638817435613190341905763972389505493 .
+    (111 394810887814999156320699623170776339 638817435613190341905763972389505493) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_418 {
+    (112 244006547798191185585064349218729154 394810887814999156320699623170776339) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_419 {
+    [] rdf:value 113; math:greaterThan 1 .
+    (113 1) math:difference 112 .
+    (150804340016807970735635273952047185 244006547798191185585064349218729154) math:sum 394810887814999156320699623170776339 .
+    (112 244006547798191185585064349218729154 394810887814999156320699623170776339) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_420 {
+    (113 150804340016807970735635273952047185 244006547798191185585064349218729154) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_421 {
+    [] rdf:value 114; math:greaterThan 1 .
+    (114 1) math:difference 113 .
+    (93202207781383214849429075266681969 150804340016807970735635273952047185) math:sum 244006547798191185585064349218729154 .
+    (113 150804340016807970735635273952047185 244006547798191185585064349218729154) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_422 {
+    (114 93202207781383214849429075266681969 150804340016807970735635273952047185) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_423 {
+    [] rdf:value 115; math:greaterThan 1 .
+    (115 1) math:difference 114 .
+    (57602132235424755886206198685365216 93202207781383214849429075266681969) math:sum 150804340016807970735635273952047185 .
+    (114 93202207781383214849429075266681969 150804340016807970735635273952047185) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_424 {
+    (115 57602132235424755886206198685365216 93202207781383214849429075266681969) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_425 {
+    [] rdf:value 116; math:greaterThan 1 .
+    (116 1) math:difference 115 .
+    (35600075545958458963222876581316753 57602132235424755886206198685365216) math:sum 93202207781383214849429075266681969 .
+    (115 57602132235424755886206198685365216 93202207781383214849429075266681969) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_426 {
+    (116 35600075545958458963222876581316753 57602132235424755886206198685365216) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_427 {
+    [] rdf:value 117; math:greaterThan 1 .
+    (117 1) math:difference 116 .
+    (22002056689466296922983322104048463 35600075545958458963222876581316753) math:sum 57602132235424755886206198685365216 .
+    (116 35600075545958458963222876581316753 57602132235424755886206198685365216) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_428 {
+    (117 22002056689466296922983322104048463 35600075545958458963222876581316753) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_429 {
+    [] rdf:value 118; math:greaterThan 1 .
+    (118 1) math:difference 117 .
+    (13598018856492162040239554477268290 22002056689466296922983322104048463) math:sum 35600075545958458963222876581316753 .
+    (117 22002056689466296922983322104048463 35600075545958458963222876581316753) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_430 {
+    (118 13598018856492162040239554477268290 22002056689466296922983322104048463) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_431 {
+    [] rdf:value 119; math:greaterThan 1 .
+    (119 1) math:difference 118 .
+    (8404037832974134882743767626780173 13598018856492162040239554477268290) math:sum 22002056689466296922983322104048463 .
+    (118 13598018856492162040239554477268290 22002056689466296922983322104048463) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_432 {
+    (119 8404037832974134882743767626780173 13598018856492162040239554477268290) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_433 {
+    [] rdf:value 120; math:greaterThan 1 .
+    (120 1) math:difference 119 .
+    (5193981023518027157495786850488117 8404037832974134882743767626780173) math:sum 13598018856492162040239554477268290 .
+    (119 8404037832974134882743767626780173 13598018856492162040239554477268290) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_434 {
+    (120 5193981023518027157495786850488117 8404037832974134882743767626780173) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_435 {
+    [] rdf:value 121; math:greaterThan 1 .
+    (121 1) math:difference 120 .
+    (3210056809456107725247980776292056 5193981023518027157495786850488117) math:sum 8404037832974134882743767626780173 .
+    (120 5193981023518027157495786850488117 8404037832974134882743767626780173) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_436 {
+    (121 3210056809456107725247980776292056 5193981023518027157495786850488117) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_437 {
+    [] rdf:value 122; math:greaterThan 1 .
+    (122 1) math:difference 121 .
+    (1983924214061919432247806074196061 3210056809456107725247980776292056) math:sum 5193981023518027157495786850488117 .
+    (121 3210056809456107725247980776292056 5193981023518027157495786850488117) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_438 {
+    (122 1983924214061919432247806074196061 3210056809456107725247980776292056) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_439 {
+    [] rdf:value 123; math:greaterThan 1 .
+    (123 1) math:difference 122 .
+    (1226132595394188293000174702095995 1983924214061919432247806074196061) math:sum 3210056809456107725247980776292056 .
+    (122 1983924214061919432247806074196061 3210056809456107725247980776292056) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_440 {
+    (123 1226132595394188293000174702095995 1983924214061919432247806074196061) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_441 {
+    [] rdf:value 124; math:greaterThan 1 .
+    (124 1) math:difference 123 .
+    (757791618667731139247631372100066 1226132595394188293000174702095995) math:sum 1983924214061919432247806074196061 .
+    (123 1226132595394188293000174702095995 1983924214061919432247806074196061) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_442 {
+    (124 757791618667731139247631372100066 1226132595394188293000174702095995) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_443 {
+    [] rdf:value 125; math:greaterThan 1 .
+    (125 1) math:difference 124 .
+    (468340976726457153752543329995929 757791618667731139247631372100066) math:sum 1226132595394188293000174702095995 .
+    (124 757791618667731139247631372100066 1226132595394188293000174702095995) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_444 {
+    (125 468340976726457153752543329995929 757791618667731139247631372100066) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_445 {
+    [] rdf:value 126; math:greaterThan 1 .
+    (126 1) math:difference 125 .
+    (289450641941273985495088042104137 468340976726457153752543329995929) math:sum 757791618667731139247631372100066 .
+    (125 468340976726457153752543329995929 757791618667731139247631372100066) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_446 {
+    (126 289450641941273985495088042104137 468340976726457153752543329995929) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_447 {
+    [] rdf:value 127; math:greaterThan 1 .
+    (127 1) math:difference 126 .
+    (178890334785183168257455287891792 289450641941273985495088042104137) math:sum 468340976726457153752543329995929 .
+    (126 289450641941273985495088042104137 468340976726457153752543329995929) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_448 {
+    (127 178890334785183168257455287891792 289450641941273985495088042104137) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_449 {
+    [] rdf:value 128; math:greaterThan 1 .
+    (128 1) math:difference 127 .
+    (110560307156090817237632754212345 178890334785183168257455287891792) math:sum 289450641941273985495088042104137 .
+    (127 178890334785183168257455287891792 289450641941273985495088042104137) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_450 {
+    (128 110560307156090817237632754212345 178890334785183168257455287891792) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_451 {
+    [] rdf:value 129; math:greaterThan 1 .
+    (129 1) math:difference 128 .
+    (68330027629092351019822533679447 110560307156090817237632754212345) math:sum 178890334785183168257455287891792 .
+    (128 110560307156090817237632754212345 178890334785183168257455287891792) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_452 {
+    (129 68330027629092351019822533679447 110560307156090817237632754212345) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_453 {
+    [] rdf:value 130; math:greaterThan 1 .
+    (130 1) math:difference 129 .
+    (42230279526998466217810220532898 68330027629092351019822533679447) math:sum 110560307156090817237632754212345 .
+    (129 68330027629092351019822533679447 110560307156090817237632754212345) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_454 {
+    (130 42230279526998466217810220532898 68330027629092351019822533679447) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_455 {
+    [] rdf:value 131; math:greaterThan 1 .
+    (131 1) math:difference 130 .
+    (26099748102093884802012313146549 42230279526998466217810220532898) math:sum 68330027629092351019822533679447 .
+    (130 42230279526998466217810220532898 68330027629092351019822533679447) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_456 {
+    (131 26099748102093884802012313146549 42230279526998466217810220532898) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_457 {
+    [] rdf:value 132; math:greaterThan 1 .
+    (132 1) math:difference 131 .
+    (16130531424904581415797907386349 26099748102093884802012313146549) math:sum 42230279526998466217810220532898 .
+    (131 26099748102093884802012313146549 42230279526998466217810220532898) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_458 {
+    (132 16130531424904581415797907386349 26099748102093884802012313146549) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_459 {
+    [] rdf:value 133; math:greaterThan 1 .
+    (133 1) math:difference 132 .
+    (9969216677189303386214405760200 16130531424904581415797907386349) math:sum 26099748102093884802012313146549 .
+    (132 16130531424904581415797907386349 26099748102093884802012313146549) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_460 {
+    (133 9969216677189303386214405760200 16130531424904581415797907386349) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_461 {
+    [] rdf:value 134; math:greaterThan 1 .
+    (134 1) math:difference 133 .
+    (6161314747715278029583501626149 9969216677189303386214405760200) math:sum 16130531424904581415797907386349 .
+    (133 9969216677189303386214405760200 16130531424904581415797907386349) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_462 {
+    (134 6161314747715278029583501626149 9969216677189303386214405760200) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_463 {
+    [] rdf:value 135; math:greaterThan 1 .
+    (135 1) math:difference 134 .
+    (3807901929474025356630904134051 6161314747715278029583501626149) math:sum 9969216677189303386214405760200 .
+    (134 6161314747715278029583501626149 9969216677189303386214405760200) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_464 {
+    (135 3807901929474025356630904134051 6161314747715278029583501626149) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_465 {
+    [] rdf:value 136; math:greaterThan 1 .
+    (136 1) math:difference 135 .
+    (2353412818241252672952597492098 3807901929474025356630904134051) math:sum 6161314747715278029583501626149 .
+    (135 3807901929474025356630904134051 6161314747715278029583501626149) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_466 {
+    (136 2353412818241252672952597492098 3807901929474025356630904134051) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_467 {
+    [] rdf:value 137; math:greaterThan 1 .
+    (137 1) math:difference 136 .
+    (1454489111232772683678306641953 2353412818241252672952597492098) math:sum 3807901929474025356630904134051 .
+    (136 2353412818241252672952597492098 3807901929474025356630904134051) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_468 {
+    (137 1454489111232772683678306641953 2353412818241252672952597492098) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_469 {
+    [] rdf:value 138; math:greaterThan 1 .
+    (138 1) math:difference 137 .
+    (898923707008479989274290850145 1454489111232772683678306641953) math:sum 2353412818241252672952597492098 .
+    (137 1454489111232772683678306641953 2353412818241252672952597492098) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_470 {
+    (138 898923707008479989274290850145 1454489111232772683678306641953) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_471 {
+    [] rdf:value 139; math:greaterThan 1 .
+    (139 1) math:difference 138 .
+    (555565404224292694404015791808 898923707008479989274290850145) math:sum 1454489111232772683678306641953 .
+    (138 898923707008479989274290850145 1454489111232772683678306641953) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_472 {
+    (139 555565404224292694404015791808 898923707008479989274290850145) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_473 {
+    [] rdf:value 140; math:greaterThan 1 .
+    (140 1) math:difference 139 .
+    (343358302784187294870275058337 555565404224292694404015791808) math:sum 898923707008479989274290850145 .
+    (139 555565404224292694404015791808 898923707008479989274290850145) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_474 {
+    (140 343358302784187294870275058337 555565404224292694404015791808) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_475 {
+    [] rdf:value 141; math:greaterThan 1 .
+    (141 1) math:difference 140 .
+    (212207101440105399533740733471 343358302784187294870275058337) math:sum 555565404224292694404015791808 .
+    (140 343358302784187294870275058337 555565404224292694404015791808) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_476 {
+    (141 212207101440105399533740733471 343358302784187294870275058337) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_477 {
+    [] rdf:value 142; math:greaterThan 1 .
+    (142 1) math:difference 141 .
+    (131151201344081895336534324866 212207101440105399533740733471) math:sum 343358302784187294870275058337 .
+    (141 212207101440105399533740733471 343358302784187294870275058337) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_478 {
+    (142 131151201344081895336534324866 212207101440105399533740733471) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_479 {
+    [] rdf:value 143; math:greaterThan 1 .
+    (143 1) math:difference 142 .
+    (81055900096023504197206408605 131151201344081895336534324866) math:sum 212207101440105399533740733471 .
+    (142 131151201344081895336534324866 212207101440105399533740733471) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_480 {
+    (143 81055900096023504197206408605 131151201344081895336534324866) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_481 {
+    [] rdf:value 144; math:greaterThan 1 .
+    (144 1) math:difference 143 .
+    (50095301248058391139327916261 81055900096023504197206408605) math:sum 131151201344081895336534324866 .
+    (143 81055900096023504197206408605 131151201344081895336534324866) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_482 {
+    (144 50095301248058391139327916261 81055900096023504197206408605) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_483 {
+    [] rdf:value 145; math:greaterThan 1 .
+    (145 1) math:difference 144 .
+    (30960598847965113057878492344 50095301248058391139327916261) math:sum 81055900096023504197206408605 .
+    (144 50095301248058391139327916261 81055900096023504197206408605) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_484 {
+    (145 30960598847965113057878492344 50095301248058391139327916261) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_485 {
+    [] rdf:value 146; math:greaterThan 1 .
+    (146 1) math:difference 145 .
+    (19134702400093278081449423917 30960598847965113057878492344) math:sum 50095301248058391139327916261 .
+    (145 30960598847965113057878492344 50095301248058391139327916261) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_486 {
+    (146 19134702400093278081449423917 30960598847965113057878492344) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_487 {
+    [] rdf:value 147; math:greaterThan 1 .
+    (147 1) math:difference 146 .
+    (11825896447871834976429068427 19134702400093278081449423917) math:sum 30960598847965113057878492344 .
+    (146 19134702400093278081449423917 30960598847965113057878492344) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_488 {
+    (147 11825896447871834976429068427 19134702400093278081449423917) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_489 {
+    [] rdf:value 148; math:greaterThan 1 .
+    (148 1) math:difference 147 .
+    (7308805952221443105020355490 11825896447871834976429068427) math:sum 19134702400093278081449423917 .
+    (147 11825896447871834976429068427 19134702400093278081449423917) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_490 {
+    (148 7308805952221443105020355490 11825896447871834976429068427) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_491 {
+    [] rdf:value 149; math:greaterThan 1 .
+    (149 1) math:difference 148 .
+    (4517090495650391871408712937 7308805952221443105020355490) math:sum 11825896447871834976429068427 .
+    (148 7308805952221443105020355490 11825896447871834976429068427) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_492 {
+    (149 4517090495650391871408712937 7308805952221443105020355490) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_493 {
+    [] rdf:value 150; math:greaterThan 1 .
+    (150 1) math:difference 149 .
+    (2791715456571051233611642553 4517090495650391871408712937) math:sum 7308805952221443105020355490 .
+    (149 4517090495650391871408712937 7308805952221443105020355490) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_494 {
+    (150 2791715456571051233611642553 4517090495650391871408712937) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_495 {
+    [] rdf:value 151; math:greaterThan 1 .
+    (151 1) math:difference 150 .
+    (1725375039079340637797070384 2791715456571051233611642553) math:sum 4517090495650391871408712937 .
+    (150 2791715456571051233611642553 4517090495650391871408712937) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_496 {
+    (151 1725375039079340637797070384 2791715456571051233611642553) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_497 {
+    [] rdf:value 152; math:greaterThan 1 .
+    (152 1) math:difference 151 .
+    (1066340417491710595814572169 1725375039079340637797070384) math:sum 2791715456571051233611642553 .
+    (151 1725375039079340637797070384 2791715456571051233611642553) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_498 {
+    (152 1066340417491710595814572169 1725375039079340637797070384) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_499 {
+    [] rdf:value 153; math:greaterThan 1 .
+    (153 1) math:difference 152 .
+    (659034621587630041982498215 1066340417491710595814572169) math:sum 1725375039079340637797070384 .
+    (152 1066340417491710595814572169 1725375039079340637797070384) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_500 {
+    (153 659034621587630041982498215 1066340417491710595814572169) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_501 {
+    [] rdf:value 154; math:greaterThan 1 .
+    (154 1) math:difference 153 .
+    (407305795904080553832073954 659034621587630041982498215) math:sum 1066340417491710595814572169 .
+    (153 659034621587630041982498215 1066340417491710595814572169) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_502 {
+    (154 407305795904080553832073954 659034621587630041982498215) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_503 {
+    [] rdf:value 155; math:greaterThan 1 .
+    (155 1) math:difference 154 .
+    (251728825683549488150424261 407305795904080553832073954) math:sum 659034621587630041982498215 .
+    (154 407305795904080553832073954 659034621587630041982498215) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_504 {
+    (155 251728825683549488150424261 407305795904080553832073954) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_505 {
+    [] rdf:value 156; math:greaterThan 1 .
+    (156 1) math:difference 155 .
+    (155576970220531065681649693 251728825683549488150424261) math:sum 407305795904080553832073954 .
+    (155 251728825683549488150424261 407305795904080553832073954) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_506 {
+    (156 155576970220531065681649693 251728825683549488150424261) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_507 {
+    [] rdf:value 157; math:greaterThan 1 .
+    (157 1) math:difference 156 .
+    (96151855463018422468774568 155576970220531065681649693) math:sum 251728825683549488150424261 .
+    (156 155576970220531065681649693 251728825683549488150424261) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_508 {
+    (157 96151855463018422468774568 155576970220531065681649693) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_509 {
+    [] rdf:value 158; math:greaterThan 1 .
+    (158 1) math:difference 157 .
+    (59425114757512643212875125 96151855463018422468774568) math:sum 155576970220531065681649693 .
+    (157 96151855463018422468774568 155576970220531065681649693) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_510 {
+    (158 59425114757512643212875125 96151855463018422468774568) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_511 {
+    [] rdf:value 159; math:greaterThan 1 .
+    (159 1) math:difference 158 .
+    (36726740705505779255899443 59425114757512643212875125) math:sum 96151855463018422468774568 .
+    (158 59425114757512643212875125 96151855463018422468774568) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_512 {
+    (159 36726740705505779255899443 59425114757512643212875125) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_513 {
+    [] rdf:value 160; math:greaterThan 1 .
+    (160 1) math:difference 159 .
+    (22698374052006863956975682 36726740705505779255899443) math:sum 59425114757512643212875125 .
+    (159 36726740705505779255899443 59425114757512643212875125) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_514 {
+    (160 22698374052006863956975682 36726740705505779255899443) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_515 {
+    [] rdf:value 161; math:greaterThan 1 .
+    (161 1) math:difference 160 .
+    (14028366653498915298923761 22698374052006863956975682) math:sum 36726740705505779255899443 .
+    (160 22698374052006863956975682 36726740705505779255899443) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_516 {
+    (161 14028366653498915298923761 22698374052006863956975682) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_517 {
+    [] rdf:value 162; math:greaterThan 1 .
+    (162 1) math:difference 161 .
+    (8670007398507948658051921 14028366653498915298923761) math:sum 22698374052006863956975682 .
+    (161 14028366653498915298923761 22698374052006863956975682) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_518 {
+    (162 8670007398507948658051921 14028366653498915298923761) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_519 {
+    [] rdf:value 163; math:greaterThan 1 .
+    (163 1) math:difference 162 .
+    (5358359254990966640871840 8670007398507948658051921) math:sum 14028366653498915298923761 .
+    (162 8670007398507948658051921 14028366653498915298923761) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_520 {
+    (163 5358359254990966640871840 8670007398507948658051921) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_521 {
+    [] rdf:value 164; math:greaterThan 1 .
+    (164 1) math:difference 163 .
+    (3311648143516982017180081 5358359254990966640871840) math:sum 8670007398507948658051921 .
+    (163 5358359254990966640871840 8670007398507948658051921) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_522 {
+    (164 3311648143516982017180081 5358359254990966640871840) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_523 {
+    [] rdf:value 165; math:greaterThan 1 .
+    (165 1) math:difference 164 .
+    (2046711111473984623691759 3311648143516982017180081) math:sum 5358359254990966640871840 .
+    (164 3311648143516982017180081 5358359254990966640871840) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_524 {
+    (165 2046711111473984623691759 3311648143516982017180081) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_525 {
+    [] rdf:value 166; math:greaterThan 1 .
+    (166 1) math:difference 165 .
+    (1264937032042997393488322 2046711111473984623691759) math:sum 3311648143516982017180081 .
+    (165 2046711111473984623691759 3311648143516982017180081) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_526 {
+    (166 1264937032042997393488322 2046711111473984623691759) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_527 {
+    [] rdf:value 167; math:greaterThan 1 .
+    (167 1) math:difference 166 .
+    (781774079430987230203437 1264937032042997393488322) math:sum 2046711111473984623691759 .
+    (166 1264937032042997393488322 2046711111473984623691759) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_528 {
+    (167 781774079430987230203437 1264937032042997393488322) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_529 {
+    [] rdf:value 168; math:greaterThan 1 .
+    (168 1) math:difference 167 .
+    (483162952612010163284885 781774079430987230203437) math:sum 1264937032042997393488322 .
+    (167 781774079430987230203437 1264937032042997393488322) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_530 {
+    (168 483162952612010163284885 781774079430987230203437) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_531 {
+    [] rdf:value 169; math:greaterThan 1 .
+    (169 1) math:difference 168 .
+    (298611126818977066918552 483162952612010163284885) math:sum 781774079430987230203437 .
+    (168 483162952612010163284885 781774079430987230203437) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_532 {
+    (169 298611126818977066918552 483162952612010163284885) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_533 {
+    [] rdf:value 170; math:greaterThan 1 .
+    (170 1) math:difference 169 .
+    (184551825793033096366333 298611126818977066918552) math:sum 483162952612010163284885 .
+    (169 298611126818977066918552 483162952612010163284885) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_534 {
+    (170 184551825793033096366333 298611126818977066918552) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_535 {
+    [] rdf:value 171; math:greaterThan 1 .
+    (171 1) math:difference 170 .
+    (114059301025943970552219 184551825793033096366333) math:sum 298611126818977066918552 .
+    (170 184551825793033096366333 298611126818977066918552) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_536 {
+    (171 114059301025943970552219 184551825793033096366333) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_537 {
+    [] rdf:value 172; math:greaterThan 1 .
+    (172 1) math:difference 171 .
+    (70492524767089125814114 114059301025943970552219) math:sum 184551825793033096366333 .
+    (171 114059301025943970552219 184551825793033096366333) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_538 {
+    (172 70492524767089125814114 114059301025943970552219) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_539 {
+    [] rdf:value 173; math:greaterThan 1 .
+    (173 1) math:difference 172 .
+    (43566776258854844738105 70492524767089125814114) math:sum 114059301025943970552219 .
+    (172 70492524767089125814114 114059301025943970552219) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_540 {
+    (173 43566776258854844738105 70492524767089125814114) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_541 {
+    [] rdf:value 174; math:greaterThan 1 .
+    (174 1) math:difference 173 .
+    (26925748508234281076009 43566776258854844738105) math:sum 70492524767089125814114 .
+    (173 43566776258854844738105 70492524767089125814114) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_542 {
+    (174 26925748508234281076009 43566776258854844738105) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_543 {
+    [] rdf:value 175; math:greaterThan 1 .
+    (175 1) math:difference 174 .
+    (16641027750620563662096 26925748508234281076009) math:sum 43566776258854844738105 .
+    (174 26925748508234281076009 43566776258854844738105) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_544 {
+    (175 16641027750620563662096 26925748508234281076009) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_545 {
+    [] rdf:value 176; math:greaterThan 1 .
+    (176 1) math:difference 175 .
+    (10284720757613717413913 16641027750620563662096) math:sum 26925748508234281076009 .
+    (175 16641027750620563662096 26925748508234281076009) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_546 {
+    (176 10284720757613717413913 16641027750620563662096) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_547 {
+    [] rdf:value 177; math:greaterThan 1 .
+    (177 1) math:difference 176 .
+    (6356306993006846248183 10284720757613717413913) math:sum 16641027750620563662096 .
+    (176 10284720757613717413913 16641027750620563662096) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_548 {
+    (177 6356306993006846248183 10284720757613717413913) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_549 {
+    [] rdf:value 178; math:greaterThan 1 .
+    (178 1) math:difference 177 .
+    (3928413764606871165730 6356306993006846248183) math:sum 10284720757613717413913 .
+    (177 6356306993006846248183 10284720757613717413913) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_550 {
+    (178 3928413764606871165730 6356306993006846248183) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_551 {
+    [] rdf:value 179; math:greaterThan 1 .
+    (179 1) math:difference 178 .
+    (2427893228399975082453 3928413764606871165730) math:sum 6356306993006846248183 .
+    (178 3928413764606871165730 6356306993006846248183) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_552 {
+    (179 2427893228399975082453 3928413764606871165730) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_553 {
+    [] rdf:value 180; math:greaterThan 1 .
+    (180 1) math:difference 179 .
+    (1500520536206896083277 2427893228399975082453) math:sum 3928413764606871165730 .
+    (179 2427893228399975082453 3928413764606871165730) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_554 {
+    (180 1500520536206896083277 2427893228399975082453) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_555 {
+    [] rdf:value 181; math:greaterThan 1 .
+    (181 1) math:difference 180 .
+    (927372692193078999176 1500520536206896083277) math:sum 2427893228399975082453 .
+    (180 1500520536206896083277 2427893228399975082453) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_556 {
+    (181 927372692193078999176 1500520536206896083277) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_557 {
+    [] rdf:value 182; math:greaterThan 1 .
+    (182 1) math:difference 181 .
+    (573147844013817084101 927372692193078999176) math:sum 1500520536206896083277 .
+    (181 927372692193078999176 1500520536206896083277) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_558 {
+    (182 573147844013817084101 927372692193078999176) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_559 {
+    [] rdf:value 183; math:greaterThan 1 .
+    (183 1) math:difference 182 .
+    (354224848179261915075 573147844013817084101) math:sum 927372692193078999176 .
+    (182 573147844013817084101 927372692193078999176) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_560 {
+    (183 354224848179261915075 573147844013817084101) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_561 {
+    [] rdf:value 184; math:greaterThan 1 .
+    (184 1) math:difference 183 .
+    (218922995834555169026 354224848179261915075) math:sum 573147844013817084101 .
+    (183 354224848179261915075 573147844013817084101) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_562 {
+    (184 218922995834555169026 354224848179261915075) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_563 {
+    [] rdf:value 185; math:greaterThan 1 .
+    (185 1) math:difference 184 .
+    (135301852344706746049 218922995834555169026) math:sum 354224848179261915075 .
+    (184 218922995834555169026 354224848179261915075) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_564 {
+    (185 135301852344706746049 218922995834555169026) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_565 {
+    [] rdf:value 186; math:greaterThan 1 .
+    (186 1) math:difference 185 .
+    (83621143489848422977 135301852344706746049) math:sum 218922995834555169026 .
+    (185 135301852344706746049 218922995834555169026) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_566 {
+    (186 83621143489848422977 135301852344706746049) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_567 {
+    [] rdf:value 187; math:greaterThan 1 .
+    (187 1) math:difference 186 .
+    (51680708854858323072 83621143489848422977) math:sum 135301852344706746049 .
+    (186 83621143489848422977 135301852344706746049) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_568 {
+    (187 51680708854858323072 83621143489848422977) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_569 {
+    [] rdf:value 188; math:greaterThan 1 .
+    (188 1) math:difference 187 .
+    (31940434634990099905 51680708854858323072) math:sum 83621143489848422977 .
+    (187 51680708854858323072 83621143489848422977) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_570 {
+    (188 31940434634990099905 51680708854858323072) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_571 {
+    [] rdf:value 189; math:greaterThan 1 .
+    (189 1) math:difference 188 .
+    (19740274219868223167 31940434634990099905) math:sum 51680708854858323072 .
+    (188 31940434634990099905 51680708854858323072) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_572 {
+    (189 19740274219868223167 31940434634990099905) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_573 {
+    [] rdf:value 190; math:greaterThan 1 .
+    (190 1) math:difference 189 .
+    (12200160415121876738 19740274219868223167) math:sum 31940434634990099905 .
+    (189 19740274219868223167 31940434634990099905) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_574 {
+    (190 12200160415121876738 19740274219868223167) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_575 {
+    [] rdf:value 191; math:greaterThan 1 .
+    (191 1) math:difference 190 .
+    (7540113804746346429 12200160415121876738) math:sum 19740274219868223167 .
+    (190 12200160415121876738 19740274219868223167) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_576 {
+    (191 7540113804746346429 12200160415121876738) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_577 {
+    [] rdf:value 192; math:greaterThan 1 .
+    (192 1) math:difference 191 .
+    (4660046610375530309 7540113804746346429) math:sum 12200160415121876738 .
+    (191 7540113804746346429 12200160415121876738) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_578 {
+    (192 4660046610375530309 7540113804746346429) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_579 {
+    [] rdf:value 193; math:greaterThan 1 .
+    (193 1) math:difference 192 .
+    (2880067194370816120 4660046610375530309) math:sum 7540113804746346429 .
+    (192 4660046610375530309 7540113804746346429) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_580 {
+    (193 2880067194370816120 4660046610375530309) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_581 {
+    [] rdf:value 194; math:greaterThan 1 .
+    (194 1) math:difference 193 .
+    (1779979416004714189 2880067194370816120) math:sum 4660046610375530309 .
+    (193 2880067194370816120 4660046610375530309) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_582 {
+    (194 1779979416004714189 2880067194370816120) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_583 {
+    [] rdf:value 195; math:greaterThan 1 .
+    (195 1) math:difference 194 .
+    (1100087778366101931 1779979416004714189) math:sum 2880067194370816120 .
+    (194 1779979416004714189 2880067194370816120) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_584 {
+    (195 1100087778366101931 1779979416004714189) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_585 {
+    [] rdf:value 196; math:greaterThan 1 .
+    (196 1) math:difference 195 .
+    (679891637638612258 1100087778366101931) math:sum 1779979416004714189 .
+    (195 1100087778366101931 1779979416004714189) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_586 {
+    (196 679891637638612258 1100087778366101931) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_587 {
+    [] rdf:value 197; math:greaterThan 1 .
+    (197 1) math:difference 196 .
+    (420196140727489673 679891637638612258) math:sum 1100087778366101931 .
+    (196 679891637638612258 1100087778366101931) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_588 {
+    (197 420196140727489673 679891637638612258) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_589 {
+    [] rdf:value 198; math:greaterThan 1 .
+    (198 1) math:difference 197 .
+    (259695496911122585 420196140727489673) math:sum 679891637638612258 .
+    (197 420196140727489673 679891637638612258) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_590 {
+    (198 259695496911122585 420196140727489673) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_591 {
+    [] rdf:value 199; math:greaterThan 1 .
+    (199 1) math:difference 198 .
+    (160500643816367088 259695496911122585) math:sum 420196140727489673 .
+    (198 259695496911122585 420196140727489673) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_592 {
+    (199 160500643816367088 259695496911122585) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_593 {
+    [] rdf:value 200; math:greaterThan 1 .
+    (200 1) math:difference 199 .
+    (99194853094755497 160500643816367088) math:sum 259695496911122585 .
+    (199 160500643816367088 259695496911122585) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_594 {
+    (200 99194853094755497 160500643816367088) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_595 {
+    [] rdf:value 201; math:greaterThan 1 .
+    (201 1) math:difference 200 .
+    (61305790721611591 99194853094755497) math:sum 160500643816367088 .
+    (200 99194853094755497 160500643816367088) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_596 {
+    (201 61305790721611591 99194853094755497) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_597 {
+    [] rdf:value 202; math:greaterThan 1 .
+    (202 1) math:difference 201 .
+    (37889062373143906 61305790721611591) math:sum 99194853094755497 .
+    (201 61305790721611591 99194853094755497) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_598 {
+    (202 37889062373143906 61305790721611591) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_599 {
+    [] rdf:value 203; math:greaterThan 1 .
+    (203 1) math:difference 202 .
+    (23416728348467685 37889062373143906) math:sum 61305790721611591 .
+    (202 37889062373143906 61305790721611591) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_600 {
+    (203 23416728348467685 37889062373143906) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_601 {
+    [] rdf:value 204; math:greaterThan 1 .
+    (204 1) math:difference 203 .
+    (14472334024676221 23416728348467685) math:sum 37889062373143906 .
+    (203 23416728348467685 37889062373143906) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_602 {
+    (204 14472334024676221 23416728348467685) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_603 {
+    [] rdf:value 205; math:greaterThan 1 .
+    (205 1) math:difference 204 .
+    (8944394323791464 14472334024676221) math:sum 23416728348467685 .
+    (204 14472334024676221 23416728348467685) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_604 {
+    (205 8944394323791464 14472334024676221) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_605 {
+    [] rdf:value 206; math:greaterThan 1 .
+    (206 1) math:difference 205 .
+    (5527939700884757 8944394323791464) math:sum 14472334024676221 .
+    (205 8944394323791464 14472334024676221) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_606 {
+    (206 5527939700884757 8944394323791464) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_607 {
+    [] rdf:value 207; math:greaterThan 1 .
+    (207 1) math:difference 206 .
+    (3416454622906707 5527939700884757) math:sum 8944394323791464 .
+    (206 5527939700884757 8944394323791464) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_608 {
+    (207 3416454622906707 5527939700884757) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_609 {
+    [] rdf:value 208; math:greaterThan 1 .
+    (208 1) math:difference 207 .
+    (2111485077978050 3416454622906707) math:sum 5527939700884757 .
+    (207 3416454622906707 5527939700884757) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_610 {
+    (208 2111485077978050 3416454622906707) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_611 {
+    [] rdf:value 209; math:greaterThan 1 .
+    (209 1) math:difference 208 .
+    (1304969544928657 2111485077978050) math:sum 3416454622906707 .
+    (208 2111485077978050 3416454622906707) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_612 {
+    (209 1304969544928657 2111485077978050) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_613 {
+    [] rdf:value 210; math:greaterThan 1 .
+    (210 1) math:difference 209 .
+    (806515533049393 1304969544928657) math:sum 2111485077978050 .
+    (209 1304969544928657 2111485077978050) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_614 {
+    (210 806515533049393 1304969544928657) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_615 {
+    [] rdf:value 211; math:greaterThan 1 .
+    (211 1) math:difference 210 .
+    (498454011879264 806515533049393) math:sum 1304969544928657 .
+    (210 806515533049393 1304969544928657) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_616 {
+    (211 498454011879264 806515533049393) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_617 {
+    [] rdf:value 212; math:greaterThan 1 .
+    (212 1) math:difference 211 .
+    (308061521170129 498454011879264) math:sum 806515533049393 .
+    (211 498454011879264 806515533049393) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_618 {
+    (212 308061521170129 498454011879264) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_619 {
+    [] rdf:value 213; math:greaterThan 1 .
+    (213 1) math:difference 212 .
+    (190392490709135 308061521170129) math:sum 498454011879264 .
+    (212 308061521170129 498454011879264) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_620 {
+    (213 190392490709135 308061521170129) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_621 {
+    [] rdf:value 214; math:greaterThan 1 .
+    (214 1) math:difference 213 .
+    (117669030460994 190392490709135) math:sum 308061521170129 .
+    (213 190392490709135 308061521170129) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_622 {
+    (214 117669030460994 190392490709135) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_623 {
+    [] rdf:value 215; math:greaterThan 1 .
+    (215 1) math:difference 214 .
+    (72723460248141 117669030460994) math:sum 190392490709135 .
+    (214 117669030460994 190392490709135) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_624 {
+    (215 72723460248141 117669030460994) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_625 {
+    [] rdf:value 216; math:greaterThan 1 .
+    (216 1) math:difference 215 .
+    (44945570212853 72723460248141) math:sum 117669030460994 .
+    (215 72723460248141 117669030460994) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_626 {
+    (216 44945570212853 72723460248141) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_627 {
+    [] rdf:value 217; math:greaterThan 1 .
+    (217 1) math:difference 216 .
+    (27777890035288 44945570212853) math:sum 72723460248141 .
+    (216 44945570212853 72723460248141) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_628 {
+    (217 27777890035288 44945570212853) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_629 {
+    [] rdf:value 218; math:greaterThan 1 .
+    (218 1) math:difference 217 .
+    (17167680177565 27777890035288) math:sum 44945570212853 .
+    (217 27777890035288 44945570212853) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_630 {
+    (218 17167680177565 27777890035288) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_631 {
+    [] rdf:value 219; math:greaterThan 1 .
+    (219 1) math:difference 218 .
+    (10610209857723 17167680177565) math:sum 27777890035288 .
+    (218 17167680177565 27777890035288) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_632 {
+    (219 10610209857723 17167680177565) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_633 {
+    [] rdf:value 220; math:greaterThan 1 .
+    (220 1) math:difference 219 .
+    (6557470319842 10610209857723) math:sum 17167680177565 .
+    (219 10610209857723 17167680177565) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_634 {
+    (220 6557470319842 10610209857723) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_635 {
+    [] rdf:value 221; math:greaterThan 1 .
+    (221 1) math:difference 220 .
+    (4052739537881 6557470319842) math:sum 10610209857723 .
+    (220 6557470319842 10610209857723) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_636 {
+    (221 4052739537881 6557470319842) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_637 {
+    [] rdf:value 222; math:greaterThan 1 .
+    (222 1) math:difference 221 .
+    (2504730781961 4052739537881) math:sum 6557470319842 .
+    (221 4052739537881 6557470319842) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_638 {
+    (222 2504730781961 4052739537881) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_639 {
+    [] rdf:value 223; math:greaterThan 1 .
+    (223 1) math:difference 222 .
+    (1548008755920 2504730781961) math:sum 4052739537881 .
+    (222 2504730781961 4052739537881) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_640 {
+    (223 1548008755920 2504730781961) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_641 {
+    [] rdf:value 224; math:greaterThan 1 .
+    (224 1) math:difference 223 .
+    (956722026041 1548008755920) math:sum 2504730781961 .
+    (223 1548008755920 2504730781961) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_642 {
+    (224 956722026041 1548008755920) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_643 {
+    [] rdf:value 225; math:greaterThan 1 .
+    (225 1) math:difference 224 .
+    (591286729879 956722026041) math:sum 1548008755920 .
+    (224 956722026041 1548008755920) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_644 {
+    (225 591286729879 956722026041) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_645 {
+    [] rdf:value 226; math:greaterThan 1 .
+    (226 1) math:difference 225 .
+    (365435296162 591286729879) math:sum 956722026041 .
+    (225 591286729879 956722026041) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_646 {
+    (226 365435296162 591286729879) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_647 {
+    [] rdf:value 227; math:greaterThan 1 .
+    (227 1) math:difference 226 .
+    (225851433717 365435296162) math:sum 591286729879 .
+    (226 365435296162 591286729879) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_648 {
+    (227 225851433717 365435296162) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_649 {
+    [] rdf:value 228; math:greaterThan 1 .
+    (228 1) math:difference 227 .
+    (139583862445 225851433717) math:sum 365435296162 .
+    (227 225851433717 365435296162) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_650 {
+    (228 139583862445 225851433717) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_651 {
+    [] rdf:value 229; math:greaterThan 1 .
+    (229 1) math:difference 228 .
+    (86267571272 139583862445) math:sum 225851433717 .
+    (228 139583862445 225851433717) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_652 {
+    (229 86267571272 139583862445) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_653 {
+    [] rdf:value 230; math:greaterThan 1 .
+    (230 1) math:difference 229 .
+    (53316291173 86267571272) math:sum 139583862445 .
+    (229 86267571272 139583862445) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_654 {
+    (230 53316291173 86267571272) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_655 {
+    [] rdf:value 231; math:greaterThan 1 .
+    (231 1) math:difference 230 .
+    (32951280099 53316291173) math:sum 86267571272 .
+    (230 53316291173 86267571272) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_656 {
+    (231 32951280099 53316291173) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_657 {
+    [] rdf:value 232; math:greaterThan 1 .
+    (232 1) math:difference 231 .
+    (20365011074 32951280099) math:sum 53316291173 .
+    (231 32951280099 53316291173) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_658 {
+    (232 20365011074 32951280099) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_659 {
+    [] rdf:value 233; math:greaterThan 1 .
+    (233 1) math:difference 232 .
+    (12586269025 20365011074) math:sum 32951280099 .
+    (232 20365011074 32951280099) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_660 {
+    (233 12586269025 20365011074) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_661 {
+    [] rdf:value 234; math:greaterThan 1 .
+    (234 1) math:difference 233 .
+    (7778742049 12586269025) math:sum 20365011074 .
+    (233 12586269025 20365011074) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_662 {
+    (234 7778742049 12586269025) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_663 {
+    [] rdf:value 235; math:greaterThan 1 .
+    (235 1) math:difference 234 .
+    (4807526976 7778742049) math:sum 12586269025 .
+    (234 7778742049 12586269025) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_664 {
+    (235 4807526976 7778742049) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_665 {
+    [] rdf:value 236; math:greaterThan 1 .
+    (236 1) math:difference 235 .
+    (2971215073 4807526976) math:sum 7778742049 .
+    (235 4807526976 7778742049) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_666 {
+    (236 2971215073 4807526976) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_667 {
+    [] rdf:value 237; math:greaterThan 1 .
+    (237 1) math:difference 236 .
+    (1836311903 2971215073) math:sum 4807526976 .
+    (236 2971215073 4807526976) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_668 {
+    (237 1836311903 2971215073) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_669 {
+    [] rdf:value 238; math:greaterThan 1 .
+    (238 1) math:difference 237 .
+    (1134903170 1836311903) math:sum 2971215073 .
+    (237 1836311903 2971215073) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_670 {
+    (238 1134903170 1836311903) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_671 {
+    [] rdf:value 239; math:greaterThan 1 .
+    (239 1) math:difference 238 .
+    (701408733 1134903170) math:sum 1836311903 .
+    (238 1134903170 1836311903) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_672 {
+    (239 701408733 1134903170) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_673 {
+    [] rdf:value 240; math:greaterThan 1 .
+    (240 1) math:difference 239 .
+    (433494437 701408733) math:sum 1134903170 .
+    (239 701408733 1134903170) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_674 {
+    (240 433494437 701408733) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_675 {
+    [] rdf:value 241; math:greaterThan 1 .
+    (241 1) math:difference 240 .
+    (267914296 433494437) math:sum 701408733 .
+    (240 433494437 701408733) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_676 {
+    (241 267914296 433494437) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_677 {
+    [] rdf:value 242; math:greaterThan 1 .
+    (242 1) math:difference 241 .
+    (165580141 267914296) math:sum 433494437 .
+    (241 267914296 433494437) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_678 {
+    (242 165580141 267914296) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_679 {
+    [] rdf:value 243; math:greaterThan 1 .
+    (243 1) math:difference 242 .
+    (102334155 165580141) math:sum 267914296 .
+    (242 165580141 267914296) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_680 {
+    (243 102334155 165580141) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_681 {
+    [] rdf:value 244; math:greaterThan 1 .
+    (244 1) math:difference 243 .
+    (63245986 102334155) math:sum 165580141 .
+    (243 102334155 165580141) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_682 {
+    (244 63245986 102334155) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_683 {
+    [] rdf:value 245; math:greaterThan 1 .
+    (245 1) math:difference 244 .
+    (39088169 63245986) math:sum 102334155 .
+    (244 63245986 102334155) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_684 {
+    (245 39088169 63245986) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_685 {
+    [] rdf:value 246; math:greaterThan 1 .
+    (246 1) math:difference 245 .
+    (24157817 39088169) math:sum 63245986 .
+    (245 39088169 63245986) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_686 {
+    (246 24157817 39088169) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_687 {
+    [] rdf:value 247; math:greaterThan 1 .
+    (247 1) math:difference 246 .
+    (14930352 24157817) math:sum 39088169 .
+    (246 24157817 39088169) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_688 {
+    (247 14930352 24157817) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_689 {
+    [] rdf:value 248; math:greaterThan 1 .
+    (248 1) math:difference 247 .
+    (9227465 14930352) math:sum 24157817 .
+    (247 14930352 24157817) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_690 {
+    (248 9227465 14930352) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_691 {
+    [] rdf:value 249; math:greaterThan 1 .
+    (249 1) math:difference 248 .
+    (5702887 9227465) math:sum 14930352 .
+    (248 9227465 14930352) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_692 {
+    (249 5702887 9227465) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_693 {
+    [] rdf:value 250; math:greaterThan 1 .
+    (250 1) math:difference 249 .
+    (3524578 5702887) math:sum 9227465 .
+    (249 5702887 9227465) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_694 {
+    (250 3524578 5702887) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_695 {
+    [] rdf:value 251; math:greaterThan 1 .
+    (251 1) math:difference 250 .
+    (2178309 3524578) math:sum 5702887 .
+    (250 3524578 5702887) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_696 {
+    (251 2178309 3524578) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_697 {
+    [] rdf:value 252; math:greaterThan 1 .
+    (252 1) math:difference 251 .
+    (1346269 2178309) math:sum 3524578 .
+    (251 2178309 3524578) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_698 {
+    (252 1346269 2178309) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_699 {
+    [] rdf:value 253; math:greaterThan 1 .
+    (253 1) math:difference 252 .
+    (832040 1346269) math:sum 2178309 .
+    (252 1346269 2178309) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_700 {
+    (253 832040 1346269) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_701 {
+    [] rdf:value 254; math:greaterThan 1 .
+    (254 1) math:difference 253 .
+    (514229 832040) math:sum 1346269 .
+    (253 832040 1346269) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_702 {
+    (254 514229 832040) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_703 {
+    [] rdf:value 255; math:greaterThan 1 .
+    (255 1) math:difference 254 .
+    (317811 514229) math:sum 832040 .
+    (254 514229 832040) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_704 {
+    (255 317811 514229) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_705 {
+    [] rdf:value 256; math:greaterThan 1 .
+    (256 1) math:difference 255 .
+    (196418 317811) math:sum 514229 .
+    (255 317811 514229) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_706 {
+    (256 196418 317811) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_707 {
+    [] rdf:value 257; math:greaterThan 1 .
+    (257 1) math:difference 256 .
+    (121393 196418) math:sum 317811 .
+    (256 196418 317811) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_708 {
+    (257 121393 196418) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_709 {
+    [] rdf:value 258; math:greaterThan 1 .
+    (258 1) math:difference 257 .
+    (75025 121393) math:sum 196418 .
+    (257 121393 196418) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_710 {
+    (258 75025 121393) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_711 {
+    [] rdf:value 259; math:greaterThan 1 .
+    (259 1) math:difference 258 .
+    (46368 75025) math:sum 121393 .
+    (258 75025 121393) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_712 {
+    (259 46368 75025) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_713 {
+    [] rdf:value 260; math:greaterThan 1 .
+    (260 1) math:difference 259 .
+    (28657 46368) math:sum 75025 .
+    (259 46368 75025) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_714 {
+    (260 28657 46368) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_715 {
+    [] rdf:value 261; math:greaterThan 1 .
+    (261 1) math:difference 260 .
+    (17711 28657) math:sum 46368 .
+    (260 28657 46368) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_716 {
+    (261 17711 28657) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_717 {
+    [] rdf:value 262; math:greaterThan 1 .
+    (262 1) math:difference 261 .
+    (10946 17711) math:sum 28657 .
+    (261 17711 28657) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_718 {
+    (262 10946 17711) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_719 {
+    [] rdf:value 263; math:greaterThan 1 .
+    (263 1) math:difference 262 .
+    (6765 10946) math:sum 17711 .
+    (262 10946 17711) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_720 {
+    (263 6765 10946) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_721 {
+    [] rdf:value 264; math:greaterThan 1 .
+    (264 1) math:difference 263 .
+    (4181 6765) math:sum 10946 .
+    (263 6765 10946) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_722 {
+    (264 4181 6765) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_723 {
+    [] rdf:value 265; math:greaterThan 1 .
+    (265 1) math:difference 264 .
+    (2584 4181) math:sum 6765 .
+    (264 4181 6765) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_724 {
+    (265 2584 4181) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_725 {
+    [] rdf:value 266; math:greaterThan 1 .
+    (266 1) math:difference 265 .
+    (1597 2584) math:sum 4181 .
+    (265 2584 4181) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_726 {
+    (266 1597 2584) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_727 {
+    [] rdf:value 267; math:greaterThan 1 .
+    (267 1) math:difference 266 .
+    (987 1597) math:sum 2584 .
+    (266 1597 2584) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_728 {
+    (267 987 1597) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_729 {
+    [] rdf:value 268; math:greaterThan 1 .
+    (268 1) math:difference 267 .
+    (610 987) math:sum 1597 .
+    (267 987 1597) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_730 {
+    (268 610 987) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_731 {
+    [] rdf:value 269; math:greaterThan 1 .
+    (269 1) math:difference 268 .
+    (377 610) math:sum 987 .
+    (268 610 987) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_732 {
+    (269 377 610) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_733 {
+    [] rdf:value 270; math:greaterThan 1 .
+    (270 1) math:difference 269 .
+    (233 377) math:sum 610 .
+    (269 377 610) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_734 {
+    (270 233 377) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_735 {
+    [] rdf:value 271; math:greaterThan 1 .
+    (271 1) math:difference 270 .
+    (144 233) math:sum 377 .
+    (270 233 377) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_736 {
+    (271 144 233) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_737 {
+    [] rdf:value 272; math:greaterThan 1 .
+    (272 1) math:difference 271 .
+    (89 144) math:sum 233 .
+    (271 144 233) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_738 {
+    (272 89 144) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_739 {
+    [] rdf:value 273; math:greaterThan 1 .
+    (273 1) math:difference 272 .
+    (55 89) math:sum 144 .
+    (272 89 144) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_740 {
+    (273 55 89) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_741 {
+    [] rdf:value 274; math:greaterThan 1 .
+    (274 1) math:difference 273 .
+    (34 55) math:sum 89 .
+    (273 55 89) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_742 {
+    (274 34 55) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_743 {
+    [] rdf:value 275; math:greaterThan 1 .
+    (275 1) math:difference 274 .
+    (21 34) math:sum 55 .
+    (274 34 55) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_744 {
+    (275 21 34) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_745 {
+    [] rdf:value 276; math:greaterThan 1 .
+    (276 1) math:difference 275 .
+    (13 21) math:sum 34 .
+    (275 21 34) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_746 {
+    (276 13 21) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_747 {
+    [] rdf:value 277; math:greaterThan 1 .
+    (277 1) math:difference 276 .
+    (8 13) math:sum 21 .
+    (276 13 21) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_748 {
+    (277 8 13) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_749 {
+    [] rdf:value 278; math:greaterThan 1 .
+    (278 1) math:difference 277 .
+    (5 8) math:sum 13 .
+    (277 8 13) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_750 {
+    (278 5 8) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_751 {
+    [] rdf:value 279; math:greaterThan 1 .
+    (279 1) math:difference 278 .
+    (3 5) math:sum 8 .
+    (278 5 8) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_752 {
+    (279 3 5) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_753 {
+    [] rdf:value 280; math:greaterThan 1 .
+    (280 1) math:difference 279 .
+    (2 3) math:sum 5 .
+    (279 3 5) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_754 {
+    (280 2 3) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_755 {
+    [] rdf:value 281; math:greaterThan 1 .
+    (281 1) math:difference 280 .
+    (1 2) math:sum 3 .
+    (280 2 3) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_756 {
+    (281 1 2) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_757 {
+    [] rdf:value 282; math:greaterThan 1 .
+    (282 1) math:difference 281 .
+    (1 1) math:sum 2 .
+    (281 1 2) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_758 {
+    (282 1 1) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_759 {
+    [] rdf:value 283; math:greaterThan 1 .
+    (283 1) math:difference 282 .
+    (0 1) math:sum 1 .
+    (282 1 1) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_760 {
+    (283 0 1) :fib 62232491515607091882574410635924603070626544377175485625797.
+}
+
+_:gn_761 {
+    [] rdf:value 283; :fibonacci 62232491515607091882574410635924603070626544377175485625797.
+}

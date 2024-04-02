@@ -1,0 +1,1040 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/turing.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+
+(1 0 1 0 0 1) :compute (1 0 1 0 1 0 "#").
+(1 0 1 1 1 1) :compute (1 1 0 0 0 0 "#").
+(1 1 1 1 1 1) :compute (1 0 0 0 0 0 0 "#").
+() :compute (1 "#").
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:gn_6.
+_:gn_7 lingua:explanation _:gn_8.
+_:gn_9 lingua:explanation _:gn_10.
+_:gn_11 lingua:explanation _:gn_12.
+_:gn_13 lingua:explanation _:gn_14.
+_:gn_15 lingua:explanation _:gn_16.
+_:gn_17 lingua:explanation _:gn_18.
+_:gn_19 lingua:explanation _:gn_20.
+_:gn_21 lingua:explanation _:gn_22.
+_:gn_23 lingua:explanation _:gn_24.
+_:gn_25 lingua:explanation _:gn_26.
+_:gn_27 lingua:explanation _:gn_28.
+_:gn_28 lingua:explanation _:gn_29.
+_:gn_30 lingua:explanation _:gn_31.
+_:gn_31 lingua:explanation _:gn_32.
+_:gn_33 lingua:explanation _:gn_34.
+_:gn_34 lingua:explanation _:gn_35.
+_:gn_36 lingua:explanation _:gn_37.
+_:gn_37 lingua:explanation _:gn_38.
+_:gn_39 lingua:explanation _:gn_40.
+_:gn_40 lingua:explanation _:gn_41.
+_:gn_42 lingua:explanation _:gn_43.
+_:gn_43 lingua:explanation _:gn_44.
+_:gn_45 lingua:explanation _:gn_46.
+_:gn_46 lingua:explanation _:gn_47.
+_:gn_48 lingua:explanation _:gn_49.
+_:gn_49 lingua:explanation _:gn_50.
+_:gn_51 lingua:explanation _:gn_52.
+_:gn_53 lingua:explanation _:gn_54.
+_:gn_55 lingua:explanation _:gn_56.
+_:gn_57 lingua:explanation _:gn_58.
+_:gn_59 lingua:explanation _:gn_60.
+_:gn_61 lingua:explanation _:gn_62.
+_:gn_63 lingua:explanation _:gn_64.
+_:gn_65 lingua:explanation _:gn_66.
+_:gn_67 lingua:explanation _:gn_68.
+_:gn_69 lingua:explanation _:gn_70.
+_:gn_71 lingua:explanation _:gn_72.
+_:gn_73 lingua:explanation _:gn_74.
+_:gn_75 lingua:explanation _:gn_76.
+_:gn_77 lingua:explanation _:gn_78.
+_:gn_79 lingua:explanation _:gn_80.
+_:gn_80 lingua:explanation _:gn_81.
+_:gn_82 lingua:explanation _:gn_83.
+_:gn_83 lingua:explanation _:gn_84.
+_:gn_85 lingua:explanation _:gn_86.
+_:gn_86 lingua:explanation _:gn_87.
+_:gn_88 lingua:explanation _:gn_89.
+_:gn_89 lingua:explanation _:gn_90.
+_:gn_91 lingua:explanation _:gn_92.
+_:gn_92 lingua:explanation _:gn_93.
+_:gn_94 lingua:explanation _:gn_95.
+_:gn_95 lingua:explanation _:gn_96.
+_:gn_97 lingua:explanation _:gn_98.
+_:gn_98 lingua:explanation _:gn_99.
+_:gn_100 lingua:explanation _:gn_101.
+_:gn_101 lingua:explanation _:gn_102.
+_:gn_103 lingua:explanation _:gn_104.
+_:gn_104 lingua:explanation _:gn_105.
+_:gn_106 lingua:explanation _:gn_107.
+_:gn_107 lingua:explanation _:gn_108.
+_:gn_109 lingua:explanation _:gn_110.
+_:gn_110 lingua:explanation _:gn_111.
+_:gn_112 lingua:explanation _:gn_113.
+_:gn_114 lingua:explanation _:gn_115.
+_:gn_116 lingua:explanation _:gn_117.
+_:gn_118 lingua:explanation _:gn_119.
+_:gn_120 lingua:explanation _:gn_121.
+_:gn_122 lingua:explanation _:gn_123.
+_:gn_124 lingua:explanation _:gn_125.
+_:gn_126 lingua:explanation _:gn_127.
+_:gn_128 lingua:explanation _:gn_129.
+_:gn_130 lingua:explanation _:gn_131.
+_:gn_132 lingua:explanation _:gn_133.
+_:gn_134 lingua:explanation _:gn_135.
+_:gn_136 lingua:explanation _:gn_137.
+_:gn_138 lingua:explanation _:gn_139.
+_:gn_140 lingua:explanation _:gn_141.
+_:gn_142 lingua:explanation _:gn_143.
+_:gn_144 lingua:explanation _:gn_145.
+_:gn_145 lingua:explanation _:gn_146.
+_:gn_147 lingua:explanation _:gn_148.
+_:gn_148 lingua:explanation _:gn_149.
+_:gn_150 lingua:explanation _:gn_151.
+_:gn_151 lingua:explanation _:gn_152.
+_:gn_153 lingua:explanation _:gn_154.
+_:gn_154 lingua:explanation _:gn_155.
+_:gn_156 lingua:explanation _:gn_157.
+_:gn_157 lingua:explanation _:gn_158.
+_:gn_159 lingua:explanation _:gn_160.
+_:gn_160 lingua:explanation _:gn_161.
+_:gn_162 lingua:explanation _:gn_163.
+_:gn_163 lingua:explanation _:gn_164.
+_:gn_165 lingua:explanation _:gn_166.
+_:gn_166 lingua:explanation _:gn_167.
+_:gn_168 lingua:explanation _:gn_169.
+_:gn_169 lingua:explanation _:gn_170.
+_:gn_171 lingua:explanation _:gn_172.
+_:gn_172 lingua:explanation _:gn_173.
+_:gn_174 lingua:explanation _:gn_175.
+_:gn_175 lingua:explanation _:gn_176.
+_:gn_177 lingua:explanation _:gn_178.
+_:gn_178 lingua:explanation _:gn_179.
+_:gn_180 lingua:explanation _:gn_181.
+_:gn_181 lingua:explanation _:gn_182.
+_:gn_183 lingua:explanation _:gn_184.
+_:gn_185 lingua:explanation _:gn_186.
+_:gn_187 lingua:explanation _:gn_188.
+_:gn_189 lingua:explanation _:gn_190.
+_:gn_191 lingua:explanation _:gn_192.
+_:gn_192 lingua:explanation _:gn_193.
+_:gn_194 lingua:explanation _:gn_195.
+_:gn_196 lingua:explanation _:gn_197.
+
+_:gn_1 {
+    (0 1 0 0 1) list:firstRest (0 (1 0 0 1)).
+    (1) list:firstRest (1 ()).
+}
+
+_:gn_2 {
+    (:right () 1 (0 1 0 0 1) (1) 0 (1 0 0 1)) :move true.
+}
+
+_:gn_3 {
+    (1 0 0 1) list:firstRest (1 (0 0 1)).
+    (0 1) list:firstRest (0 (1)).
+}
+
+_:gn_4 {
+    (:right (1) 0 (1 0 0 1) (0 1) 1 (0 0 1)) :move true.
+}
+
+_:gn_5 {
+    (0 0 1) list:firstRest (0 (0 1)).
+    (1 0 1) list:firstRest (1 (0 1)).
+}
+
+_:gn_6 {
+    (:right (0 1) 1 (0 0 1) (1 0 1) 0 (0 1)) :move true.
+}
+
+_:gn_7 {
+    (0 1) list:firstRest (0 (1)).
+    (0 1 0 1) list:firstRest (0 (1 0 1)).
+}
+
+_:gn_8 {
+    (:right (1 0 1) 0 (0 1) (0 1 0 1) 0 (1)) :move true.
+}
+
+_:gn_9 {
+    (1) list:firstRest (1 ()).
+    (0 0 1 0 1) list:firstRest (0 (0 1 0 1)).
+}
+
+_:gn_10 {
+    (:right (0 1 0 1) 0 (1) (0 0 1 0 1) 1 ()) :move true.
+}
+
+_:gn_11 {
+    (1 0 0 1 0 1) list:firstRest (1 (0 0 1 0 1)).
+}
+
+_:gn_12 {
+    (:right (0 0 1 0 1) 1 () (1 0 0 1 0 1) "#" ()) :move true.
+}
+
+_:gn_13 {
+    (1 0 0 1 0 1) list:firstRest (1 (0 0 1 0 1)).
+    ("#") list:firstRest ("#" ()).
+}
+
+_:gn_14 {
+    (:left (1 0 0 1 0 1) "#" () (0 0 1 0 1) 1 ("#")) :move true.
+}
+
+_:gn_15 {
+    (0 0 1 0 1) list:firstRest (0 (0 1 0 1)).
+    (0 "#") list:firstRest (0 ("#")).
+}
+
+_:gn_16 {
+    (:left (0 0 1 0 1) 0 ("#") (0 1 0 1) 0 (0 "#")) :move true.
+}
+
+_:gn_17 {
+    (1) list:firstRest (1 ()).
+    () :reverse ().
+    (() (1)) list:append (1).
+}
+
+_:gn_18 {
+    (1) :reverse (1).
+}
+
+_:gn_19 {
+    (0 1) list:firstRest (0 (1)).
+    (1) :reverse (1).
+    ((1) (0)) list:append (1 0).
+}
+
+_:gn_20 {
+    (0 1) :reverse (1 0).
+}
+
+_:gn_21 {
+    (1 0 1) list:firstRest (1 (0 1)).
+    (0 1) :reverse (1 0).
+    ((1 0) (1)) list:append (1 0 1).
+}
+
+_:gn_22 {
+    (1 0 1) :reverse (1 0 1).
+}
+
+_:gn_23 {
+    (0 1 0 1) list:firstRest (0 (1 0 1)).
+    (1 0 1) :reverse (1 0 1).
+    ((1 0 1) (0)) list:append (1 0 1 0).
+}
+
+_:gn_24 {
+    (0 1 0 1) :reverse (1 0 1 0).
+}
+
+_:gn_25 {
+    (0 1 0 1) :reverse (1 0 1 0).
+    (1 0 "#") list:firstRest (1 (0 "#")).
+    ((1 0 1 0) (1 0 "#")) list:append (1 0 1 0 1 0 "#").
+}
+
+_:gn_26 {
+    (:halt (0 1 0 1) 1 (0 "#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_27 {
+    (1 0 1 :stop) :tape :halt.
+    (:stop (0 1 0 1) 1 (0 "#") (0 1 0 1) 1 (0 "#")) :move true.
+    (:halt (0 1 0 1) 1 (0 "#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_28 {
+    (1 (0 1 0 1) 0 (0 "#")) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_29 {
+    (1 (0 1 0 1) 0 (0 "#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_30 {
+    (1 1 0 :left) :tape 1 .
+    (:left (0 0 1 0 1) 0 ("#") (0 1 0 1) 0 (0 "#")) :move true.
+    (1 (0 1 0 1) 0 (0 "#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_31 {
+    (1 (0 0 1 0 1) 1 ("#")) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_32 {
+    (1 (0 0 1 0 1) 1 ("#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_33 {
+    (0 "#" "#" :left) :tape 1 .
+    (:left (1 0 0 1 0 1) "#" () (0 0 1 0 1) 1 ("#")) :move true.
+    (1 (0 0 1 0 1) 1 ("#")) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_34 {
+    (0 (1 0 0 1 0 1) "#" ()) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_35 {
+    (0 (1 0 0 1 0 1) "#" ()) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_36 {
+    (0 1 1 :right) :tape 0 .
+    (:right (0 0 1 0 1) 1 () (1 0 0 1 0 1) "#" ()) :move true.
+    (0 (1 0 0 1 0 1) "#" ()) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_37 {
+    (0 (0 0 1 0 1) 1 ()) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_38 {
+    (0 (0 0 1 0 1) 1 ()) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_39 {
+    (0 0 0 :right) :tape 0 .
+    (:right (0 1 0 1) 0 (1) (0 0 1 0 1) 1 ()) :move true.
+    (0 (0 0 1 0 1) 1 ()) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_40 {
+    (0 (0 1 0 1) 0 (1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_41 {
+    (0 (0 1 0 1) 0 (1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_42 {
+    (0 0 0 :right) :tape 0 .
+    (:right (1 0 1) 0 (0 1) (0 1 0 1) 0 (1)) :move true.
+    (0 (0 1 0 1) 0 (1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_43 {
+    (0 (1 0 1) 0 (0 1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_44 {
+    (0 (1 0 1) 0 (0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_45 {
+    (0 1 1 :right) :tape 0 .
+    (:right (0 1) 1 (0 0 1) (1 0 1) 0 (0 1)) :move true.
+    (0 (1 0 1) 0 (0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_46 {
+    (0 (0 1) 1 (0 0 1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_47 {
+    (0 (0 1) 1 (0 0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_48 {
+    (0 0 0 :right) :tape 0 .
+    (:right (1) 0 (1 0 0 1) (0 1) 1 (0 0 1)) :move true.
+    (0 (0 1) 1 (0 0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_49 {
+    (0 (1) 0 (1 0 0 1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_50 {
+    (0 (1) 0 (1 0 0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_51 {
+    (0 1 1 :right) :tape 0 .
+    (:right () 1 (0 1 0 0 1) (1) 0 (1 0 0 1)) :move true.
+    (0 (1) 0 (1 0 0 1)) :continue (1 0 1 0 1 0 "#").
+}
+
+_:gn_52 {
+    (0 () 1 (0 1 0 0 1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_53 {
+    (1 0 1 0 0 1) list:firstRest (1 (0 1 0 0 1)).
+    :add1 :start 0 .
+    (0 () 1 (0 1 0 0 1)) :find (1 0 1 0 1 0 "#").
+}
+
+_:gn_54 {
+    (1 0 1 0 0 1) :compute (1 0 1 0 1 0 "#").
+}
+
+_:gn_55 {
+    (0 1 1 1 1) list:firstRest (0 (1 1 1 1)).
+    (1) list:firstRest (1 ()).
+}
+
+_:gn_56 {
+    (:right () 1 (0 1 1 1 1) (1) 0 (1 1 1 1)) :move true.
+}
+
+_:gn_57 {
+    (1 1 1 1) list:firstRest (1 (1 1 1)).
+    (0 1) list:firstRest (0 (1)).
+}
+
+_:gn_58 {
+    (:right (1) 0 (1 1 1 1) (0 1) 1 (1 1 1)) :move true.
+}
+
+_:gn_59 {
+    (1 1 1) list:firstRest (1 (1 1)).
+    (1 0 1) list:firstRest (1 (0 1)).
+}
+
+_:gn_60 {
+    (:right (0 1) 1 (1 1 1) (1 0 1) 1 (1 1)) :move true.
+}
+
+_:gn_61 {
+    (1 1) list:firstRest (1 (1)).
+    (1 1 0 1) list:firstRest (1 (1 0 1)).
+}
+
+_:gn_62 {
+    (:right (1 0 1) 1 (1 1) (1 1 0 1) 1 (1)) :move true.
+}
+
+_:gn_63 {
+    (1) list:firstRest (1 ()).
+    (1 1 1 0 1) list:firstRest (1 (1 1 0 1)).
+}
+
+_:gn_64 {
+    (:right (1 1 0 1) 1 (1) (1 1 1 0 1) 1 ()) :move true.
+}
+
+_:gn_65 {
+    (1 1 1 1 0 1) list:firstRest (1 (1 1 1 0 1)).
+}
+
+_:gn_66 {
+    (:right (1 1 1 0 1) 1 () (1 1 1 1 0 1) "#" ()) :move true.
+}
+
+_:gn_67 {
+    (1 1 1 1 0 1) list:firstRest (1 (1 1 1 0 1)).
+    ("#") list:firstRest ("#" ()).
+}
+
+_:gn_68 {
+    (:left (1 1 1 1 0 1) "#" () (1 1 1 0 1) 1 ("#")) :move true.
+}
+
+_:gn_69 {
+    (1 1 1 0 1) list:firstRest (1 (1 1 0 1)).
+    (0 "#") list:firstRest (0 ("#")).
+}
+
+_:gn_70 {
+    (:left (1 1 1 0 1) 0 ("#") (1 1 0 1) 1 (0 "#")) :move true.
+}
+
+_:gn_71 {
+    (1 1 0 1) list:firstRest (1 (1 0 1)).
+    (0 0 "#") list:firstRest (0 (0 "#")).
+}
+
+_:gn_72 {
+    (:left (1 1 0 1) 0 (0 "#") (1 0 1) 1 (0 0 "#")) :move true.
+}
+
+_:gn_73 {
+    (1 0 1) list:firstRest (1 (0 1)).
+    (0 0 0 "#") list:firstRest (0 (0 0 "#")).
+}
+
+_:gn_74 {
+    (:left (1 0 1) 0 (0 0 "#") (0 1) 1 (0 0 0 "#")) :move true.
+}
+
+_:gn_75 {
+    (0 1) list:firstRest (0 (1)).
+    (0 0 0 0 "#") list:firstRest (0 (0 0 0 "#")).
+}
+
+_:gn_76 {
+    (:left (0 1) 0 (0 0 0 "#") (1) 0 (0 0 0 0 "#")) :move true.
+}
+
+_:gn_77 {
+    (1) :reverse (1).
+    (1 0 0 0 0 "#") list:firstRest (1 (0 0 0 0 "#")).
+    ((1) (1 0 0 0 0 "#")) list:append (1 1 0 0 0 0 "#").
+}
+
+_:gn_78 {
+    (:halt (1) 1 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_79 {
+    (1 0 1 :stop) :tape :halt.
+    (:stop (1) 1 (0 0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
+    (:halt (1) 1 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_80 {
+    (1 (1) 0 (0 0 0 0 "#")) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_81 {
+    (1 (1) 0 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_82 {
+    (1 1 0 :left) :tape 1 .
+    (:left (0 1) 0 (0 0 0 "#") (1) 0 (0 0 0 0 "#")) :move true.
+    (1 (1) 0 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_83 {
+    (1 (0 1) 1 (0 0 0 "#")) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_84 {
+    (1 (0 1) 1 (0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_85 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 0 1) 0 (0 0 "#") (0 1) 1 (0 0 0 "#")) :move true.
+    (1 (0 1) 1 (0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_86 {
+    (1 (1 0 1) 1 (0 0 "#")) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_87 {
+    (1 (1 0 1) 1 (0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_88 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1 0 1) 0 (0 "#") (1 0 1) 1 (0 0 "#")) :move true.
+    (1 (1 0 1) 1 (0 0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_89 {
+    (1 (1 1 0 1) 1 (0 "#")) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_90 {
+    (1 (1 1 0 1) 1 (0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_91 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1 1 0 1) 0 ("#") (1 1 0 1) 1 (0 "#")) :move true.
+    (1 (1 1 0 1) 1 (0 "#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_92 {
+    (1 (1 1 1 0 1) 1 ("#")) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_93 {
+    (1 (1 1 1 0 1) 1 ("#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_94 {
+    (0 "#" "#" :left) :tape 1 .
+    (:left (1 1 1 1 0 1) "#" () (1 1 1 0 1) 1 ("#")) :move true.
+    (1 (1 1 1 0 1) 1 ("#")) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_95 {
+    (0 (1 1 1 1 0 1) "#" ()) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_96 {
+    (0 (1 1 1 1 0 1) "#" ()) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_97 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1 1 0 1) 1 () (1 1 1 1 0 1) "#" ()) :move true.
+    (0 (1 1 1 1 0 1) "#" ()) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_98 {
+    (0 (1 1 1 0 1) 1 ()) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_99 {
+    (0 (1 1 1 0 1) 1 ()) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_100 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1 0 1) 1 (1) (1 1 1 0 1) 1 ()) :move true.
+    (0 (1 1 1 0 1) 1 ()) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_101 {
+    (0 (1 1 0 1) 1 (1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_102 {
+    (0 (1 1 0 1) 1 (1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_103 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 0 1) 1 (1 1) (1 1 0 1) 1 (1)) :move true.
+    (0 (1 1 0 1) 1 (1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_104 {
+    (0 (1 0 1) 1 (1 1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_105 {
+    (0 (1 0 1) 1 (1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_106 {
+    (0 1 1 :right) :tape 0 .
+    (:right (0 1) 1 (1 1 1) (1 0 1) 1 (1 1)) :move true.
+    (0 (1 0 1) 1 (1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_107 {
+    (0 (0 1) 1 (1 1 1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_108 {
+    (0 (0 1) 1 (1 1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_109 {
+    (0 0 0 :right) :tape 0 .
+    (:right (1) 0 (1 1 1 1) (0 1) 1 (1 1 1)) :move true.
+    (0 (0 1) 1 (1 1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_110 {
+    (0 (1) 0 (1 1 1 1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_111 {
+    (0 (1) 0 (1 1 1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_112 {
+    (0 1 1 :right) :tape 0 .
+    (:right () 1 (0 1 1 1 1) (1) 0 (1 1 1 1)) :move true.
+    (0 (1) 0 (1 1 1 1)) :continue (1 1 0 0 0 0 "#").
+}
+
+_:gn_113 {
+    (0 () 1 (0 1 1 1 1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_114 {
+    (1 0 1 1 1 1) list:firstRest (1 (0 1 1 1 1)).
+    :add1 :start 0 .
+    (0 () 1 (0 1 1 1 1)) :find (1 1 0 0 0 0 "#").
+}
+
+_:gn_115 {
+    (1 0 1 1 1 1) :compute (1 1 0 0 0 0 "#").
+}
+
+_:gn_116 {
+    (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
+    (1) list:firstRest (1 ()).
+}
+
+_:gn_117 {
+    (:right () 1 (1 1 1 1 1) (1) 1 (1 1 1 1)) :move true.
+}
+
+_:gn_118 {
+    (1 1 1 1) list:firstRest (1 (1 1 1)).
+    (1 1) list:firstRest (1 (1)).
+}
+
+_:gn_119 {
+    (:right (1) 1 (1 1 1 1) (1 1) 1 (1 1 1)) :move true.
+}
+
+_:gn_120 {
+    (1 1 1) list:firstRest (1 (1 1)).
+    (1 1 1) list:firstRest (1 (1 1)).
+}
+
+_:gn_121 {
+    (:right (1 1) 1 (1 1 1) (1 1 1) 1 (1 1)) :move true.
+}
+
+_:gn_122 {
+    (1 1) list:firstRest (1 (1)).
+    (1 1 1 1) list:firstRest (1 (1 1 1)).
+}
+
+_:gn_123 {
+    (:right (1 1 1) 1 (1 1) (1 1 1 1) 1 (1)) :move true.
+}
+
+_:gn_124 {
+    (1) list:firstRest (1 ()).
+    (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
+}
+
+_:gn_125 {
+    (:right (1 1 1 1) 1 (1) (1 1 1 1 1) 1 ()) :move true.
+}
+
+_:gn_126 {
+    (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
+}
+
+_:gn_127 {
+    (:right (1 1 1 1 1) 1 () (1 1 1 1 1 1) "#" ()) :move true.
+}
+
+_:gn_128 {
+    (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
+    ("#") list:firstRest ("#" ()).
+}
+
+_:gn_129 {
+    (:left (1 1 1 1 1 1) "#" () (1 1 1 1 1) 1 ("#")) :move true.
+}
+
+_:gn_130 {
+    (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
+    (0 "#") list:firstRest (0 ("#")).
+}
+
+_:gn_131 {
+    (:left (1 1 1 1 1) 0 ("#") (1 1 1 1) 1 (0 "#")) :move true.
+}
+
+_:gn_132 {
+    (1 1 1 1) list:firstRest (1 (1 1 1)).
+    (0 0 "#") list:firstRest (0 (0 "#")).
+}
+
+_:gn_133 {
+    (:left (1 1 1 1) 0 (0 "#") (1 1 1) 1 (0 0 "#")) :move true.
+}
+
+_:gn_134 {
+    (1 1 1) list:firstRest (1 (1 1)).
+    (0 0 0 "#") list:firstRest (0 (0 0 "#")).
+}
+
+_:gn_135 {
+    (:left (1 1 1) 0 (0 0 "#") (1 1) 1 (0 0 0 "#")) :move true.
+}
+
+_:gn_136 {
+    (1 1) list:firstRest (1 (1)).
+    (0 0 0 0 "#") list:firstRest (0 (0 0 0 "#")).
+}
+
+_:gn_137 {
+    (:left (1 1) 0 (0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
+}
+
+_:gn_138 {
+    (1) list:firstRest (1 ()).
+    (0 0 0 0 0 "#") list:firstRest (0 (0 0 0 0 "#")).
+}
+
+_:gn_139 {
+    (:left (1) 0 (0 0 0 0 "#") () 1 (0 0 0 0 0 "#")) :move true.
+}
+
+_:gn_140 {
+    (0 0 0 0 0 0 "#") list:firstRest (0 (0 0 0 0 0 "#")).
+}
+
+_:gn_141 {
+    (:left () 0 (0 0 0 0 0 "#") () "#" (0 0 0 0 0 0 "#")) :move true.
+}
+
+_:gn_142 {
+    () :reverse ().
+    (1 0 0 0 0 0 0 "#") list:firstRest (1 (0 0 0 0 0 0 "#")).
+    (() (1 0 0 0 0 0 0 "#")) list:append (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_143 {
+    (:halt () 1 (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_144 {
+    (1 "#" 1 :stop) :tape :halt.
+    (:stop () 1 (0 0 0 0 0 0 "#") () 1 (0 0 0 0 0 0 "#")) :move true.
+    (:halt () 1 (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_145 {
+    (1 () "#" (0 0 0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_146 {
+    (1 () "#" (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_147 {
+    (1 1 0 :left) :tape 1 .
+    (:left () 0 (0 0 0 0 0 "#") () "#" (0 0 0 0 0 0 "#")) :move true.
+    (1 () "#" (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_148 {
+    (1 () 1 (0 0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_149 {
+    (1 () 1 (0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_150 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1) 0 (0 0 0 0 "#") () 1 (0 0 0 0 0 "#")) :move true.
+    (1 () 1 (0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_151 {
+    (1 (1) 1 (0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_152 {
+    (1 (1) 1 (0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_153 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1) 0 (0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
+    (1 (1) 1 (0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_154 {
+    (1 (1 1) 1 (0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_155 {
+    (1 (1 1) 1 (0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_156 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1 1) 0 (0 0 "#") (1 1) 1 (0 0 0 "#")) :move true.
+    (1 (1 1) 1 (0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_157 {
+    (1 (1 1 1) 1 (0 0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_158 {
+    (1 (1 1 1) 1 (0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_159 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1 1 1) 0 (0 "#") (1 1 1) 1 (0 0 "#")) :move true.
+    (1 (1 1 1) 1 (0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_160 {
+    (1 (1 1 1 1) 1 (0 "#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_161 {
+    (1 (1 1 1 1) 1 (0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_162 {
+    (1 1 0 :left) :tape 1 .
+    (:left (1 1 1 1 1) 0 ("#") (1 1 1 1) 1 (0 "#")) :move true.
+    (1 (1 1 1 1) 1 (0 "#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_163 {
+    (1 (1 1 1 1 1) 1 ("#")) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_164 {
+    (1 (1 1 1 1 1) 1 ("#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_165 {
+    (0 "#" "#" :left) :tape 1 .
+    (:left (1 1 1 1 1 1) "#" () (1 1 1 1 1) 1 ("#")) :move true.
+    (1 (1 1 1 1 1) 1 ("#")) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_166 {
+    (0 (1 1 1 1 1 1) "#" ()) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_167 {
+    (0 (1 1 1 1 1 1) "#" ()) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_168 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1 1 1 1) 1 () (1 1 1 1 1 1) "#" ()) :move true.
+    (0 (1 1 1 1 1 1) "#" ()) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_169 {
+    (0 (1 1 1 1 1) 1 ()) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_170 {
+    (0 (1 1 1 1 1) 1 ()) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_171 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1 1 1) 1 (1) (1 1 1 1 1) 1 ()) :move true.
+    (0 (1 1 1 1 1) 1 ()) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_172 {
+    (0 (1 1 1 1) 1 (1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_173 {
+    (0 (1 1 1 1) 1 (1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_174 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1 1) 1 (1 1) (1 1 1 1) 1 (1)) :move true.
+    (0 (1 1 1 1) 1 (1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_175 {
+    (0 (1 1 1) 1 (1 1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_176 {
+    (0 (1 1 1) 1 (1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_177 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1 1) 1 (1 1 1) (1 1 1) 1 (1 1)) :move true.
+    (0 (1 1 1) 1 (1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_178 {
+    (0 (1 1) 1 (1 1 1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_179 {
+    (0 (1 1) 1 (1 1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_180 {
+    (0 1 1 :right) :tape 0 .
+    (:right (1) 1 (1 1 1 1) (1 1) 1 (1 1 1)) :move true.
+    (0 (1 1) 1 (1 1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_181 {
+    (0 (1) 1 (1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_182 {
+    (0 (1) 1 (1 1 1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_183 {
+    (0 1 1 :right) :tape 0 .
+    (:right () 1 (1 1 1 1 1) (1) 1 (1 1 1 1)) :move true.
+    (0 (1) 1 (1 1 1 1)) :continue (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_184 {
+    (0 () 1 (1 1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_185 {
+    (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
+    :add1 :start 0 .
+    (0 () 1 (1 1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_186 {
+    (1 1 1 1 1 1) :compute (1 0 0 0 0 0 0 "#").
+}
+
+_:gn_187 {
+    ("#") list:firstRest ("#" ()).
+}
+
+_:gn_188 {
+    (:left () "#" () () "#" ("#")) :move true.
+}
+
+_:gn_189 {
+    () :reverse ().
+    (1 "#") list:firstRest (1 ("#")).
+    (() (1 "#")) list:append (1 "#").
+}
+
+_:gn_190 {
+    (:halt () 1 ("#")) :continue (1 "#").
+}
+
+_:gn_191 {
+    (1 "#" 1 :stop) :tape :halt.
+    (:stop () 1 ("#") () 1 ("#")) :move true.
+    (:halt () 1 ("#")) :continue (1 "#").
+}
+
+_:gn_192 {
+    (1 () "#" ("#")) :find (1 "#").
+}
+
+_:gn_193 {
+    (1 () "#" ("#")) :continue (1 "#").
+}
+
+_:gn_194 {
+    (0 "#" "#" :left) :tape 1 .
+    (:left () "#" () () "#" ("#")) :move true.
+    (1 () "#" ("#")) :continue (1 "#").
+}
+
+_:gn_195 {
+    (0 () "#" ()) :find (1 "#").
+}
+
+_:gn_196 {
+    :add1 :start 0 .
+    (0 () "#" ()) :find (1 "#").
+}
+
+_:gn_197 {
+    () :compute (1 "#").
+}

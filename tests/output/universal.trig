@@ -1,0 +1,27 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/universal.trig#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix skolem: <http://eyereasoner.github.io/.well-known/genid/8b98b360-9a70-4845-b52c-c675af60ad01#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+
+:pat a rdfs:Resource.
+:bob :loves skolem:t_0.
+skolem:t_0 :is :lonely.
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_1 lingua:explanation _:gn_3.
+
+_:gn_1 {
+    (:bob) log:skolem skolem:t_0.
+}
+
+_:gn_2 {
+    :bob :loves skolem:t_0.
+}
+
+_:gn_3 {
+    skolem:t_0 :is :lonely.
+}

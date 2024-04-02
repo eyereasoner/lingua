@@ -1,0 +1,90 @@
+# -----------------------------
+# Access control policy example
+# -----------------------------
+
+@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+:test1 :policy :PolicyX;
+    :has :A, :B, :C.
+
+:PolicyX a :Policy;
+    :allOf :A, :B;
+    :anyOf :C;
+    :noneOf :D.
+
+_:ng1 lingua:hornb _:ng2.
+
+_:ng1 {
+    var:Pol :pass :allOfTest.
+}
+
+_:ng2 {
+    var:Test :policy var:Pol.
+    var:Pol a :Policy.
+    (_:ng3 _:ng4) log:forAllIn var:X.
+}
+
+_:ng3 {
+    var:Pol :allOf var:Field.
+}
+
+_:ng4 {
+    var:Test :has var:Field.
+}
+
+_:ng5 lingua:hornb _:ng6.
+
+_:ng5 {
+    var:Pol :pass :anyOfTest.
+}
+
+_:ng6 {
+    var:Test :policy var:Pol.
+    var:Pol a :Policy.
+    (var:Field _:ng7 var:List) log:collectAllIn var:X.
+    var:List list:length var:L.
+    (var:L) log:notEqualTo (0).
+}
+
+_:ng7 {
+    var:Pol :anyOf var:Field.
+    var:Test :has var:Field.
+}
+
+_:ng8 lingua:hornb _:ng9.
+
+_:ng8 {
+    var:Pol :pass :noneOfTest.
+}
+
+_:ng9 {
+    var:Test :policy var:Pol.
+    var:Pol a :Policy.
+    (var:Field _:ng10 var:List) log:collectAllIn var:X.
+    var:List list:length var:L.
+    (var:L) log:equalTo (0).
+}
+
+_:ng10 {
+    var:Pol :noneOf var:Field.
+    var:Test :has var:Field.
+}
+
+# query
+_:ng11 lingua:query _:ng12.
+
+_:ng11 {
+    var:Pol a :Policy.
+    var:Pol :pass :allOfTest.
+    var:Pol :pass :anyOfTest.
+    var:Pol :pass :noneOfTest.
+}
+
+_:ng12 {
+    :test :for var:Pol.
+    :test :is true.
+}

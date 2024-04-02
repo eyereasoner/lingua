@@ -1,0 +1,44 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/derived.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+
+:test :is true.
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:node_4_1.
+
+_:gn_1 {
+    :Alice a :Cat.
+}
+
+_:gn_2 {
+    _:gn_6 lingua:implication _:node_4_1.
+}
+
+_:gn_3 {
+    :Minka a :Cat.
+}
+
+_:gn_4 {
+    _:gn_7 lingua:implication _:node_4_1.
+}
+
+_:gn_5 {
+    :Charly a :Dog.
+}
+
+_:node_4_1 {
+    :test :is true.
+}
+
+_:gn_6 {
+    var:x_2 a :Dog.
+}
+
+_:gn_7 {
+    var:x_3 a :Dog.
+}

@@ -1,0 +1,235 @@
+@prefix complex: <http://eyereasoner.github.io/complex#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+
+((-1 0) (0.5 0)) complex:exponentiation (6.123233995736766e-17 1.0).
+((2.718281828459045 0) (0 3.141592653589793)) complex:exponentiation (-1.0 1.2246467991473532e-16).
+((0 1) (0 1)) complex:exponentiation (0.20787957635076193 0.0).
+((2.718281828459045 0) (-1.57079632679 0)) complex:exponentiation (0.20787957635177984 0.0).
+(2 0) complex:asin (1.5707963267948966 1.3169578969248166).
+(2 0) complex:acos (0.0 -1.3169578969248166).
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:gn_6.
+_:gn_7 lingua:explanation _:gn_8.
+_:gn_9 lingua:explanation _:gn_10.
+_:gn_11 lingua:explanation _:gn_12.
+_:gn_13 lingua:explanation _:gn_14.
+_:gn_15 lingua:explanation _:gn_16.
+_:gn_17 lingua:explanation _:gn_18.
+_:gn_19 lingua:explanation _:gn_20.
+_:gn_21 lingua:explanation _:gn_22.
+_:gn_23 lingua:explanation _:gn_24.
+
+_:gn_1 {
+    [] rdf:value -1; math:lessThan 0 .
+    [] rdf:value 0; math:notLessThan 0 .
+    (3.141592653589793 0.0) math:difference 3.141592653589793.
+}
+
+_:gn_2 {
+    (-1 0 0.0) complex:dial 3.141592653589793.
+}
+
+_:gn_3 {
+    (-1 2) math:exponentiation 1 .
+    (0 2) math:exponentiation 0 .
+    (1 0) math:sum 1 .
+    (1 0.5) math:exponentiation 1 .
+    [] rdf:value -1; math:absoluteValue 1 .
+    (1 1) math:quotient 1 .
+    [] rdf:value 1; math:acos 0.0 .
+    (-1 0 0.0) complex:dial 3.141592653589793.
+}
+
+_:gn_4 {
+    (-1 0) complex:polar (1 3.141592653589793).
+}
+
+_:gn_5 {
+    (-1 0) complex:polar (1 3.141592653589793).
+    (1 0.5) math:exponentiation 1 .
+    [] rdf:value 0; math:negation 0 .
+    (0 3.141592653589793) math:product 0.0 .
+    (2.718281828459045 0.0) math:exponentiation 1 .
+    (2.718281828459045 0.0) math:exponentiation 1 .
+    (0 0.0) math:product 0.0 .
+    (0.5 3.141592653589793) math:product 1.5707963267948966 .
+    (0.0 1.5707963267948966) math:sum 1.5707963267948966 .
+    [] rdf:value 1.5707963267948966; math:cos 6.123233995736766e-17 .
+    (1 1 6.123233995736766e-17) math:product 6.123233995736766e-17 .
+    [] rdf:value 1.5707963267948966; math:sin 1.0 .
+    (1 1 1.0) math:product 1.0.
+}
+
+_:gn_6 {
+    ((-1 0) (0.5 0)) complex:exponentiation (6.123233995736766e-17 1.0).
+}
+
+_:gn_7 {
+    [] rdf:value 2.718281828459045; math:notLessThan 0 .
+    [] rdf:value 0; math:notLessThan 0 .
+    (0 0.0) math:sum 0.0.
+}
+
+_:gn_8 {
+    (2.718281828459045 0 0.0) complex:dial 0.0.
+}
+
+_:gn_9 {
+    (2.718281828459045 2) math:exponentiation 7.3890560989306495 .
+    (0 2) math:exponentiation 0 .
+    (7.3890560989306495 0) math:sum 7.3890560989306495 .
+    (7.3890560989306495 0.5) math:exponentiation 2.718281828459045 .
+    [] rdf:value 2.718281828459045; math:absoluteValue 2.718281828459045 .
+    (2.718281828459045 2.718281828459045) math:quotient 1.0 .
+    [] rdf:value 1.0; math:acos 0.0 .
+    (2.718281828459045 0 0.0) complex:dial 0.0.
+}
+
+_:gn_10 {
+    (2.718281828459045 0) complex:polar (2.718281828459045 0.0).
+}
+
+_:gn_11 {
+    (2.718281828459045 0) complex:polar (2.718281828459045 0.0).
+    (2.718281828459045 0) math:exponentiation 1 .
+    [] rdf:value 3.141592653589793; math:negation -3.141592653589793 .
+    (-3.141592653589793 0.0) math:product -0.0 .
+    (2.718281828459045 -0.0) math:exponentiation 1 .
+    (2.718281828459045 1.0) math:exponentiation 2.718281828459045 .
+    (3.141592653589793 1.0) math:product 3.141592653589793 .
+    (0 0.0) math:product 0.0 .
+    (3.141592653589793 0.0) math:sum 3.141592653589793 .
+    [] rdf:value 3.141592653589793; math:cos -1.0 .
+    (1 1 -1.0) math:product -1.0 .
+    [] rdf:value 3.141592653589793; math:sin 1.2246467991473532e-16 .
+    (1 1 1.2246467991473532e-16) math:product 1.2246467991473532e-16.
+}
+
+_:gn_12 {
+    ((2.718281828459045 0) (0 3.141592653589793)) complex:exponentiation (-1.0 1.2246467991473532e-16).
+}
+
+_:gn_13 {
+    [] rdf:value 0; math:notLessThan 0 .
+    [] rdf:value 1; math:notLessThan 0 .
+    (0 1.5707963267948966) math:sum 1.5707963267948966.
+}
+
+_:gn_14 {
+    (0 1 1.5707963267948966) complex:dial 1.5707963267948966.
+}
+
+_:gn_15 {
+    (0 2) math:exponentiation 0 .
+    (1 2) math:exponentiation 1 .
+    (0 1) math:sum 1 .
+    (1 0.5) math:exponentiation 1 .
+    [] rdf:value 0; math:absoluteValue 0 .
+    (0 1) math:quotient 0 .
+    [] rdf:value 0; math:acos 1.5707963267948966 .
+    (0 1 1.5707963267948966) complex:dial 1.5707963267948966.
+}
+
+_:gn_16 {
+    (0 1) complex:polar (1 1.5707963267948966).
+}
+
+_:gn_17 {
+    (0 1) complex:polar (1 1.5707963267948966).
+    (1 0) math:exponentiation 1 .
+    [] rdf:value 1; math:negation -1 .
+    (-1 1.5707963267948966) math:product -1.5707963267948966 .
+    (2.718281828459045 -1.5707963267948966) math:exponentiation 0.20787957635076193 .
+    (2.718281828459045 0.0) math:exponentiation 1 .
+    (1 0.0) math:product 0.0 .
+    (0 1.5707963267948966) math:product 0.0 .
+    (0.0 0.0) math:sum 0.0 .
+    [] rdf:value 0.0; math:cos 1.0 .
+    (1 0.20787957635076193 1.0) math:product 0.20787957635076193 .
+    [] rdf:value 0.0; math:sin 0.0 .
+    (1 0.20787957635076193 0.0) math:product 0.0.
+}
+
+_:gn_18 {
+    ((0 1) (0 1)) complex:exponentiation (0.20787957635076193 0.0).
+}
+
+_:gn_19 {
+    (2.718281828459045 0) complex:polar (2.718281828459045 0.0).
+    (2.718281828459045 -1.57079632679) math:exponentiation 0.20787957635177984 .
+    [] rdf:value 0; math:negation 0 .
+    (0 0.0) math:product 0.0 .
+    (2.718281828459045 0.0) math:exponentiation 1 .
+    (2.718281828459045 1.0) math:exponentiation 2.718281828459045 .
+    (0 1.0) math:product 0.0 .
+    (-1.57079632679 0.0) math:product -0.0 .
+    (0.0 -0.0) math:sum 0.0 .
+    [] rdf:value 0.0; math:cos 1.0 .
+    (0.20787957635177984 1 1.0) math:product 0.20787957635177984 .
+    [] rdf:value 0.0; math:sin 0.0 .
+    (0.20787957635177984 1 0.0) math:product 0.0.
+}
+
+_:gn_20 {
+    ((2.718281828459045 0) (-1.57079632679 0)) complex:exponentiation (0.20787957635177984 0.0).
+}
+
+_:gn_21 {
+    (1 2) math:sum 3 .
+    (3 2) math:exponentiation 9 .
+    (0 2) math:exponentiation 0 .
+    (9 0) math:sum 9 .
+    (9 0.5) math:exponentiation 3.0 .
+    (1 2) math:difference -1 .
+    (-1 2) math:exponentiation 1 .
+    (1 0) math:sum 1 .
+    (1 0.5) math:exponentiation 1 .
+    (3.0 1) math:difference 2.0 .
+    (2.0 2) math:quotient 1.0 .
+    (3.0 1) math:sum 4.0 .
+    (4.0 2) math:quotient 2.0 .
+    [] rdf:value 1.0; math:asin 1.5707963267948966 .
+    (2.0 2) math:exponentiation 4.0 .
+    (4.0 1) math:difference 3.0 .
+    (3.0 0.5) math:exponentiation 1.7320508075688772 .
+    (2.0 1.7320508075688772) math:sum 3.732050807568877 .
+    (2.718281828459045 1.3169578969248166) math:exponentiation 3.732050807568877.
+}
+
+_:gn_22 {
+    (2 0) complex:asin (1.5707963267948966 1.3169578969248166).
+}
+
+_:gn_23 {
+    (1 2) math:sum 3 .
+    (3 2) math:exponentiation 9 .
+    (0 2) math:exponentiation 0 .
+    (9 0) math:sum 9 .
+    (9 0.5) math:exponentiation 3.0 .
+    (1 2) math:difference -1 .
+    (-1 2) math:exponentiation 1 .
+    (1 0) math:sum 1 .
+    (1 0.5) math:exponentiation 1 .
+    (3.0 1) math:difference 2.0 .
+    (2.0 2) math:quotient 1.0 .
+    (3.0 1) math:sum 4.0 .
+    (4.0 2) math:quotient 2.0 .
+    [] rdf:value 1.0; math:acos 0.0 .
+    (2.0 2) math:exponentiation 4.0 .
+    (4.0 1) math:difference 3.0 .
+    (3.0 0.5) math:exponentiation 1.7320508075688772 .
+    (2.0 1.7320508075688772) math:sum 3.732050807568877 .
+    (2.718281828459045 1.3169578969248166) math:exponentiation 3.732050807568877 .
+    [] rdf:value 1.3169578969248166; math:negation -1.3169578969248166.
+}
+
+_:gn_24 {
+    (2 0) complex:acos (0.0 -1.3169578969248166).
+}

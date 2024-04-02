@@ -1,0 +1,54 @@
+# ------------------------------------
+# Calculate pi using Nilakantha series
+# ------------------------------------
+#
+# See http://www.wikihow.com/Calculate-Pi
+
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+_:ng1 lingua:hornb _:ng2.
+
+_:ng1 {
+    (var:N var:Pi) :pi true.
+}
+
+_:ng2 {
+    (1 var:N 0 var:P 1) :pi true.
+    (4 var:P) math:product var:A.
+    (3 var:A) math:sum var:Pi.
+}
+
+_:ng3 lingua:hornb true.
+
+_:ng3 {
+    (var:N var:N var:P var:P var:S) :pi true.
+}
+
+_:ng4 lingua:hornb _:ng5.
+
+_:ng4 {
+    (var:K var:N var:P0 var:P var:S) :pi true.
+ }
+
+_:ng5 {
+    var:K math:notEqualTo var:N.
+    (var:K 1) math:sum var:K1.
+    (2 var:K) math:product var:K2.
+    (var:K2 1) math:sum var:A.
+    (var:K2 2) math:sum var:B.
+    (var:K2 var:A var:B) math:product var:C.
+    (var:S var:C) math:quotient var:D.
+    (var:P0 var:D) math:sum var:P1.
+    var:S math:negation var:S1.
+    (var:K1 var:N var:P1 var:P var:S1) :pi true.
+}
+
+# query
+_:ng6 lingua:query _:ng6.
+
+_:ng6 {
+    (1000 var:Pi) :pi true.
+}

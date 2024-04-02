@@ -1,0 +1,59 @@
+# -----------------
+# Fibonacci numbers
+# -----------------
+#
+# See https://en.wikipedia.org/wiki/Fibonacci_number
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+# backward rules
+_:ng1 lingua:hornb _:ng2.
+
+_:ng1 {
+    var:X :fibonacci var:Y.
+}
+
+_:ng2 {
+    (var:X 0 1) :fib var:Y.
+}
+
+_:ng3 lingua:hornb true.
+
+_:ng3 {
+    (0 var:A var:B) :fib var:A.
+}
+
+_:ng4 lingua:hornb true.
+
+_:ng4 {
+    (1 var:A var:B) :fib var:B.
+}
+
+_:ng5 lingua:hornb _:ng6.
+
+_:ng5 {
+    (var:X var:A var:B) :fib var:Y.
+}
+
+_:ng6 {
+    var:X math:greaterThan 1.
+    (var:X 1) math:difference var:C.
+    (var:A var:B) math:sum var:D.
+    (var:C var:B var:D) :fib var:Y.
+}
+
+# query
+_:ng7 lingua:query _:ng7.
+
+_:ng7 {
+    [] rdf:value 0; :fibonacci var:F1.
+    [] rdf:value 1; :fibonacci var:F2.
+    [] rdf:value 6; :fibonacci var:F3.
+    [] rdf:value 91; :fibonacci var:F4.
+    [] rdf:value 283; :fibonacci var:F5.
+#   [] rdf:value 3674; :fibonacci var:F6.   # explanation is 15 MB
+}

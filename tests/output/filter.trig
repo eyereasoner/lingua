@@ -1,0 +1,27 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/filter.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+@prefix string: <http://www.w3.org/2000/10/swap/string#>.
+
+:result :is ("Huey" "Dewey").
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+
+_:gn_1 {
+    :Let :where (_:sk_0 _:gn_3).
+    (_:sk_0 _:gn_3 ("Huey" "Dewey")) log:collectAllIn ((<https://eyereasoner.github.io/lingua/tests/filter.trig>) 1).
+    ("Huey" "Dewey") list:length 2.
+}
+
+_:gn_2 {
+    :result :is ("Huey" "Dewey").
+}
+
+_:gn_3 {
+    :Let :param _:sk_0.
+    _:sk_0 string:lessThan "Louie".
+}

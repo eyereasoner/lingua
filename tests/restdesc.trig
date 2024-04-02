@@ -1,0 +1,182 @@
+# -------------
+# RESTdesc path
+# -------------
+#
+# See https://github.com/RubenVerborgh/RESTdesc-Composition-Benchmark
+
+@prefix http: <http://www.w3.org/2011/http#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+# initial
+:x :rel1 :y.
+
+# RESTdesc
+_:ng1 lingua:implication _:ng2.
+
+_:ng1 {
+    var:a1 :rel1 var:b1.
+}
+
+_:ng2{
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel2 var:b1.
+    var:a2 :rel2 var:b2.
+    var:a3 :rel2 var:b3.
+}
+
+_:ng3 lingua:implication _:ng4.
+
+_:ng3 {
+    var:a1 :rel2 var:b1.
+    var:a2 :rel2 var:b2.
+    var:a3 :rel2 var:b3.
+}
+
+_:ng4 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel3 var:b1.
+    var:a2 :rel3 var:b2.
+    var:a3 :rel3 var:b3.
+}
+
+_:ng5 lingua:implication _:ng6.
+
+_:ng5 {
+    var:a1 :rel3 var:b1.
+    var:a2 :rel3 var:b2.
+    var:a3 :rel3 var:b3.
+}
+
+_:ng6 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel4 var:b1.
+    var:a2 :rel4 var:b2.
+    var:a3 :rel4 var:b3.
+}
+
+_:ng7 lingua:implication _:ng8.
+
+_:ng7 {
+    var:a1 :rel4 var:b1.
+    var:a2 :rel4 var:b2.
+    var:a3 :rel4 var:b3.
+}
+
+_:ng8 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel5 var:b1.
+    var:a2 :rel5 var:b2.
+    var:a3 :rel5 var:b3.
+}
+
+_:ng9 lingua:implication _:ng10.
+
+_:ng9 {
+    var:a1 :rel5 var:b1.
+    var:a2 :rel5 var:b2.
+    var:a3 :rel5 var:b3.
+}
+
+_:ng10 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel6 var:b1.
+    var:a2 :rel6 var:b2.
+    var:a3 :rel6 var:b3.
+}
+
+_:ng11 lingua:implication _:ng12.
+
+_:ng11 {
+    var:a1 :rel6 var:b1.
+    var:a2 :rel6 var:b2.
+    var:a3 :rel6 var:b3.
+}
+
+_:ng12 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel7 var:b1.
+    var:a2 :rel7 var:b2.
+    var:a3 :rel7 var:b3.
+}
+
+_:ng13 lingua:implication _:ng14.
+
+_:ng13 {
+    var:a1 :rel7 var:b1.
+    var:a2 :rel7 var:b2.
+    var:a3 :rel7 var:b3.
+}
+
+_:ng14 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel8 var:b1.
+    var:a2 :rel8 var:b2.
+    var:a3 :rel8 var:b3.
+}
+
+_:ng15 lingua:implication _:ng16.
+
+_:ng15 {
+    var:a1 :rel8 var:b1.
+    var:a2 :rel8 var:b2.
+    var:a3 :rel8 var:b3.
+}
+
+_:ng16 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel9 var:b1.
+    var:a2 :rel9 var:b2.
+    var:a3 :rel9 var:b3.
+}
+
+_:ng17 lingua:implication _:ng18.
+
+_:ng17 {
+    var:a1 :rel9 var:b1.
+    var:a2 :rel9 var:b2.
+    var:a3 :rel9 var:b3.
+}
+
+_:ng18 {
+    var:request http:methodName "GET";
+        http:requestURI var:a1;
+        http:resp var:resp.
+    var:resp http:body var:b1.
+    var:a1 :rel10 var:b1.
+    var:a2 :rel10 var:b2.
+    var:a3 :rel10 var:b3.
+    var:a1 :relGoal var:b1.
+}
+
+# query
+_:ng19 lingua:query _:ng19.
+
+_:ng19 {
+    :x :relGoal :y.
+}

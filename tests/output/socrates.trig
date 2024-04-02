@@ -1,0 +1,19 @@
+@prefix : <https://eyereasoner.github.io/lingua/tests/socrates.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+:Socrates a :Mortal.
+
+#
+# lingua explanation
+#
+_:gn_1 lingua:explanation _:gn_2.
+
+_:gn_1 {
+    :Human rdfs:subClassOf :Mortal.
+    :Socrates a :Human.
+}
+
+_:gn_2 {
+    :Socrates a :Mortal.
+}

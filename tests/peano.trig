@@ -1,0 +1,86 @@
+# ----------------
+# Peano arithmetic
+# ----------------
+#
+# See https://en.wikipedia.org/wiki/Peano_axioms
+
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+@prefix : <#>.
+
+# add
+_:ng1 lingua:hornb true.
+
+_:ng1 {
+    (var:A 0) :add var:A.
+}
+
+_:ng2 lingua:hornb _:ng3.
+
+_:ng2 {
+    (var:A (:s var:B)) :add (:s var:C).
+}
+
+_:ng3 {
+    (var:A var:B) :add var:C.
+}
+
+# multiply
+_:ng4 lingua:hornb true.
+
+_:ng4 {
+    (var:A 0) :multiply 0.
+}
+
+_:ng5 lingua:hornb _:ng6.
+
+_:ng5 {
+    (var:A (:s var:B)) :multiply var:C.
+}
+
+_:ng6 {
+    (var:A var:B) :multiply var:D.
+    (var:A var:D) :add var:C.
+}
+
+# factorial
+_:ng7 lingua:hornb _:ng8.
+
+_:ng7 {
+    var:A :factorial var:B.
+}
+
+_:ng8 {
+    (var:A (:s 0)) :fac var:B.
+}
+
+_:ng9 lingua:hornb true.
+
+_:ng9 {
+    (0 var:A) :fac var:A.
+}
+
+_:ng10 lingua:hornb _:ng11.
+
+_:ng10 {
+    ((:s var:A) var:B) :fac var:C.
+}
+
+_:ng11 {
+    (var:B (:s var:A)) :multiply var:D.
+    (var:A var:D) :fac var:C.
+}
+
+# query
+_:ng12 lingua:query _:ng13.
+
+_:ng12 {
+    ((:s 0) (:s (:s 0))) :multiply var:A.
+    (var:A (:s (:s (:s 0)))) :add var:B.
+    var:B :factorial var:C.
+}
+
+_:ng13 {
+    var:B :factorial var:C.
+}

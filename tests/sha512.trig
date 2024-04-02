@@ -18,5 +18,5 @@ _:ng1 {
 }
 
 _:ng2 {
-    () :sha512 (var:X var:Y).
+    var:X :sha512 var:Y.
 }

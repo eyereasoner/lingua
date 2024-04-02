@@ -2,7 +2,7 @@
 
 Reasoning engine that is using RDF TriG as the web lingua.
 
-Tests are in [tests](https://github.com/eyereasoner/lingua/tree/main/tests) and their output in [tests/output](https://github.com/eyereasoner/lingua/tree/main/tests/output)
+Examples and test cases are in [tests](https://github.com/eyereasoner/lingua/tree/main/tests) and their output in [tests/output](https://github.com/eyereasoner/lingua/tree/main/tests/output)
 
 ```
 Usage: lingua <options>* <data>*
@@ -39,7 +39,7 @@ A forward rule with `lingua:implication false` is an inference fuse.
 
 Lingua also supports reasoning with backward rules described in RDF as
 ```
-_:ng1 lingua:hornb _:ng2.
+_:ng1 lingua:hornb _:ng2.   # hornb is acronym for "head or not body"
 
 _:ng1 {
     RDF triples

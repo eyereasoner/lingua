@@ -2,7 +2,7 @@
 
 Reasoning engine that is using RDF TriG as the web lingua.
 
-Examples are in [lingua](https://github.com/eyereasoner/lingua/tree/main/lingua) and their output in [lingua/output](https://github.com/eyereasoner/lingua/tree/main/lingua/output)
+Tests are in [tests](https://github.com/eyereasoner/lingua/tree/main/tests) and their output in [tests/output](https://github.com/eyereasoner/lingua/tree/main/tests/output)
 
 ```
 Usage: lingua <options>* <data>*
@@ -69,3 +69,8 @@ in the "Semantic Web Area for Play" `http://www.w3.org/2000/10/swap/` URI.
 The `var:` prefix is `<http://www.w3.org/2000/10/swap/var#>` and is used for
 variables that are interpreted as universally quantified variables except for
 forward rule conclusion-only variables which are interpreted existentially.
+
+Literal subjects are described as
+```
+[] rdf:value "aha"; :p :o.
+```

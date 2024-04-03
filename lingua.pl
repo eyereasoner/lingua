@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.2 (2024-04-03)').
+version_info('lingua v0.0.3 (2024-04-03)').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -40,7 +40,6 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic(cc/1).
 :- dynamic(cpred/1).
 :- dynamic(exopred/3).          % exopred(Predicate, Subject, Object)
-:- dynamic(flag/2).
 :- dynamic(fpred/1).
 :- dynamic(graph/2).
 :- dynamic(hash_value/2).
@@ -73,6 +72,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#hornb>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#implication>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#query>'/2).
@@ -167,7 +167,7 @@ gre(Argus) :-
     ->  opts(['--help'], _)
     ;   true
     ),
-    (   flag('genid', Genid)
+    (   nb_getval(genid, Genid)
     ->  true
     ;   uuid(Genid)
     ),
@@ -228,7 +228,8 @@ gre(Argus) :-
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
-            (   Q \= true,
+            (   nb_getval(explain, true),
+                Q \= true,
                 I \= false
             ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I), F)
             ;   F = I
@@ -239,7 +240,8 @@ gre(Argus) :-
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
-            (   Q \= true,
+            (   nb_getval(explain, true),
+                Q \= true,
                 Q \= !
             ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I)), F)
             ;   F = Q
@@ -256,7 +258,8 @@ gre(Argus) :-
     % create queries
     assertz(implies((
             '<http://www.w3.org/2000/10/swap/lingua#query>'(A, B),
-            (   A \= B
+            (   nb_getval(explain, true),
+                A \= B
             ->  F = ('<http://www.w3.org/2000/10/swap/lingua#explanation>'(A, B), B)
             ;   F = B
             ),
@@ -293,6 +296,10 @@ gre(Argus) :-
         ),
         Scope
     ),
+    (   '<http://www.w3.org/2000/10/swap/lingua#explanation>'(_, _)
+    ->  nb_setval(explain, false)
+    ;   nb_setval(explain, true)
+    ),
     nb_setval(scope, Scope),
     nb_setval(rn, 0),
     nb_setval(keep_ng, true),
@@ -318,8 +325,7 @@ opts([], []) :-
     !.
 opts(['--genid', Genid|Argus], Args) :-
     !,
-    retractall(flag('genid', _)),
-    assertz(flag('genid', Genid)),
+    nb_setval(genid, Genid),
     opts(Argus, Args).
 opts(['--help'|_], _) :-
     !,
@@ -329,10 +335,9 @@ opts(['--help'|_], _) :-
     throw(halt(0)).
 opts(['--output', File|Argus], Args) :-
     !,
-    retractall(flag('output', _)),
     open(File, write, Out, [encoding(utf8)]),
     tell(Out),
-    assertz(flag('output', Out)),
+    nb_setval(output, Out),
     opts(Argus, Args).
 opts(['--version'|_], _) :-
     !,
@@ -529,7 +534,7 @@ eam(Recursion) :-
                 assertz(pfx(Pfx, Uri))
             ),
             told,
-            (   flag('output', Output)
+            (   nb_getval(output, Output)
             ->  tell(Output)
             ;   true
             ),
@@ -676,7 +681,6 @@ djiti_fact(A, A) :-
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>',
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>',
         P \= pfx,
-        P \= flag,
         \+pred(P)
     ->  assertz(pred(P))
     ;   true
@@ -763,7 +767,6 @@ wt(X) :-
 wt0(!) :-
     !,
     wq(true),
-    !,
     write(' '),
     wp('<http://www.w3.org/2000/10/swap/log#callWithCut>'),
     write(' true').
@@ -1930,7 +1933,7 @@ indentation(C) :-
     ),
     nl,
     told,
-    (   flag('output', Output)
+    (   nb_getval(output, Output)
     ->  tell(Output)
     ;   true
     ).

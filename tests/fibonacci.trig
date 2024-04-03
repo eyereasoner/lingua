@@ -6,9 +6,13 @@
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix math: <http://www.w3.org/2000/10/swap/math#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix var: <http://www.w3.org/2000/10/swap/var#>.
 @prefix : <#>.
+
+# assuming lingua explanations
+[] lingua:explanation [].
 
 # backward rules
 _:ng1 lingua:hornb _:ng2.
@@ -55,5 +59,5 @@ _:ng7 {
     [] rdf:value 6; :fibonacci var:F3.
     [] rdf:value 91; :fibonacci var:F4.
     [] rdf:value 283; :fibonacci var:F5.
-#   [] rdf:value 3674; :fibonacci var:F6.   # explanation is 15 MB
+    [] rdf:value 3674; :fibonacci var:F6.
 }

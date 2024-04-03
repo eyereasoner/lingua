@@ -9,6 +9,9 @@
 @prefix var: <http://www.w3.org/2000/10/swap/var#>.
 @prefix : <#>.
 
+# assuming lingua explanations
+[] lingua:explanation [].
+
 _:ng1 lingua:hornb _:ng2.
 
 _:ng1 {
@@ -50,5 +53,5 @@ _:ng5 {
 _:ng6 lingua:query _:ng6.
 
 _:ng6 {
-    (1000 var:Pi) :pi true.
+    (50000 var:Pi) :pi true.
 }

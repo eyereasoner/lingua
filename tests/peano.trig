@@ -9,6 +9,9 @@
 @prefix var: <http://www.w3.org/2000/10/swap/var#>.
 @prefix : <#>.
 
+# assuming lingua explanations
+[] lingua:explanation [].
+
 # add
 _:ng1 lingua:hornb true.
 

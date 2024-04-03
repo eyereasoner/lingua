@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.3 (2024-04-03)').
+version_info('lingua v0.0.4 (2024-04-03)').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -167,7 +167,7 @@ gre(Argus) :-
     ->  opts(['--help'], _)
     ;   true
     ),
-    (   nb_getval(genid, Genid)
+    (   catch(nb_getval(genid, Genid), _, fail)
     ->  true
     ;   uuid(Genid)
     ),
@@ -534,7 +534,7 @@ eam(Recursion) :-
                 assertz(pfx(Pfx, Uri))
             ),
             told,
-            (   nb_getval(output, Output)
+            (   catch(nb_getval(output, Output), _, fail)
             ->  tell(Output)
             ;   true
             ),
@@ -1933,7 +1933,7 @@ indentation(C) :-
     ),
     nl,
     told,
-    (   nb_getval(output, Output)
+    (   catch(nb_getval(output, Output), _, fail)
     ->  tell(Output)
     ;   true
     ).

@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.1 (2024-04-02)').
+version_info('lingua v0.0.2 (2024-04-03)').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -239,7 +239,8 @@ gre(Argus) :-
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
-            (   Q \= true
+            (   Q \= true,
+                Q \= !
             ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I)), F)
             ;   F = Q
             ),
@@ -761,7 +762,9 @@ wt(X) :-
 
 wt0(!) :-
     !,
-    write('_:true '),
+    wq(true),
+    !,
+    write(' '),
     wp('<http://www.w3.org/2000/10/swap/log#callWithCut>'),
     write(' true').
 wt0(:-) :-
@@ -3376,7 +3379,7 @@ conjify((A, B), (C, D)) :-
     !,
     conjify(A, C),
     conjify(B, D).
-conjify('<http://www.w3.org/2000/10/swap/log#callWithCut>'(A, _), (A, !)) :-
+conjify('<http://www.w3.org/2000/10/swap/log#callWithCut>'(true, true), !) :-
     !.
 conjify(A, A).
 

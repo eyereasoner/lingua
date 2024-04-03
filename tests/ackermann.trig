@@ -20,6 +20,7 @@
 # where A(4,0) has a value of 2 digits, A(4,1) has a value of 5 digits
 # and A(4,2) has a value of 19729 digits.
 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix math: <http://www.w3.org/2000/10/swap/math#>.
 @prefix log: <http://www.w3.org/2000/10/swap/log#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
@@ -48,7 +49,7 @@ _:ng3 {
 }
 
 _:ng4 {
-    _:ng13 log:callWithCut true.
+    [] rdf:value true; log:callWithCut true.
     (var:Y 1) math:sum var:A.
 }
 
@@ -60,7 +61,7 @@ _:ng5 {
 }
 
 _:ng6 {
-    _:ng13 log:callWithCut true.
+    [] rdf:value true; log:callWithCut true.
     (var:Y var:Z) math:sum var:A.
 }
 
@@ -72,7 +73,7 @@ _:ng7 {
 }
 
 _:ng8 {
-    _:ng13 log:callWithCut true.
+    [] rdf:value true; log:callWithCut true.
     (var:Y var:Z) math:product var:A.
 }
 
@@ -84,7 +85,7 @@ _:ng9 {
 }
 
 _:ng10 {
-    _:ng13 log:callWithCut true.
+    [] rdf:value true; log:callWithCut true.
 }
 
 _:ng11 lingua:hornb _:ng12.
@@ -98,11 +99,6 @@ _:ng12 {
     (var:X var:B var:Z) :ackermann var:C.
     (var:X 1) math:difference var:D.
     (var:D var:C var:Z) :ackermann var:A.
-}
-
-# workaround to avoid true as subject
-_:ng13 {
-    () log:equalTo ().
 }
 
 # query

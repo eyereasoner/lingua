@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.4 (2024-04-03)').
+version_info('lingua v0.0.5 (2024-04-03)').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -40,6 +40,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic(cc/1).
 :- dynamic(cpred/1).
 :- dynamic(exopred/3).          % exopred(Predicate, Subject, Object)
+:- dynamic(flag/2).
 :- dynamic(fpred/1).
 :- dynamic(graph/2).
 :- dynamic(hash_value/2).
@@ -167,7 +168,7 @@ gre(Argus) :-
     ->  opts(['--help'], _)
     ;   true
     ),
-    (   catch(nb_getval(genid, Genid), _, fail)
+    (   flag(genid, Genid)
     ->  true
     ;   uuid(Genid)
     ),
@@ -325,7 +326,8 @@ opts([], []) :-
     !.
 opts(['--genid', Genid|Argus], Args) :-
     !,
-    nb_setval(genid, Genid),
+    retractall(flag(genid, _)),
+    assertz(flag(genid, Genid)),
     opts(Argus, Args).
 opts(['--help'|_], _) :-
     !,
@@ -337,7 +339,8 @@ opts(['--output', File|Argus], Args) :-
     !,
     open(File, write, Out, [encoding(utf8)]),
     tell(Out),
-    nb_setval(output, Out),
+    retractall(flag(output, _)),
+    assertz(flag(output, Out)),
     opts(Argus, Args).
 opts(['--version'|_], _) :-
     !,
@@ -534,7 +537,7 @@ eam(Recursion) :-
                 assertz(pfx(Pfx, Uri))
             ),
             told,
-            (   catch(nb_getval(output, Output), _, fail)
+            (   flag(output, Output)
             ->  tell(Output)
             ;   true
             ),
@@ -681,6 +684,7 @@ djiti_fact(A, A) :-
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>',
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>',
         P \= pfx,
+        P \= flag,
         \+pred(P)
     ->  assertz(pred(P))
     ;   true
@@ -1933,7 +1937,7 @@ indentation(C) :-
     ),
     nl,
     told,
-    (   catch(nb_getval(output, Output), _, fail)
+    (   flag(output, Output)
     ->  tell(Output)
     ;   true
     ).

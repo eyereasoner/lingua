@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # change working directory
 pushd ~/github.com/eyereasoner/lingua
 
@@ -8,8 +7,5 @@ swipl -q -f lingua.pl -g "qsave_program('lingua.pvm', [goal(main)]), halt."
 
 # link lingua command
 sudo ln -sf $(realpath ./lingua) /usr/local/bin
-
-# run the tests
-./test
 
 popd

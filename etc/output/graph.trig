@@ -1,4 +1,4 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/graph.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/graph.trig#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 
 :angers :path :nantes.

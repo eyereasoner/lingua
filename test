@@ -1,4 +1,4 @@
 #!/bin/bash
-pushd ~/github.com/eyereasoner/lingua/tests > /dev/null
+pushd ~/github.com/eyereasoner/lingua/etc > /dev/null
 ./test
 popd > /dev/null

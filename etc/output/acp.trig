@@ -1,4 +1,4 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/acp.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/acp.trig#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix log: <http://www.w3.org/2000/10/swap/log#>.
 @prefix var: <http://www.w3.org/2000/10/swap/var#>.
@@ -19,7 +19,7 @@ _:gn_7 lingua:explanation _:gn_8.
 _:gn_1 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (_:gn_9 _:gn_10) log:forAllIn ((<https://eyereasoner.github.io/lingua/tests/acp.trig>) 1).
+    (_:gn_9 _:gn_10) log:forAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
 }
 
 _:gn_2 {
@@ -29,7 +29,7 @@ _:gn_2 {
 _:gn_3 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (var:x_0 _:gn_11 (:C)) log:collectAllIn ((<https://eyereasoner.github.io/lingua/tests/acp.trig>) 1).
+    (var:x_0 _:gn_11 (:C)) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
     (:C) list:length 1 .
     (1) log:notEqualTo (0).
 }
@@ -41,7 +41,7 @@ _:gn_4 {
 _:gn_5 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (var:x_0 _:gn_12 ()) log:collectAllIn ((<https://eyereasoner.github.io/lingua/tests/acp.trig>) 1).
+    (var:x_0 _:gn_12 ()) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
     () list:length 0 .
     (0) log:equalTo (0).
 }

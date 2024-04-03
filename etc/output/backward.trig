@@ -1,5 +1,5 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix : <https://eyereasoner.github.io/lingua/tests/backward.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/backward.trig#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix math: <http://www.w3.org/2000/10/swap/math#>.
 

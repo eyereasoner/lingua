@@ -1,3 +1,3 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/peano.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/peano.trig#>.
 
 (:s (:s (:s (:s (:s 0))))) :factorial (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s (:s 0)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))).

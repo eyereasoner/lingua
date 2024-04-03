@@ -3046,16 +3046,16 @@ _:gn_3033 lingua:explanation _:gn_3034.
 _:gn_3035 lingua:explanation _:gn_3036.
 
 _:node_1_1 {
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt1.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt2.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt3.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt4.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt5.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt6.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt7.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt8.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt9.ttl>.
-    <https://eyereasoner.github.io/lingua/tests/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt10.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt1.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt2.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt3.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt4.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt5.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt6.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt7.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt8.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt9.ttl>.
+    <https://eyereasoner.github.io/lingua/etc/monadic.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt10.ttl>.
 }
 
 _:gn_1 {

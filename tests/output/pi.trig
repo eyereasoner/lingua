@@ -1,3 +1,0 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/pi.trig#>.
-
-(50000 3.141592653589793) :pi true.

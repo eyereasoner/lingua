@@ -1,4 +1,4 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/restdesc.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/restdesc.trig#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix http: <http://www.w3.org/2011/http#>.
 

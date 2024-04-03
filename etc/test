@@ -11,7 +11,8 @@ FAILED=0
 version=$(lingua -v)
 
 echo -e "${YELLOW}#${NORMAL}"
-echo -e "${YELLOW}# Running lingua tests with $version${NORMAL}"
+echo -e "${YELLOW}# Running lingua examples and test cases${NORMAL}"
+echo -e "${YELLOW}# $version${NORMAL}"
 echo -e "${YELLOW}#${NORMAL}"
 echo ""
 
@@ -26,7 +27,7 @@ for file in *.trig
 do
     echo -en "$(pad "${file}" -24)"
     start=$(($(date +%s%N)/1000000))
-    lingua --genid 8b98b360-9a70-4845-b52c-c675af60ad01 --wcache https://eyereasoner.github.io ../.. https://eyereasoner.github.io/lingua/tests/$file --output output/$file
+    lingua --genid 8b98b360-9a70-4845-b52c-c675af60ad01 --wcache https://eyereasoner.github.io ../.. https://eyereasoner.github.io/lingua/etc/$file --output output/$file
     end=$(($(date +%s%N)/1000000))
     echo -en "${YELLOW}$(pad "`expr $end - $start` msec" 12)${NORMAL} "
     if [[ $(git diff */$file | wc -l) -eq 0 ]]; then

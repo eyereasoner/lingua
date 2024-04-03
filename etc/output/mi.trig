@@ -1,4 +1,4 @@
-@prefix : <https://eyereasoner.github.io/lingua/tests/mi.trig#>.
+@prefix : <https://eyereasoner.github.io/lingua/etc/mi.trig#>.
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix list: <http://www.w3.org/2000/10/swap/list#>.
 @prefix var: <http://www.w3.org/2000/10/swap/var#>.

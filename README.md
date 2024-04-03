@@ -1,4 +1,4 @@
-# The lingua reasoner
+# The Lingua reasoner
 
 Reasoning engine that is using RDF TriG as the web lingua.
 

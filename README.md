@@ -9,9 +9,9 @@ Usage: lingua <options>* <data>*
 
 <options>
     --genid <genid>             use <genid> in Skolem IRIs
-    --help                      show help info
+    --help, -h                  show help info
     --output <file>             write reasoner output to <file>
-    --version                   show version info
+    --version, -v               show version info
     --wcache <uri> <file>       to tell that <uri> is cached as <file>
 
 <data>

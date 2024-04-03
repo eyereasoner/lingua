@@ -53,10 +53,9 @@ fi
 echo "${a[0]}.${a[1]}.${a[2]}" > VERSION
 
 export RELEASE="v$(cat VERSION)"
-export DATE="$(date -Idate)"
 
 # update version in lingua.pl
-cat lingua.pl | sed -e "s/'lingua.*'/'lingua $RELEASE \($DATE\)'/" > lingua.pl.tmp
+cat lingua.pl | sed -e "s/'lingua.*'/'lingua $RELEASE'/" > lingua.pl.tmp
 mv lingua.pl.tmp lingua.pl
 
 # create image

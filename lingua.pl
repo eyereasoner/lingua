@@ -19,15 +19,15 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.6 (2024-04-03)').
+version_info('lingua v0.0.7').
 
 help_info('Usage: lingua <options>* <data>*
 
 <options>
     --genid <genid>             use <genid> in Skolem IRIs
-    --help                      show help info
+    --help, -h                  show help info
     --output <file>             write reasoner output to <file>
-    --version                   show version info
+    --version, -v               show version info
     --wcache <uri> <file>       to tell that <uri> is cached as <file>
 
 <data>
@@ -329,12 +329,6 @@ opts(['--genid', Genid|Argus], Args) :-
     retractall(flag(genid, _)),
     assertz(flag(genid, Genid)),
     opts(Argus, Args).
-opts(['--help'|_], _) :-
-    !,
-    help_info(Help),
-    format(user_error, '~w~n', [Help]),
-    flush_output(user_error),
-    throw(halt(0)).
 opts(['--output', File|Argus], Args) :-
     !,
     open(File, write, Out, [encoding(utf8)]),
@@ -342,12 +336,6 @@ opts(['--output', File|Argus], Args) :-
     retractall(flag(output, _)),
     assertz(flag(output, Out)),
     opts(Argus, Args).
-opts(['--version'|_], _) :-
-    !,
-    version_info(Version),
-    format(user_error, '~w~n', [Version]),
-    flush_output(user_error),
-    throw(halt(0)).
 opts(['--wcache', Argument, File|Argus], Args) :-
     !,
     absolute_uri(Argument, Arg),
@@ -355,7 +343,19 @@ opts(['--wcache', Argument, File|Argus], Args) :-
     assertz(wcache(Arg, File)),
     opts(Argus, Args).
 opts([Arg|_], _) :-
-    \+memberchk(Arg, ['--help']),
+    memberchk(Arg, ['--help', '-h']),
+    !,
+    help_info(Help),
+    format('~w~n', [Help]),
+    throw(halt(0)).
+opts([Arg|_], _) :-
+    memberchk(Arg, ['--version', '-v']),
+    !,
+    version_info(Version),
+    format('~w~n', [Version]),
+    throw(halt(0)).
+opts([Arg|_], _) :-
+    \+memberchk(Arg, ['--help', '-h']),
     sub_atom(Arg, 0, 2, _, '--'),
     !,
     throw(not_supported_option(Arg)).

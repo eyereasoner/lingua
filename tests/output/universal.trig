@@ -11,6 +11,7 @@ skolem:t_0 :is :lonely.
 #
 # lingua explanation
 #
+
 _:gn_1 lingua:explanation _:gn_2.
 _:gn_1 lingua:explanation _:gn_3.
 

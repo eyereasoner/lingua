@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v0.0.7').
+version_info('lingua v0.0.8').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -741,6 +741,7 @@ w3 :-
         writeln('#'),
         writeln('# lingua explanation'),
         writeln('#'),
+        nl,
         (   answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', S, O),
             labelvars('<http://www.w3.org/2000/10/swap/lingua#explanation>'(S, O), 0, _, avar),
             indent,

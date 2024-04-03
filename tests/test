@@ -10,7 +10,9 @@ FAILED=0
 
 version=$(lingua -v)
 
-echo -e "${YELLOW}Running lingua tests with $version${NORMAL}"
+echo -e "${YELLOW}#${NORMAL}"
+echo -e "${YELLOW}# Running lingua tests with $version${NORMAL}"
+echo -e "${YELLOW}#${NORMAL}"
 echo ""
 
 pad () {

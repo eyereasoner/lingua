@@ -1524,6 +1524,7 @@ bmt:i27 bmt:cycle (bmt:i39 bmt:i84 bmt:i39 bmt:i84 bmt:i39 bmt:i84 bmt:i39 bmt:i
 #
 # lingua explanation
 #
+
 _:node_1_1 lingua:explanation true.
 _:gn_1 lingua:explanation _:gn_2.
 _:gn_3 lingua:explanation _:gn_4.

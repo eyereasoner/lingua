@@ -9,12 +9,12 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
+_:bng_1 lingua:explanation _:bng_2.
 
-_:gn_1 {
+_:bng_1 {
     [] rdf:value 5; math:greaterThan 3.
 }
 
-_:gn_2 {
+_:bng_2 {
     [] rdf:value 5; :moreInterestingThan 3.
 }

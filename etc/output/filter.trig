@@ -10,19 +10,19 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
+_:bng_1 lingua:explanation _:bng_2.
 
-_:gn_1 {
-    :Let :where (_:sk_0 _:gn_3).
-    (_:sk_0 _:gn_3 ("Huey" "Dewey")) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/filter.trig>) 1).
+_:bng_1 {
+    :Let :where (_:sk_0 _:bng_3).
+    (_:sk_0 _:bng_3 ("Huey" "Dewey")) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/filter.trig>) 1).
     ("Huey" "Dewey") list:length 2.
 }
 
-_:gn_2 {
+_:bng_2 {
     :result :is ("Huey" "Dewey").
 }
 
-_:gn_3 {
+_:bng_3 {
     :Let :param _:sk_0.
     _:sk_0 string:lessThan "Louie".
 }

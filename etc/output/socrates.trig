@@ -8,13 +8,13 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
+_:bng_1 lingua:explanation _:bng_2.
 
-_:gn_1 {
+_:bng_1 {
     :Human rdfs:subClassOf :Mortal.
     :Socrates a :Human.
 }
 
-_:gn_2 {
+_:bng_2 {
     :Socrates a :Mortal.
 }

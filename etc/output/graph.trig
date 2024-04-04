@@ -10,245 +10,245 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
-_:gn_3 lingua:explanation _:gn_4.
-_:gn_5 lingua:explanation _:gn_6.
-_:gn_7 lingua:explanation _:gn_8.
-_:gn_9 lingua:explanation _:gn_10.
-_:gn_11 lingua:explanation _:gn_12.
-_:gn_13 lingua:explanation _:gn_14.
-_:gn_15 lingua:explanation _:gn_16.
-_:gn_17 lingua:explanation _:gn_18.
-_:gn_19 lingua:explanation _:gn_20.
-_:gn_21 lingua:explanation _:gn_22.
-_:gn_23 lingua:explanation _:gn_24.
-_:gn_25 lingua:explanation _:gn_26.
-_:gn_27 lingua:explanation _:gn_28.
-_:gn_29 lingua:explanation _:gn_30.
-_:gn_31 lingua:explanation _:gn_32.
-_:gn_33 lingua:explanation _:gn_34.
-_:gn_35 lingua:explanation _:gn_36.
-_:gn_37 lingua:explanation _:gn_38.
-_:gn_39 lingua:explanation _:gn_36.
-_:gn_40 lingua:explanation _:gn_41.
-_:gn_42 lingua:explanation _:gn_36.
-_:gn_43 lingua:explanation _:gn_38.
-_:gn_44 lingua:explanation _:gn_36.
-_:gn_45 lingua:explanation _:gn_46.
-_:gn_47 lingua:explanation _:gn_41.
-_:gn_48 lingua:explanation _:gn_46.
-_:gn_49 lingua:explanation _:gn_46.
+_:bng_1 lingua:explanation _:bng_2.
+_:bng_3 lingua:explanation _:bng_4.
+_:bng_5 lingua:explanation _:bng_6.
+_:bng_7 lingua:explanation _:bng_8.
+_:bng_9 lingua:explanation _:bng_10.
+_:bng_11 lingua:explanation _:bng_12.
+_:bng_13 lingua:explanation _:bng_14.
+_:bng_15 lingua:explanation _:bng_16.
+_:bng_17 lingua:explanation _:bng_18.
+_:bng_19 lingua:explanation _:bng_20.
+_:bng_21 lingua:explanation _:bng_22.
+_:bng_23 lingua:explanation _:bng_24.
+_:bng_25 lingua:explanation _:bng_26.
+_:bng_27 lingua:explanation _:bng_28.
+_:bng_29 lingua:explanation _:bng_30.
+_:bng_31 lingua:explanation _:bng_32.
+_:bng_33 lingua:explanation _:bng_34.
+_:bng_35 lingua:explanation _:bng_36.
+_:bng_37 lingua:explanation _:bng_38.
+_:bng_39 lingua:explanation _:bng_36.
+_:bng_40 lingua:explanation _:bng_41.
+_:bng_42 lingua:explanation _:bng_36.
+_:bng_43 lingua:explanation _:bng_38.
+_:bng_44 lingua:explanation _:bng_36.
+_:bng_45 lingua:explanation _:bng_46.
+_:bng_47 lingua:explanation _:bng_41.
+_:bng_48 lingua:explanation _:bng_46.
+_:bng_49 lingua:explanation _:bng_46.
 
-_:gn_1 {
+_:bng_1 {
     :paris :oneway :orleans.
 }
 
-_:gn_2 {
+_:bng_2 {
     :paris :path :orleans.
 }
 
-_:gn_3 {
+_:bng_3 {
     :paris :oneway :chartres.
 }
 
-_:gn_4 {
+_:bng_4 {
     :paris :path :chartres.
 }
 
-_:gn_5 {
+_:bng_5 {
     :paris :oneway :amiens.
 }
 
-_:gn_6 {
+_:bng_6 {
     :paris :path :amiens.
 }
 
-_:gn_7 {
+_:bng_7 {
     :orleans :oneway :blois.
 }
 
-_:gn_8 {
+_:bng_8 {
     :orleans :path :blois.
 }
 
-_:gn_9 {
+_:bng_9 {
     :orleans :oneway :bourges.
 }
 
-_:gn_10 {
+_:bng_10 {
     :orleans :path :bourges.
 }
 
-_:gn_11 {
+_:bng_11 {
     :blois :oneway :tours.
 }
 
-_:gn_12 {
+_:bng_12 {
     :blois :path :tours.
 }
 
-_:gn_13 {
+_:bng_13 {
     :chartres :oneway :lemans.
 }
 
-_:gn_14 {
+_:bng_14 {
     :chartres :path :lemans.
 }
 
-_:gn_15 {
+_:bng_15 {
     :lemans :oneway :angers.
 }
 
-_:gn_16 {
+_:bng_16 {
     :lemans :path :angers.
 }
 
-_:gn_17 {
+_:bng_17 {
     :lemans :oneway :tours.
 }
 
-_:gn_18 {
+_:bng_18 {
     :lemans :path :tours.
 }
 
-_:gn_19 {
+_:bng_19 {
     :angers :oneway :nantes.
 }
 
-_:gn_20 {
+_:bng_20 {
     :angers :path :nantes.
 }
 
-_:gn_21 {
+_:bng_21 {
     :paris :path :orleans.
     :orleans :path :blois.
 }
 
-_:gn_22 {
+_:bng_22 {
     :paris :path :blois.
 }
 
-_:gn_23 {
+_:bng_23 {
     :paris :path :orleans.
     :orleans :path :bourges.
 }
 
-_:gn_24 {
+_:bng_24 {
     :paris :path :bourges.
 }
 
-_:gn_25 {
+_:bng_25 {
     :paris :path :chartres.
     :chartres :path :lemans.
 }
 
-_:gn_26 {
+_:bng_26 {
     :paris :path :lemans.
 }
 
-_:gn_27 {
+_:bng_27 {
     :orleans :path :blois.
     :blois :path :tours.
 }
 
-_:gn_28 {
+_:bng_28 {
     :orleans :path :tours.
 }
 
-_:gn_29 {
+_:bng_29 {
     :chartres :path :lemans.
     :lemans :path :angers.
 }
 
-_:gn_30 {
+_:bng_30 {
     :chartres :path :angers.
 }
 
-_:gn_31 {
+_:bng_31 {
     :chartres :path :lemans.
     :lemans :path :tours.
 }
 
-_:gn_32 {
+_:bng_32 {
     :chartres :path :tours.
 }
 
-_:gn_33 {
+_:bng_33 {
     :lemans :path :angers.
     :angers :path :nantes.
 }
 
-_:gn_34 {
+_:bng_34 {
     :lemans :path :nantes.
 }
 
-_:gn_35 {
+_:bng_35 {
     :paris :path :orleans.
     :orleans :path :tours.
 }
 
-_:gn_36 {
+_:bng_36 {
     :paris :path :tours.
 }
 
-_:gn_37 {
+_:bng_37 {
     :paris :path :chartres.
     :chartres :path :angers.
 }
 
-_:gn_38 {
+_:bng_38 {
     :paris :path :angers.
 }
 
-_:gn_39 {
+_:bng_39 {
     :paris :path :chartres.
     :chartres :path :tours.
 }
 
-_:gn_40 {
+_:bng_40 {
     :chartres :path :lemans.
     :lemans :path :nantes.
 }
 
-_:gn_41 {
+_:bng_41 {
     :chartres :path :nantes.
 }
 
-_:gn_42 {
+_:bng_42 {
     :paris :path :blois.
     :blois :path :tours.
 }
 
-_:gn_43 {
+_:bng_43 {
     :paris :path :lemans.
     :lemans :path :angers.
 }
 
-_:gn_44 {
+_:bng_44 {
     :paris :path :lemans.
     :lemans :path :tours.
 }
 
-_:gn_45 {
+_:bng_45 {
     :paris :path :lemans.
     :lemans :path :nantes.
 }
 
-_:gn_46 {
+_:bng_46 {
     :paris :path :nantes.
 }
 
-_:gn_47 {
+_:bng_47 {
     :chartres :path :angers.
     :angers :path :nantes.
 }
 
-_:gn_48 {
+_:bng_48 {
     :paris :path :chartres.
     :chartres :path :nantes.
 }
 
-_:gn_49 {
+_:bng_49 {
     :paris :path :angers.
     :angers :path :nantes.
 }

@@ -2,41 +2,41 @@
 @prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
 @prefix graph: <http://www.w3.org/2000/10/swap/graph#>.
 
-:result :is _:gn_1.
+:result :is _:bng_1.
 
 #
 # lingua explanation
 #
 
-_:gn_2 lingua:explanation _:gn_3.
+_:bng_2 lingua:explanation _:bng_3.
 
-_:gn_1 {
+_:bng_1 {
     :A :B :C.
     :A :X :C.
     :D :E :F.
     :A :Y :C.
 }
 
-_:gn_2 {
-    (_:node_1_1 _:node_2_1) graph:union _:gn_1.
+_:bng_2 {
+    (_:bng_4 _:bng_5) graph:union _:bng_1.
 }
 
-_:gn_3 {
-    :result :is _:gn_1.
+_:bng_3 {
+    :result :is _:bng_1.
 }
 
-_:node_1_1 {
+_:bng_4 {
     :A :B :C.
     :A :X :C.
     :D :E :F.
 }
 
-_:node_2_1 {
+_:bng_5 {
     :A :Y :C.
     :A :B :C.
 }
 
-_:gn_1 {
+_:bng_1 {
     :A :B :C.
     :A :X :C.
     :D :E :F.

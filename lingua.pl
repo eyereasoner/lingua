@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.0.0').
+version_info('lingua v1.0.1').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -154,6 +154,8 @@ argv([Arg|Argvs], [Arg|Argus]) :-
 % ------------------------------
 
 gre(Argus) :-
+
+    % prepare engine
     nb_setval(exit_code, 0),
     nb_setval(indentation, 0),
     nb_setval(limit, -1),
@@ -163,21 +165,30 @@ gre(Argus) :-
     nb_setval(cdepth, 0),
     nb_setval(wn, 0),
     nb_setval(doc_nr, 0),
+
+    % check command line options
     opts(Argus, Args),
     (   Args = []
     ->  opts(['--help'], _)
     ;   true
     ),
+
+    % get genid for Skolem IRIs
     (   flag(genid, Genid)
     ->  true
     ;   uuid(Genid)
     ),
     atomic_list_concat(['http://eyereasoner.github.io/.well-known/genid/', Genid, '#'], Sns),
     nb_setval(var_ns, Sns),
+
+    % common namespace prefixes
     put_pfx('skolem', Sns),
     put_pfx('var', 'http://www.w3.org/2000/10/swap/var#'),
     put_pfx('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'),
+
+    % process command line arguments
     args(Args),
+
     % create named graphs
     (   quad(_, _, _, G),
         findall(C,
@@ -192,6 +203,7 @@ gre(Argus) :-
         fail
     ;   true
     ),
+
     % move rdf lists and values
     (   graph(A, B),
         conj_list(B, C),
@@ -203,6 +215,7 @@ gre(Argus) :-
         fail
     ;   true
     ),
+
     % create terms
     (   pred(P),
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>',
@@ -219,10 +232,17 @@ gre(Argus) :-
         fail
     ;   true
     ),
-    % remove rdf lists and values
+
+    % remove rdf lists
     retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>'(_, _)),
     retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>'(_, _)),
+
+    % remove rdf values
     retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'(_, _)),
+
+    % remove rdf named graphs
+    retractall(graph(_, _)),
+
     % create forward rules
     assertz(implies((
             '<http://www.w3.org/2000/10/swap/lingua#implication>'(A, B),
@@ -235,6 +255,7 @@ gre(Argus) :-
             ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I), F)
             ;   F = I
             )), '<http://www.w3.org/2000/10/swap/log#implies>'(Q, F))),
+
     % create backward rules
     assertz(implies((
             '<http://www.w3.org/2000/10/swap/lingua#hornb>'(B, A),
@@ -256,6 +277,7 @@ gre(Argus) :-
                 retractall(brake)
             ;   true
             )), true)),
+
     % create queries
     assertz(implies((
             '<http://www.w3.org/2000/10/swap/lingua#query>'(A, B),
@@ -277,6 +299,7 @@ gre(Argus) :-
                 retractall(brake)
             ;   true
             )), true)),
+
     % create universal statements
     (   pred(P),
         \+atom_concat('<http://www.w3.org/2000/10/swap/', _, P),
@@ -291,6 +314,7 @@ gre(Argus) :-
         fail
     ;   true
     ),
+
     % set engine values
     findall(Sc,
         (   scope(Sc)
@@ -304,6 +328,7 @@ gre(Argus) :-
     nb_setval(scope, Scope),
     nb_setval(rn, 0),
     nb_setval(keep_ng, true),
+
     % run engine
     catch(eam(0), Exc3,
         (   (   Exc3 = halt(0)
@@ -1157,7 +1182,7 @@ wg(X) :-
     ->  (   nb_getval(keep_ng, true)
         ->  (   graph(N, X)
             ->  true
-            ;   gensym('gn_', Y),
+            ;   gensym('bng_', Y),
                 nb_getval(var_ns, Sns),
                 atomic_list_concat(['<', Sns, Y, '>'], N),
                 assertz(graph(N, X))

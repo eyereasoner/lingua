@@ -12,17 +12,17 @@ skolem:t_0 :is :lonely.
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
-_:gn_1 lingua:explanation _:gn_3.
+_:bng_1 lingua:explanation _:bng_2.
+_:bng_1 lingua:explanation _:bng_3.
 
-_:gn_1 {
+_:bng_1 {
     (:bob) log:skolem skolem:t_0.
 }
 
-_:gn_2 {
+_:bng_2 {
     :bob :loves skolem:t_0.
 }
 
-_:gn_3 {
+_:bng_3 {
     skolem:t_0 :is :lonely.
 }

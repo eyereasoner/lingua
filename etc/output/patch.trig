@@ -11,17 +11,17 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation true.
+_:bng_1 lingua:explanation true.
 
-_:gn_1 {
+_:bng_1 {
     :pers001 :familyName "Garcia".
-    _:gn_2 log:becomes _:gn_3.
+    _:bng_2 log:becomes _:bng_3.
 }
 
-_:gn_2 {
+_:bng_2 {
     :pers001 :givenName "Claudia".
 }
 
-_:gn_3 {
+_:bng_3 {
     :pers001 :givenName "Alex".
 }

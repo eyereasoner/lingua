@@ -11,71 +11,71 @@
 # lingua explanation
 #
 
-_:gn_1 lingua:explanation _:gn_2.
-_:gn_3 lingua:explanation _:gn_4.
-_:gn_5 lingua:explanation _:gn_6.
-_:gn_7 lingua:explanation _:gn_8.
+_:bng_1 lingua:explanation _:bng_2.
+_:bng_3 lingua:explanation _:bng_4.
+_:bng_5 lingua:explanation _:bng_6.
+_:bng_7 lingua:explanation _:bng_8.
 
-_:gn_1 {
+_:bng_1 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (_:gn_9 _:gn_10) log:forAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
+    (_:bng_9 _:bng_10) log:forAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
 }
 
-_:gn_2 {
+_:bng_2 {
     :PolicyX :pass :allOfTest.
 }
 
-_:gn_3 {
+_:bng_3 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (var:x_0 _:gn_11 (:C)) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
+    (var:x_0 _:bng_11 (:C)) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
     (:C) list:length 1 .
     (1) log:notEqualTo (0).
 }
 
-_:gn_4 {
+_:bng_4 {
     :PolicyX :pass :anyOfTest.
 }
 
-_:gn_5 {
+_:bng_5 {
     :test1 :policy :PolicyX.
     :PolicyX a :Policy.
-    (var:x_0 _:gn_12 ()) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
+    (var:x_0 _:bng_12 ()) log:collectAllIn ((<https://eyereasoner.github.io/lingua/etc/acp.trig>) 1).
     () list:length 0 .
     (0) log:equalTo (0).
 }
 
-_:gn_6 {
+_:bng_6 {
     :PolicyX :pass :noneOfTest.
 }
 
-_:gn_7 {
+_:bng_7 {
     :PolicyX a :Policy.
     :PolicyX :pass :allOfTest.
     :PolicyX :pass :anyOfTest.
     :PolicyX :pass :noneOfTest.
 }
 
-_:gn_8 {
+_:bng_8 {
     :test :for :PolicyX.
     :test :is true.
 }
 
-_:gn_9 {
+_:bng_9 {
     :PolicyX :allOf var:x_0.
 }
 
-_:gn_10 {
+_:bng_10 {
     :test1 :has var:x_0.
 }
 
-_:gn_11 {
+_:bng_11 {
     :PolicyX :anyOf var:x_0.
     :test1 :has var:x_0.
 }
 
-_:gn_12 {
+_:bng_12 {
     :PolicyX :noneOf var:x_0.
     :test1 :has var:x_0.
 }

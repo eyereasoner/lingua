@@ -13,27 +13,27 @@
 :Minka a :Cat.
 :Charly a :Dog.
 
-_:ng1 lingua:implication _:ng2.
+_:bng_1 lingua:implication _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     var:cat a :Cat.
 }
 
-_:ng2 {
-    _:ng3 lingua:implication _:ng4.
+_:bng_2 {
+    _:bng_3 lingua:implication _:bng_4.
 }
 
-_:ng3 {
+_:bng_3 {
     var:dog a :Dog.
 }
 
-_:ng4 {
+_:bng_4 {
     :test :is true.
 }
 
 # query
-_:ng5 lingua:query _:ng5.
+_:bng_5 lingua:query _:bng_5.
 
-_:ng5 {
+_:bng_5 {
     :test :is var:result.
 }

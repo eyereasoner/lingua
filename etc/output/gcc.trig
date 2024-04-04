@@ -1,0 +1,395 @@
+@prefix : <https://eyereasoner.github.io/lingua/etc/gcc.trig#>.
+@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+
+((1 1 1 1 1 1 1 1 1) (0 0 0)) :testgcc ((0 0 1) (0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+
+#
+# lingua explanation
+#
+
+_:gn_1 lingua:explanation _:gn_2.
+_:gn_3 lingua:explanation _:gn_4.
+_:gn_5 lingua:explanation _:gn_6.
+_:gn_7 lingua:explanation _:gn_8.
+_:gn_9 lingua:explanation _:gn_10.
+_:gn_11 lingua:explanation _:gn_12.
+_:gn_13 lingua:explanation _:gn_14.
+_:gn_15 lingua:explanation _:gn_16.
+_:gn_17 lingua:explanation _:gn_18.
+_:gn_19 lingua:explanation _:gn_20.
+_:gn_21 lingua:explanation _:gn_22.
+_:gn_23 lingua:explanation _:gn_24.
+_:gn_25 lingua:explanation _:gn_26.
+_:gn_27 lingua:explanation _:gn_28.
+_:gn_29 lingua:explanation _:gn_30.
+_:gn_31 lingua:explanation _:gn_32.
+_:gn_33 lingua:explanation _:gn_34.
+_:gn_35 lingua:explanation _:gn_36.
+_:gn_37 lingua:explanation _:gn_38.
+_:gn_39 lingua:explanation _:gn_40.
+_:gn_41 lingua:explanation _:gn_42.
+_:gn_43 lingua:explanation _:gn_44.
+_:gn_45 lingua:explanation _:gn_46.
+_:gn_47 lingua:explanation _:gn_48.
+_:gn_49 lingua:explanation _:gn_50.
+_:gn_51 lingua:explanation _:gn_52.
+_:gn_53 lingua:explanation _:gn_54.
+_:gn_55 lingua:explanation _:gn_56.
+_:gn_57 lingua:explanation _:gn_58.
+
+_:gn_1 {
+    (0 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (0 1) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (1 0) :and 0 .
+    (0 0) :or 0 .
+    (0 0) :or 0.
+}
+
+_:gn_2 {
+    (0 0 0) :netb (0 0).
+}
+
+_:gn_3 {
+    (0 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    [] rdf:value 0; :inv 1 .
+    (1 1) :and 1 .
+    (0 1) :or 1.
+}
+
+_:gn_4 {
+    (0 0) :neta 1.
+}
+
+_:gn_5 {
+    (0 0 0) :netb (0 0).
+    (0 0) :neta 1 .
+    (0 1 0) :dff 0 .
+    (0 1 0) :dff 0 .
+    (1 1 0) :dff 1.
+}
+
+_:gn_6 {
+    (1 (0 0 0)) :gcc (0 0 1).
+}
+
+_:gn_7 {
+    (0 1) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    (0 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (1 1) :and 1 .
+    (0 0) :or 0 .
+    (0 1) :or 1.
+}
+
+_:gn_8 {
+    (0 0 1) :netb (0 1).
+}
+
+_:gn_9 {
+    (0 0 1) :netb (0 1).
+    (0 0) :neta 1 .
+    (0 1 0) :dff 0 .
+    (1 1 0) :dff 1 .
+    (1 1 1) :dff 1.
+}
+
+_:gn_10 {
+    (1 (0 0 1)) :gcc (0 1 1).
+}
+
+_:gn_11 {
+    (0 1) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    (1 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (1 1) :and 1 .
+    (0 0) :or 0 .
+    (0 1) :or 1.
+}
+
+_:gn_12 {
+    (0 1 1) :netb (0 1).
+}
+
+_:gn_13 {
+    (0 1) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    [] rdf:value 1; :inv 0 .
+    (1 0) :and 0 .
+    (0 0) :or 0.
+}
+
+_:gn_14 {
+    (0 1) :neta 0.
+}
+
+_:gn_15 {
+    (0 1 1) :netb (0 1).
+    (0 1) :neta 0 .
+    (0 1 0) :dff 0 .
+    (1 1 1) :dff 1 .
+    (0 1 1) :dff 0.
+}
+
+_:gn_16 {
+    (1 (0 1 1)) :gcc (0 1 0).
+}
+
+_:gn_17 {
+    (0 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (1 1) :and 1 .
+    [] rdf:value 0; :inv 1 .
+    (1 0) :and 0 .
+    (0 1) :or 1 .
+    (1 0) :or 1.
+}
+
+_:gn_18 {
+    (0 1 0) :netb (1 1).
+}
+
+_:gn_19 {
+    (0 1 0) :netb (1 1).
+    (0 1) :neta 0 .
+    (1 1 0) :dff 1 .
+    (1 1 1) :dff 1 .
+    (0 1 0) :dff 0.
+}
+
+_:gn_20 {
+    (1 (0 1 0)) :gcc (1 1 0).
+}
+
+_:gn_21 {
+    (1 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (1 1) :and 1 .
+    [] rdf:value 1; :inv 0 .
+    (0 0) :and 0 .
+    (0 1) :or 1 .
+    (1 0) :or 1.
+}
+
+_:gn_22 {
+    (1 1 0) :netb (1 1).
+}
+
+_:gn_23 {
+    (1 1) :and 1 .
+    [] rdf:value 1; :inv 0 .
+    [] rdf:value 1; :inv 0 .
+    (0 0) :and 0 .
+    (1 0) :or 1.
+}
+
+_:gn_24 {
+    (1 1) :neta 1.
+}
+
+_:gn_25 {
+    (1 1 0) :netb (1 1).
+    (1 1) :neta 1 .
+    (1 1 1) :dff 1 .
+    (1 1 1) :dff 1 .
+    (1 1 0) :dff 1.
+}
+
+_:gn_26 {
+    (1 (1 1 0)) :gcc (1 1 1).
+}
+
+_:gn_27 {
+    (1 1) :and 1 .
+    [] rdf:value 1; :inv 0 .
+    (1 0) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    (0 1) :and 0 .
+    (1 0) :or 1 .
+    (0 0) :or 0.
+}
+
+_:gn_28 {
+    (1 1 1) :netb (1 0).
+}
+
+_:gn_29 {
+    (1 1 1) :netb (1 0).
+    (1 1) :neta 1 .
+    (1 1 1) :dff 1 .
+    (0 1 1) :dff 0 .
+    (1 1 1) :dff 1.
+}
+
+_:gn_30 {
+    (1 (1 1 1)) :gcc (1 0 1).
+}
+
+_:gn_31 {
+    (1 1) :and 1 .
+    [] rdf:value 1; :inv 0 .
+    (0 0) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    (0 1) :and 0 .
+    (1 0) :or 1 .
+    (0 0) :or 0.
+}
+
+_:gn_32 {
+    (1 0 1) :netb (1 0).
+}
+
+_:gn_33 {
+    (1 0) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    [] rdf:value 0; :inv 1 .
+    (0 1) :and 0 .
+    (0 0) :or 0.
+}
+
+_:gn_34 {
+    (1 0) :neta 0.
+}
+
+_:gn_35 {
+    (1 0 1) :netb (1 0).
+    (1 0) :neta 0 .
+    (1 1 1) :dff 1 .
+    (0 1 0) :dff 0 .
+    (0 1 1) :dff 0.
+}
+
+_:gn_36 {
+    (1 (1 0 1)) :gcc (1 0 0).
+}
+
+_:gn_37 {
+    (1 0) :and 0 .
+    [] rdf:value 0; :inv 1 .
+    (0 1) :and 0 .
+    [] rdf:value 1; :inv 0 .
+    (0 0) :and 0 .
+    (0 0) :or 0 .
+    (0 0) :or 0.
+}
+
+_:gn_38 {
+    (1 0 0) :netb (0 0).
+}
+
+_:gn_39 {
+    (1 0 0) :netb (0 0).
+    (1 0) :neta 0 .
+    (0 1 1) :dff 0 .
+    (0 1 0) :dff 0 .
+    (0 1 0) :dff 0.
+}
+
+_:gn_40 {
+    (1 (1 0 0)) :gcc (0 0 0).
+}
+
+_:gn_41 {
+    (1) list:firstRest (1 ()).
+    ((0 0 1)) list:firstRest ((0 0 1) ()).
+    (1 (0 0 0)) :gcc (0 0 1).
+    (() (0 0 1)) :testgcc ().
+}
+
+_:gn_42 {
+    ((1) (0 0 0)) :testgcc ((0 0 1)).
+}
+
+_:gn_43 {
+    (1 1) list:firstRest (1 (1)).
+    ((0 0 0) (0 0 1)) list:firstRest ((0 0 0) ((0 0 1))).
+    (1 (1 0 0)) :gcc (0 0 0).
+    ((1) (0 0 0)) :testgcc ((0 0 1)).
+}
+
+_:gn_44 {
+    ((1 1) (1 0 0)) :testgcc ((0 0 0) (0 0 1)).
+}
+
+_:gn_45 {
+    (1 1 1) list:firstRest (1 (1 1)).
+    ((1 0 0) (0 0 0) (0 0 1)) list:firstRest ((1 0 0) ((0 0 0) (0 0 1))).
+    (1 (1 0 1)) :gcc (1 0 0).
+    ((1 1) (1 0 0)) :testgcc ((0 0 0) (0 0 1)).
+}
+
+_:gn_46 {
+    ((1 1 1) (1 0 1)) :testgcc ((1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_47 {
+    (1 1 1 1) list:firstRest (1 (1 1 1)).
+    ((1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((1 0 1) ((1 0 0) (0 0 0) (0 0 1))).
+    (1 (1 1 1)) :gcc (1 0 1).
+    ((1 1 1) (1 0 1)) :testgcc ((1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_48 {
+    ((1 1 1 1) (1 1 1)) :testgcc ((1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_49 {
+    (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
+    ((1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((1 1 1) ((1 0 1) (1 0 0) (0 0 0) (0 0 1))).
+    (1 (1 1 0)) :gcc (1 1 1).
+    ((1 1 1 1) (1 1 1)) :testgcc ((1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_50 {
+    ((1 1 1 1 1) (1 1 0)) :testgcc ((1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_51 {
+    (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
+    ((1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((1 1 0) ((1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1))).
+    (1 (0 1 0)) :gcc (1 1 0).
+    ((1 1 1 1 1) (1 1 0)) :testgcc ((1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_52 {
+    ((1 1 1 1 1 1) (0 1 0)) :testgcc ((1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_53 {
+    (1 1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1 1)).
+    ((0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((0 1 0) ((1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1))).
+    (1 (0 1 1)) :gcc (0 1 0).
+    ((1 1 1 1 1 1) (0 1 0)) :testgcc ((1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_54 {
+    ((1 1 1 1 1 1 1) (0 1 1)) :testgcc ((0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_55 {
+    (1 1 1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1 1 1)).
+    ((0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((0 1 1) ((0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1))).
+    (1 (0 0 1)) :gcc (0 1 1).
+    ((1 1 1 1 1 1 1) (0 1 1)) :testgcc ((0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_56 {
+    ((1 1 1 1 1 1 1 1) (0 0 1)) :testgcc ((0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_57 {
+    (1 1 1 1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1 1 1 1)).
+    ((0 0 1) (0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)) list:firstRest ((0 0 1) ((0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1))).
+    (1 (0 0 0)) :gcc (0 0 1).
+    ((1 1 1 1 1 1 1 1) (0 0 1)) :testgcc ((0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}
+
+_:gn_58 {
+    ((1 1 1 1 1 1 1 1 1) (0 0 0)) :testgcc ((0 0 1) (0 1 1) (0 1 0) (1 1 0) (1 1 1) (1 0 1) (1 0 0) (0 0 0) (0 0 1)).
+}

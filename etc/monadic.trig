@@ -12,9 +12,9 @@
 @prefix : <#>.
 
 # importing
-_:ng1 lingua:implication true.
+_:bng_1 lingua:implication true.
 
-_:ng1 {
+_:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt1.ttl>.
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt2.ttl>.
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt3.ttl>.
@@ -28,9 +28,9 @@ _:ng1 {
 }
 
 #query
-_:ng2 lingua:query _:ng3.
+_:bng_2 lingua:query _:bng_3.
 
-_:ng2 {
+_:bng_2 {
     var:D0 var:R var:D1.
     var:D1 var:R var:D2.
     var:D2 var:R var:D3.
@@ -43,6 +43,6 @@ _:ng2 {
     var:D9 var:R var:D0.
 }
 
-_:ng3 {
+_:bng_3 {
     var:R bmt:cycle (var:D0 var:D1 var:D2 var:D3 var:D4 var:D5 var:D6 var:D7 var:D8 var:D9).
 }

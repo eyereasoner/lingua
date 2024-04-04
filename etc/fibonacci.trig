@@ -15,35 +15,35 @@
 [] lingua:explanation [].
 
 # backward rules
-_:ng1 lingua:hornb _:ng2.
+_:bng_1 lingua:hornb _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     var:X :fibonacci var:Y.
 }
 
-_:ng2 {
+_:bng_2 {
     (var:X 0 1) :fib var:Y.
 }
 
-_:ng3 lingua:hornb true.
+_:bng_3 lingua:hornb true.
 
-_:ng3 {
+_:bng_3 {
     (0 var:A var:B) :fib var:A.
 }
 
-_:ng4 lingua:hornb true.
+_:bng_4 lingua:hornb true.
 
-_:ng4 {
+_:bng_4 {
     (1 var:A var:B) :fib var:B.
 }
 
-_:ng5 lingua:hornb _:ng6.
+_:bng_5 lingua:hornb _:bng_6.
 
-_:ng5 {
+_:bng_5 {
     (var:X var:A var:B) :fib var:Y.
 }
 
-_:ng6 {
+_:bng_6 {
     var:X math:greaterThan 1.
     (var:X 1) math:difference var:C.
     (var:A var:B) math:sum var:D.
@@ -51,9 +51,9 @@ _:ng6 {
 }
 
 # query
-_:ng7 lingua:query _:ng7.
+_:bng_7 lingua:query _:bng_7.
 
-_:ng7 {
+_:bng_7 {
     [] rdf:value 0; :fibonacci var:F1.
     [] rdf:value 1; :fibonacci var:F2.
     [] rdf:value 6; :fibonacci var:F3.

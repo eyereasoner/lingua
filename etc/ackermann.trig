@@ -31,13 +31,13 @@
 [] lingua:explanation [].
 
 # ackermann(x, y)
-_:ng1 lingua:hornb _:ng2.
+_:bng_1 lingua:hornb _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     (var:X var:Y) :ackermann var:A.
 }
 
-_:ng2 {
+_:bng_2 {
     (var:Y 3) math:sum var:B.
     (var:X var:B 2) :ackermann var:C.
     (var:C 3) math:difference var:A.
@@ -45,59 +45,59 @@ _:ng2 {
 
 # ackermann(x, y, z)
 # succ (x=0)
-_:ng3 lingua:hornb _:ng4.
+_:bng_3 lingua:hornb _:bng_4.
 
-_:ng3 {
+_:bng_3 {
     (0 var:Y var:Z) :ackermann var:A.
 }
 
-_:ng4 {
+_:bng_4 {
     [] rdf:value true; log:callWithCut true.
     (var:Y 1) math:sum var:A.
 }
 
 # sum (x=1)
-_:ng5 lingua:hornb _:ng6.
+_:bng_5 lingua:hornb _:bng_6.
 
-_:ng5 {
+_:bng_5 {
     (1 var:Y var:Z) :ackermann var:A.
 }
 
-_:ng6 {
+_:bng_6 {
     [] rdf:value true; log:callWithCut true.
     (var:Y var:Z) math:sum var:A.
 }
 
 # product (x=2)
-_:ng7 lingua:hornb _:ng8.
+_:bng_7 lingua:hornb _:bng_8.
 
-_:ng7 {
+_:bng_7 {
     (2 var:Y var:Z) :ackermann var:A.
 }
 
-_:ng8 {
+_:bng_8 {
     [] rdf:value true; log:callWithCut true.
     (var:Y var:Z) math:product var:A.
 }
 
 # exponentiation (x=3), tetration (x=4), pentation (x=5), hexation (x=6), etc
-_:ng9 lingua:hornb _:ng10.
+_:bng_9 lingua:hornb _:bng_10.
 
-_:ng9 {
+_:bng_9 {
     (var:X 0 var:Z) :ackermann 1.
 }
 
-_:ng10 {
+_:bng_10 {
     [] rdf:value true; log:callWithCut true.
 }
 
-_:ng11 lingua:hornb _:ng12.
+_:bng_11 lingua:hornb _:bng_12.
 
-_:ng11 {
+_:bng_11 {
     (var:X var:Y var:Z) :ackermann var:A.
 }
 
-_:ng12 {
+_:bng_12 {
     (var:Y 1) math:difference var:B.
     (var:X var:B var:Z) :ackermann var:C.
     (var:X 1) math:difference var:D.
@@ -105,9 +105,9 @@ _:ng12 {
 }
 
 # query
-_:ng14 lingua:query _:ng14.
+_:bng_14 lingua:query _:bng_14.
 
-_:ng14 {
+_:bng_14 {
     (0 0) :ackermann var:A0.
     (0 6) :ackermann var:A1.
     (1 2) :ackermann var:A2.

@@ -15,21 +15,21 @@
 :Let :param "Louie".
 
 # query
-_:ng1 lingua:query _:ng2.
+_:bng_1 lingua:query _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     :Let :where (var:param var:where).
     (var:param var:where var:filteredParams) log:collectAllIn var:scope.
     var:filteredParams list:length 2.
 }
 
-_:ng2 {
+_:bng_2 {
     :result :is var:filteredParams.
 }
 
-:Let :where (var:param _:ng3).
+:Let :where (var:param _:bng_3).
 
-_:ng3 {
+_:bng_3 {
     :Let :param var:param.
     var:param string:lessThan "Louie".
 }

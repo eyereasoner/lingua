@@ -12,13 +12,13 @@
 @prefix : <#>.
 
 # calculate easter day
-_:ng1 lingua:hornb _:ng2.
+_:bng_1 lingua:hornb _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     var:x0 :easter (var:x34 var:x32).
 }
 
-_:ng2 {
+_:bng_2 {
     (var:x0 19) math:remainder var:x1.
     (var:x0 100) math:integerQuotient var:x2.
     (var:x0 100) math:remainder var:x3.
@@ -56,14 +56,14 @@ _:ng2 {
 }
 
 # query
-_:ng3 lingua:query _:ng4.
+_:bng_3 lingua:query _:bng_4.
 
-_:ng3 {
+_:bng_3 {
     [] rdf:value 27; log:repeat var:x0.
     (2024 var:x0) math:sum var:x1.
     var:x1 :easter (var:x2 var:x3).
 }
 
-_:ng4 {
+_:bng_4 {
     var:x1 :easter (var:x2 var:x3).
 }

@@ -11,19 +11,19 @@
 @prefix : <#>.
 
 # something is more interesting if it is greater
-_:ng1 lingua:hornb _:ng2.
+_:bng_1 lingua:hornb _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     var:X :moreInterestingThan var:Y.
 }
 
-_:ng2 {
+_:bng_2 {
     var:X math:greaterThan var:Y.
 }
 
 # query
-_:ng3 lingua:query _:ng3.
+_:bng_3 lingua:query _:bng_3.
 
-_:ng3 {
+_:bng_3 {
     [] rdf:value 5; :moreInterestingThan 3.
 }

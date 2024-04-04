@@ -10,13 +10,13 @@
 :Let :param "hello world".
 
 # query
-_:ng1 lingua:query _:ng2.
+_:bng_1 lingua:query _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     :Let :param var:X.
     var:X crypto:sha512 var:Y.
 }
 
-_:ng2 {
+_:bng_2 {
     var:X :sha512 var:Y.
 }

@@ -18,25 +18,25 @@
 :pers002 :givenName "Claudia".
 
 # patch rule
-_:ng1 lingua:implication true.
+_:bng_1 lingua:implication true.
 
-_:ng1 {
+_:bng_1 {
     var:person :familyName "Garcia".
-    _:ng2 log:becomes _:ng3.
+    _:bng_2 log:becomes _:bng_3.
 }
 
-_:ng2 {
+_:bng_2 {
     var:person :givenName "Claudia".
 }
 
-_:ng3 {
+_:bng_3 {
     var:person :givenName "Alex".
 }
 
 # query
-_:ng4 lingua:query _:ng4.
+_:bng_4 lingua:query _:bng_4.
 
-_:ng4 {
+_:bng_4 {
     var:person :familyName var:fname.
     var:person :givenName var:gname.
 }

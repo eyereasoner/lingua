@@ -14,20 +14,20 @@
 :Human rdfs:subClassOf :Mortal.
 
 # rdfs subclass
-_:ng1 lingua:implication _:ng2.
+_:bng_1 lingua:implication _:bng_2.
 
-_:ng1 {
+_:bng_1 {
     var:A rdfs:subClassOf var:B.
     var:S a var:A.
 }
 
-_:ng2 {
+_:bng_2 {
     var:S a var:B.
 }
 
 # query
-_:ng3 lingua:query _:ng3.
+_:bng_3 lingua:query _:bng_3.
 
-_:ng3 {
+_:bng_3 {
     var:S a :Mortal.
 }

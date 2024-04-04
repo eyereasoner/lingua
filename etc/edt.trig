@@ -19,28 +19,28 @@
 [] lingua:explanation [].
 
 # importing
-_:ng1 lingua:implication true.
+_:bng_1 lingua:implication true.
 
-_:ng1 {
+_:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-facts.ttl>.
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-dl.ttl>.
 }
 
 # rdfs subclass rule
-_:ng2 lingua:hornb _:ng3.
+_:bng_2 lingua:hornb _:bng_3.
 
-_:ng2 {
+_:bng_2 {
     var:X a var:D.
 }
 
-_:ng3 {
+_:bng_3 {
     var:C rdfs:subClassOf var:D.
     var:X a var:C.
 }
 
 # query
-_:ng4 lingua:query _:ng4.
+_:bng_4 lingua:query _:bng_4.
 
-_:ng4 {
+_:bng_4 {
     edt:i100000 a edt:N100000.
 }

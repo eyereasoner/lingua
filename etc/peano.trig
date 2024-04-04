@@ -13,77 +13,77 @@
 [] lingua:explanation [].
 
 # add
-_:ng1 lingua:hornb true.
+_:bng_1 lingua:hornb true.
 
-_:ng1 {
+_:bng_1 {
     (var:A 0) :add var:A.
 }
 
-_:ng2 lingua:hornb _:ng3.
+_:bng_2 lingua:hornb _:bng_3.
 
-_:ng2 {
+_:bng_2 {
     (var:A (:s var:B)) :add (:s var:C).
 }
 
-_:ng3 {
+_:bng_3 {
     (var:A var:B) :add var:C.
 }
 
 # multiply
-_:ng4 lingua:hornb true.
+_:bng_4 lingua:hornb true.
 
-_:ng4 {
+_:bng_4 {
     (var:A 0) :multiply 0.
 }
 
-_:ng5 lingua:hornb _:ng6.
+_:bng_5 lingua:hornb _:bng_6.
 
-_:ng5 {
+_:bng_5 {
     (var:A (:s var:B)) :multiply var:C.
 }
 
-_:ng6 {
+_:bng_6 {
     (var:A var:B) :multiply var:D.
     (var:A var:D) :add var:C.
 }
 
 # factorial
-_:ng7 lingua:hornb _:ng8.
+_:bng_7 lingua:hornb _:bng_8.
 
-_:ng7 {
+_:bng_7 {
     var:A :factorial var:B.
 }
 
-_:ng8 {
+_:bng_8 {
     (var:A (:s 0)) :fac var:B.
 }
 
-_:ng9 lingua:hornb true.
+_:bng_9 lingua:hornb true.
 
-_:ng9 {
+_:bng_9 {
     (0 var:A) :fac var:A.
 }
 
-_:ng10 lingua:hornb _:ng11.
+_:bng_10 lingua:hornb _:bng_11.
 
-_:ng10 {
+_:bng_10 {
     ((:s var:A) var:B) :fac var:C.
 }
 
-_:ng11 {
+_:bng_11 {
     (var:B (:s var:A)) :multiply var:D.
     (var:A var:D) :fac var:C.
 }
 
 # query
-_:ng12 lingua:query _:ng13.
+_:bng_12 lingua:query _:bng_13.
 
-_:ng12 {
+_:bng_12 {
     ((:s 0) (:s (:s 0))) :multiply var:A.
     (var:A (:s (:s (:s 0)))) :add var:B.
     var:B :factorial var:C.
 }
 
-_:ng13 {
+_:bng_13 {
     var:B :factorial var:C.
 }

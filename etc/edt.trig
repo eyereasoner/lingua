@@ -27,7 +27,7 @@ _:bng_1 {
 }
 
 # rdfs subclass rule
-_:bng_2 lingua:hornb _:bng_3.
+_:bng_2 lingua:component _:bng_3.
 
 _:bng_2 {
     var:X a var:D.

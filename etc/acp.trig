@@ -16,7 +16,7 @@
     :anyOf :C;
     :noneOf :D.
 
-_:bng_1 lingua:hornb _:bng_2.
+_:bng_1 lingua:component _:bng_2.
 
 _:bng_1 {
     var:Pol :pass :allOfTest.
@@ -36,7 +36,7 @@ _:bng_4 {
     var:Test :has var:Field.
 }
 
-_:bng_5 lingua:hornb _:bng_6.
+_:bng_5 lingua:component _:bng_6.
 
 _:bng_5 {
     var:Pol :pass :anyOfTest.
@@ -55,7 +55,7 @@ _:bng_7 {
     var:Test :has var:Field.
 }
 
-_:bng_8 lingua:hornb _:bng_9.
+_:bng_8 lingua:component _:bng_9.
 
 _:bng_8 {
     var:Pol :pass :noneOfTest.

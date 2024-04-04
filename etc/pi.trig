@@ -12,7 +12,7 @@
 # assuming lingua explanations
 [] lingua:explanation [].
 
-_:bng_1 lingua:hornb _:bng_2.
+_:bng_1 lingua:component _:bng_2.
 
 _:bng_1 {
     (var:N var:Pi) :pi true.
@@ -24,13 +24,13 @@ _:bng_2 {
     (3 var:A) math:sum var:Pi.
 }
 
-_:bng_3 lingua:hornb true.
+_:bng_3 lingua:component true.
 
 _:bng_3 {
     (var:N var:N var:P var:P var:S) :pi true.
 }
 
-_:bng_4 lingua:hornb _:bng_5.
+_:bng_4 lingua:component _:bng_5.
 
 _:bng_4 {
     (var:K var:N var:P0 var:P var:S) :pi true.

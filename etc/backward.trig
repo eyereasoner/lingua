@@ -11,7 +11,7 @@
 @prefix : <#>.
 
 # something is more interesting if it is greater
-_:bng_1 lingua:hornb _:bng_2.
+_:bng_1 lingua:component _:bng_2.
 
 _:bng_1 {
     var:X :moreInterestingThan var:Y.

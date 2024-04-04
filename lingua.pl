@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.0.1').
+version_info('lingua v1.0.2').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -74,7 +74,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#hornb>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#component>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#implication>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#query>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
@@ -258,7 +258,7 @@ gre(Argus) :-
 
     % create backward rules
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#hornb>'(B, A),
+            '<http://www.w3.org/2000/10/swap/lingua#component>'(B, A),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),

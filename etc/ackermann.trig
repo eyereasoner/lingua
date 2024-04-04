@@ -31,7 +31,7 @@
 [] lingua:explanation [].
 
 # ackermann(x, y)
-_:bng_1 lingua:hornb _:bng_2.
+_:bng_1 lingua:component _:bng_2.
 
 _:bng_1 {
     (var:X var:Y) :ackermann var:A.
@@ -45,7 +45,7 @@ _:bng_2 {
 
 # ackermann(x, y, z)
 # succ (x=0)
-_:bng_3 lingua:hornb _:bng_4.
+_:bng_3 lingua:component _:bng_4.
 
 _:bng_3 {
     (0 var:Y var:Z) :ackermann var:A.
@@ -57,7 +57,7 @@ _:bng_4 {
 }
 
 # sum (x=1)
-_:bng_5 lingua:hornb _:bng_6.
+_:bng_5 lingua:component _:bng_6.
 
 _:bng_5 {
     (1 var:Y var:Z) :ackermann var:A.
@@ -69,7 +69,7 @@ _:bng_6 {
 }
 
 # product (x=2)
-_:bng_7 lingua:hornb _:bng_8.
+_:bng_7 lingua:component _:bng_8.
 
 _:bng_7 {
     (2 var:Y var:Z) :ackermann var:A.
@@ -81,7 +81,7 @@ _:bng_8 {
 }
 
 # exponentiation (x=3), tetration (x=4), pentation (x=5), hexation (x=6), etc
-_:bng_9 lingua:hornb _:bng_10.
+_:bng_9 lingua:component _:bng_10.
 
 _:bng_9 {
     (var:X 0 var:Z) :ackermann 1.
@@ -91,7 +91,7 @@ _:bng_10 {
     [] rdf:value true; log:callWithCut true.
 }
 
-_:bng_11 lingua:hornb _:bng_12.
+_:bng_11 lingua:component _:bng_12.
 
 _:bng_11 {
     (var:X var:Y var:Z) :ackermann var:A.

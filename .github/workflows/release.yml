@@ -1,0 +1,22 @@
+name: "tagged-release"
+
+on:
+  create
+
+jobs:
+  tagged-release:
+    # Don't run on releases/tags/* which causes recursive behaviour
+    if: startsWith(github.ref, 'refs/tags/')
+    name: "Tagged Release"
+    runs-on: "ubuntu-latest"
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: ${{ github.token }}
+          automatic_release_tag: ${{ github.ref_name }}
+          prerelease: false
+          files: "*"

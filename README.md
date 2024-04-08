@@ -1,3 +1,7 @@
+> [!NOTE]
+> is now integrated in the EYE reasoner
+> see https://github.com/eyereasoner/eye/tree/master/reasoning/lingua
+
 # The Lingua reasoner
 
 Reasoning engine that is using RDF TriG as the web lingua.

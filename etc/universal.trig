@@ -9,14 +9,14 @@
 @prefix : <#>.
 
 # \Every x: type(x, Resource
-_:bng_1 lingua:component true.
+_:bng_1 lingua:backward true.
 
 _:bng_1 {
     var:X a rdfs:Resource.
 }
 
 # Everybody loves somebody who is lonely
-_:bng_2 lingua:component _:bng_3.
+_:bng_2 lingua:backward _:bng_3.
 
 _:bng_2 {
     var:A :loves var:B.
@@ -26,7 +26,7 @@ _:bng_3 {
     (var:A) log:skolem var:B.
 }
 
-_:bng_4 lingua:component _:bng_5.
+_:bng_4 lingua:backward _:bng_5.
 
 _:bng_4 {
     var:B :is :lonely.

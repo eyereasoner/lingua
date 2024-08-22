@@ -74,8 +74,8 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#component>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#implication>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#backward>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#forward>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#query>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
@@ -245,7 +245,7 @@ gre(Argus) :-
 
     % create forward rules
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#implication>'(A, B),
+            '<http://www.w3.org/2000/10/swap/lingua#forward>'(A, B),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
@@ -258,7 +258,7 @@ gre(Argus) :-
 
     % create backward rules
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#component>'(B, A),
+            '<http://www.w3.org/2000/10/swap/lingua#backward>'(B, A),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
@@ -3341,7 +3341,7 @@ quant(answer(':-', _, _), allv) :-
     !.
 quant(_-A, avar) :-
     conj_list(A, B),
-    member('<http://www.w3.org/2000/10/swap/lingua#implication>'(_, _), B),
+    member('<http://www.w3.org/2000/10/swap/lingua#forward>'(_, _), B),
     !.
 quant(_, some).
 

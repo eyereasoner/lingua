@@ -15,14 +15,14 @@
 
 # get airroutes
 # importing
-_:bng_1 lingua:implication true.
+_:bng_1 lingua:forward true.
 
 _:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/path-discovery/path-discovery-data.ttl>.
 }
 
 # connectivity
-_:bng_2 lingua:component _:bng_3.
+_:bng_2 lingua:backward _:bng_3.
 
 _:bng_2 {
     (var:from var:to var:visited var:length var:max) :route (var:from var:to).
@@ -34,7 +34,7 @@ _:bng_3 {
     var:visited list:notMember var:to.
 }
 
-_:bng_4 lingua:component _:bng_5.
+_:bng_4 lingua:backward _:bng_5.
 
 _:bng_4 {
     (var:from var:to var:visited var:length var:max) :route var:route.

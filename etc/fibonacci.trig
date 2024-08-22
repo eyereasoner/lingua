@@ -15,7 +15,7 @@
 [] lingua:explanation [].
 
 # backward rules
-_:bng_1 lingua:component _:bng_2.
+_:bng_1 lingua:backward _:bng_2.
 
 _:bng_1 {
     var:X :fibonacci var:Y.
@@ -25,19 +25,19 @@ _:bng_2 {
     (var:X 0 1) :fib var:Y.
 }
 
-_:bng_3 lingua:component true.
+_:bng_3 lingua:backward true.
 
 _:bng_3 {
     (0 var:A var:B) :fib var:A.
 }
 
-_:bng_4 lingua:component true.
+_:bng_4 lingua:backward true.
 
 _:bng_4 {
     (1 var:A var:B) :fib var:B.
 }
 
-_:bng_5 lingua:component _:bng_6.
+_:bng_5 lingua:backward _:bng_6.
 
 _:bng_5 {
     (var:X var:A var:B) :fib var:Y.

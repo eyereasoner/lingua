@@ -17,7 +17,7 @@ _:bng_1 {
 }
 
 _:bng_2 {
-    _:bng_7 lingua:implication _:bng_6.
+    _:bng_7 lingua:forward _:bng_6.
 }
 
 _:bng_3 {
@@ -25,7 +25,7 @@ _:bng_3 {
 }
 
 _:bng_4 {
-    _:bng_8 lingua:implication _:bng_6.
+    _:bng_8 lingua:forward _:bng_6.
 }
 
 _:bng_5 {

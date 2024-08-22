@@ -20,11 +20,11 @@ Usage: lingua <options>* <data>*
 
 ## RDF lingua
 
-RDF TriG as the web lingua and using blank node graphs.
+RDF TriG as the web lingua using blank node graphs.
 
 Lingua supports reasoning with forward rules described in RDF as
 ```
-_:bng_1 lingua:implication _:bng_2.
+_:bng_1 lingua:forward _:bng_2.
 
 _:bng_1 {
     RDF triples
@@ -35,11 +35,11 @@ _:bng_2 {
 }
 ```
 
-A forward rule with `lingua:implication false` is an inference fuse.
+A forward rule with `lingua:forward false` is an inference fuse.
 
 Lingua also supports reasoning with backward rules described in RDF as
 ```
-_:bng_1 lingua:component _:bng_2.
+_:bng_1 lingua:backward _:bng_2.
 
 _:bng_1 {
     RDF triple

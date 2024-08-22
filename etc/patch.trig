@@ -18,7 +18,7 @@
 :pers002 :givenName "Claudia".
 
 # patch rule
-_:bng_1 lingua:implication true.
+_:bng_1 lingua:forward true.
 
 _:bng_1 {
     var:person :familyName "Garcia".

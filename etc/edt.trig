@@ -19,7 +19,7 @@
 [] lingua:explanation [].
 
 # importing
-_:bng_1 lingua:implication true.
+_:bng_1 lingua:forward true.
 
 _:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-facts.ttl>.
@@ -27,7 +27,7 @@ _:bng_1 {
 }
 
 # rdfs subclass rule
-_:bng_2 lingua:component _:bng_3.
+_:bng_2 lingua:backward _:bng_3.
 
 _:bng_2 {
     var:X a var:D.

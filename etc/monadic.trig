@@ -12,7 +12,7 @@
 @prefix : <#>.
 
 # importing
-_:bng_1 lingua:implication true.
+_:bng_1 lingua:forward true.
 
 _:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt1.ttl>.

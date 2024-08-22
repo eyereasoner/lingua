@@ -42,7 +42,7 @@ Lingua also supports reasoning with backward rules described in RDF as
 _:bng_1 lingua:component _:bng_2.
 
 _:bng_1 {
-    RDF triples
+    RDF triple
 }
 
 _:bng_2 {

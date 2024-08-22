@@ -1,4 +1,4 @@
-# The Lingua reasoner
+# The lingua reasoner
 
 Reasoning engine that is using RDF TriG as the web lingua.
 
@@ -18,7 +18,7 @@ Usage: lingua <options>* <data>*
     <uri>                       TriG data
 ```
 
-## RDF Lingua
+## RDF lingua
 
 RDF TriG as the web lingua and using blank node graphs.
 

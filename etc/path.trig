@@ -51,7 +51,7 @@ _:bng_5 {
 }
 
 # find routes from Manchester-Boston Regional Airport to Helsinki Vantaa Airport with at most 2 stopovers
-_:bng_6 lingua:query _:bng_7.
+_:bng_6 lingua:answer _:bng_7.
 
 _:bng_6 {
     var:source rdfs:label "Manchester-Boston Regional Airport".

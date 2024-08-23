@@ -51,7 +51,7 @@ _:bng_6 {
 }
 
 # query
-_:bng_7 lingua:query _:bng_7.
+_:bng_7 lingua:answer _:bng_7.
 
 _:bng_7 {
     [] rdf:value 0; :fibonacci var:F1.

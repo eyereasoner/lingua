@@ -15,7 +15,7 @@
 :Let :param "Louie".
 
 # query
-_:bng_1 lingua:query _:bng_2.
+_:bng_1 lingua:answer _:bng_2.
 
 _:bng_1 {
     :Let :where (var:param var:where).

@@ -70,7 +70,7 @@ _:bng_7 {
 }
 
 # query
-_:bng_8 lingua:query _:bng_8.
+_:bng_8 lingua:answer _:bng_8.
 
 _:bng_8 {
     _:bng_7 lingua:forward false.

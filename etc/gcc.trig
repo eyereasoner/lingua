@@ -96,7 +96,7 @@ _:bng_11 {
 }
 
 # query
-_:bng_12 lingua:query _:bng_12.
+_:bng_12 lingua:answer _:bng_12.
 
 _:bng_12 {
     ((1 1 1 1 1 1 1 1 1) (0 0 0)) :testgcc var:Q.

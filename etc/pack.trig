@@ -33,7 +33,7 @@ _:bng_2 {
 }
 
 # query
-_:bng_3 lingua:query var:C.
+_:bng_3 lingua:answer var:C.
 
 _:bng_3 {
     var:S pack:package var:O.

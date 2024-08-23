@@ -28,7 +28,7 @@ _:bng_1 {
 }
 
 #query
-_:bng_2 lingua:query _:bng_3.
+_:bng_2 lingua:answer _:bng_3.
 
 _:bng_2 {
     var:D0 var:R var:D1.

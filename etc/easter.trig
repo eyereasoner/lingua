@@ -56,7 +56,7 @@ _:bng_2 {
 }
 
 # query
-_:bng_3 lingua:query _:bng_4.
+_:bng_3 lingua:answer _:bng_4.
 
 _:bng_3 {
     [] rdf:value 27; log:repeat var:x0.

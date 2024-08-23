@@ -75,7 +75,7 @@ _:bng_10 {
 }
 
 # query
-_:bng_11 lingua:query _:bng_12.
+_:bng_11 lingua:answer _:bng_12.
 
 _:bng_11 {
     var:Pol a :Policy.

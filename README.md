@@ -52,7 +52,7 @@ _:bng_2 {
 
 Lingua also supports querying with queries described in RDF as
 ```
-_:bng_1 lingua:query _:bng_2.
+_:bng_1 lingua:answer _:bng_2.
 
 _:bng_1 {
     RDF triples

@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.1.0').
+version_info('lingua v1.2.0').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -73,10 +73,10 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#answer>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#backward>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/lingua#forward>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#query>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#implies>'/2).
@@ -280,7 +280,7 @@ gre(Argus) :-
 
     % create queries
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#query>'(A, B),
+            '<http://www.w3.org/2000/10/swap/lingua#answer>'(A, B),
             (   nb_getval(explain, true),
                 A \= B
             ->  F = ('<http://www.w3.org/2000/10/swap/lingua#explanation>'(A, B), B)

@@ -39,7 +39,7 @@ _:bng_3 {
 }
 
 # query
-_:bng_4 lingua:query _:bng_4.
+_:bng_4 lingua:answer _:bng_4.
 
 _:bng_4 {
     edt:i100000 a edt:N100000.

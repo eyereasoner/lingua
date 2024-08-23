@@ -50,7 +50,7 @@ _:bng_5 {
 }
 
 # query
-_:bng_6 lingua:query _:bng_6.
+_:bng_6 lingua:answer _:bng_6.
 
 _:bng_6 {
     (50000 var:Pi) :pi true.

@@ -175,7 +175,7 @@ _:bng_18 {
 }
 
 # query
-_:bng_19 lingua:query _:bng_19.
+_:bng_19 lingua:answer _:bng_19.
 
 _:bng_19 {
     :x :relGoal :y.

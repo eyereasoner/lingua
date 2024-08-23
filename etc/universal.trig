@@ -37,13 +37,13 @@ _:bng_5 {
 }
 
 # queries
-_:bng_6 lingua:query _:bng_6.
+_:bng_6 lingua:answer _:bng_6.
 
 _:bng_6 {
     :pat a rdfs:Resource.
 }
 
-_:bng_7 lingua:query _:bng_7.
+_:bng_7 lingua:answer _:bng_7.
 
 _:bng_7 {
     :bob :loves var:X.

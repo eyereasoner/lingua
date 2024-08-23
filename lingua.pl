@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.0').
+version_info('lingua v1.2.1').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -1412,7 +1412,9 @@ indentation(C) :-
         )
     ).
 
-'<http://www.w3.org/2000/10/swap/list#firstRest>'([A|B], [A, B]).
+'<http://www.w3.org/2000/10/swap/list#firstRest>'(A, [B, C]) :-
+    getlist(A, D),
+    D = [B|C].
 
 '<http://www.w3.org/2000/10/swap/list#in>'(A, B) :-
     when(
@@ -1421,6 +1423,12 @@ indentation(C) :-
         (   getlist(B, C),
             member(A, C)
         )
+    ).
+
+'<http://www.w3.org/2000/10/swap/list#isList>'(A, B) :-
+    (   getlist(A, _)
+    ->  B = true
+    ;   B = false
     ).
 
 '<http://www.w3.org/2000/10/swap/list#iterate>'(A, [B, C]) :-
@@ -1549,6 +1557,15 @@ indentation(C) :-
         ),
         (   getlist(A, C),
             C = [_|B]
+        )
+    ).
+
+'<http://www.w3.org/2000/10/swap/list#select>'(A, [B, C]) :-
+    when(
+        (   nonvar(A)
+        ),
+        (   getlist(A, D),
+            select(B, D, C)
         )
     ).
 
@@ -2263,7 +2280,13 @@ indentation(C) :-
     when(
         (   ground(X)
         ),
-        (   max_list(X, Y)
+        (   findall(A,
+                (   member(B, X),
+                    getnumber(B, A)
+                ),
+                Z
+            ),
+            max_list(Z, Y)
         )
     ).
 
@@ -2287,7 +2310,13 @@ indentation(C) :-
     when(
         (   ground(X)
         ),
-        (   min_list(X, Y)
+        (   findall(A,
+                (   member(B, X),
+                    getnumber(B, A)
+                ),
+                Z
+            ),
+            min_list(Z, Y)
         )
     ).
 
@@ -3653,6 +3682,8 @@ getlist(A, A) :-
     var(A),
     !.
 getlist([], []) :-
+    !.
+getlist('<http://www.w3.org/1999/02/22-rdf-syntax-ns#nil>', []) :-
     !.
 getlist([A|B], [C|D]) :-
     getlist(A, C),

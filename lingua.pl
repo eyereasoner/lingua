@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.1').
+version_info('lingua v1.2.2').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -880,6 +880,8 @@ wt0(X) :-
     (   wtcache(X, W)
     ->  true
     ;   (   atom(X),
+            atom_codes(X, Y),
+            intersection(Y, [0'!, 0'$, 0'&, 0'', 0'(, 0'), 0'*, 0'+, 0',, 0';, 0'=], []),
             (   sub_atom(X, I, 1, J, '#')
             ->  J > 1,
                 sub_atom(X, 0, I, _, C),
@@ -902,7 +904,9 @@ wt0(X) :-
             ;   assertz(apfx(E, D))
             ),
             K is J-1,
-            sub_atom(X, _, K, 1, F)
+            sub_atom(X, _, K, 1, F),
+            \+sub_atom(F, _, 1, _, '/'),
+            \+sub_atom(F, _, 1, 0, '.')
         ->  atom_concat(E, F, W),
             assertz(wtcache(X, W))
         ;   (   atom(X),

@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.2').
+version_info('lingua v1.2.3').
 
 help_info('Usage: lingua <options>* <data>*
 

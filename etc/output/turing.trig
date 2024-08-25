@@ -1,6 +1,6 @@
-@prefix : <https://eyereasoner.github.io/lingua/etc/turing.trig#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix list: <http://www.w3.org/2000/10/swap/list#>.
+PREFIX : <https://eyereasoner.github.io/lingua/etc/turing.trig#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 
 (1 0 1 0 0 1) :compute (1 0 1 0 1 0 "#").
 (1 0 1 1 1 1) :compute (1 1 0 0 0 0 "#").
@@ -127,915 +127,915 @@ _:bng_192 lingua:explanation _:bng_193.
 _:bng_194 lingua:explanation _:bng_195.
 _:bng_196 lingua:explanation _:bng_197.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     (0 1 0 0 1) list:firstRest (0 (1 0 0 1)).
     (1) list:firstRest (1 ()).
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     (:right () 1 (0 1 0 0 1) (1) 0 (1 0 0 1)) :move true.
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     (1 0 0 1) list:firstRest (1 (0 0 1)).
     (0 1) list:firstRest (0 (1)).
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     (:right (1) 0 (1 0 0 1) (0 1) 1 (0 0 1)) :move true.
 }
 
-_:bng_5 {
+GRAPH _:bng_5 {
     (0 0 1) list:firstRest (0 (0 1)).
     (1 0 1) list:firstRest (1 (0 1)).
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     (:right (0 1) 1 (0 0 1) (1 0 1) 0 (0 1)) :move true.
 }
 
-_:bng_7 {
+GRAPH _:bng_7 {
     (0 1) list:firstRest (0 (1)).
     (0 1 0 1) list:firstRest (0 (1 0 1)).
 }
 
-_:bng_8 {
+GRAPH _:bng_8 {
     (:right (1 0 1) 0 (0 1) (0 1 0 1) 0 (1)) :move true.
 }
 
-_:bng_9 {
+GRAPH _:bng_9 {
     (1) list:firstRest (1 ()).
     (0 0 1 0 1) list:firstRest (0 (0 1 0 1)).
 }
 
-_:bng_10 {
+GRAPH _:bng_10 {
     (:right (0 1 0 1) 0 (1) (0 0 1 0 1) 1 ()) :move true.
 }
 
-_:bng_11 {
+GRAPH _:bng_11 {
     (1 0 0 1 0 1) list:firstRest (1 (0 0 1 0 1)).
 }
 
-_:bng_12 {
+GRAPH _:bng_12 {
     (:right (0 0 1 0 1) 1 () (1 0 0 1 0 1) "#" ()) :move true.
 }
 
-_:bng_13 {
+GRAPH _:bng_13 {
     (1 0 0 1 0 1) list:firstRest (1 (0 0 1 0 1)).
     ("#") list:firstRest ("#" ()).
 }
 
-_:bng_14 {
+GRAPH _:bng_14 {
     (:left (1 0 0 1 0 1) "#" () (0 0 1 0 1) 1 ("#")) :move true.
 }
 
-_:bng_15 {
+GRAPH _:bng_15 {
     (0 0 1 0 1) list:firstRest (0 (0 1 0 1)).
     (0 "#") list:firstRest (0 ("#")).
 }
 
-_:bng_16 {
+GRAPH _:bng_16 {
     (:left (0 0 1 0 1) 0 ("#") (0 1 0 1) 0 (0 "#")) :move true.
 }
 
-_:bng_17 {
+GRAPH _:bng_17 {
     (1) list:firstRest (1 ()).
     () :reverse ().
     (() (1)) list:append (1).
 }
 
-_:bng_18 {
+GRAPH _:bng_18 {
     (1) :reverse (1).
 }
 
-_:bng_19 {
+GRAPH _:bng_19 {
     (0 1) list:firstRest (0 (1)).
     (1) :reverse (1).
     ((1) (0)) list:append (1 0).
 }
 
-_:bng_20 {
+GRAPH _:bng_20 {
     (0 1) :reverse (1 0).
 }
 
-_:bng_21 {
+GRAPH _:bng_21 {
     (1 0 1) list:firstRest (1 (0 1)).
     (0 1) :reverse (1 0).
     ((1 0) (1)) list:append (1 0 1).
 }
 
-_:bng_22 {
+GRAPH _:bng_22 {
     (1 0 1) :reverse (1 0 1).
 }
 
-_:bng_23 {
+GRAPH _:bng_23 {
     (0 1 0 1) list:firstRest (0 (1 0 1)).
     (1 0 1) :reverse (1 0 1).
     ((1 0 1) (0)) list:append (1 0 1 0).
 }
 
-_:bng_24 {
+GRAPH _:bng_24 {
     (0 1 0 1) :reverse (1 0 1 0).
 }
 
-_:bng_25 {
+GRAPH _:bng_25 {
     (0 1 0 1) :reverse (1 0 1 0).
     (1 0 "#") list:firstRest (1 (0 "#")).
     ((1 0 1 0) (1 0 "#")) list:append (1 0 1 0 1 0 "#").
 }
 
-_:bng_26 {
+GRAPH _:bng_26 {
     (:halt (0 1 0 1) 1 (0 "#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_27 {
+GRAPH _:bng_27 {
     (1 0 1 :stop) :tape :halt.
     (:stop (0 1 0 1) 1 (0 "#") (0 1 0 1) 1 (0 "#")) :move true.
     (:halt (0 1 0 1) 1 (0 "#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_28 {
+GRAPH _:bng_28 {
     (1 (0 1 0 1) 0 (0 "#")) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_29 {
+GRAPH _:bng_29 {
     (1 (0 1 0 1) 0 (0 "#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_30 {
+GRAPH _:bng_30 {
     (1 1 0 :left) :tape 1 .
     (:left (0 0 1 0 1) 0 ("#") (0 1 0 1) 0 (0 "#")) :move true.
     (1 (0 1 0 1) 0 (0 "#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_31 {
+GRAPH _:bng_31 {
     (1 (0 0 1 0 1) 1 ("#")) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_32 {
+GRAPH _:bng_32 {
     (1 (0 0 1 0 1) 1 ("#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_33 {
+GRAPH _:bng_33 {
     (0 "#" "#" :left) :tape 1 .
     (:left (1 0 0 1 0 1) "#" () (0 0 1 0 1) 1 ("#")) :move true.
     (1 (0 0 1 0 1) 1 ("#")) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_34 {
+GRAPH _:bng_34 {
     (0 (1 0 0 1 0 1) "#" ()) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_35 {
+GRAPH _:bng_35 {
     (0 (1 0 0 1 0 1) "#" ()) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_36 {
+GRAPH _:bng_36 {
     (0 1 1 :right) :tape 0 .
     (:right (0 0 1 0 1) 1 () (1 0 0 1 0 1) "#" ()) :move true.
     (0 (1 0 0 1 0 1) "#" ()) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_37 {
+GRAPH _:bng_37 {
     (0 (0 0 1 0 1) 1 ()) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_38 {
+GRAPH _:bng_38 {
     (0 (0 0 1 0 1) 1 ()) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_39 {
+GRAPH _:bng_39 {
     (0 0 0 :right) :tape 0 .
     (:right (0 1 0 1) 0 (1) (0 0 1 0 1) 1 ()) :move true.
     (0 (0 0 1 0 1) 1 ()) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_40 {
+GRAPH _:bng_40 {
     (0 (0 1 0 1) 0 (1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_41 {
+GRAPH _:bng_41 {
     (0 (0 1 0 1) 0 (1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_42 {
+GRAPH _:bng_42 {
     (0 0 0 :right) :tape 0 .
     (:right (1 0 1) 0 (0 1) (0 1 0 1) 0 (1)) :move true.
     (0 (0 1 0 1) 0 (1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_43 {
+GRAPH _:bng_43 {
     (0 (1 0 1) 0 (0 1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_44 {
+GRAPH _:bng_44 {
     (0 (1 0 1) 0 (0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_45 {
+GRAPH _:bng_45 {
     (0 1 1 :right) :tape 0 .
     (:right (0 1) 1 (0 0 1) (1 0 1) 0 (0 1)) :move true.
     (0 (1 0 1) 0 (0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_46 {
+GRAPH _:bng_46 {
     (0 (0 1) 1 (0 0 1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_47 {
+GRAPH _:bng_47 {
     (0 (0 1) 1 (0 0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_48 {
+GRAPH _:bng_48 {
     (0 0 0 :right) :tape 0 .
     (:right (1) 0 (1 0 0 1) (0 1) 1 (0 0 1)) :move true.
     (0 (0 1) 1 (0 0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_49 {
+GRAPH _:bng_49 {
     (0 (1) 0 (1 0 0 1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_50 {
+GRAPH _:bng_50 {
     (0 (1) 0 (1 0 0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_51 {
+GRAPH _:bng_51 {
     (0 1 1 :right) :tape 0 .
     (:right () 1 (0 1 0 0 1) (1) 0 (1 0 0 1)) :move true.
     (0 (1) 0 (1 0 0 1)) :continue (1 0 1 0 1 0 "#").
 }
 
-_:bng_52 {
+GRAPH _:bng_52 {
     (0 () 1 (0 1 0 0 1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_53 {
+GRAPH _:bng_53 {
     (1 0 1 0 0 1) list:firstRest (1 (0 1 0 0 1)).
     :add1 :start 0 .
     (0 () 1 (0 1 0 0 1)) :find (1 0 1 0 1 0 "#").
 }
 
-_:bng_54 {
+GRAPH _:bng_54 {
     (1 0 1 0 0 1) :compute (1 0 1 0 1 0 "#").
 }
 
-_:bng_55 {
+GRAPH _:bng_55 {
     (0 1 1 1 1) list:firstRest (0 (1 1 1 1)).
     (1) list:firstRest (1 ()).
 }
 
-_:bng_56 {
+GRAPH _:bng_56 {
     (:right () 1 (0 1 1 1 1) (1) 0 (1 1 1 1)) :move true.
 }
 
-_:bng_57 {
+GRAPH _:bng_57 {
     (1 1 1 1) list:firstRest (1 (1 1 1)).
     (0 1) list:firstRest (0 (1)).
 }
 
-_:bng_58 {
+GRAPH _:bng_58 {
     (:right (1) 0 (1 1 1 1) (0 1) 1 (1 1 1)) :move true.
 }
 
-_:bng_59 {
+GRAPH _:bng_59 {
     (1 1 1) list:firstRest (1 (1 1)).
     (1 0 1) list:firstRest (1 (0 1)).
 }
 
-_:bng_60 {
+GRAPH _:bng_60 {
     (:right (0 1) 1 (1 1 1) (1 0 1) 1 (1 1)) :move true.
 }
 
-_:bng_61 {
+GRAPH _:bng_61 {
     (1 1) list:firstRest (1 (1)).
     (1 1 0 1) list:firstRest (1 (1 0 1)).
 }
 
-_:bng_62 {
+GRAPH _:bng_62 {
     (:right (1 0 1) 1 (1 1) (1 1 0 1) 1 (1)) :move true.
 }
 
-_:bng_63 {
+GRAPH _:bng_63 {
     (1) list:firstRest (1 ()).
     (1 1 1 0 1) list:firstRest (1 (1 1 0 1)).
 }
 
-_:bng_64 {
+GRAPH _:bng_64 {
     (:right (1 1 0 1) 1 (1) (1 1 1 0 1) 1 ()) :move true.
 }
 
-_:bng_65 {
+GRAPH _:bng_65 {
     (1 1 1 1 0 1) list:firstRest (1 (1 1 1 0 1)).
 }
 
-_:bng_66 {
+GRAPH _:bng_66 {
     (:right (1 1 1 0 1) 1 () (1 1 1 1 0 1) "#" ()) :move true.
 }
 
-_:bng_67 {
+GRAPH _:bng_67 {
     (1 1 1 1 0 1) list:firstRest (1 (1 1 1 0 1)).
     ("#") list:firstRest ("#" ()).
 }
 
-_:bng_68 {
+GRAPH _:bng_68 {
     (:left (1 1 1 1 0 1) "#" () (1 1 1 0 1) 1 ("#")) :move true.
 }
 
-_:bng_69 {
+GRAPH _:bng_69 {
     (1 1 1 0 1) list:firstRest (1 (1 1 0 1)).
     (0 "#") list:firstRest (0 ("#")).
 }
 
-_:bng_70 {
+GRAPH _:bng_70 {
     (:left (1 1 1 0 1) 0 ("#") (1 1 0 1) 1 (0 "#")) :move true.
 }
 
-_:bng_71 {
+GRAPH _:bng_71 {
     (1 1 0 1) list:firstRest (1 (1 0 1)).
     (0 0 "#") list:firstRest (0 (0 "#")).
 }
 
-_:bng_72 {
+GRAPH _:bng_72 {
     (:left (1 1 0 1) 0 (0 "#") (1 0 1) 1 (0 0 "#")) :move true.
 }
 
-_:bng_73 {
+GRAPH _:bng_73 {
     (1 0 1) list:firstRest (1 (0 1)).
     (0 0 0 "#") list:firstRest (0 (0 0 "#")).
 }
 
-_:bng_74 {
+GRAPH _:bng_74 {
     (:left (1 0 1) 0 (0 0 "#") (0 1) 1 (0 0 0 "#")) :move true.
 }
 
-_:bng_75 {
+GRAPH _:bng_75 {
     (0 1) list:firstRest (0 (1)).
     (0 0 0 0 "#") list:firstRest (0 (0 0 0 "#")).
 }
 
-_:bng_76 {
+GRAPH _:bng_76 {
     (:left (0 1) 0 (0 0 0 "#") (1) 0 (0 0 0 0 "#")) :move true.
 }
 
-_:bng_77 {
+GRAPH _:bng_77 {
     (1) :reverse (1).
     (1 0 0 0 0 "#") list:firstRest (1 (0 0 0 0 "#")).
     ((1) (1 0 0 0 0 "#")) list:append (1 1 0 0 0 0 "#").
 }
 
-_:bng_78 {
+GRAPH _:bng_78 {
     (:halt (1) 1 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_79 {
+GRAPH _:bng_79 {
     (1 0 1 :stop) :tape :halt.
     (:stop (1) 1 (0 0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
     (:halt (1) 1 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_80 {
+GRAPH _:bng_80 {
     (1 (1) 0 (0 0 0 0 "#")) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_81 {
+GRAPH _:bng_81 {
     (1 (1) 0 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_82 {
+GRAPH _:bng_82 {
     (1 1 0 :left) :tape 1 .
     (:left (0 1) 0 (0 0 0 "#") (1) 0 (0 0 0 0 "#")) :move true.
     (1 (1) 0 (0 0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_83 {
+GRAPH _:bng_83 {
     (1 (0 1) 1 (0 0 0 "#")) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_84 {
+GRAPH _:bng_84 {
     (1 (0 1) 1 (0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_85 {
+GRAPH _:bng_85 {
     (1 1 0 :left) :tape 1 .
     (:left (1 0 1) 0 (0 0 "#") (0 1) 1 (0 0 0 "#")) :move true.
     (1 (0 1) 1 (0 0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_86 {
+GRAPH _:bng_86 {
     (1 (1 0 1) 1 (0 0 "#")) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_87 {
+GRAPH _:bng_87 {
     (1 (1 0 1) 1 (0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_88 {
+GRAPH _:bng_88 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1 0 1) 0 (0 "#") (1 0 1) 1 (0 0 "#")) :move true.
     (1 (1 0 1) 1 (0 0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_89 {
+GRAPH _:bng_89 {
     (1 (1 1 0 1) 1 (0 "#")) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_90 {
+GRAPH _:bng_90 {
     (1 (1 1 0 1) 1 (0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_91 {
+GRAPH _:bng_91 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1 1 0 1) 0 ("#") (1 1 0 1) 1 (0 "#")) :move true.
     (1 (1 1 0 1) 1 (0 "#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_92 {
+GRAPH _:bng_92 {
     (1 (1 1 1 0 1) 1 ("#")) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_93 {
+GRAPH _:bng_93 {
     (1 (1 1 1 0 1) 1 ("#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_94 {
+GRAPH _:bng_94 {
     (0 "#" "#" :left) :tape 1 .
     (:left (1 1 1 1 0 1) "#" () (1 1 1 0 1) 1 ("#")) :move true.
     (1 (1 1 1 0 1) 1 ("#")) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_95 {
+GRAPH _:bng_95 {
     (0 (1 1 1 1 0 1) "#" ()) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_96 {
+GRAPH _:bng_96 {
     (0 (1 1 1 1 0 1) "#" ()) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_97 {
+GRAPH _:bng_97 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1 1 0 1) 1 () (1 1 1 1 0 1) "#" ()) :move true.
     (0 (1 1 1 1 0 1) "#" ()) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_98 {
+GRAPH _:bng_98 {
     (0 (1 1 1 0 1) 1 ()) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_99 {
+GRAPH _:bng_99 {
     (0 (1 1 1 0 1) 1 ()) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_100 {
+GRAPH _:bng_100 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1 0 1) 1 (1) (1 1 1 0 1) 1 ()) :move true.
     (0 (1 1 1 0 1) 1 ()) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_101 {
+GRAPH _:bng_101 {
     (0 (1 1 0 1) 1 (1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_102 {
+GRAPH _:bng_102 {
     (0 (1 1 0 1) 1 (1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_103 {
+GRAPH _:bng_103 {
     (0 1 1 :right) :tape 0 .
     (:right (1 0 1) 1 (1 1) (1 1 0 1) 1 (1)) :move true.
     (0 (1 1 0 1) 1 (1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_104 {
+GRAPH _:bng_104 {
     (0 (1 0 1) 1 (1 1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_105 {
+GRAPH _:bng_105 {
     (0 (1 0 1) 1 (1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_106 {
+GRAPH _:bng_106 {
     (0 1 1 :right) :tape 0 .
     (:right (0 1) 1 (1 1 1) (1 0 1) 1 (1 1)) :move true.
     (0 (1 0 1) 1 (1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_107 {
+GRAPH _:bng_107 {
     (0 (0 1) 1 (1 1 1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_108 {
+GRAPH _:bng_108 {
     (0 (0 1) 1 (1 1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_109 {
+GRAPH _:bng_109 {
     (0 0 0 :right) :tape 0 .
     (:right (1) 0 (1 1 1 1) (0 1) 1 (1 1 1)) :move true.
     (0 (0 1) 1 (1 1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_110 {
+GRAPH _:bng_110 {
     (0 (1) 0 (1 1 1 1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_111 {
+GRAPH _:bng_111 {
     (0 (1) 0 (1 1 1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_112 {
+GRAPH _:bng_112 {
     (0 1 1 :right) :tape 0 .
     (:right () 1 (0 1 1 1 1) (1) 0 (1 1 1 1)) :move true.
     (0 (1) 0 (1 1 1 1)) :continue (1 1 0 0 0 0 "#").
 }
 
-_:bng_113 {
+GRAPH _:bng_113 {
     (0 () 1 (0 1 1 1 1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_114 {
+GRAPH _:bng_114 {
     (1 0 1 1 1 1) list:firstRest (1 (0 1 1 1 1)).
     :add1 :start 0 .
     (0 () 1 (0 1 1 1 1)) :find (1 1 0 0 0 0 "#").
 }
 
-_:bng_115 {
+GRAPH _:bng_115 {
     (1 0 1 1 1 1) :compute (1 1 0 0 0 0 "#").
 }
 
-_:bng_116 {
+GRAPH _:bng_116 {
     (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
     (1) list:firstRest (1 ()).
 }
 
-_:bng_117 {
+GRAPH _:bng_117 {
     (:right () 1 (1 1 1 1 1) (1) 1 (1 1 1 1)) :move true.
 }
 
-_:bng_118 {
+GRAPH _:bng_118 {
     (1 1 1 1) list:firstRest (1 (1 1 1)).
     (1 1) list:firstRest (1 (1)).
 }
 
-_:bng_119 {
+GRAPH _:bng_119 {
     (:right (1) 1 (1 1 1 1) (1 1) 1 (1 1 1)) :move true.
 }
 
-_:bng_120 {
+GRAPH _:bng_120 {
     (1 1 1) list:firstRest (1 (1 1)).
     (1 1 1) list:firstRest (1 (1 1)).
 }
 
-_:bng_121 {
+GRAPH _:bng_121 {
     (:right (1 1) 1 (1 1 1) (1 1 1) 1 (1 1)) :move true.
 }
 
-_:bng_122 {
+GRAPH _:bng_122 {
     (1 1) list:firstRest (1 (1)).
     (1 1 1 1) list:firstRest (1 (1 1 1)).
 }
 
-_:bng_123 {
+GRAPH _:bng_123 {
     (:right (1 1 1) 1 (1 1) (1 1 1 1) 1 (1)) :move true.
 }
 
-_:bng_124 {
+GRAPH _:bng_124 {
     (1) list:firstRest (1 ()).
     (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
 }
 
-_:bng_125 {
+GRAPH _:bng_125 {
     (:right (1 1 1 1) 1 (1) (1 1 1 1 1) 1 ()) :move true.
 }
 
-_:bng_126 {
+GRAPH _:bng_126 {
     (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
 }
 
-_:bng_127 {
+GRAPH _:bng_127 {
     (:right (1 1 1 1 1) 1 () (1 1 1 1 1 1) "#" ()) :move true.
 }
 
-_:bng_128 {
+GRAPH _:bng_128 {
     (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
     ("#") list:firstRest ("#" ()).
 }
 
-_:bng_129 {
+GRAPH _:bng_129 {
     (:left (1 1 1 1 1 1) "#" () (1 1 1 1 1) 1 ("#")) :move true.
 }
 
-_:bng_130 {
+GRAPH _:bng_130 {
     (1 1 1 1 1) list:firstRest (1 (1 1 1 1)).
     (0 "#") list:firstRest (0 ("#")).
 }
 
-_:bng_131 {
+GRAPH _:bng_131 {
     (:left (1 1 1 1 1) 0 ("#") (1 1 1 1) 1 (0 "#")) :move true.
 }
 
-_:bng_132 {
+GRAPH _:bng_132 {
     (1 1 1 1) list:firstRest (1 (1 1 1)).
     (0 0 "#") list:firstRest (0 (0 "#")).
 }
 
-_:bng_133 {
+GRAPH _:bng_133 {
     (:left (1 1 1 1) 0 (0 "#") (1 1 1) 1 (0 0 "#")) :move true.
 }
 
-_:bng_134 {
+GRAPH _:bng_134 {
     (1 1 1) list:firstRest (1 (1 1)).
     (0 0 0 "#") list:firstRest (0 (0 0 "#")).
 }
 
-_:bng_135 {
+GRAPH _:bng_135 {
     (:left (1 1 1) 0 (0 0 "#") (1 1) 1 (0 0 0 "#")) :move true.
 }
 
-_:bng_136 {
+GRAPH _:bng_136 {
     (1 1) list:firstRest (1 (1)).
     (0 0 0 0 "#") list:firstRest (0 (0 0 0 "#")).
 }
 
-_:bng_137 {
+GRAPH _:bng_137 {
     (:left (1 1) 0 (0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
 }
 
-_:bng_138 {
+GRAPH _:bng_138 {
     (1) list:firstRest (1 ()).
     (0 0 0 0 0 "#") list:firstRest (0 (0 0 0 0 "#")).
 }
 
-_:bng_139 {
+GRAPH _:bng_139 {
     (:left (1) 0 (0 0 0 0 "#") () 1 (0 0 0 0 0 "#")) :move true.
 }
 
-_:bng_140 {
+GRAPH _:bng_140 {
     (0 0 0 0 0 0 "#") list:firstRest (0 (0 0 0 0 0 "#")).
 }
 
-_:bng_141 {
+GRAPH _:bng_141 {
     (:left () 0 (0 0 0 0 0 "#") () "#" (0 0 0 0 0 0 "#")) :move true.
 }
 
-_:bng_142 {
+GRAPH _:bng_142 {
     () :reverse ().
     (1 0 0 0 0 0 0 "#") list:firstRest (1 (0 0 0 0 0 0 "#")).
     (() (1 0 0 0 0 0 0 "#")) list:append (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_143 {
+GRAPH _:bng_143 {
     (:halt () 1 (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_144 {
+GRAPH _:bng_144 {
     (1 "#" 1 :stop) :tape :halt.
     (:stop () 1 (0 0 0 0 0 0 "#") () 1 (0 0 0 0 0 0 "#")) :move true.
     (:halt () 1 (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_145 {
+GRAPH _:bng_145 {
     (1 () "#" (0 0 0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_146 {
+GRAPH _:bng_146 {
     (1 () "#" (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_147 {
+GRAPH _:bng_147 {
     (1 1 0 :left) :tape 1 .
     (:left () 0 (0 0 0 0 0 "#") () "#" (0 0 0 0 0 0 "#")) :move true.
     (1 () "#" (0 0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_148 {
+GRAPH _:bng_148 {
     (1 () 1 (0 0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_149 {
+GRAPH _:bng_149 {
     (1 () 1 (0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_150 {
+GRAPH _:bng_150 {
     (1 1 0 :left) :tape 1 .
     (:left (1) 0 (0 0 0 0 "#") () 1 (0 0 0 0 0 "#")) :move true.
     (1 () 1 (0 0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_151 {
+GRAPH _:bng_151 {
     (1 (1) 1 (0 0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_152 {
+GRAPH _:bng_152 {
     (1 (1) 1 (0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_153 {
+GRAPH _:bng_153 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1) 0 (0 0 0 "#") (1) 1 (0 0 0 0 "#")) :move true.
     (1 (1) 1 (0 0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_154 {
+GRAPH _:bng_154 {
     (1 (1 1) 1 (0 0 0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_155 {
+GRAPH _:bng_155 {
     (1 (1 1) 1 (0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_156 {
+GRAPH _:bng_156 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1 1) 0 (0 0 "#") (1 1) 1 (0 0 0 "#")) :move true.
     (1 (1 1) 1 (0 0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_157 {
+GRAPH _:bng_157 {
     (1 (1 1 1) 1 (0 0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_158 {
+GRAPH _:bng_158 {
     (1 (1 1 1) 1 (0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_159 {
+GRAPH _:bng_159 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1 1 1) 0 (0 "#") (1 1 1) 1 (0 0 "#")) :move true.
     (1 (1 1 1) 1 (0 0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_160 {
+GRAPH _:bng_160 {
     (1 (1 1 1 1) 1 (0 "#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_161 {
+GRAPH _:bng_161 {
     (1 (1 1 1 1) 1 (0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_162 {
+GRAPH _:bng_162 {
     (1 1 0 :left) :tape 1 .
     (:left (1 1 1 1 1) 0 ("#") (1 1 1 1) 1 (0 "#")) :move true.
     (1 (1 1 1 1) 1 (0 "#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_163 {
+GRAPH _:bng_163 {
     (1 (1 1 1 1 1) 1 ("#")) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_164 {
+GRAPH _:bng_164 {
     (1 (1 1 1 1 1) 1 ("#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_165 {
+GRAPH _:bng_165 {
     (0 "#" "#" :left) :tape 1 .
     (:left (1 1 1 1 1 1) "#" () (1 1 1 1 1) 1 ("#")) :move true.
     (1 (1 1 1 1 1) 1 ("#")) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_166 {
+GRAPH _:bng_166 {
     (0 (1 1 1 1 1 1) "#" ()) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_167 {
+GRAPH _:bng_167 {
     (0 (1 1 1 1 1 1) "#" ()) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_168 {
+GRAPH _:bng_168 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1 1 1 1) 1 () (1 1 1 1 1 1) "#" ()) :move true.
     (0 (1 1 1 1 1 1) "#" ()) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_169 {
+GRAPH _:bng_169 {
     (0 (1 1 1 1 1) 1 ()) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_170 {
+GRAPH _:bng_170 {
     (0 (1 1 1 1 1) 1 ()) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_171 {
+GRAPH _:bng_171 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1 1 1) 1 (1) (1 1 1 1 1) 1 ()) :move true.
     (0 (1 1 1 1 1) 1 ()) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_172 {
+GRAPH _:bng_172 {
     (0 (1 1 1 1) 1 (1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_173 {
+GRAPH _:bng_173 {
     (0 (1 1 1 1) 1 (1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_174 {
+GRAPH _:bng_174 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1 1) 1 (1 1) (1 1 1 1) 1 (1)) :move true.
     (0 (1 1 1 1) 1 (1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_175 {
+GRAPH _:bng_175 {
     (0 (1 1 1) 1 (1 1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_176 {
+GRAPH _:bng_176 {
     (0 (1 1 1) 1 (1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_177 {
+GRAPH _:bng_177 {
     (0 1 1 :right) :tape 0 .
     (:right (1 1) 1 (1 1 1) (1 1 1) 1 (1 1)) :move true.
     (0 (1 1 1) 1 (1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_178 {
+GRAPH _:bng_178 {
     (0 (1 1) 1 (1 1 1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_179 {
+GRAPH _:bng_179 {
     (0 (1 1) 1 (1 1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_180 {
+GRAPH _:bng_180 {
     (0 1 1 :right) :tape 0 .
     (:right (1) 1 (1 1 1 1) (1 1) 1 (1 1 1)) :move true.
     (0 (1 1) 1 (1 1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_181 {
+GRAPH _:bng_181 {
     (0 (1) 1 (1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_182 {
+GRAPH _:bng_182 {
     (0 (1) 1 (1 1 1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_183 {
+GRAPH _:bng_183 {
     (0 1 1 :right) :tape 0 .
     (:right () 1 (1 1 1 1 1) (1) 1 (1 1 1 1)) :move true.
     (0 (1) 1 (1 1 1 1)) :continue (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_184 {
+GRAPH _:bng_184 {
     (0 () 1 (1 1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_185 {
+GRAPH _:bng_185 {
     (1 1 1 1 1 1) list:firstRest (1 (1 1 1 1 1)).
     :add1 :start 0 .
     (0 () 1 (1 1 1 1 1)) :find (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_186 {
+GRAPH _:bng_186 {
     (1 1 1 1 1 1) :compute (1 0 0 0 0 0 0 "#").
 }
 
-_:bng_187 {
+GRAPH _:bng_187 {
     ("#") list:firstRest ("#" ()).
 }
 
-_:bng_188 {
+GRAPH _:bng_188 {
     (:left () "#" () () "#" ("#")) :move true.
 }
 
-_:bng_189 {
+GRAPH _:bng_189 {
     () :reverse ().
     (1 "#") list:firstRest (1 ("#")).
     (() (1 "#")) list:append (1 "#").
 }
 
-_:bng_190 {
+GRAPH _:bng_190 {
     (:halt () 1 ("#")) :continue (1 "#").
 }
 
-_:bng_191 {
+GRAPH _:bng_191 {
     (1 "#" 1 :stop) :tape :halt.
     (:stop () 1 ("#") () 1 ("#")) :move true.
     (:halt () 1 ("#")) :continue (1 "#").
 }
 
-_:bng_192 {
+GRAPH _:bng_192 {
     (1 () "#" ("#")) :find (1 "#").
 }
 
-_:bng_193 {
+GRAPH _:bng_193 {
     (1 () "#" ("#")) :continue (1 "#").
 }
 
-_:bng_194 {
+GRAPH _:bng_194 {
     (0 "#" "#" :left) :tape 1 .
     (:left () "#" () () "#" ("#")) :move true.
     (1 () "#" ("#")) :continue (1 "#").
 }
 
-_:bng_195 {
+GRAPH _:bng_195 {
     (0 () "#" ()) :find (1 "#").
 }
 
-_:bng_196 {
+GRAPH _:bng_196 {
     :add1 :start 0 .
     (0 () "#" ()) :find (1 "#").
 }
 
-_:bng_197 {
+GRAPH _:bng_197 {
     () :compute (1 "#").
 }

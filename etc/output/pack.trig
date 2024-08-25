@@ -1,9 +1,9 @@
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#>.
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix pack: <https://example.org/ns/package#>.
-@prefix log: <http://www.w3.org/2000/10/swap/log#>.
-@prefix sign: <https://example.org/ns/signature#>.
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX pack: <https://example.org/ns/package#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX sign: <https://example.org/ns/signature#>
 
 <https://example.org/ns/example#Bob> vcard:bday "2000-01-01T09:00:00.000Z"^^xsd:dateTime.
 
@@ -13,16 +13,16 @@
 
 _:bng_1 lingua:explanation _:bng_2.
 
-_:bng_2 {
+GRAPH _:bng_2 {
     <https://example.org/ns/example#Bob> vcard:bday "2000-01-01T09:00:00.000Z"^^xsd:dateTime.
 }
 
-_:bng_1 {
+GRAPH _:bng_1 {
     _:node_1_1 pack:package _:bng_3.
     _:bng_3 log:includes _:bng_4.
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     _:node_3_1 pack:content _:bng_2.
     _:node_3_1 pack:origin <https://example.org/ns/example#Endpoint>.
     _:node_3_1 pack:createdAt "2024-01-08T17:08:52.165Z"^^xsd:dateTime.
@@ -33,6 +33,6 @@ _:bng_3 {
     _:node_3_1 pack:hasContentSignature _:node_5_1.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     _:node_3_1 pack:content _:bng_2.
 }

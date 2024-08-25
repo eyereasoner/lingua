@@ -1,7 +1,7 @@
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix : <https://eyereasoner.github.io/lingua/etc/backward.trig#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <https://eyereasoner.github.io/lingua/etc/backward.trig#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 
 [] rdf:value 5; :moreInterestingThan 3 .
 
@@ -11,10 +11,10 @@
 
 _:bng_1 lingua:explanation _:bng_2.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     [] rdf:value 5; math:greaterThan 3.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     [] rdf:value 5; :moreInterestingThan 3.
 }

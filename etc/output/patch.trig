@@ -1,6 +1,6 @@
-@prefix : <https://eyereasoner.github.io/lingua/etc/patch.trig#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+PREFIX : <https://eyereasoner.github.io/lingua/etc/patch.trig#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 
 :pers001 :familyName "Garcia".
 :pers001 :givenName "Alex".
@@ -13,15 +13,15 @@
 
 _:bng_1 lingua:explanation true.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :pers001 :familyName "Garcia".
     _:bng_2 log:becomes _:bng_3.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     :pers001 :givenName "Claudia".
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     :pers001 :givenName "Alex".
 }

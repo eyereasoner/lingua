@@ -2,18 +2,18 @@
 # Graph union example
 # -------------------
 
-@prefix graph: <http://www.w3.org/2000/10/swap/graph#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix : <#>.
+PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX : <#>
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :A :B :C.
     :A :X :C.
     :D :E :F.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     :A :Y :C.
     :A :B :C.
 }
@@ -21,10 +21,10 @@ _:bng_2 {
 #query
 _:bng_3 lingua:answer _:bng_4.
 
-_:bng_3 {
+GRAPH _:bng_3 {
     (_:bng_1 _:bng_2) graph:union var:U.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     :result :is var:U.
 }

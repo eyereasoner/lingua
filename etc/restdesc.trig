@@ -4,10 +4,10 @@
 #
 # See https://github.com/RubenVerborgh/RESTdesc-Composition-Benchmark
 
-@prefix http: <http://www.w3.org/2011/http#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix : <#>.
+PREFIX http: <http://www.w3.org/2011/http#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX : <#>
 
 # initial
 :x :rel1 :y.
@@ -15,11 +15,11 @@
 # RESTdesc
 _:bng_1 lingua:forward _:bng_2.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     var:a1 :rel1 var:b1.
 }
 
-_:bng_2{
+GRAPH _:bng_2{
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -31,13 +31,13 @@ _:bng_2{
 
 _:bng_3 lingua:forward _:bng_4.
 
-_:bng_3 {
+GRAPH _:bng_3 {
     var:a1 :rel2 var:b1.
     var:a2 :rel2 var:b2.
     var:a3 :rel2 var:b3.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -49,13 +49,13 @@ _:bng_4 {
 
 _:bng_5 lingua:forward _:bng_6.
 
-_:bng_5 {
+GRAPH _:bng_5 {
     var:a1 :rel3 var:b1.
     var:a2 :rel3 var:b2.
     var:a3 :rel3 var:b3.
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -67,13 +67,13 @@ _:bng_6 {
 
 _:bng_7 lingua:forward _:bng_8.
 
-_:bng_7 {
+GRAPH _:bng_7 {
     var:a1 :rel4 var:b1.
     var:a2 :rel4 var:b2.
     var:a3 :rel4 var:b3.
 }
 
-_:bng_8 {
+GRAPH _:bng_8 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -85,13 +85,13 @@ _:bng_8 {
 
 _:bng_9 lingua:forward _:bng_10.
 
-_:bng_9 {
+GRAPH _:bng_9 {
     var:a1 :rel5 var:b1.
     var:a2 :rel5 var:b2.
     var:a3 :rel5 var:b3.
 }
 
-_:bng_10 {
+GRAPH _:bng_10 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -103,13 +103,13 @@ _:bng_10 {
 
 _:bng_11 lingua:forward _:bng_12.
 
-_:bng_11 {
+GRAPH _:bng_11 {
     var:a1 :rel6 var:b1.
     var:a2 :rel6 var:b2.
     var:a3 :rel6 var:b3.
 }
 
-_:bng_12 {
+GRAPH _:bng_12 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -121,13 +121,13 @@ _:bng_12 {
 
 _:bng_13 lingua:forward _:bng_14.
 
-_:bng_13 {
+GRAPH _:bng_13 {
     var:a1 :rel7 var:b1.
     var:a2 :rel7 var:b2.
     var:a3 :rel7 var:b3.
 }
 
-_:bng_14 {
+GRAPH _:bng_14 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -139,13 +139,13 @@ _:bng_14 {
 
 _:bng_15 lingua:forward _:bng_16.
 
-_:bng_15 {
+GRAPH _:bng_15 {
     var:a1 :rel8 var:b1.
     var:a2 :rel8 var:b2.
     var:a3 :rel8 var:b3.
 }
 
-_:bng_16 {
+GRAPH _:bng_16 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -157,13 +157,13 @@ _:bng_16 {
 
 _:bng_17 lingua:forward _:bng_18.
 
-_:bng_17 {
+GRAPH _:bng_17 {
     var:a1 :rel9 var:b1.
     var:a2 :rel9 var:b2.
     var:a3 :rel9 var:b3.
 }
 
-_:bng_18 {
+GRAPH _:bng_18 {
     var:request http:methodName "GET";
         http:requestURI var:a1;
         http:resp var:resp.
@@ -177,6 +177,6 @@ _:bng_18 {
 # query
 _:bng_19 lingua:answer _:bng_19.
 
-_:bng_19 {
+GRAPH _:bng_19 {
     :x :relGoal :y.
 }

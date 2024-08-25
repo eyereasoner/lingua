@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.3').
+version_info('lingua v1.2.4').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -731,7 +731,7 @@ w3 :-
         (   pfx(A, B),
             \+wpfx(A)
         ),
-        (   format('@prefix ~w ~w.~n', [A, B]),
+        (   format('PREFIX ~w ~w~n', [A, B]),
             assertz(wpfx(A)),
             nb_setval(wpfx, true)
         )
@@ -1112,6 +1112,7 @@ wt2(':-'(X, Y)) :-
     !.
 wt2(graph(X, Y)) :-
     !,
+    write('GRAPH '),
     wp(X),
     write(' '),
     nb_setval(keep_ng, false),

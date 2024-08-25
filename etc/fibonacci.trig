@@ -4,12 +4,12 @@
 #
 # See https://en.wikipedia.org/wiki/Fibonacci_number
 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix math: <http://www.w3.org/2000/10/swap/math#>.
-@prefix log: <http://www.w3.org/2000/10/swap/log#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix : <#>.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX math: <http://www.w3.org/2000/10/swap/math#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX : <#>
 
 # assuming lingua explanations
 [] lingua:explanation [].
@@ -17,33 +17,33 @@
 # backward rules
 _:bng_1 lingua:backward _:bng_2.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     var:X :fibonacci var:Y.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     (var:X 0 1) :fib var:Y.
 }
 
 _:bng_3 lingua:backward true.
 
-_:bng_3 {
+GRAPH _:bng_3 {
     (0 var:A var:B) :fib var:A.
 }
 
 _:bng_4 lingua:backward true.
 
-_:bng_4 {
+GRAPH _:bng_4 {
     (1 var:A var:B) :fib var:B.
 }
 
 _:bng_5 lingua:backward _:bng_6.
 
-_:bng_5 {
+GRAPH _:bng_5 {
     (var:X var:A var:B) :fib var:Y.
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     var:X math:greaterThan 1.
     (var:X 1) math:difference var:C.
     (var:A var:B) math:sum var:D.
@@ -53,7 +53,7 @@ _:bng_6 {
 # query
 _:bng_7 lingua:answer _:bng_7.
 
-_:bng_7 {
+GRAPH _:bng_7 {
     [] rdf:value 0; :fibonacci var:F1.
     [] rdf:value 1; :fibonacci var:F2.
     [] rdf:value 6; :fibonacci var:F3.

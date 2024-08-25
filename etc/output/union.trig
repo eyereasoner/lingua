@@ -1,6 +1,6 @@
-@prefix : <https://eyereasoner.github.io/lingua/etc/union.trig#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix graph: <http://www.w3.org/2000/10/swap/graph#>.
+PREFIX : <https://eyereasoner.github.io/lingua/etc/union.trig#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
 
 :result :is _:bng_1.
 
@@ -10,33 +10,33 @@
 
 _:bng_2 lingua:explanation _:bng_3.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :A :B :C.
     :A :X :C.
     :D :E :F.
     :A :Y :C.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     (_:bng_4 _:bng_5) graph:union _:bng_1.
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     :result :is _:bng_1.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     :A :B :C.
     :A :X :C.
     :D :E :F.
 }
 
-_:bng_5 {
+GRAPH _:bng_5 {
     :A :Y :C.
     :A :B :C.
 }
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :A :B :C.
     :A :X :C.
     :D :E :F.

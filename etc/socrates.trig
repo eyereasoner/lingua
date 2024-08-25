@@ -4,10 +4,10 @@
 #
 # Infer that Socrates is mortal.
 
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix : <#>.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX : <#>
 
 # facts
 :Socrates a :Human.
@@ -16,18 +16,18 @@
 # rdfs subclass
 _:bng_1 lingua:forward _:bng_2.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     var:A rdfs:subClassOf var:B.
     var:S a var:A.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     var:S a var:B.
 }
 
 # query
 _:bng_3 lingua:answer _:bng_3.
 
-_:bng_3 {
+GRAPH _:bng_3 {
     var:S a :Mortal.
 }

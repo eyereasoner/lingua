@@ -9,11 +9,11 @@
 # and 100000 individuals belonging to those classes (like patients having
 # observations, diseases, treatments, ...).
 
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix log: <http://www.w3.org/2000/10/swap/log#>.
-@prefix edt: <http://eulersharp.sourceforge.net/2009/12dtb/test#>.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX edt: <http://eulersharp.sourceforge.net/2009/12dtb/test#>
 
 # assuming lingua explanations
 [] lingua:explanation [].
@@ -21,7 +21,7 @@
 # importing
 _:bng_1 lingua:forward true.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-facts.ttl>.
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-dl.ttl>.
 }
@@ -29,11 +29,11 @@ _:bng_1 {
 # rdfs subclass rule
 _:bng_2 lingua:backward _:bng_3.
 
-_:bng_2 {
+GRAPH _:bng_2 {
     var:X a var:D.
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     var:C rdfs:subClassOf var:D.
     var:X a var:C.
 }
@@ -41,6 +41,6 @@ _:bng_3 {
 # query
 _:bng_4 lingua:answer _:bng_4.
 
-_:bng_4 {
+GRAPH _:bng_4 {
     edt:i100000 a edt:N100000.
 }

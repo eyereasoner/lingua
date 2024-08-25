@@ -1,11 +1,11 @@
 # Gray Code Counter
 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix list: <http://www.w3.org/2000/10/swap/list#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
-@prefix : <#>.
-@prefix : <#>.
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX : <#>
+PREFIX : <#>
 
 (0 0) :and 0.
 (0 1) :and 0.
@@ -22,23 +22,23 @@
 
 _:bng_1 lingua:backward true.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     (var:D 0 var:Q) :dff var:Q.
 }
 
 _:bng_2 lingua:backward true.
 
-_:bng_2 {
+GRAPH _:bng_2 {
     (var:D 1 var:Q) :dff var:D.
 }
 
 _:bng_3 lingua:backward _:bng_4.
 
-_:bng_3 {
+GRAPH _:bng_3 {
     (var:A var:B) :neta var:Q.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     (var:A var:B) :and var:T1.
     var:A :inv var:NA.
     var:B :inv var:NB.
@@ -48,11 +48,11 @@ _:bng_4 {
 
 _:bng_5 lingua:backward _:bng_6.
 
-_:bng_5 {
+GRAPH _:bng_5 {
     (var:A var:B var:C) :netb (var:Q1 var:Q2).
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     (var:A var:C) :and var:T1.
     var:C :inv var:NC.
     (var:B var:NC) :and var:T2.
@@ -64,11 +64,11 @@ _:bng_6 {
 
 _:bng_7 lingua:backward _:bng_8.
 
-_:bng_7 {
+GRAPH _:bng_7 {
     (var:C (var:Qa var:Qb var:Qc)) :gcc (var:Za var:Zb var:Zc).
 }
 
-_:bng_8 {
+GRAPH _:bng_8 {
     (var:Qa var:Qb var:Qc) :netb (var:D1 var:D2).
     (var:Qa var:Qb) :neta var:D3.
     (var:D1 var:C var:Qa) :dff var:Za.
@@ -78,17 +78,17 @@ _:bng_8 {
 
 _:bng_9 lingua:backward true.
 
-_:bng_9 {
+GRAPH _:bng_9 {
     (() var:S) :testgcc ().
 }
 
 _:bng_10 lingua:backward _:bng_11.
 
-_:bng_10 {
+GRAPH _:bng_10 {
     (var:Cc var:S) :testgcc var:Nc.
 }
 
-_:bng_11 {
+GRAPH _:bng_11 {
     var:Cc list:firstRest (var:C var:Cs).
     var:Nc list:firstRest (var:N var:Ns).
     (var:C var:S) :gcc var:N.
@@ -98,6 +98,6 @@ _:bng_11 {
 # query
 _:bng_12 lingua:answer _:bng_12.
 
-_:bng_12 {
+GRAPH _:bng_12 {
     ((1 1 1 1 1 1 1 1 1) (0 0 0)) :testgcc var:Q.
 }

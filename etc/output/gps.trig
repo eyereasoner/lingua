@@ -1,10 +1,10 @@
-@prefix : <https://eyereasoner.github.io/lingua/etc/gps.trig#>.
-@prefix gps: <http://eyereasoner.github.io/eye/reasoning/gps/gps-schema#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix list: <http://www.w3.org/2000/10/swap/list#>.
-@prefix log: <http://www.w3.org/2000/10/swap/log#>.
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+PREFIX : <https://eyereasoner.github.io/lingua/etc/gps.trig#>
+PREFIX gps: <http://eyereasoner.github.io/eye/reasoning/gps/gps-schema#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 
 :i1 gps:path ((:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99).
 :i1 gps:path ((:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801).
@@ -45,65 +45,65 @@ _:bng_22 lingua:explanation _:bng_10.
 _:bng_1 lingua:explanation _:bng_9.
 _:bng_1 lingua:explanation _:bng_10.
 
-_:bng_5 {
+GRAPH _:bng_5 {
     :i1 :location :Brugge.
 }
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :i1 :location :Gent.
 }
 
-_:bng_19 {
+GRAPH _:bng_19 {
     :i1 :location :Oostende.
 }
 
-_:bng_22 {
+GRAPH _:bng_22 {
     :i1 :location :Kortrijk.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     :map-BE gps:description (_:bng_1 true _:bng_5 :drive_gent_brugge 1500.0 0.006 0.96 0.99).
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     (:map-BE) list:firstRest (:map-BE ()).
     () gps:stagecount 1.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     (:map-BE) gps:stagecount 1.
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     (:map-BE :map-BE) list:firstRest (:map-BE (:map-BE)).
     (:map-BE) gps:stagecount 1.
 }
 
-_:bng_7 {
+GRAPH _:bng_7 {
     (:map-BE :map-BE) gps:stagecount 1.
 }
 
-_:bng_8 {
+GRAPH _:bng_8 {
     :map-BE gps:description (_:bng_1 true _:bng_22 :drive_gent_kortrijk 1600.0 0.007 0.96 0.99).
 }
 
-_:bng_9 {
+GRAPH _:bng_9 {
     :map-BE gps:description (_:bng_22 true _:bng_5 :drive_kortrijk_brugge 1600.0 0.007 0.96 0.99).
 }
 
-_:bng_10 {
+GRAPH _:bng_10 {
     :map-BE gps:description (_:bng_5 true _:bng_19 :drive_brugge_oostende 900.0 0.004 0.98 1.0).
 }
 
-_:bng_11 {
+GRAPH _:bng_11 {
     _:bng_19 log:call true.
 }
 
-_:bng_12 {
+GRAPH _:bng_12 {
     () gps:findpaths ((:map-BE :map-BE) _:bng_19 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_13 {
+GRAPH _:bng_13 {
     :map-BE gps:description (_:bng_5 true _:bng_19 :drive_brugge_oostende 900.0 0.004 0.98 1.0).
     ((:map-BE) (:map-BE)) list:append (:map-BE :map-BE).
     (:map-BE :map-BE) gps:stagecount 1 .
@@ -121,11 +121,11 @@ _:bng_13 {
     _:bng_12 log:callWithCleanup _:bng_34.
 }
 
-_:bng_14 {
+GRAPH _:bng_14 {
     () gps:findpaths ((:map-BE) _:bng_19 (:drive_gent_brugge) 1500.0 0.006 0.96 0.99 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_15 {
+GRAPH _:bng_15 {
     :map-BE gps:description (_:bng_1 true _:bng_5 :drive_gent_brugge 1500.0 0.006 0.96 0.99).
     (() (:map-BE)) list:append (:map-BE).
     (:map-BE) gps:stagecount 1 .
@@ -143,32 +143,32 @@ _:bng_15 {
     _:bng_14 log:callWithCleanup _:bng_35.
 }
 
-_:bng_16 {
+GRAPH _:bng_16 {
     () gps:findpaths (() _:bng_19 () 0.0 0.0 1.0 1.0 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_17 {
+GRAPH _:bng_17 {
     () gps:findpath (_:bng_19 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_18 {
+GRAPH _:bng_18 {
     :i1 gps:path ((:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99).
 }
 
-_:bng_20 {
+GRAPH _:bng_20 {
     (:map-BE :map-BE :map-BE) list:firstRest (:map-BE (:map-BE :map-BE)).
     (:map-BE :map-BE) gps:stagecount 1.
 }
 
-_:bng_21 {
+GRAPH _:bng_21 {
     (:map-BE :map-BE :map-BE) gps:stagecount 1.
 }
 
-_:bng_23 {
+GRAPH _:bng_23 {
     () gps:findpaths ((:map-BE :map-BE :map-BE) _:bng_19 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_24 {
+GRAPH _:bng_24 {
     :map-BE gps:description (_:bng_5 true _:bng_19 :drive_brugge_oostende 900.0 0.004 0.98 1.0).
     ((:map-BE :map-BE) (:map-BE)) list:append (:map-BE :map-BE :map-BE).
     (:map-BE :map-BE :map-BE) gps:stagecount 1 .
@@ -186,11 +186,11 @@ _:bng_24 {
     _:bng_23 log:callWithCleanup _:bng_34.
 }
 
-_:bng_25 {
+GRAPH _:bng_25 {
     () gps:findpaths ((:map-BE :map-BE) _:bng_19 (:drive_gent_kortrijk :drive_kortrijk_brugge) 3200.0 0.014 0.9216 0.9801 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_26 {
+GRAPH _:bng_26 {
     :map-BE gps:description (_:bng_22 true _:bng_5 :drive_kortrijk_brugge 1600.0 0.007 0.96 0.99).
     ((:map-BE) (:map-BE)) list:append (:map-BE :map-BE).
     (:map-BE :map-BE) gps:stagecount 1 .
@@ -208,11 +208,11 @@ _:bng_26 {
     _:bng_25 log:callWithCleanup _:bng_36.
 }
 
-_:bng_27 {
+GRAPH _:bng_27 {
     () gps:findpaths ((:map-BE) _:bng_19 (:drive_gent_kortrijk) 1600.0 0.007 0.96 0.99 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_28 {
+GRAPH _:bng_28 {
     :map-BE gps:description (_:bng_1 true _:bng_22 :drive_gent_kortrijk 1600.0 0.007 0.96 0.99).
     (() (:map-BE)) list:append (:map-BE).
     (:map-BE) gps:stagecount 1 .
@@ -230,75 +230,75 @@ _:bng_28 {
     _:bng_27 log:callWithCleanup _:bng_37.
 }
 
-_:bng_29 {
+GRAPH _:bng_29 {
     () gps:findpaths (() _:bng_19 () 0.0 0.0 1.0 1.0 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_30 {
+GRAPH _:bng_30 {
     () gps:findpath (_:bng_19 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_31 {
+GRAPH _:bng_31 {
     :i1 gps:path ((:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801).
 }
 
-_:bng_32 {
+GRAPH _:bng_32 {
     (:map-BE :map-BE :map-BE :map-BE) list:firstRest (:map-BE (:map-BE :map-BE :map-BE)).
     (:map-BE :map-BE :map-BE) gps:stagecount 1.
 }
 
-_:bng_33 {
+GRAPH _:bng_33 {
     (:map-BE :map-BE :map-BE :map-BE) gps:stagecount 1.
 }
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :i1 :location :Gent.
 }
 
-_:bng_5 {
+GRAPH _:bng_5 {
     :i1 :location :Brugge.
 }
 
-_:bng_22 {
+GRAPH _:bng_22 {
     :i1 :location :Kortrijk.
 }
 
-_:bng_19 {
+GRAPH _:bng_19 {
     :i1 :location :Oostende.
 }
 
-_:bng_12 {
+GRAPH _:bng_12 {
     () gps:findpaths ((:map-BE :map-BE) _:bng_19 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_34 {
+GRAPH _:bng_34 {
     _:bng_19 log:becomes _:bng_5.
 }
 
-_:bng_14 {
+GRAPH _:bng_14 {
     () gps:findpaths ((:map-BE) _:bng_19 (:drive_gent_brugge) 1500.0 0.006 0.96 0.99 (:drive_gent_brugge :drive_brugge_oostende) 2400.0 0.01 0.9408 0.99 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_35 {
+GRAPH _:bng_35 {
     _:bng_5 log:becomes _:bng_1.
 }
 
-_:bng_23 {
+GRAPH _:bng_23 {
     () gps:findpaths ((:map-BE :map-BE :map-BE) _:bng_19 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_25 {
+GRAPH _:bng_25 {
     () gps:findpaths ((:map-BE :map-BE) _:bng_19 (:drive_gent_kortrijk :drive_kortrijk_brugge) 3200.0 0.014 0.9216 0.9801 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_36 {
+GRAPH _:bng_36 {
     _:bng_5 log:becomes _:bng_22.
 }
 
-_:bng_27 {
+GRAPH _:bng_27 {
     () gps:findpaths ((:map-BE) _:bng_19 (:drive_gent_kortrijk) 1600.0 0.007 0.96 0.99 (:drive_gent_kortrijk :drive_kortrijk_brugge :drive_brugge_oostende) 4100.0 0.018000000000000002 0.903168 0.9801 (5000.0 5.0 0.2 0.4 1)).
 }
 
-_:bng_37 {
+GRAPH _:bng_37 {
     _:bng_22 log:becomes _:bng_1.
 }

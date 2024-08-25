@@ -1,6 +1,6 @@
-@prefix : <https://eyereasoner.github.io/lingua/etc/derived.trig#>.
-@prefix lingua: <http://www.w3.org/2000/10/swap/lingua#>.
-@prefix var: <http://www.w3.org/2000/10/swap/var#>.
+PREFIX : <https://eyereasoner.github.io/lingua/etc/derived.trig#>
+PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 
 :test :is true.
 
@@ -12,34 +12,34 @@ _:bng_1 lingua:explanation _:bng_2.
 _:bng_3 lingua:explanation _:bng_4.
 _:bng_5 lingua:explanation _:bng_6.
 
-_:bng_1 {
+GRAPH _:bng_1 {
     :Alice a :Cat.
 }
 
-_:bng_2 {
+GRAPH _:bng_2 {
     _:bng_7 lingua:forward _:bng_6.
 }
 
-_:bng_3 {
+GRAPH _:bng_3 {
     :Minka a :Cat.
 }
 
-_:bng_4 {
+GRAPH _:bng_4 {
     _:bng_8 lingua:forward _:bng_6.
 }
 
-_:bng_5 {
+GRAPH _:bng_5 {
     :Charly a :Dog.
 }
 
-_:bng_6 {
+GRAPH _:bng_6 {
     :test :is true.
 }
 
-_:bng_7 {
+GRAPH _:bng_7 {
     var:x_2 a :Dog.
 }
 
-_:bng_8 {
+GRAPH _:bng_8 {
     var:x_3 a :Dog.
 }

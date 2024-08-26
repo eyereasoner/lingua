@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.4').
+version_info('lingua v1.2.5').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -302,7 +302,7 @@ gre(Argus) :-
 
     % create universal statements
     (   pred(P),
-        \+atom_concat('<http://www.w3.org/2000/10/swap/', _, P),
+        \+atom_concat('<http://www.w3.org/2000/10/swap/lingua#', _, P),
         X =.. [P, _, _],
         call(X),
         findvars(X, V, alpha),
@@ -439,7 +439,11 @@ args([Argument|Args]) :-
             trig_term(P, Predicate),
             trig_term(O, Object),
             Triple =.. [Predicate, Subject, Object],
-            djiti_assertz(Triple)
+            djiti_assertz(Triple),
+            (   current_predicate(Predicate/2)
+            ->  true
+            ;   dynamic(Predicate/2)
+            )
         )
     ),
     forall(
@@ -449,7 +453,11 @@ args([Argument|Args]) :-
             trig_term(O, Object),
             G = H:_,
             trig_term(H, Graph),
-            assertz(quad(Subject, Predicate, Object, Graph))
+            assertz(quad(Subject, Predicate, Object, Graph)),
+            (   current_predicate(Predicate/2)
+            ->  true
+            ;   dynamic(Predicate/2)
+            )
         )
     ),
     args(Args).

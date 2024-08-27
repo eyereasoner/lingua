@@ -35,3 +35,6 @@ _:bng_3 lingua:answer _:bng_3.
 GRAPH _:bng_3 {
     var:S :ageAbove "P80Y"^^xsd:duration.
 }
+
+# assuming lingua explanations
+[] lingua:explanation [].

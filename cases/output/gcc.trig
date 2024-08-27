@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/gcc.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/gcc.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>

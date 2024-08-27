@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/socrates.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/socrates.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 

@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/restdesc.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/restdesc.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX http: <http://www.w3.org/2011/http#>
 

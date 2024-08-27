@@ -1,5 +1,5 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <https://eyereasoner.github.io/lingua/etc/easter.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/easter.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>

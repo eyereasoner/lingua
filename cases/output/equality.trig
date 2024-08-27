@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/equality.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/equality.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 

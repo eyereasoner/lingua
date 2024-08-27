@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/turing.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/turing.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 

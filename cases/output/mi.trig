@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/mi.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/mi.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>

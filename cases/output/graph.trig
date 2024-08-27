@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/graph.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/graph.trig#>
 PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 
 :angers :path :nantes.

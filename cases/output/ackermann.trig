@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/etc/ackermann.trig#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/ackermann.trig#>
 
 (0 0) :ackermann 1 .
 (0 6) :ackermann 7 .

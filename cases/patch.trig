@@ -7,7 +7,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX solid: <http://www.w3.org/ns/solid/terms#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
@@ -18,7 +17,7 @@ PREFIX : <#>
 :pers002 :givenName "Claudia".
 
 # patch rule
-_:bng_1 lingua:forward true.
+_:bng_1 log:implies true.
 
 GRAPH _:bng_1 {
     var:person :familyName "Garcia".
@@ -34,7 +33,7 @@ GRAPH _:bng_3 {
 }
 
 # query
-_:bng_4 lingua:answer _:bng_4.
+_:bng_4 log:query _:bng_4.
 
 GRAPH _:bng_4 {
     var:person :familyName var:fname.

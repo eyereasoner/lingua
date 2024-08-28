@@ -23,15 +23,14 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
 # assuming lingua explanations
-[] lingua:explanation [].
+[] log:explanation [].
 
 # ackermann(x, y)
-_:bng_1 lingua:backward _:bng_2.
+_:bng_1 log:isImpliedBy _:bng_2.
 
 GRAPH _:bng_1 {
     (var:X var:Y) :ackermann var:A.
@@ -45,7 +44,7 @@ GRAPH _:bng_2 {
 
 # ackermann(x, y, z)
 # succ (x=0)
-_:bng_3 lingua:backward _:bng_4.
+_:bng_3 log:isImpliedBy _:bng_4.
 
 GRAPH _:bng_3 {
     (0 var:Y var:Z) :ackermann var:A.
@@ -57,7 +56,7 @@ GRAPH _:bng_4 {
 }
 
 # sum (x=1)
-_:bng_5 lingua:backward _:bng_6.
+_:bng_5 log:isImpliedBy _:bng_6.
 
 GRAPH _:bng_5 {
     (1 var:Y var:Z) :ackermann var:A.
@@ -69,7 +68,7 @@ GRAPH _:bng_6 {
 }
 
 # product (x=2)
-_:bng_7 lingua:backward _:bng_8.
+_:bng_7 log:isImpliedBy _:bng_8.
 
 GRAPH _:bng_7 {
     (2 var:Y var:Z) :ackermann var:A.
@@ -81,7 +80,7 @@ GRAPH _:bng_8 {
 }
 
 # exponentiation (x=3), tetration (x=4), pentation (x=5), hexation (x=6), etc
-_:bng_9 lingua:backward _:bng_10.
+_:bng_9 log:isImpliedBy _:bng_10.
 
 GRAPH _:bng_9 {
     (var:X 0 var:Z) :ackermann 1.
@@ -91,7 +90,7 @@ GRAPH _:bng_10 {
     [] rdf:value true; log:callWithCut true.
 }
 
-_:bng_11 lingua:backward _:bng_12.
+_:bng_11 log:isImpliedBy _:bng_12.
 
 GRAPH _:bng_11 {
     (var:X var:Y var:Z) :ackermann var:A.
@@ -105,7 +104,7 @@ GRAPH _:bng_12 {
 }
 
 # query
-_:bng_14 lingua:answer _:bng_14.
+_:bng_14 log:query _:bng_14.
 
 GRAPH _:bng_14 {
     (0 0) :ackermann var:A0.

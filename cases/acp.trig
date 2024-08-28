@@ -4,7 +4,6 @@
 
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
@@ -16,7 +15,7 @@ PREFIX : <#>
     :anyOf :C;
     :noneOf :D.
 
-_:bng_1 lingua:backward _:bng_2.
+_:bng_1 log:isImpliedBy _:bng_2.
 
 GRAPH _:bng_1 {
     var:Pol :pass :allOfTest.
@@ -36,7 +35,7 @@ GRAPH _:bng_4 {
     var:Test :has var:Field.
 }
 
-_:bng_5 lingua:backward _:bng_6.
+_:bng_5 log:isImpliedBy _:bng_6.
 
 GRAPH _:bng_5 {
     var:Pol :pass :anyOfTest.
@@ -55,7 +54,7 @@ GRAPH _:bng_7 {
     var:Test :has var:Field.
 }
 
-_:bng_8 lingua:backward _:bng_9.
+_:bng_8 log:isImpliedBy _:bng_9.
 
 GRAPH _:bng_8 {
     var:Pol :pass :noneOfTest.
@@ -75,7 +74,7 @@ GRAPH _:bng_10 {
 }
 
 # query
-_:bng_11 lingua:answer _:bng_12.
+_:bng_11 log:query _:bng_12.
 
 GRAPH _:bng_11 {
     var:Pol a :Policy.

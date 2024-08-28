@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.2.5').
+version_info('lingua v1.3.0').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -73,13 +73,12 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#answer>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#backward>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#explanation>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/lingua#forward>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/log#explanation>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#implies>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/log#isImpliedBy>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/log#query>'/2).
 
 %
 % Main goal
@@ -199,6 +198,10 @@ gre(Argus) :-
         ),
         D \= [],
         conjoin(D, E),
+        (   contains(G, E)
+        ->  throw(term_cannot_contain_itself(G, E))
+        ;   true
+        ),
         assertz(graph(G, E)),
         fail
     ;   true
@@ -216,13 +219,30 @@ gre(Argus) :-
     ;   true
     ),
 
+    % create types
+    (   '<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'(X, Y),
+        ground([X, Y]),
+        getterm(X, Z),
+        (   Z = X
+        ->  true
+        ;   retract('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'(X, Y)),
+            assertz('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'(Z, Y))
+        ),
+        fail
+    ;   true
+    ),
+
     % create terms
     (   pred(P),
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#first>',
+        P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies>',
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#rest>',
+        P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>',
         P \= '<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>',
+        P \= quad,
         X =.. [P, _, _],
         call(X),
+        ground(X),
         getterm(X, Y),
         (   Y = X
         ->  true
@@ -240,32 +260,38 @@ gre(Argus) :-
     % remove rdf values
     retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'(_, _)),
 
+    % remove rdf reifiers
+    retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies>'(_, _)),
+
     % remove rdf named graphs
     retractall(graph(_, _)),
 
     % create forward rules
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#forward>'(A, B),
+            '<http://www.w3.org/2000/10/swap/log#implies>'(A, B),
+            ground([A, B]),
+            conj_list(B, L),
+            \+last(L, answer('<http://www.w3.org/2000/10/swap/log#explanation>', _, _)),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
             (   nb_getval(explain, true),
                 Q \= true,
                 I \= false
-            ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I), F)
+            ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I), F)
             ;   F = I
             )), '<http://www.w3.org/2000/10/swap/log#implies>'(Q, F))),
 
     % create backward rules
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#backward>'(B, A),
+            '<http://www.w3.org/2000/10/swap/log#isImpliedBy>'(B, A),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B, U], [Q, I, X], beta(U)),
             (   nb_getval(explain, true),
                 Q \= true,
                 Q \= !
-            ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', Q, I)), F)
+            ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I)), F)
             ;   F = Q
             ),
             C = ':-'(I, F),
@@ -280,10 +306,10 @@ gre(Argus) :-
 
     % create queries
     assertz(implies((
-            '<http://www.w3.org/2000/10/swap/lingua#answer>'(A, B),
+            '<http://www.w3.org/2000/10/swap/log#query>'(A, B),
             (   nb_getval(explain, true),
                 A \= B
-            ->  F = ('<http://www.w3.org/2000/10/swap/lingua#explanation>'(A, B), B)
+            ->  F = ('<http://www.w3.org/2000/10/swap/log#explanation>'(A, B), B)
             ;   F = B
             ),
             djiti_answer(answer(F), J),
@@ -302,7 +328,7 @@ gre(Argus) :-
 
     % create universal statements
     (   pred(P),
-        \+atom_concat('<http://www.w3.org/2000/10/swap/lingua#', _, P),
+        \+atom_concat('<http://www.w3.org/2000/10/swap/', _, P),
         X =.. [P, _, _],
         call(X),
         findvars(X, V, alpha),
@@ -321,7 +347,7 @@ gre(Argus) :-
         ),
         Scope
     ),
-    (   '<http://www.w3.org/2000/10/swap/lingua#explanation>'(_, _)
+    (   '<http://www.w3.org/2000/10/swap/log#explanation>'(_, _)
     ->  nb_setval(explain, false)
     ;   nb_setval(explain, true)
     ),
@@ -687,6 +713,9 @@ djiti_fact(implies(A, B), implies(A, B)) :-
     !.
 djiti_fact('<http://www.w3.org/2000/10/swap/log#implies>'(A, B), C) :-
     nonvar(B),
+    (   \+atomic(A)
+    ;   \+atomic(B)
+    ),
     (   conj_list(B, D)
     ->  true
     ;   D = B
@@ -752,7 +781,7 @@ w3 :-
     nb_setval(pdepth, 0),
     nb_setval(cdepth, 0),
     (   answer(B1, B2, B3),
-        B1 \= '<http://www.w3.org/2000/10/swap/lingua#explanation>',
+        B1 \= '<http://www.w3.org/2000/10/swap/log#explanation>',
         relabel([B1, B2, B3], [C1, C2, C3]),
         djiti_answer(answer(C), answer(C1, C2, C3)),
         indent,
@@ -769,17 +798,17 @@ w3 :-
         fail
     ;   true
     ),
-    (   answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', _, _)
+    (   answer('<http://www.w3.org/2000/10/swap/log#explanation>', _, _)
     ->  nl,
         writeln('#'),
         writeln('# lingua explanation'),
         writeln('#'),
         nl,
-        (   answer('<http://www.w3.org/2000/10/swap/lingua#explanation>', S, O),
-            labelvars('<http://www.w3.org/2000/10/swap/lingua#explanation>'(S, O), 0, _, avar),
+        (   answer('<http://www.w3.org/2000/10/swap/log#explanation>', S, O),
+            labelvars('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O), 0, _, avar),
             indent,
-            wt('<http://www.w3.org/2000/10/swap/lingua#explanation>'(S, O)),
-            ws('<http://www.w3.org/2000/10/swap/lingua#explanation>'(S, O)),
+            wt('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O)),
+            ws('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O)),
             write('.'),
             nl,
             fail
@@ -3383,7 +3412,7 @@ quant(answer(':-', _, _), allv) :-
     !.
 quant(_-A, avar) :-
     conj_list(A, B),
-    member('<http://www.w3.org/2000/10/swap/lingua#forward>'(_, _), B),
+    member('<http://www.w3.org/2000/10/swap/log#implies>'(_, _), B),
     !.
 quant(_, some).
 
@@ -3457,6 +3486,14 @@ conjify((A, B), (C, D)) :-
 conjify('<http://www.w3.org/2000/10/swap/log#callWithCut>'(true, true), !) :-
     !.
 conjify(A, A).
+
+contains(X, X) :-
+    !.
+contains(X, Term) :-
+    compound(Term),
+    arg(_, Term, Arg),
+    contains(X, Arg),
+    !.
 
 commonvars(A, B, C) :-
     term_variables(A, D),

@@ -11,7 +11,6 @@ PREFIX pol: <https://example.org/ns/policy#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 
 [] pack:package _:bng_1 .
@@ -33,7 +32,7 @@ GRAPH _:bng_2 {
 }
 
 # query
-_:bng_3 lingua:answer var:C.
+_:bng_3 log:query var:C.
 
 GRAPH _:bng_3 {
     var:S pack:package var:O.

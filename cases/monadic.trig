@@ -6,13 +6,12 @@
 # and https://eulersharp.sourceforge.net/2014/11bmb/README.md
 
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX bmt: <http://eulersharp.sourceforge.net/2007/07test/graph#>
 PREFIX : <#>
 
 # importing
-_:bng_1 lingua:forward true.
+_:bng_1 log:implies true.
 
 GRAPH _:bng_1 {
     <> log:imports <https://eyereasoner.github.io/eye/reasoning/bmt/1tt1.ttl>.
@@ -28,7 +27,7 @@ GRAPH _:bng_1 {
 }
 
 #query
-_:bng_2 lingua:answer _:bng_3.
+_:bng_2 log:query _:bng_3.
 
 GRAPH _:bng_2 {
     var:D0 var:R var:D1.

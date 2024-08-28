@@ -1,5 +1,5 @@
 PREFIX : <https://eyereasoner.github.io/lingua/cases/union.trig#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
 
 :result :is _:bng_1.
@@ -8,7 +8,7 @@ PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
 # lingua explanation
 #
 
-_:bng_2 lingua:explanation _:bng_3.
+_:bng_2 log:explanation _:bng_3.
 
 GRAPH _:bng_1 {
     :A :B :C.

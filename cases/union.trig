@@ -3,7 +3,7 @@
 # -------------------
 
 PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
@@ -19,7 +19,7 @@ GRAPH _:bng_2 {
 }
 
 #query
-_:bng_3 lingua:answer _:bng_4.
+_:bng_3 log:query _:bng_4.
 
 GRAPH _:bng_3 {
     (_:bng_1 _:bng_2) graph:union var:U.

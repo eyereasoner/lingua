@@ -1,5 +1,5 @@
 PREFIX complex: <http://eyereasoner.github.io/complex#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 
@@ -14,18 +14,18 @@ PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 # lingua explanation
 #
 
-_:bng_1 lingua:explanation _:bng_2.
-_:bng_3 lingua:explanation _:bng_4.
-_:bng_5 lingua:explanation _:bng_6.
-_:bng_7 lingua:explanation _:bng_8.
-_:bng_9 lingua:explanation _:bng_10.
-_:bng_11 lingua:explanation _:bng_12.
-_:bng_13 lingua:explanation _:bng_14.
-_:bng_15 lingua:explanation _:bng_16.
-_:bng_17 lingua:explanation _:bng_18.
-_:bng_19 lingua:explanation _:bng_20.
-_:bng_21 lingua:explanation _:bng_22.
-_:bng_23 lingua:explanation _:bng_24.
+_:bng_1 log:explanation _:bng_2.
+_:bng_3 log:explanation _:bng_4.
+_:bng_5 log:explanation _:bng_6.
+_:bng_7 log:explanation _:bng_8.
+_:bng_9 log:explanation _:bng_10.
+_:bng_11 log:explanation _:bng_12.
+_:bng_13 log:explanation _:bng_14.
+_:bng_15 log:explanation _:bng_16.
+_:bng_17 log:explanation _:bng_18.
+_:bng_19 log:explanation _:bng_20.
+_:bng_21 log:explanation _:bng_22.
+_:bng_23 log:explanation _:bng_24.
 
 GRAPH _:bng_1 {
     [] rdf:value -1; math:lessThan 0 .

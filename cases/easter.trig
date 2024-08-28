@@ -7,12 +7,11 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
 # calculate easter day
-_:bng_1 lingua:backward _:bng_2.
+_:bng_1 log:isImpliedBy _:bng_2.
 
 GRAPH _:bng_1 {
     var:x0 :easter (var:x34 var:x32).
@@ -56,7 +55,7 @@ GRAPH _:bng_2 {
 }
 
 # query
-_:bng_3 lingua:answer _:bng_4.
+_:bng_3 log:query _:bng_4.
 
 GRAPH _:bng_3 {
     [] rdf:value 27; log:repeat var:x0.

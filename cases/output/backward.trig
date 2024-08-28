@@ -1,6 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <https://eyereasoner.github.io/lingua/cases/backward.trig#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 
 [] rdf:value 5; :moreInterestingThan 3 .
@@ -9,7 +9,7 @@ PREFIX math: <http://www.w3.org/2000/10/swap/math#>
 # lingua explanation
 #
 
-_:bng_1 lingua:explanation _:bng_2.
+_:bng_1 log:explanation _:bng_2.
 
 GRAPH _:bng_1 {
     [] rdf:value 5; math:greaterThan 3.

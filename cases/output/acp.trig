@@ -1,5 +1,4 @@
 PREFIX : <https://eyereasoner.github.io/lingua/cases/acp.trig#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>
@@ -11,10 +10,10 @@ PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 # lingua explanation
 #
 
-_:bng_1 lingua:explanation _:bng_2.
-_:bng_3 lingua:explanation _:bng_4.
-_:bng_5 lingua:explanation _:bng_6.
-_:bng_7 lingua:explanation _:bng_8.
+_:bng_1 log:explanation _:bng_2.
+_:bng_3 log:explanation _:bng_4.
+_:bng_5 log:explanation _:bng_6.
+_:bng_7 log:explanation _:bng_8.
 
 GRAPH _:bng_1 {
     :test1 :policy :PolicyX.

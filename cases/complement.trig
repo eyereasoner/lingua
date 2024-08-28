@@ -3,7 +3,6 @@
 # ----------------------------------------
 
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
@@ -19,7 +18,7 @@ PREFIX : <#>
 #    _:s2 :p2 _:o2.
 #    _:s3 :p3 _:o3.
 # }
-_:bng_1 lingua:forward _:bng_2.
+_:bng_1 log:implies _:bng_2.
 
 GRAPH _:bng_1 {
     _:s1 :p1 _:o1.
@@ -31,7 +30,7 @@ GRAPH _:bng_2 {
     _:s3 :c3 _:o3.
 }
 
-_:bng_3 lingua:forward _:bng_4.
+_:bng_3 log:implies _:bng_4.
 
 GRAPH _:bng_3 {
     _:s2 :p2 _:o2.
@@ -43,7 +42,7 @@ GRAPH _:bng_4 {
     _:s1 :c1 _:o1.
 }
 
-_:bng_5 lingua:forward _:bng_6.
+_:bng_5 log:implies _:bng_6.
 
 GRAPH _:bng_5 {
     _:s3 :p3 _:o3.
@@ -61,7 +60,7 @@ GRAPH _:bng_6 {
 # _:s3 :p3 _:o3.
 
 # fuse
-_:bng_7 lingua:forward false.
+_:bng_7 log:implies false.
 
 GRAPH _:bng_7 {
     var:P log:complement var:C.
@@ -70,8 +69,8 @@ GRAPH _:bng_7 {
 }
 
 # query
-_:bng_8 lingua:answer _:bng_8.
+_:bng_8 log:query _:bng_8.
 
 GRAPH _:bng_8 {
-    _:bng_7 lingua:forward false.
+    _:bng_7 log:implies false.
 }

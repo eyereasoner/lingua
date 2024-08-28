@@ -3,14 +3,14 @@
 # --------------
 
 PREFIX crypto: <http://www.w3.org/2000/10/swap/crypto#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
 :Let :param "hello world".
 
 # query
-_:bng_1 lingua:answer _:bng_2.
+_:bng_1 log:query _:bng_2.
 
 GRAPH _:bng_1 {
     :Let :param var:X.

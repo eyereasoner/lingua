@@ -5,7 +5,6 @@
 PREFIX list: <http://www.w3.org/2000/10/swap/list#>
 PREFIX string: <http://www.w3.org/2000/10/swap/string#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX lingua: <http://www.w3.org/2000/10/swap/lingua#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
@@ -15,7 +14,7 @@ PREFIX : <#>
 :Let :param "Louie".
 
 # query
-_:bng_1 lingua:answer _:bng_2.
+_:bng_1 log:query _:bng_2.
 
 GRAPH _:bng_1 {
     :Let :where (var:param var:where).

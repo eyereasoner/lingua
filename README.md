@@ -63,7 +63,7 @@ _:bng_2 {
 }
 ```
 
-The `lingua:` prefix is `<http://www.w3.org/2000/10/swap/lingua#>` and is rooted
+The `log:` prefix is `<http://www.w3.org/2000/10/swap/log#>` and is rooted
 in the "Semantic Web Area for Play" `http://www.w3.org/2000/10/swap/` URI.
 
 The `var:` prefix is `<http://www.w3.org/2000/10/swap/var#>` and is used for

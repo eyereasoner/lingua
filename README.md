@@ -1,5 +1,7 @@
 # The lingua reasoner
 
+[![DOI](https://zenodo.org/badge/781099490.svg)](https://zenodo.org/doi/10.5281/zenodo.13370910)
+
 Reasoning engine that is using RDF TriG as the web lingua.
 
 See [examples and cases](https://github.com/eyereasoner/lingua/tree/main/cases) and their [output](https://github.com/eyereasoner/lingua/tree/main/cases/output)

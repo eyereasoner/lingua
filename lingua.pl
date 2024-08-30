@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.3.0').
+version_info('lingua v1.3.1').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -2720,7 +2720,8 @@ indentation(C) :-
     when(
         (   ground(A)
         ),
-        (   sub_atom(A, 0, B, 0, _)
+        (   escape_atom(A, C),
+            sub_atom(C, 0, B, 0, _)
         )
     ).
 
@@ -2774,7 +2775,8 @@ indentation(C) :-
         (   ground([X, Search, Replace])
         ),
         (   (   atomic_list_concat(['(', Search, ')'], Se),
-                regex(Se, X, [S|_])
+                regex(Se, X, [St|_]),
+                escape_atom(S, St)
             ->  (   sub_atom(Search, 0, 1, _, '^')
                 ->  atom_concat(S, T, X),
                     atom_concat(Replace, T, Y)
@@ -2810,7 +2812,8 @@ indentation(C) :-
         (   ground([X, Y])
         ),
         (   regex(Y, X, [W|_]),
-            atom_string(Z, W)
+            atom_string(V, W),
+            escape_atom(Z, V)
         )
     ).
 
@@ -3338,6 +3341,18 @@ sub_atom_last(A, B, C, D, E) :-
     ->  sub_atom_last(G, B, C, D, E)
     ;   true
     ).
+
+escape_atom(A, B) :-
+    ground(A),
+    !,
+    atom_codes(A, C),
+    escape_codes(D, C),
+    atom_codes(B, D).
+escape_atom(A, B) :-
+    ground(B),
+    atom_codes(B, C),
+    escape_codes(C, D),
+    atom_codes(A, D).
 
 escape_string([], []) :-
     !.
@@ -4276,12 +4291,8 @@ uuid(UUID) :-
             ~`0t~16r~12+', [A, B, C, D, E]).
 
 regex(Pattern, String, List) :-
-    atom_codes(Pattern, PatternC),
-    escape_string(PatC, PatternC),
-    atom_codes(Pat, PatC),
-    atom_codes(String, StringC),
-    escape_string(StrC, StringC),
-    atom_codes(Str, StrC),
+    escape_atom(Pattern, Pat),
+    escape_atom(String, Str),
     re_matchsub(Pat, Str, Dict, []),
     findall(Value,
         (   get_dict(Key, Dict, Value),

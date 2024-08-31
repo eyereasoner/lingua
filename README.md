@@ -65,9 +65,6 @@ _:bng_2 {
 }
 ```
 
-The `log:` prefix is `<http://www.w3.org/2000/10/swap/log#>` and is rooted
-in the "Semantic Web Area for Play" `http://www.w3.org/2000/10/swap/` URI.
-
 The `var:` prefix is `<http://www.w3.org/2000/10/swap/var#>` and is used for
 variables that are interpreted as universally quantified variables except for
 forward rule conclusion-only variables which are interpreted existentially.

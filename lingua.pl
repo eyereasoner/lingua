@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.4.0').
+version_info('lingua v1.4.1').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -491,18 +491,18 @@ trig_term(literal(type('http://www.w3.org/2001/XMLSchema#boolean', A)), A) :-
     !.
 trig_term(literal(type(A, B)), literal(E, type(F))) :-
     atom_codes(B, C),
-    escape_string(C, D),
+    escape_codes(C, D),
     atom_codes(E, D),
     atomic_list_concat(['<', A, '>'], F),
     !.
 trig_term(literal(lang(A, B)), literal(E, lang(A))) :-
     atom_codes(B, C),
-    escape_string(C, D),
+    escape_codes(C, D),
     atom_codes(E, D),
     !.
 trig_term(literal(A), literal(E, type('<http://www.w3.org/2001/XMLSchema#string>'))) :-
     atom_codes(A, C),
-    escape_string(C, D),
+    escape_codes(C, D),
     atom_codes(E, D),
     !.
 trig_term(node(A), B) :-
@@ -2578,7 +2578,9 @@ indentation(C) :-
     when(
         (   ground([X, Y])
         ),
-        (   sub_atom(X, _, _, _, Y)
+        (   escape_atom(X, Xe),
+            escape_atom(Y, Ye),
+            sub_atom(Xe, _, _, _, Ye)
         )
     ).
 
@@ -2586,8 +2588,10 @@ indentation(C) :-
     when(
         (   ground([X, Y])
         ),
-        (   downcase_atom(X, U),
-            downcase_atom(Y, V),
+        (   escape_atom(X, Xe),
+            escape_atom(Y, Ye),
+            downcase_atom(Xe, U),
+            downcase_atom(Ye, V),
             sub_atom(U, _, _, _, V)
         )
     ).
@@ -2596,8 +2600,10 @@ indentation(C) :-
     when(
         (   ground([X, Y])
         ),
-        (   downcase_atom(X, R),
-            downcase_atom(Y, S),
+        (   escape_atom(X, Xe),
+            escape_atom(Y, Ye),
+            downcase_atom(Xe, R),
+            downcase_atom(Ye, S),
             normalize_space(atom(U), R),
             normalize_space(atom(V), S),
             sub_atom(U, _, _, _, V)
@@ -2608,7 +2614,9 @@ indentation(C) :-
     when(
         (   ground([X, Y])
         ),
-        (   sub_atom(X, _, _, 0, Y)
+        (   escape_atom(X, Xe),
+            escape_atom(Y, Ye),
+            sub_atom(Xe, _, _, 0, Ye)
         )
     ).
 
@@ -2625,11 +2633,13 @@ indentation(C) :-
     when(
         (   ground([A, B])
         ),
-        (   atom_codes(A, D),
+        (   escape_atom(A, Ae),
+            atom_codes(Ae, D),
             subst([[[0'%, 0's], [0'~, 0'w]]], D, E),
             preformat(B, F),
             format_to_chars(E, F, G),
-            atom_codes(C, G)
+            atom_codes(Ce, G),
+            escape_atom(C, Ce)
         )
     ).
 
@@ -2673,8 +2683,8 @@ indentation(C) :-
         ;   ground(Z),
             getcodes(Z, U),
             getcodes(Y, C),
-            escape_string(T, U),
-            escape_string(V, C),
+            escape_codes(T, U),
+            escape_codes(V, C),
             (   V = []
             ->  findall(literal(A, type('<http://www.w3.org/2001/XMLSchema#string>')),
                     (   member(B, T),
@@ -2693,7 +2703,7 @@ indentation(C) :-
             findall(literal(N, type('<http://www.w3.org/2001/XMLSchema#string>')),
                 (   member(literal(M, type('<http://www.w3.org/2001/XMLSchema#string>')), Q),
                     atom_codes(M, Mc),
-                    escape_string(Mc, Nc),
+                    escape_codes(Mc, Nc),
                     atom_codes(N, Nc)
                 ),
                 X
@@ -2724,7 +2734,9 @@ indentation(C) :-
     when(
         (   ground(X)
         ),
-        (   downcase_atom(X, Y)
+        (   escape_atom(X, Xe),
+            downcase_atom(Xe, Ye),
+            escape_atom(Y, Ye)
         )
     ).
 
@@ -2858,7 +2870,9 @@ indentation(C) :-
             ),
             (   H < 0
             ->  D = ''
-            ;   sub_atom(A, G, H, _, D)
+            ;   escape_atom(A, Ae),
+                escape_atom(D, De),
+                sub_atom(Ae, G, H, _, De)
             )
         )
     ).
@@ -2877,7 +2891,9 @@ indentation(C) :-
             ),
             (   H < 0
             ->  D = []
-            ;   sub_atom(A, G, H, _, D)
+            ;   escape_atom(A, Ae),
+                escape_atom(D, De),
+                sub_atom(Ae, G, H, _, De)
             )
         )
     ).
@@ -2886,7 +2902,9 @@ indentation(C) :-
     when(
         (   ground(X)
         ),
-        (   upcase_atom(X, Y)
+        (   escape_atom(X, Xe),
+            upcase_atom(Xe, Ye),
+            escape_atom(Y, Ye)
         )
     ).
 
@@ -3349,31 +3367,31 @@ escape_atom(A, B) :-
     escape_codes(C, D),
     atom_codes(A, D).
 
-escape_string([], []) :-
+escape_codes([], []) :-
     !.
-escape_string([0'\t|A], [0'\\, 0't|B]) :-
+escape_codes([0'\t|A], [0'\\, 0't|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'\b|A], [0'\\, 0'b|B]) :-
+    escape_codes(A, B).
+escape_codes([0'\b|A], [0'\\, 0'b|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'\n|A], [0'\\, 0'n|B]) :-
+    escape_codes(A, B).
+escape_codes([0'\n|A], [0'\\, 0'n|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'\r|A], [0'\\, 0'r|B]) :-
+    escape_codes(A, B).
+escape_codes([0'\r|A], [0'\\, 0'r|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'\f|A], [0'\\, 0'f|B]) :-
+    escape_codes(A, B).
+escape_codes([0'\f|A], [0'\\, 0'f|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'"|A], [0'\\, 0'"|B]) :-
+    escape_codes(A, B).
+escape_codes([0'"|A], [0'\\, 0'"|B]) :-
     !,
-    escape_string(A, B).
-escape_string([0'\\|A], [0'\\, 0'\\|B]) :-
+    escape_codes(A, B).
+escape_codes([0'\\|A], [0'\\, 0'\\|B]) :-
     !,
-    escape_string(A, B).
-escape_string([A|B], [A|C]) :-
-    escape_string(B, C).
+    escape_codes(A, B).
+escape_codes([A|B], [A|C]) :-
+    escape_codes(B, C).
 
 escape_unicode([], []) :-
     !.
@@ -3847,6 +3865,9 @@ getconj(A, A).
 getstring(A, B) :-
     '<http://www.w3.org/2000/10/swap/log#uri>'(A, B),
     !.
+getstring(literal(A, B), literal(C, B)) :-
+    !,
+    escape_atom(A, C).
 getstring(A, A).
 
 getcodes(literal(A, _), B) :-
@@ -3865,8 +3886,9 @@ remember(_).
 
 preformat([], []) :-
     !.
-preformat([literal(A, type('<http://www.w3.org/2001/XMLSchema#string>'))|B], [A|D]) :-
+preformat([literal(A, type('<http://www.w3.org/2001/XMLSchema#string>'))|B], [C|D]) :-
     !,
+    escape_atom(A, C),
     preformat(B, D).
 preformat([A|B], [A|D]) :-
     preformat(B, D).

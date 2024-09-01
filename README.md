@@ -11,6 +11,7 @@ Usage: lingua <options>* <data>*
 
 <options>
     --genid <genid>             use <genid> in Skolem IRIs
+    --explain                   explain the reasoning steps
     --help, -h                  show help info
     --output <file>             write reasoner output to <file>
     --version, -v               show version info
@@ -18,6 +19,15 @@ Usage: lingua <options>* <data>*
 
 <data>
     <uri>                       TriG data
+```
+
+## Install and test
+
+```bash
+git clone https://github.com/eyereasoner/lingua
+cd lingua
+./install
+./test
 ```
 
 ## RDF lingua

@@ -19,11 +19,12 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.3.1').
+version_info('lingua v1.4.0').
 
 help_info('Usage: lingua <options>* <data>*
 
 <options>
+    --explain                   explain the reasoning steps
     --genid <genid>             use <genid> in Skolem IRIs
     --help, -h                  show help info
     --output <file>             write reasoner output to <file>
@@ -40,6 +41,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic(cc/1).
 :- dynamic(cpred/1).
 :- dynamic(exopred/3).          % exopred(Predicate, Subject, Object)
+:- dynamic(flag/1).
 :- dynamic(flag/2).
 :- dynamic(fpred/1).
 :- dynamic(graph/2).
@@ -274,8 +276,8 @@ gre(Argus) :-
             \+last(L, answer('<http://www.w3.org/2000/10/swap/log#explanation>', _, _)),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
-            makevars([A, B, U], [Q, I, X], beta(U)),
-            (   nb_getval(explain, true),
+            makevars([A, B], [Q, I], beta(U)),
+            (   flag(explain),
                 Q \= true,
                 I \= false
             ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I), F)
@@ -287,8 +289,8 @@ gre(Argus) :-
             '<http://www.w3.org/2000/10/swap/log#isImpliedBy>'(B, A),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
-            makevars([A, B, U], [Q, I, X], beta(U)),
-            (   nb_getval(explain, true),
+            makevars([A, B], [Q, I], beta(U)),
+            (   flag(explain),
                 Q \= true,
                 Q \= !
             ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I)), F)
@@ -307,7 +309,7 @@ gre(Argus) :-
     % create queries
     assertz(implies((
             '<http://www.w3.org/2000/10/swap/log#query>'(A, B),
-            (   nb_getval(explain, true),
+            (   flag(explain),
                 A \= B
             ->  F = ('<http://www.w3.org/2000/10/swap/log#explanation>'(A, B), B)
             ;   F = B
@@ -315,16 +317,8 @@ gre(Argus) :-
             djiti_answer(answer(F), J),
             findvars([A, F], V, alpha),
             list_to_set(V, U),
-            makevars([A, J, U], [Q, I, X], beta(U)),
-            C = implies(Q, I),
-            copy_term_nat(C, CC),
-            labelvars(CC, 0, _, avar),
-            (   \+cc(CC)
-            ->  assertz(cc(CC)),
-                assertz(C),
-                retractall(brake)
-            ;   true
-            )), true)),
+            makevars([A, J], [Q, I], beta(U))
+            ), '<http://www.w3.org/2000/10/swap/log#implies>'(Q, I))),
 
     % create universal statements
     (   pred(P),
@@ -346,10 +340,6 @@ gre(Argus) :-
         (   scope(Sc)
         ),
         Scope
-    ),
-    (   '<http://www.w3.org/2000/10/swap/log#explanation>'(_, _)
-    ->  nb_setval(explain, false)
-    ;   nb_setval(explain, true)
     ),
     nb_setval(scope, Scope),
     nb_setval(rn, 0),
@@ -375,6 +365,11 @@ gre(Argus) :-
 
 opts([], []) :-
     !.
+opts(['--explain'|Argus], Args) :-
+    !,
+    retractall(flag(explain)),
+    assertz(flag(explain)),
+    opts(Argus, Args).
 opts(['--genid', Genid|Argus], Args) :-
     !,
     retractall(flag(genid, _)),
@@ -779,7 +774,7 @@ w3 :-
     ),
     nb_setval(fdepth, 0),
     nb_setval(pdepth, 0),
-    nb_setval(cdepth, 0),
+    nb_setval(cdepth, 0), mf(answer(_)),
     (   answer(B1, B2, B3),
         B1 \= '<http://www.w3.org/2000/10/swap/log#explanation>',
         relabel([B1, B2, B3], [C1, C2, C3]),

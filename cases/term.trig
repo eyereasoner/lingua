@@ -30,5 +30,10 @@ GRAPH _:bng_2 {
 _:bng_3 log:query _:bng_3.
 
 GRAPH _:bng_3 {
-    var:S a var:O.
+    var:S graph:term var:O.
+    var:O graph:member _:bng_4.
+}
+
+GRAPH _:bng_4 {
+    var:X rdfs:subClassOf var:Y.
 }

@@ -1,21 +1,4 @@
-PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
-PREFIX var: <http://www.w3.org/2000/10/swap/var#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX : <https://eyereasoner.github.io/lingua/cases/socrates.trig#>
 
-_:node_1_1 graph:term _:node_1_1.
-_:node_1_1 graph:member _:bng_1.
-_:node_4_1 graph:term _:node_4_1.
-_:node_4_1 graph:member _:node_4_1.
-
-GRAPH _:node_1_1 {
-    var:A rdfs:subClassOf var:B.
-    var:S a var:A.
-}
-
-GRAPH _:bng_1 {
-    var:A rdfs:subClassOf var:B.
-}
-
-GRAPH _:node_4_1 {
-    var:X rdfs:subClassOf var:Y.
-}
+:Socrates a :Human.
+:Socrates a :Mortal.

@@ -10,10 +10,10 @@ FAILED=0
 
 version=$(lingua -v)
 
-echo -e "${YELLOW}# --------------------${NORMAL}"
-echo -e "${YELLOW}# Running lingua cases${NORMAL}"
-echo -e "${YELLOW}# $version${NORMAL}"
-echo -e "${YELLOW}# --------------------${NORMAL}"
+echo -e "${YELLOW}--------------------${NORMAL}"
+echo -e "${YELLOW}Running lingua cases${NORMAL}"
+echo -e "${YELLOW}$version${NORMAL}"
+echo -e "${YELLOW}--------------------${NORMAL}"
 echo ""
 
 pad () {

@@ -15,9 +15,9 @@ _:bng_1 log:explains _:bng_2.
 
 GRAPH _:bng_1 {
     :patH :birthDay "1944-08-21"^^xsd:date.
-    [] rdf:value ""; time:localTime "2024-09-02T12:48:42.013Z"^^xsd:dateTime.
-    ("2024-09-02T12:48:42.013Z"^^xsd:dateTime "1944-08-21"^^xsd:date) math:difference 2525690922.013 .
-    [] rdf:value 2525690922.013; math:greaterThan "P80Y"^^xsd:duration.
+    [] rdf:value ""; time:localTime "2024-09-02T15:04:02.842Z"^^xsd:dateTime.
+    ("2024-09-02T15:04:02.842Z"^^xsd:dateTime "1944-08-21"^^xsd:date) math:difference 2525699042.842 .
+    [] rdf:value 2525699042.842; math:greaterThan "P80Y"^^xsd:duration.
 }
 
 GRAPH _:bng_2 {

@@ -5,6 +5,7 @@
 # Infer that Socrates is mortal.
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
 PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
@@ -29,5 +30,10 @@ GRAPH _:bng_2 {
 _:bng_3 log:query _:bng_3.
 
 GRAPH _:bng_3 {
-    var:S a :Mortal.
+    var:S graph:term var:O.
+    var:O graph:member _:bng_4.
+}
+
+GRAPH _:bng_4 {
+    var:X rdfs:subClassOf var:Y.
 }

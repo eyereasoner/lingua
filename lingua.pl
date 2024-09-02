@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.4.1').
+version_info('lingua v1.4.2').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -264,9 +264,6 @@ gre(Argus) :-
 
     % remove rdf reifiers
     retractall('<http://www.w3.org/1999/02/22-rdf-syntax-ns#reifies>'(_, _)),
-
-    % remove rdf named graphs
-    retractall(graph(_, _)),
 
     % create forward rules
     assertz(implies((
@@ -1416,6 +1413,9 @@ indentation(C) :-
             nb_setval(wn, N)
         )
     ).
+
+'<http://www.w3.org/2000/10/swap/graph#term>'(A, B) :-
+    graph(A, B).
 
 '<http://www.w3.org/2000/10/swap/graph#union>'(A, B) :-
     when(

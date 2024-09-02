@@ -1,0 +1,11 @@
+PREFIX skolem: <http://eyereasoner.github.io/.well-known/genid/8b98b360-9a70-4845-b52c-c675af60ad01#>
+PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+skolem:bng_1 => false.
+
+GRAPH _:bng_1 {
+    var:P log:complement var:C.
+    var:S var:P var:O.
+    var:S var:C var:O.
+}

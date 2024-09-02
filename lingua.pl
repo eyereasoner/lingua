@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.4.2').
+version_info('lingua v1.4.4').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -77,7 +77,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/log#explanation>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/log#explains>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#implies>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#isImpliedBy>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#query>'/2).
@@ -270,14 +270,14 @@ gre(Argus) :-
             '<http://www.w3.org/2000/10/swap/log#implies>'(A, B),
             ground([A, B]),
             conj_list(B, L),
-            \+last(L, answer('<http://www.w3.org/2000/10/swap/log#explanation>', _, _)),
+            \+last(L, answer('<http://www.w3.org/2000/10/swap/log#explains>', _, _)),
             findvars([A, B], V, alpha),
             list_to_set(V, U),
             makevars([A, B], [Q, I], beta(U)),
             (   flag(explain),
                 Q \= true,
                 I \= false
-            ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I), F)
+            ->  conj_append(I, answer('<http://www.w3.org/2000/10/swap/log#explains>', Q, I), F)
             ;   F = I
             )), '<http://www.w3.org/2000/10/swap/log#implies>'(Q, F))),
 
@@ -290,7 +290,7 @@ gre(Argus) :-
             (   flag(explain),
                 Q \= true,
                 Q \= !
-            ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/log#explanation>', Q, I)), F)
+            ->  conj_append(Q, remember(answer('<http://www.w3.org/2000/10/swap/log#explains>', Q, I)), F)
             ;   F = Q
             ),
             C = ':-'(I, F),
@@ -308,7 +308,7 @@ gre(Argus) :-
             '<http://www.w3.org/2000/10/swap/log#query>'(A, B),
             (   flag(explain),
                 A \= B
-            ->  F = ('<http://www.w3.org/2000/10/swap/log#explanation>'(A, B), B)
+            ->  F = ('<http://www.w3.org/2000/10/swap/log#explains>'(A, B), B)
             ;   F = B
             ),
             djiti_answer(answer(F), J),
@@ -773,7 +773,7 @@ w3 :-
     nb_setval(pdepth, 0),
     nb_setval(cdepth, 0), mf(answer(_)),
     (   answer(B1, B2, B3),
-        B1 \= '<http://www.w3.org/2000/10/swap/log#explanation>',
+        B1 \= '<http://www.w3.org/2000/10/swap/log#explains>',
         relabel([B1, B2, B3], [C1, C2, C3]),
         djiti_answer(answer(C), answer(C1, C2, C3)),
         indent,
@@ -790,17 +790,17 @@ w3 :-
         fail
     ;   true
     ),
-    (   answer('<http://www.w3.org/2000/10/swap/log#explanation>', _, _)
+    (   answer('<http://www.w3.org/2000/10/swap/log#explains>', _, _)
     ->  nl,
         writeln('#'),
         writeln('# lingua explanation'),
         writeln('#'),
         nl,
-        (   answer('<http://www.w3.org/2000/10/swap/log#explanation>', S, O),
-            labelvars('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O), 0, _, avar),
+        (   answer('<http://www.w3.org/2000/10/swap/log#explains>', S, O),
+            labelvars('<http://www.w3.org/2000/10/swap/log#explains>'(S, O), 0, _, avar),
             indent,
-            wt('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O)),
-            ws('<http://www.w3.org/2000/10/swap/log#explanation>'(S, O)),
+            wt('<http://www.w3.org/2000/10/swap/log#explains>'(S, O)),
+            ws('<http://www.w3.org/2000/10/swap/log#explains>'(S, O)),
             write('.'),
             nl,
             fail

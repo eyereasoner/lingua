@@ -10,8 +10,8 @@ See [examples and cases](https://github.com/eyereasoner/lingua/tree/main/cases) 
 Usage: lingua <options>* <data>*
 
 <options>
-    --genid <genid>             use <genid> in Skolem IRIs
     --explain                   explain the reasoning steps
+    --genid <genid>             use <genid> in Skolem IRIs
     --help, -h                  show help info
     --output <file>             write reasoner output to <file>
     --version, -v               show version info

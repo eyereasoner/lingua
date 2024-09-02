@@ -1,0 +1,44 @@
+PREFIX : <https://eyereasoner.github.io/lingua/cases/union.trig#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX graph: <http://www.w3.org/2000/10/swap/graph#>
+
+:result :is _:bng_1.
+
+#
+# lingua explanation
+#
+
+_:bng_2 log:explains _:bng_3.
+
+GRAPH _:bng_1 {
+    :A :B :C.
+    :A :X :C.
+    :D :E :F.
+    :A :Y :C.
+}
+
+GRAPH _:bng_2 {
+    (_:node_1_1 _:node_2_1) graph:union _:bng_1.
+}
+
+GRAPH _:bng_3 {
+    :result :is _:bng_1.
+}
+
+GRAPH _:node_1_1 {
+    :A :B :C.
+    :A :X :C.
+    :D :E :F.
+}
+
+GRAPH _:node_2_1 {
+    :A :Y :C.
+    :A :B :C.
+}
+
+GRAPH _:bng_1 {
+    :A :B :C.
+    :A :X :C.
+    :D :E :F.
+    :A :Y :C.
+}

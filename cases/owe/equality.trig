@@ -1,0 +1,32 @@
+PREFIX : <https://eyereasoner.github.io/lingua/cases/equality.trig#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+
+:test :is true.
+
+#
+# lingua explanation
+#
+
+_:bng_1 log:explains _:node_6_1.
+
+GRAPH _:bng_4 {
+    :F :G _:sk_2.
+}
+
+GRAPH _:bng_1 {
+    _:bng_2 log:equalTo _:bng_3.
+}
+
+GRAPH _:node_6_1 {
+    :test :is true.
+}
+
+GRAPH _:bng_2 {
+    :A :B :C.
+    :D :E _:bng_4.
+}
+
+GRAPH _:bng_3 {
+    :D :E _:bng_4.
+    :A :B :C.
+}

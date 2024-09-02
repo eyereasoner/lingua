@@ -1,0 +1,27 @@
+PREFIX : <https://eyereasoner.github.io/lingua/cases/filter.trig#>
+PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+PREFIX list: <http://www.w3.org/2000/10/swap/list#>
+PREFIX string: <http://www.w3.org/2000/10/swap/string#>
+
+:result :is ("Huey" "Dewey").
+
+#
+# lingua explanation
+#
+
+_:bng_1 log:explains _:bng_2.
+
+GRAPH _:bng_1 {
+    :Let :where (_:sk_4 _:bng_3).
+    (_:sk_4 _:bng_3 ("Huey" "Dewey")) log:collectAllIn ((<https://eyereasoner.github.io/lingua/cases/filter.trig>) 1).
+    ("Huey" "Dewey") list:length 2.
+}
+
+GRAPH _:bng_2 {
+    :result :is ("Huey" "Dewey").
+}
+
+GRAPH _:bng_3 {
+    :Let :param _:sk_4.
+    _:sk_4 string:lessThan "Louie".
+}

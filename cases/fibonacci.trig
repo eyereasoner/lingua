@@ -10,9 +10,6 @@ PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX : <#>
 
-# assuming lingua explanations
-[] log:explanation [].
-
 # backward rules
 _:bng_1 log:isImpliedBy _:bng_2.
 

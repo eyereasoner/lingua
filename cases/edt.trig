@@ -14,9 +14,6 @@ PREFIX log: <http://www.w3.org/2000/10/swap/log#>
 PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 PREFIX edt: <http://eulersharp.sourceforge.net/2009/12dtb/test#>
 
-# assuming lingua explanations
-[] log:explanation [].
-
 # importing
 _:bng_1 log:implies true.
 

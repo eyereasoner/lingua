@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.4.4').
+version_info('lingua v1.4.5').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -45,6 +45,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic(flag/2).
 :- dynamic(fpred/1).
 :- dynamic(graph/2).
+:- dynamic(graphid/1).
 :- dynamic(hash_value/2).
 :- dynamic(implies/2).          % implies(Premise, Conclusion)
 :- dynamic(keep_ng/1).
@@ -75,6 +76,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/graph#is>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#explains>'/2).
@@ -190,8 +192,8 @@ gre(Argus) :-
     % process command line arguments
     args(Args),
 
-    % create named graphs
-    (   quad(_, _, _, G),
+    % create trig graphs
+    (   graphid(G),
         findall(C,
             (   retract(quad(S, P, O, G)),
                 C =.. [P, S, O]
@@ -475,6 +477,10 @@ args([Argument|Args]) :-
             (   current_predicate(Predicate/2)
             ->  true
             ;   dynamic(Predicate/2)
+            ),
+            (   \+graphid(Graph)
+            ->  assertz(graphid(Graph))
+            ;   true
             )
         )
     ),
@@ -727,6 +733,18 @@ djiti_fact('<http://www.w3.org/2000/10/swap/log#implies>'(A, B), C) :-
 djiti_fact(':-'(A, B), ':-'(C, D)) :-
     !,
     makevars((A, B), (C, D), eta).
+djiti_fact('<http://www.w3.org/2000/10/swap/graph#is>'(G, T), graph(G, T)) :-
+    !,
+    (   \+graphid(G)
+    ->  assertz(graphid(G))
+    ;   true
+    ).
+djiti_fact('<http://www.w3.org/2000/10/swap/graph#is>'(G, T), graph(G, T)) :-
+    !,
+    (   \+graphid(G)
+    ->  assertz(graphid(G))
+    ;   true
+    ).
 djiti_fact('<http://www.w3.org/2000/10/swap/log#dcg>'(_, literal(A, type('<http://www.w3.org/2001/XMLSchema#string>'))), B) :-
     !,
     read_term_from_atom(A, C, []),
@@ -771,7 +789,7 @@ w3 :-
     ),
     nb_setval(fdepth, 0),
     nb_setval(pdepth, 0),
-    nb_setval(cdepth, 0), mf(answer(_)),
+    nb_setval(cdepth, 0),
     (   answer(B1, B2, B3),
         B1 \= '<http://www.w3.org/2000/10/swap/log#explains>',
         relabel([B1, B2, B3], [C1, C2, C3]),
@@ -1367,6 +1385,9 @@ indentation(C) :-
         )
     ).
 
+'<http://www.w3.org/2000/10/swap/graph#is>'(A, B) :-
+    graph(A, B).
+
 '<http://www.w3.org/2000/10/swap/graph#length>'(A, B) :-
     when(
         (   nonvar(A)
@@ -1413,9 +1434,6 @@ indentation(C) :-
             nb_setval(wn, N)
         )
     ).
-
-'<http://www.w3.org/2000/10/swap/graph#term>'(A, B) :-
-    graph(A, B).
 
 '<http://www.w3.org/2000/10/swap/graph#union>'(A, B) :-
     when(
@@ -2809,7 +2827,9 @@ indentation(C) :-
         ),
         (   preformat(SearchList, SearchList2),
             preformat(ReplaceList, ReplaceList2),
-            replace(SearchList2, ReplaceList2, X, Z),
+            escape_atom(X, Xe),
+            replace(SearchList2, ReplaceList2, Xe, Ze),
+            escape_atom(Z, Ze),
             atom_string(Y, Z)
         )
     ).
@@ -2881,7 +2901,8 @@ indentation(C) :-
         (   ground([A, B])
         ),
         (   getint(B, I),
-            sub_atom(A, 0, E, 0, _),
+            escape_atom(A, Ae),
+            sub_atom(Ae, 0, E, 0, _),
             J is E-I+1,
             (   I < 1
             ->  G is 0,
@@ -2890,9 +2911,8 @@ indentation(C) :-
                 H is J
             ),
             (   H < 0
-            ->  D = []
-            ;   escape_atom(A, Ae),
-                escape_atom(D, De),
+            ->  D = ''
+            ;   escape_atom(D, De),
                 sub_atom(Ae, G, H, _, De)
             )
         )
@@ -3292,7 +3312,8 @@ replace([], [], X, X) :-
     !.
 replace([Search|SearchRest], [Replace|ReplaceRest], X, Y) :-
     atomic_list_concat(['(', Search, ')'], Scap),
-    scrape(X, Scap, Scrape),
+    escape_atom(Scape, Scap),
+    scrape(X, Scape, Scrape),
     atom_codes(Replace, RC),
     srlist(Scrape, RC, Subst),
     atom_codes(X, XC),
@@ -3512,6 +3533,8 @@ conjify((A, B), (C, D)) :-
     conjify(A, C),
     conjify(B, D).
 conjify('<http://www.w3.org/2000/10/swap/log#callWithCut>'(true, true), !) :-
+    !.
+conjify('<http://www.w3.org/2000/10/swap/log#callWithCut>'(A, true), (A, !)) :-
     !.
 conjify(A, A).
 

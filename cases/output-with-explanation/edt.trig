@@ -8,7 +8,7 @@ edt:i100000 a edt:N5000.
 # lingua explanation
 #
 
-_:node_3_1 log:explains true.
+_:node_1_1 log:explains true.
 _:bng_1 log:explains _:bng_2.
 _:bng_3 log:explains _:bng_4.
 _:bng_5 log:explains _:bng_6.
@@ -5008,9 +5008,9 @@ _:bng_9991 log:explains _:bng_9992.
 _:bng_9993 log:explains _:bng_9994.
 _:bng_9995 log:explains _:bng_9996.
 _:bng_9997 log:explains _:bng_9998.
-_:bng_9999 log:explains _:node_6_1.
+_:bng_9999 log:explains _:node_4_1.
 
-GRAPH _:node_3_1 {
+GRAPH _:node_1_1 {
     <https://eyereasoner.github.io/lingua/cases/edt.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-facts.ttl>.
     <https://eyereasoner.github.io/lingua/cases/edt.trig> log:imports <https://eyereasoner.github.io/eye/reasoning/edt/test-dl.ttl>.
 }
@@ -50011,6 +50011,6 @@ GRAPH _:bng_9999 {
     edt:i100000 a edt:N4999.
 }
 
-GRAPH _:node_6_1 {
+GRAPH _:node_4_1 {
     edt:i100000 a edt:N5000.
 }

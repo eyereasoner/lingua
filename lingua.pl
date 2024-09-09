@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.6.0').
+version_info('lingua v1.6.1').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -1802,20 +1802,6 @@ indentation(C) :-
     ->  true
     ;   B \= answer(_, _, _),
         B \= (answer(_, _, _), _)
-    ).
-
-'<http://www.w3.org/2000/10/swap/log#imports>'(_, X) :-
-    when(
-        (   nonvar(X)
-        ),
-        (   (   scope(X)
-            ->  true
-            ;   sub_atom(X, 0, 1, _, '<'),
-                sub_atom(X, _, 1, 0, '>'),
-                sub_atom(X, 1, _, 1, Z),
-                args([Z])
-            )
-        )
     ).
 
 '<http://www.w3.org/2000/10/swap/log#includes>'(X, Y) :-

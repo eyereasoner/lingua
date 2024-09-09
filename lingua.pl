@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.6.2').
+version_info('lingua v1.6.3').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -790,15 +790,21 @@ w3 :-
         djiti_answer(answer(C), answer(C1, C2, C3)),
         indent,
         labelvars(C, 0, _, avar),
-        wt(C),
-        ws(C),
-        (   (   C = graph(_, _)
-            ;   C = exopred(graph, _, _)
+        (   C = '<http://www.w3.org/2000/10/swap/graph#namedGraph>'(X, Y)
+        ->  (   \+keep_ng(graph(X, Y))
+            ->  assertz(keep_ng(graph(X, Y)))
+            ;   true
             )
-        ->  true
-        ;   write('.')
+        ;   wt(C),
+            ws(C),
+            (   (   C = graph(_, _)
+                ;   C = exopred(graph, _, _)
+                )
+            ->  true
+            ;   write('.')
+            ),
+            nl
         ),
-        nl,
         fail
     ;   true
     ),

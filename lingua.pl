@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.6.1').
+version_info('lingua v1.6.2').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -1084,7 +1084,9 @@ wt2('<http://www.w3.org/2000/10/swap/log#implies>'(X, Y)) :-
         )
     ;   (   clause('<http://www.w3.org/2000/10/swap/log#implies>'(X, Y, _, _, _, _), true)
         ->  wg(X),
-            write(' => '),
+            write(' '),
+            wp('<http://www.w3.org/2000/10/swap/log#implies>'),
+            write(' '),
             wg(Y)
         ;   (   nb_getval(fdepth, 0)
             ->  assertz(ncllit)
@@ -1105,7 +1107,9 @@ wt2('<http://www.w3.org/2000/10/swap/log#implies>'(X, Y)) :-
             ->  retract(ncllit)
             ;   true
             ),
-            write(' => '),
+            write(' '),
+            wp('<http://www.w3.org/2000/10/swap/log#implies>'),
+            write(' '),
             (   \+atom(Y)
             ->  nb_getval(cdepth, CD),
                 CD1 is CD+1,

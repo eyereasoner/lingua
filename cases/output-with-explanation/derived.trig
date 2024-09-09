@@ -16,7 +16,7 @@ GRAPH _:bng_1 {
 }
 
 GRAPH _:bng_2 {
-    _:bng_5 => _:node_4_1.
+    _:bng_5 log:implies _:node_4_1.
 }
 
 GRAPH _:bng_3 {
@@ -24,7 +24,7 @@ GRAPH _:bng_3 {
 }
 
 GRAPH _:bng_4 {
-    _:bng_6 => _:node_4_1.
+    _:bng_6 log:implies _:node_4_1.
 }
 
 GRAPH _:bng_5 {

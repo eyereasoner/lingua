@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.5.0').
+version_info('lingua v1.6.0').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -76,8 +76,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/graph#content>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/graph#isContentOf>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/graph#namedGraph>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#explains>'/2).
@@ -734,16 +733,10 @@ djiti_fact('<http://www.w3.org/2000/10/swap/log#implies>'(A, B), C) :-
 djiti_fact(':-'(A, B), ':-'(C, D)) :-
     !,
     makevars((A, B), (C, D), eta).
-djiti_fact('<http://www.w3.org/2000/10/swap/graph#content>'(A, B), graph(A, B)) :-
+djiti_fact('<http://www.w3.org/2000/10/swap/graph#namedGraph>'(A, B), graph(A, B)) :-
     !,
     (   \+graphid(A)
     ->  assertz(graphid(A))
-    ;   true
-    ).
-djiti_fact('<http://www.w3.org/2000/10/swap/graph#isContentOf>'(A, B), graph(B, A)) :-
-    !,
-    (   \+graphid(B)
-    ->  assertz(graphid(B))
     ;   true
     ).
 djiti_fact('<http://www.w3.org/2000/10/swap/log#dcg>'(_, literal(A, type('<http://www.w3.org/2001/XMLSchema#string>'))), B) :-
@@ -1369,9 +1362,6 @@ indentation(C) :-
         )
     ).
 
-'<http://www.w3.org/2000/10/swap/graph#content>'(A, B) :-
-    graph(A, B).
-
 '<http://www.w3.org/2000/10/swap/graph#difference>'(A, B) :-
     when(
         (   nonvar(A)
@@ -1388,9 +1378,6 @@ indentation(C) :-
         (   intersect(A, B)
         )
     ).
-
-'<http://www.w3.org/2000/10/swap/graph#isContentOf>'(A, B) :-
-    graph(B, A).
 
 '<http://www.w3.org/2000/10/swap/graph#length>'(A, B) :-
     when(
@@ -1416,6 +1403,9 @@ indentation(C) :-
             member(B, C)
         )
     ).
+
+'<http://www.w3.org/2000/10/swap/graph#namedGraph>'(A, B) :-
+    graph(A, B).
 
 '<http://www.w3.org/2000/10/swap/graph#notMember>'(A, B) :-
     when(

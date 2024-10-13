@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.6.4').
+version_info('lingua v1.6.5').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -872,16 +872,16 @@ wt0(X) :-
             )
         ;   memberchk(X, L)
         )
-    ->  write('var:U_')
-    ;   write('_:sk_')
+    ->  atomic_list_concat(['<http://www.w3.org/2000/10/swap/var#U_', Y, '>'], Z)
+    ;   atomic_list_concat(['_:sk_', Y], Z)
     ),
-    write(Y).
+    wt(Z).
 wt0(X) :-
     atom(X),
     atom_concat(allv, Y, X),
     !,
-    write('var:U_'),
-    write(Y).
+    atomic_list_concat(['<http://www.w3.org/2000/10/swap/var#U_', Y, '>'], Z),
+    wt(Z).
 wt0(X) :-
     atom(X),
     atom_concat(avar, Y, X),

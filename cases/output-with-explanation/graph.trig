@@ -1,5 +1,5 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/graph.trig#>
-PREFIX log: <http://www.w3.org/2000/10/swap/log#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/graph.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
 
 :angers :path :nantes.
 :lemans :path :nantes.
@@ -39,216 +39,216 @@ _:bng_47 log:explains _:bng_41.
 _:bng_48 log:explains _:bng_46.
 _:bng_49 log:explains _:bng_46.
 
-GRAPH _:bng_1 {
+_:bng_1 {
     :paris :oneway :orleans.
 }
 
-GRAPH _:bng_2 {
+_:bng_2 {
     :paris :path :orleans.
 }
 
-GRAPH _:bng_3 {
+_:bng_3 {
     :paris :oneway :chartres.
 }
 
-GRAPH _:bng_4 {
+_:bng_4 {
     :paris :path :chartres.
 }
 
-GRAPH _:bng_5 {
+_:bng_5 {
     :paris :oneway :amiens.
 }
 
-GRAPH _:bng_6 {
+_:bng_6 {
     :paris :path :amiens.
 }
 
-GRAPH _:bng_7 {
+_:bng_7 {
     :orleans :oneway :blois.
 }
 
-GRAPH _:bng_8 {
+_:bng_8 {
     :orleans :path :blois.
 }
 
-GRAPH _:bng_9 {
+_:bng_9 {
     :orleans :oneway :bourges.
 }
 
-GRAPH _:bng_10 {
+_:bng_10 {
     :orleans :path :bourges.
 }
 
-GRAPH _:bng_11 {
+_:bng_11 {
     :blois :oneway :tours.
 }
 
-GRAPH _:bng_12 {
+_:bng_12 {
     :blois :path :tours.
 }
 
-GRAPH _:bng_13 {
+_:bng_13 {
     :chartres :oneway :lemans.
 }
 
-GRAPH _:bng_14 {
+_:bng_14 {
     :chartres :path :lemans.
 }
 
-GRAPH _:bng_15 {
+_:bng_15 {
     :lemans :oneway :angers.
 }
 
-GRAPH _:bng_16 {
+_:bng_16 {
     :lemans :path :angers.
 }
 
-GRAPH _:bng_17 {
+_:bng_17 {
     :lemans :oneway :tours.
 }
 
-GRAPH _:bng_18 {
+_:bng_18 {
     :lemans :path :tours.
 }
 
-GRAPH _:bng_19 {
+_:bng_19 {
     :angers :oneway :nantes.
 }
 
-GRAPH _:bng_20 {
+_:bng_20 {
     :angers :path :nantes.
 }
 
-GRAPH _:bng_21 {
+_:bng_21 {
     :paris :path :orleans.
     :orleans :path :blois.
 }
 
-GRAPH _:bng_22 {
+_:bng_22 {
     :paris :path :blois.
 }
 
-GRAPH _:bng_23 {
+_:bng_23 {
     :paris :path :orleans.
     :orleans :path :bourges.
 }
 
-GRAPH _:bng_24 {
+_:bng_24 {
     :paris :path :bourges.
 }
 
-GRAPH _:bng_25 {
+_:bng_25 {
     :paris :path :chartres.
     :chartres :path :lemans.
 }
 
-GRAPH _:bng_26 {
+_:bng_26 {
     :paris :path :lemans.
 }
 
-GRAPH _:bng_27 {
+_:bng_27 {
     :orleans :path :blois.
     :blois :path :tours.
 }
 
-GRAPH _:bng_28 {
+_:bng_28 {
     :orleans :path :tours.
 }
 
-GRAPH _:bng_29 {
+_:bng_29 {
     :chartres :path :lemans.
     :lemans :path :angers.
 }
 
-GRAPH _:bng_30 {
+_:bng_30 {
     :chartres :path :angers.
 }
 
-GRAPH _:bng_31 {
+_:bng_31 {
     :chartres :path :lemans.
     :lemans :path :tours.
 }
 
-GRAPH _:bng_32 {
+_:bng_32 {
     :chartres :path :tours.
 }
 
-GRAPH _:bng_33 {
+_:bng_33 {
     :lemans :path :angers.
     :angers :path :nantes.
 }
 
-GRAPH _:bng_34 {
+_:bng_34 {
     :lemans :path :nantes.
 }
 
-GRAPH _:bng_35 {
+_:bng_35 {
     :paris :path :orleans.
     :orleans :path :tours.
 }
 
-GRAPH _:bng_36 {
+_:bng_36 {
     :paris :path :tours.
 }
 
-GRAPH _:bng_37 {
+_:bng_37 {
     :paris :path :chartres.
     :chartres :path :angers.
 }
 
-GRAPH _:bng_38 {
+_:bng_38 {
     :paris :path :angers.
 }
 
-GRAPH _:bng_39 {
+_:bng_39 {
     :paris :path :chartres.
     :chartres :path :tours.
 }
 
-GRAPH _:bng_40 {
+_:bng_40 {
     :chartres :path :lemans.
     :lemans :path :nantes.
 }
 
-GRAPH _:bng_41 {
+_:bng_41 {
     :chartres :path :nantes.
 }
 
-GRAPH _:bng_42 {
+_:bng_42 {
     :paris :path :blois.
     :blois :path :tours.
 }
 
-GRAPH _:bng_43 {
+_:bng_43 {
     :paris :path :lemans.
     :lemans :path :angers.
 }
 
-GRAPH _:bng_44 {
+_:bng_44 {
     :paris :path :lemans.
     :lemans :path :tours.
 }
 
-GRAPH _:bng_45 {
+_:bng_45 {
     :paris :path :lemans.
     :lemans :path :nantes.
 }
 
-GRAPH _:bng_46 {
+_:bng_46 {
     :paris :path :nantes.
 }
 
-GRAPH _:bng_47 {
+_:bng_47 {
     :chartres :path :angers.
     :angers :path :nantes.
 }
 
-GRAPH _:bng_48 {
+_:bng_48 {
     :paris :path :chartres.
     :chartres :path :nantes.
 }
 
-GRAPH _:bng_49 {
+_:bng_49 {
     :paris :path :angers.
     :angers :path :nantes.
 }

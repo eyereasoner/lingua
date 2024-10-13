@@ -1,0 +1,34 @@
+@prefix : <https://eyereasoner.github.io/lingua/cases/qiana.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+:Fabian :believes _:bng_1.
+:northStar :notNecessarilyA :gold.
+
+_:bng_1 {
+    _:bng_2 log:implies _:bng_3.
+}
+
+_:bng_4 {
+    _:bng_5 log:implies _:bng_6.
+}
+
+_:bng_2 {
+    [] rdf:value var:U_8; a :glitter.
+}
+
+_:bng_3 {
+    [] rdf:value var:U_8; :notNecessarilyA :gold.
+}
+
+_:bng_4 {
+    _:bng_5 log:implies _:bng_6.
+}
+
+_:bng_5 {
+    [] rdf:value var:U_9; a :glitter.
+}
+
+_:bng_6 {
+    [] rdf:value var:U_9; :notNecessarilyA :gold.
+}

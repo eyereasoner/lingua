@@ -1,0 +1,60 @@
+@prefix : <https://eyereasoner.github.io/lingua/cases/qiana.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+:Fabian :believes _:bng_1.
+:northStar :notNecessarilyA :gold.
+
+#
+# lingua explanation
+#
+
+_:bng_2 log:explains _:bng_3.
+
+_:bng_10 {
+    <http://www.w3.org/2000/10/swap/var#x_0> a :glitter.
+}
+
+_:bng_11 {
+    <http://www.w3.org/2000/10/swap/var#x_0> :notNecessarilyA :gold.
+}
+
+_:bng_1 {
+    _:bng_4 log:implies _:bng_5.
+}
+
+_:bng_6 {
+    _:bng_7 log:implies _:bng_8.
+}
+
+_:bng_2 {
+    :Einstein :says _:bng_9.
+}
+
+_:bng_3 {
+    :Fabian :believes _:bng_9.
+}
+
+_:bng_4 {
+    [] rdf:value var:U_8; a :glitter.
+}
+
+_:bng_5 {
+    [] rdf:value var:U_8; :notNecessarilyA :gold.
+}
+
+_:bng_6 {
+    _:bng_7 log:implies _:bng_8.
+}
+
+_:bng_7 {
+    [] rdf:value var:U_9; a :glitter.
+}
+
+_:bng_8 {
+    [] rdf:value var:U_9; :notNecessarilyA :gold.
+}
+
+_:bng_9 {
+    _:bng_10 log:implies _:bng_11.
+}

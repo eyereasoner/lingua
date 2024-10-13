@@ -1,6 +1,6 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/derived.trig#>
-PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/derived.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
 
 :test :is true.
 
@@ -11,30 +11,30 @@ PREFIX var: <http://www.w3.org/2000/10/swap/var#>
 _:bng_1 log:explains _:bng_2.
 _:bng_3 log:explains _:bng_4.
 
-GRAPH _:bng_1 {
+_:bng_1 {
     :Alice a :Cat.
 }
 
-GRAPH _:bng_2 {
+_:bng_2 {
     _:bng_5 log:implies _:node_4_1.
 }
 
-GRAPH _:bng_3 {
+_:bng_3 {
     :Minka a :Cat.
 }
 
-GRAPH _:bng_4 {
+_:bng_4 {
     _:bng_6 log:implies _:node_4_1.
 }
 
-GRAPH _:bng_5 {
+_:bng_5 {
     var:x_5 a :Dog.
 }
 
-GRAPH _:node_4_1 {
+_:node_4_1 {
     :test :is true.
 }
 
-GRAPH _:bng_6 {
+_:bng_6 {
     var:x_6 a :Dog.
 }

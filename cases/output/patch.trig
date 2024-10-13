@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/patch.trig#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/patch.trig#>.
 
 :pers001 :familyName "Garcia".
 :pers001 :givenName "Alex".

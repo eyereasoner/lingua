@@ -1,4 +1,3 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/socrates.trig#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/socrates.trig#>.
 
-:Socrates a :Human.
 :Socrates a :Mortal.

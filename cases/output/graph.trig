@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/graph.trig#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/graph.trig#>.
 
 :angers :path :nantes.
 :lemans :path :nantes.

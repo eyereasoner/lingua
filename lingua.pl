@@ -19,7 +19,7 @@
 :- use_module(library(semweb/turtle)).
 :- catch(use_module(library(http/http_open)), _, true).
 
-version_info('lingua v1.6.3').
+version_info('lingua v1.6.4').
 
 help_info('Usage: lingua <options>* <data>*
 
@@ -76,7 +76,7 @@ help_info('Usage: lingua <options>* <data>*
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>'/2).
 :- dynamic('<http://www.w3.org/1999/02/22-rdf-syntax-ns#value>'/2).
 :- dynamic('<http://www.w3.org/2000/01/rdf-schema#subClassOf>'/2).
-:- dynamic('<http://www.w3.org/2000/10/swap/graph#namedGraph>'/2).
+:- dynamic('<http://www.w3.org/2000/10/swap/graph#statement>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#callWithCleanup>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#collectAllIn>'/2).
 :- dynamic('<http://www.w3.org/2000/10/swap/log#explains>'/2).
@@ -297,7 +297,6 @@ gre(Argus) :-
             ),
             C = ':-'(I, F),
             copy_term_nat(C, CC),
-            labelvars(CC, 0, _, avar),
             (   \+cc(CC)
             ->  assertz(cc(CC)),
                 assertz(C),
@@ -732,8 +731,11 @@ djiti_fact('<http://www.w3.org/2000/10/swap/log#implies>'(A, B), C) :-
     makevars(implies(A, B), C, zeta).
 djiti_fact(':-'(A, B), ':-'(C, D)) :-
     !,
-    makevars((A, B), (C, D), eta).
-djiti_fact('<http://www.w3.org/2000/10/swap/graph#namedGraph>'(A, B), graph(A, B)) :-
+    makevars((A, B), (C, D), alpha).
+djiti_fact('<http://www.w3.org/2000/10/swap/graph#statement>'(A, B), void(A, B)) :-
+    atomic(B),
+    !.
+djiti_fact('<http://www.w3.org/2000/10/swap/graph#statement>'(A, B), graph(A, B)) :-
     !,
     (   \+graphid(A)
     ->  assertz(graphid(A))
@@ -772,7 +774,7 @@ w3 :-
         (   pfx(A, B),
             \+wpfx(A)
         ),
-        (   format('PREFIX ~w ~w~n', [A, B]),
+        (   format('@prefix ~w ~w.~n', [A, B]),
             assertz(wpfx(A)),
             nb_setval(wpfx, true)
         )
@@ -790,7 +792,7 @@ w3 :-
         djiti_answer(answer(C), answer(C1, C2, C3)),
         indent,
         labelvars(C, 0, _, avar),
-        (   C = '<http://www.w3.org/2000/10/swap/graph#namedGraph>'(X, Y)
+        (   C = '<http://www.w3.org/2000/10/swap/graph#statement>'(X, Y)
         ->  (   \+keep_ng(graph(X, Y))
             ->  assertz(keep_ng(graph(X, Y)))
             ;   true
@@ -1163,7 +1165,6 @@ wt2(':-'(X, Y)) :-
     !.
 wt2(graph(X, Y)) :-
     !,
-    write('GRAPH '),
     wp(X),
     write(' '),
     nb_setval(keep_ng, false),
@@ -1414,8 +1415,14 @@ indentation(C) :-
         )
     ).
 
-'<http://www.w3.org/2000/10/swap/graph#namedGraph>'(A, B) :-
-    graph(A, B).
+'<http://www.w3.org/2000/10/swap/graph#statement>'(A, B) :-
+    (   nonvar(A)
+    ->  (   member(A, [true, false])
+        ->  B = A
+        ;   getterm(A, B)
+        )
+    ;   graph(A, B)
+    ).
 
 '<http://www.w3.org/2000/10/swap/graph#notMember>'(A, B) :-
     when(
@@ -3568,10 +3575,8 @@ makevars(A, B, alpha(C)) :-
 makevars(A, B, beta(C)) :-
     !,
     distinct(C, D),
-    findvars(A, Z, zeta),
-    append(D, Z, E),
     findall([X, _],
-        (   member(X, E)
+        (   member(X, D)
         ),
         F
     ),

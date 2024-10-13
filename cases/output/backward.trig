@@ -1,4 +1,4 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <https://eyereasoner.github.io/lingua/cases/backward.trig#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://eyereasoner.github.io/lingua/cases/backward.trig#>.
 
 [] rdf:value 5; :moreInterestingThan 3 .

@@ -1,0 +1,36 @@
+@prefix : <https://eyereasoner.github.io/lingua/cases/issue118.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix ns1: <https://eyereasoner.github.io/.well-known/genid/d983461b-11b7-4e52-89c1-328e91bf1de1#>.
+
+:s a :Success.
+
+#
+# lingua explanation
+#
+
+_:bng_1 log:explains _:bng_2.
+_:bng_3 log:explains _:bng_4.
+
+_:bng_1 {
+    :s :value 1.
+}
+
+_:bng_2 {
+    :s a :Success.
+}
+
+_:bng_3 {
+    :s :copy ns1:bn_5.
+}
+
+_:bng_4 {
+    _:bng_5 log:isImpliedBy _:bng_6.
+}
+
+_:bng_5 {
+    ns1:bn_5 :value _:sk_9.
+}
+
+_:bng_6 {
+    :s :value _:sk_9.
+}

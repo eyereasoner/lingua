@@ -1,0 +1,56 @@
+@prefix : <https://eyereasoner.github.io/lingua/cases/control.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
+
+:actuator1 :control1 39.27346198678276 .
+:actuator2 :control1 26.08 .
+
+#
+# lingua explanation
+#
+
+_:bng_1 log:explains _:bng_2.
+_:bng_3 log:explains _:bng_4.
+_:bng_5 log:explains _:bng_6.
+
+_:bng_1 {
+    :input1 :measurement1 (6 11).
+    [] rdf:value 6; math:lessThan 11 .
+    (11 6) math:difference 5 .
+    (5 0.5) math:exponentiation 2.23606797749979.
+}
+
+_:bng_2 {
+    :input1 :measurement10 2.23606797749979.
+}
+
+_:bng_3 {
+    :input1 :measurement10 2.23606797749979 .
+    :input2 :measurement2 true.
+    :disturbance1 :measurement3 35766 .
+    (2.23606797749979 19.6) math:product 43.82693235899588 .
+    (10 4.553470372213121) math:exponentiation 35766 .
+    (43.82693235899588 4.553470372213121) math:difference 39.27346198678276.
+}
+
+_:bng_4 {
+    :actuator1 :control1 39.27346198678276.
+}
+
+_:bng_5 {
+    :input3 :measurement3 56967 .
+    :state3 :observation3 22 .
+    :output2 :measurement4 24 .
+    :output2 :target2 29 .
+    (29 24) math:difference 5 .
+    (22 24) math:difference -2 .
+    (5.8 5) math:product 29.0 .
+    (7.3 5) math:quotient 1.46 .
+    (1.46 -2) math:product -2.92 .
+    (29.0 -2.92) math:sum 26.08.
+}
+
+_:bng_6 {
+    :actuator2 :control1 26.08.
+}

@@ -1,7 +1,7 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <https://eyereasoner.github.io/lingua/cases/easter.trig#>
-PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX math: <http://www.w3.org/2000/10/swap/math#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix : <https://eyereasoner.github.io/lingua/cases/easter.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
 
 [] rdf:value 2024; :easter (31 3).
 [] rdf:value 2025; :easter (20 4).
@@ -90,7 +90,7 @@ _:bng_78 log:explains _:bng_77.
 _:bng_79 log:explains _:bng_80.
 _:bng_81 log:explains _:bng_80.
 
-GRAPH _:bng_1 {
+_:bng_1 {
     (2024 19) math:remainder 10 .
     (2024 100) math:integerQuotient 20 .
     (2024 100) math:remainder 24 .
@@ -127,17 +127,17 @@ GRAPH _:bng_1 {
     (30 1) math:sum 31.
 }
 
-GRAPH _:bng_2 {
+_:bng_2 {
     [] rdf:value 2024; :easter (31 3).
 }
 
-GRAPH _:bng_3 {
+_:bng_3 {
     [] rdf:value 27; log:repeat 0 .
     (2024 0) math:sum 2024 .
     [] rdf:value 2024; :easter (31 3).
 }
 
-GRAPH _:bng_4 {
+_:bng_4 {
     (2025 19) math:remainder 11 .
     (2025 100) math:integerQuotient 20 .
     (2025 100) math:remainder 25 .
@@ -174,17 +174,17 @@ GRAPH _:bng_4 {
     (19 1) math:sum 20.
 }
 
-GRAPH _:bng_5 {
+_:bng_5 {
     [] rdf:value 2025; :easter (20 4).
 }
 
-GRAPH _:bng_6 {
+_:bng_6 {
     [] rdf:value 27; log:repeat 1 .
     (2024 1) math:sum 2025 .
     [] rdf:value 2025; :easter (20 4).
 }
 
-GRAPH _:bng_7 {
+_:bng_7 {
     (2026 19) math:remainder 12 .
     (2026 100) math:integerQuotient 20 .
     (2026 100) math:remainder 26 .
@@ -221,17 +221,17 @@ GRAPH _:bng_7 {
     (4 1) math:sum 5.
 }
 
-GRAPH _:bng_8 {
+_:bng_8 {
     [] rdf:value 2026; :easter (5 4).
 }
 
-GRAPH _:bng_9 {
+_:bng_9 {
     [] rdf:value 27; log:repeat 2 .
     (2024 2) math:sum 2026 .
     [] rdf:value 2026; :easter (5 4).
 }
 
-GRAPH _:bng_10 {
+_:bng_10 {
     (2027 19) math:remainder 13 .
     (2027 100) math:integerQuotient 20 .
     (2027 100) math:remainder 27 .
@@ -268,17 +268,17 @@ GRAPH _:bng_10 {
     (27 1) math:sum 28.
 }
 
-GRAPH _:bng_11 {
+_:bng_11 {
     [] rdf:value 2027; :easter (28 3).
 }
 
-GRAPH _:bng_12 {
+_:bng_12 {
     [] rdf:value 27; log:repeat 3 .
     (2024 3) math:sum 2027 .
     [] rdf:value 2027; :easter (28 3).
 }
 
-GRAPH _:bng_13 {
+_:bng_13 {
     (2028 19) math:remainder 14 .
     (2028 100) math:integerQuotient 20 .
     (2028 100) math:remainder 28 .
@@ -315,17 +315,17 @@ GRAPH _:bng_13 {
     (15 1) math:sum 16.
 }
 
-GRAPH _:bng_14 {
+_:bng_14 {
     [] rdf:value 2028; :easter (16 4).
 }
 
-GRAPH _:bng_15 {
+_:bng_15 {
     [] rdf:value 27; log:repeat 4 .
     (2024 4) math:sum 2028 .
     [] rdf:value 2028; :easter (16 4).
 }
 
-GRAPH _:bng_16 {
+_:bng_16 {
     (2029 19) math:remainder 15 .
     (2029 100) math:integerQuotient 20 .
     (2029 100) math:remainder 29 .
@@ -362,17 +362,17 @@ GRAPH _:bng_16 {
     (0 1) math:sum 1.
 }
 
-GRAPH _:bng_17 {
+_:bng_17 {
     [] rdf:value 2029; :easter (1 4).
 }
 
-GRAPH _:bng_18 {
+_:bng_18 {
     [] rdf:value 27; log:repeat 5 .
     (2024 5) math:sum 2029 .
     [] rdf:value 2029; :easter (1 4).
 }
 
-GRAPH _:bng_19 {
+_:bng_19 {
     (2030 19) math:remainder 16 .
     (2030 100) math:integerQuotient 20 .
     (2030 100) math:remainder 30 .
@@ -409,17 +409,17 @@ GRAPH _:bng_19 {
     (20 1) math:sum 21.
 }
 
-GRAPH _:bng_20 {
+_:bng_20 {
     [] rdf:value 2030; :easter (21 4).
 }
 
-GRAPH _:bng_21 {
+_:bng_21 {
     [] rdf:value 27; log:repeat 6 .
     (2024 6) math:sum 2030 .
     [] rdf:value 2030; :easter (21 4).
 }
 
-GRAPH _:bng_22 {
+_:bng_22 {
     (2031 19) math:remainder 17 .
     (2031 100) math:integerQuotient 20 .
     (2031 100) math:remainder 31 .
@@ -456,17 +456,17 @@ GRAPH _:bng_22 {
     (12 1) math:sum 13.
 }
 
-GRAPH _:bng_23 {
+_:bng_23 {
     [] rdf:value 2031; :easter (13 4).
 }
 
-GRAPH _:bng_24 {
+_:bng_24 {
     [] rdf:value 27; log:repeat 7 .
     (2024 7) math:sum 2031 .
     [] rdf:value 2031; :easter (13 4).
 }
 
-GRAPH _:bng_25 {
+_:bng_25 {
     (2032 19) math:remainder 18 .
     (2032 100) math:integerQuotient 20 .
     (2032 100) math:remainder 32 .
@@ -503,17 +503,17 @@ GRAPH _:bng_25 {
     (27 1) math:sum 28.
 }
 
-GRAPH _:bng_26 {
+_:bng_26 {
     [] rdf:value 2032; :easter (28 3).
 }
 
-GRAPH _:bng_27 {
+_:bng_27 {
     [] rdf:value 27; log:repeat 8 .
     (2024 8) math:sum 2032 .
     [] rdf:value 2032; :easter (28 3).
 }
 
-GRAPH _:bng_28 {
+_:bng_28 {
     (2033 19) math:remainder 0 .
     (2033 100) math:integerQuotient 20 .
     (2033 100) math:remainder 33 .
@@ -550,17 +550,17 @@ GRAPH _:bng_28 {
     (16 1) math:sum 17.
 }
 
-GRAPH _:bng_29 {
+_:bng_29 {
     [] rdf:value 2033; :easter (17 4).
 }
 
-GRAPH _:bng_30 {
+_:bng_30 {
     [] rdf:value 27; log:repeat 9 .
     (2024 9) math:sum 2033 .
     [] rdf:value 2033; :easter (17 4).
 }
 
-GRAPH _:bng_31 {
+_:bng_31 {
     (2034 19) math:remainder 1 .
     (2034 100) math:integerQuotient 20 .
     (2034 100) math:remainder 34 .
@@ -597,17 +597,17 @@ GRAPH _:bng_31 {
     (8 1) math:sum 9.
 }
 
-GRAPH _:bng_32 {
+_:bng_32 {
     [] rdf:value 2034; :easter (9 4).
 }
 
-GRAPH _:bng_33 {
+_:bng_33 {
     [] rdf:value 27; log:repeat 10 .
     (2024 10) math:sum 2034 .
     [] rdf:value 2034; :easter (9 4).
 }
 
-GRAPH _:bng_34 {
+_:bng_34 {
     (2035 19) math:remainder 2 .
     (2035 100) math:integerQuotient 20 .
     (2035 100) math:remainder 35 .
@@ -644,17 +644,17 @@ GRAPH _:bng_34 {
     (24 1) math:sum 25.
 }
 
-GRAPH _:bng_35 {
+_:bng_35 {
     [] rdf:value 2035; :easter (25 3).
 }
 
-GRAPH _:bng_36 {
+_:bng_36 {
     [] rdf:value 27; log:repeat 11 .
     (2024 11) math:sum 2035 .
     [] rdf:value 2035; :easter (25 3).
 }
 
-GRAPH _:bng_37 {
+_:bng_37 {
     (2036 19) math:remainder 3 .
     (2036 100) math:integerQuotient 20 .
     (2036 100) math:remainder 36 .
@@ -691,17 +691,17 @@ GRAPH _:bng_37 {
     (12 1) math:sum 13.
 }
 
-GRAPH _:bng_38 {
+_:bng_38 {
     [] rdf:value 2036; :easter (13 4).
 }
 
-GRAPH _:bng_39 {
+_:bng_39 {
     [] rdf:value 27; log:repeat 12 .
     (2024 12) math:sum 2036 .
     [] rdf:value 2036; :easter (13 4).
 }
 
-GRAPH _:bng_40 {
+_:bng_40 {
     (2037 19) math:remainder 4 .
     (2037 100) math:integerQuotient 20 .
     (2037 100) math:remainder 37 .
@@ -738,17 +738,17 @@ GRAPH _:bng_40 {
     (4 1) math:sum 5.
 }
 
-GRAPH _:bng_41 {
+_:bng_41 {
     [] rdf:value 2037; :easter (5 4).
 }
 
-GRAPH _:bng_42 {
+_:bng_42 {
     [] rdf:value 27; log:repeat 13 .
     (2024 13) math:sum 2037 .
     [] rdf:value 2037; :easter (5 4).
 }
 
-GRAPH _:bng_43 {
+_:bng_43 {
     (2038 19) math:remainder 5 .
     (2038 100) math:integerQuotient 20 .
     (2038 100) math:remainder 38 .
@@ -785,17 +785,17 @@ GRAPH _:bng_43 {
     (24 1) math:sum 25.
 }
 
-GRAPH _:bng_44 {
+_:bng_44 {
     [] rdf:value 2038; :easter (25 4).
 }
 
-GRAPH _:bng_45 {
+_:bng_45 {
     [] rdf:value 27; log:repeat 14 .
     (2024 14) math:sum 2038 .
     [] rdf:value 2038; :easter (25 4).
 }
 
-GRAPH _:bng_46 {
+_:bng_46 {
     (2039 19) math:remainder 6 .
     (2039 100) math:integerQuotient 20 .
     (2039 100) math:remainder 39 .
@@ -832,17 +832,17 @@ GRAPH _:bng_46 {
     (9 1) math:sum 10.
 }
 
-GRAPH _:bng_47 {
+_:bng_47 {
     [] rdf:value 2039; :easter (10 4).
 }
 
-GRAPH _:bng_48 {
+_:bng_48 {
     [] rdf:value 27; log:repeat 15 .
     (2024 15) math:sum 2039 .
     [] rdf:value 2039; :easter (10 4).
 }
 
-GRAPH _:bng_49 {
+_:bng_49 {
     (2040 19) math:remainder 7 .
     (2040 100) math:integerQuotient 20 .
     (2040 100) math:remainder 40 .
@@ -879,17 +879,17 @@ GRAPH _:bng_49 {
     (0 1) math:sum 1.
 }
 
-GRAPH _:bng_50 {
+_:bng_50 {
     [] rdf:value 2040; :easter (1 4).
 }
 
-GRAPH _:bng_51 {
+_:bng_51 {
     [] rdf:value 27; log:repeat 16 .
     (2024 16) math:sum 2040 .
     [] rdf:value 2040; :easter (1 4).
 }
 
-GRAPH _:bng_52 {
+_:bng_52 {
     (2041 19) math:remainder 8 .
     (2041 100) math:integerQuotient 20 .
     (2041 100) math:remainder 41 .
@@ -926,17 +926,17 @@ GRAPH _:bng_52 {
     (20 1) math:sum 21.
 }
 
-GRAPH _:bng_53 {
+_:bng_53 {
     [] rdf:value 2041; :easter (21 4).
 }
 
-GRAPH _:bng_54 {
+_:bng_54 {
     [] rdf:value 27; log:repeat 17 .
     (2024 17) math:sum 2041 .
     [] rdf:value 2041; :easter (21 4).
 }
 
-GRAPH _:bng_55 {
+_:bng_55 {
     (2042 19) math:remainder 9 .
     (2042 100) math:integerQuotient 20 .
     (2042 100) math:remainder 42 .
@@ -973,17 +973,17 @@ GRAPH _:bng_55 {
     (5 1) math:sum 6.
 }
 
-GRAPH _:bng_56 {
+_:bng_56 {
     [] rdf:value 2042; :easter (6 4).
 }
 
-GRAPH _:bng_57 {
+_:bng_57 {
     [] rdf:value 27; log:repeat 18 .
     (2024 18) math:sum 2042 .
     [] rdf:value 2042; :easter (6 4).
 }
 
-GRAPH _:bng_58 {
+_:bng_58 {
     (2043 19) math:remainder 10 .
     (2043 100) math:integerQuotient 20 .
     (2043 100) math:remainder 43 .
@@ -1020,17 +1020,17 @@ GRAPH _:bng_58 {
     (28 1) math:sum 29.
 }
 
-GRAPH _:bng_59 {
+_:bng_59 {
     [] rdf:value 2043; :easter (29 3).
 }
 
-GRAPH _:bng_60 {
+_:bng_60 {
     [] rdf:value 27; log:repeat 19 .
     (2024 19) math:sum 2043 .
     [] rdf:value 2043; :easter (29 3).
 }
 
-GRAPH _:bng_61 {
+_:bng_61 {
     (2044 19) math:remainder 11 .
     (2044 100) math:integerQuotient 20 .
     (2044 100) math:remainder 44 .
@@ -1067,17 +1067,17 @@ GRAPH _:bng_61 {
     (16 1) math:sum 17.
 }
 
-GRAPH _:bng_62 {
+_:bng_62 {
     [] rdf:value 2044; :easter (17 4).
 }
 
-GRAPH _:bng_63 {
+_:bng_63 {
     [] rdf:value 27; log:repeat 20 .
     (2024 20) math:sum 2044 .
     [] rdf:value 2044; :easter (17 4).
 }
 
-GRAPH _:bng_64 {
+_:bng_64 {
     (2045 19) math:remainder 12 .
     (2045 100) math:integerQuotient 20 .
     (2045 100) math:remainder 45 .
@@ -1114,17 +1114,17 @@ GRAPH _:bng_64 {
     (8 1) math:sum 9.
 }
 
-GRAPH _:bng_65 {
+_:bng_65 {
     [] rdf:value 2045; :easter (9 4).
 }
 
-GRAPH _:bng_66 {
+_:bng_66 {
     [] rdf:value 27; log:repeat 21 .
     (2024 21) math:sum 2045 .
     [] rdf:value 2045; :easter (9 4).
 }
 
-GRAPH _:bng_67 {
+_:bng_67 {
     (2046 19) math:remainder 13 .
     (2046 100) math:integerQuotient 20 .
     (2046 100) math:remainder 46 .
@@ -1161,17 +1161,17 @@ GRAPH _:bng_67 {
     (24 1) math:sum 25.
 }
 
-GRAPH _:bng_68 {
+_:bng_68 {
     [] rdf:value 2046; :easter (25 3).
 }
 
-GRAPH _:bng_69 {
+_:bng_69 {
     [] rdf:value 27; log:repeat 22 .
     (2024 22) math:sum 2046 .
     [] rdf:value 2046; :easter (25 3).
 }
 
-GRAPH _:bng_70 {
+_:bng_70 {
     (2047 19) math:remainder 14 .
     (2047 100) math:integerQuotient 20 .
     (2047 100) math:remainder 47 .
@@ -1208,17 +1208,17 @@ GRAPH _:bng_70 {
     (13 1) math:sum 14.
 }
 
-GRAPH _:bng_71 {
+_:bng_71 {
     [] rdf:value 2047; :easter (14 4).
 }
 
-GRAPH _:bng_72 {
+_:bng_72 {
     [] rdf:value 27; log:repeat 23 .
     (2024 23) math:sum 2047 .
     [] rdf:value 2047; :easter (14 4).
 }
 
-GRAPH _:bng_73 {
+_:bng_73 {
     (2048 19) math:remainder 15 .
     (2048 100) math:integerQuotient 20 .
     (2048 100) math:remainder 48 .
@@ -1255,17 +1255,17 @@ GRAPH _:bng_73 {
     (4 1) math:sum 5.
 }
 
-GRAPH _:bng_74 {
+_:bng_74 {
     [] rdf:value 2048; :easter (5 4).
 }
 
-GRAPH _:bng_75 {
+_:bng_75 {
     [] rdf:value 27; log:repeat 24 .
     (2024 24) math:sum 2048 .
     [] rdf:value 2048; :easter (5 4).
 }
 
-GRAPH _:bng_76 {
+_:bng_76 {
     (2049 19) math:remainder 16 .
     (2049 100) math:integerQuotient 20 .
     (2049 100) math:remainder 49 .
@@ -1302,17 +1302,17 @@ GRAPH _:bng_76 {
     (17 1) math:sum 18.
 }
 
-GRAPH _:bng_77 {
+_:bng_77 {
     [] rdf:value 2049; :easter (18 4).
 }
 
-GRAPH _:bng_78 {
+_:bng_78 {
     [] rdf:value 27; log:repeat 25 .
     (2024 25) math:sum 2049 .
     [] rdf:value 2049; :easter (18 4).
 }
 
-GRAPH _:bng_79 {
+_:bng_79 {
     (2050 19) math:remainder 17 .
     (2050 100) math:integerQuotient 20 .
     (2050 100) math:remainder 50 .
@@ -1349,11 +1349,11 @@ GRAPH _:bng_79 {
     (9 1) math:sum 10.
 }
 
-GRAPH _:bng_80 {
+_:bng_80 {
     [] rdf:value 2050; :easter (10 4).
 }
 
-GRAPH _:bng_81 {
+_:bng_81 {
     [] rdf:value 27; log:repeat 26 .
     (2024 26) math:sum 2050 .
     [] rdf:value 2050; :easter (10 4).

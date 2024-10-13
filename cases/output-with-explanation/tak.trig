@@ -1,7 +1,7 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/tak.trig#>
-PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX math: <http://www.w3.org/2000/10/swap/math#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/tak.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix math: <http://www.w3.org/2000/10/swap/math#>.
 
 (18 13 8) :tak 13 .
 
@@ -208,65 +208,65 @@ _:bng_315 log:explains _:bng_316.
 _:bng_289 log:explains _:bng_317.
 _:bng_318 log:explains _:bng_319.
 
-GRAPH _:bng_1 {
+_:bng_1 {
     _:bng_320 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_2 {
+_:bng_2 {
     (13 13 8) :tak 8.
 }
 
-GRAPH _:bng_3 {
+_:bng_3 {
     _:bng_321 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_4 {
+_:bng_4 {
     (8 8 14) :tak 14.
 }
 
-GRAPH _:bng_5 {
+_:bng_5 {
     _:bng_322 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_6 {
+_:bng_6 {
     (7 14 9) :tak 9.
 }
 
-GRAPH _:bng_7 {
+_:bng_7 {
     _:bng_323 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_8 {
+_:bng_8 {
     (9 9 8) :tak 8.
 }
 
-GRAPH _:bng_9 {
+_:bng_9 {
     (8 8 10) :tak 10.
 }
 
-GRAPH _:bng_10 {
+_:bng_10 {
     _:bng_324 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_11 {
+_:bng_11 {
     (7 10 9) :tak 9.
 }
 
-GRAPH _:bng_12 {
+_:bng_12 {
     _:bng_325 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_13 {
+_:bng_13 {
     (8 10 9) :tak 9.
 }
 
-GRAPH _:bng_14 {
+_:bng_14 {
     (10 1) math:difference 9 .
     (9 9 8) :tak 8 .
     (9 1) math:difference 8 .
@@ -276,33 +276,33 @@ GRAPH _:bng_14 {
     (8 10 9) :tak 9.
 }
 
-GRAPH _:bng_15 {
+_:bng_15 {
     (10 9 8) :tak 9.
 }
 
-GRAPH _:bng_16 {
+_:bng_16 {
     (8 8 11) :tak 11.
 }
 
-GRAPH _:bng_17 {
+_:bng_17 {
     _:bng_326 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_18 {
+_:bng_18 {
     (7 11 9) :tak 9.
 }
 
-GRAPH _:bng_19 {
+_:bng_19 {
     _:bng_327 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_20 {
+_:bng_20 {
     (9 11 9) :tak 9.
 }
 
-GRAPH _:bng_21 {
+_:bng_21 {
     (11 1) math:difference 10 .
     (10 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -312,33 +312,33 @@ GRAPH _:bng_21 {
     (9 11 9) :tak 9.
 }
 
-GRAPH _:bng_22 {
+_:bng_22 {
     (11 9 8) :tak 9.
 }
 
-GRAPH _:bng_23 {
+_:bng_23 {
     (8 8 12) :tak 12.
 }
 
-GRAPH _:bng_24 {
+_:bng_24 {
     _:bng_328 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_25 {
+_:bng_25 {
     (7 12 9) :tak 9.
 }
 
-GRAPH _:bng_26 {
+_:bng_26 {
     _:bng_329 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_27 {
+_:bng_27 {
     (9 12 9) :tak 9.
 }
 
-GRAPH _:bng_28 {
+_:bng_28 {
     (12 1) math:difference 11 .
     (11 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -348,33 +348,33 @@ GRAPH _:bng_28 {
     (9 12 9) :tak 9.
 }
 
-GRAPH _:bng_29 {
+_:bng_29 {
     (12 9 8) :tak 9.
 }
 
-GRAPH _:bng_30 {
+_:bng_30 {
     (8 8 13) :tak 13.
 }
 
-GRAPH _:bng_31 {
+_:bng_31 {
     _:bng_330 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_32 {
+_:bng_32 {
     (7 13 9) :tak 9.
 }
 
-GRAPH _:bng_33 {
+_:bng_33 {
     _:bng_331 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_34 {
+_:bng_34 {
     (9 13 9) :tak 9.
 }
 
-GRAPH _:bng_35 {
+_:bng_35 {
     (13 1) math:difference 12 .
     (12 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -384,33 +384,33 @@ GRAPH _:bng_35 {
     (9 13 9) :tak 9.
 }
 
-GRAPH _:bng_36 {
+_:bng_36 {
     (13 9 8) :tak 9.
 }
 
-GRAPH _:bng_37 {
+_:bng_37 {
     (9 9 9) :tak 9.
 }
 
-GRAPH _:bng_38 {
+_:bng_38 {
     _:bng_332 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_39 {
+_:bng_39 {
     (8 9 10) :tak 10.
 }
 
-GRAPH _:bng_40 {
+_:bng_40 {
     _:bng_333 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_41 {
+_:bng_41 {
     (9 10 9) :tak 9.
 }
 
-GRAPH _:bng_42 {
+_:bng_42 {
     (10 1) math:difference 9 .
     (9 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -420,24 +420,24 @@ GRAPH _:bng_42 {
     (9 10 9) :tak 9.
 }
 
-GRAPH _:bng_43 {
+_:bng_43 {
     (10 9 9) :tak 9.
 }
 
-GRAPH _:bng_44 {
+_:bng_44 {
     (8 9 11) :tak 11.
 }
 
-GRAPH _:bng_45 {
+_:bng_45 {
     _:bng_334 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_46 {
+_:bng_46 {
     (8 11 9) :tak 9.
 }
 
-GRAPH _:bng_47 {
+_:bng_47 {
     (11 1) math:difference 10 .
     (10 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -447,24 +447,24 @@ GRAPH _:bng_47 {
     (9 11 9) :tak 9.
 }
 
-GRAPH _:bng_48 {
+_:bng_48 {
     (11 9 9) :tak 9.
 }
 
-GRAPH _:bng_49 {
+_:bng_49 {
     (8 9 12) :tak 12.
 }
 
-GRAPH _:bng_50 {
+_:bng_50 {
     _:bng_335 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_51 {
+_:bng_51 {
     (8 12 9) :tak 9.
 }
 
-GRAPH _:bng_52 {
+_:bng_52 {
     (12 1) math:difference 11 .
     (11 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -474,24 +474,24 @@ GRAPH _:bng_52 {
     (9 12 9) :tak 9.
 }
 
-GRAPH _:bng_53 {
+_:bng_53 {
     (12 9 9) :tak 9.
 }
 
-GRAPH _:bng_54 {
+_:bng_54 {
     (8 9 13) :tak 13.
 }
 
-GRAPH _:bng_55 {
+_:bng_55 {
     _:bng_336 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_56 {
+_:bng_56 {
     (8 13 9) :tak 9.
 }
 
-GRAPH _:bng_57 {
+_:bng_57 {
     (13 1) math:difference 12 .
     (12 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -501,33 +501,33 @@ GRAPH _:bng_57 {
     (9 13 9) :tak 9.
 }
 
-GRAPH _:bng_58 {
+_:bng_58 {
     (13 9 9) :tak 9.
 }
 
-GRAPH _:bng_59 {
+_:bng_59 {
     (8 9 14) :tak 14.
 }
 
-GRAPH _:bng_60 {
+_:bng_60 {
     _:bng_337 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_61 {
+_:bng_61 {
     (8 14 9) :tak 9.
 }
 
-GRAPH _:bng_62 {
+_:bng_62 {
     _:bng_338 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_63 {
+_:bng_63 {
     (9 14 9) :tak 9.
 }
 
-GRAPH _:bng_64 {
+_:bng_64 {
     (14 1) math:difference 13 .
     (13 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -537,11 +537,11 @@ GRAPH _:bng_64 {
     (9 14 9) :tak 9.
 }
 
-GRAPH _:bng_65 {
+_:bng_65 {
     (14 9 9) :tak 9.
 }
 
-GRAPH _:bng_66 {
+_:bng_66 {
     (9 1) math:difference 8 .
     (8 8 14) :tak 14 .
     (8 1) math:difference 7 .
@@ -551,24 +551,24 @@ GRAPH _:bng_66 {
     (14 9 9) :tak 9.
 }
 
-GRAPH _:bng_67 {
+_:bng_67 {
     (9 8 14) :tak 9.
 }
 
-GRAPH _:bng_68 {
+_:bng_68 {
     (7 14 10) :tak 10.
 }
 
-GRAPH _:bng_69 {
+_:bng_69 {
     _:bng_339 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_70 {
+_:bng_70 {
     (10 10 8) :tak 8.
 }
 
-GRAPH _:bng_71 {
+_:bng_71 {
     (9 1) math:difference 8 .
     (8 8 11) :tak 11 .
     (8 1) math:difference 7 .
@@ -578,15 +578,15 @@ GRAPH _:bng_71 {
     (11 9 9) :tak 9.
 }
 
-GRAPH _:bng_72 {
+_:bng_72 {
     (9 8 11) :tak 9.
 }
 
-GRAPH _:bng_73 {
+_:bng_73 {
     (7 11 10) :tak 10.
 }
 
-GRAPH _:bng_74 {
+_:bng_74 {
     (11 1) math:difference 10 .
     (10 10 8) :tak 8 .
     (10 1) math:difference 9 .
@@ -596,11 +596,11 @@ GRAPH _:bng_74 {
     (8 9 10) :tak 10.
 }
 
-GRAPH _:bng_75 {
+_:bng_75 {
     (11 10 8) :tak 10.
 }
 
-GRAPH _:bng_76 {
+_:bng_76 {
     (9 1) math:difference 8 .
     (8 8 12) :tak 12 .
     (8 1) math:difference 7 .
@@ -610,27 +610,27 @@ GRAPH _:bng_76 {
     (12 9 9) :tak 9.
 }
 
-GRAPH _:bng_77 {
+_:bng_77 {
     (9 8 12) :tak 9.
 }
 
-GRAPH _:bng_78 {
+_:bng_78 {
     (7 12 10) :tak 10.
 }
 
-GRAPH _:bng_79 {
+_:bng_79 {
     (9 9 10) :tak 10.
 }
 
-GRAPH _:bng_80 {
+_:bng_80 {
     (8 10 10) :tak 10.
 }
 
-GRAPH _:bng_81 {
+_:bng_81 {
     (10 10 9) :tak 9.
 }
 
-GRAPH _:bng_82 {
+_:bng_82 {
     (10 1) math:difference 9 .
     (9 9 10) :tak 10 .
     (9 1) math:difference 8 .
@@ -640,11 +640,11 @@ GRAPH _:bng_82 {
     (10 10 9) :tak 9.
 }
 
-GRAPH _:bng_83 {
+_:bng_83 {
     (10 9 10) :tak 9.
 }
 
-GRAPH _:bng_84 {
+_:bng_84 {
     (12 1) math:difference 11 .
     (11 10 8) :tak 10 .
     (10 1) math:difference 9 .
@@ -654,11 +654,11 @@ GRAPH _:bng_84 {
     (10 9 10) :tak 9.
 }
 
-GRAPH _:bng_85 {
+_:bng_85 {
     (12 10 8) :tak 9.
 }
 
-GRAPH _:bng_86 {
+_:bng_86 {
     (9 1) math:difference 8 .
     (8 8 13) :tak 13 .
     (8 1) math:difference 7 .
@@ -668,15 +668,15 @@ GRAPH _:bng_86 {
     (13 9 9) :tak 9.
 }
 
-GRAPH _:bng_87 {
+_:bng_87 {
     (9 8 13) :tak 9.
 }
 
-GRAPH _:bng_88 {
+_:bng_88 {
     (7 13 10) :tak 10.
 }
 
-GRAPH _:bng_89 {
+_:bng_89 {
     (13 1) math:difference 12 .
     (12 10 8) :tak 9 .
     (10 1) math:difference 9 .
@@ -686,15 +686,15 @@ GRAPH _:bng_89 {
     (9 9 10) :tak 10.
 }
 
-GRAPH _:bng_90 {
+_:bng_90 {
     (13 10 8) :tak 10.
 }
 
-GRAPH _:bng_91 {
+_:bng_91 {
     (9 10 10) :tak 10.
 }
 
-GRAPH _:bng_92 {
+_:bng_92 {
     (10 1) math:difference 9 .
     (9 8 14) :tak 9 .
     (8 1) math:difference 7 .
@@ -704,24 +704,24 @@ GRAPH _:bng_92 {
     (9 10 10) :tak 10.
 }
 
-GRAPH _:bng_93 {
+_:bng_93 {
     (10 8 14) :tak 10.
 }
 
-GRAPH _:bng_94 {
+_:bng_94 {
     (7 14 11) :tak 11.
 }
 
-GRAPH _:bng_95 {
+_:bng_95 {
     _:bng_340 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_96 {
+_:bng_96 {
     (11 11 8) :tak 8.
 }
 
-GRAPH _:bng_97 {
+_:bng_97 {
     (10 1) math:difference 9 .
     (9 8 12) :tak 9 .
     (8 1) math:difference 7 .
@@ -731,19 +731,19 @@ GRAPH _:bng_97 {
     (9 10 10) :tak 10.
 }
 
-GRAPH _:bng_98 {
+_:bng_98 {
     (10 8 12) :tak 10.
 }
 
-GRAPH _:bng_99 {
+_:bng_99 {
     (7 12 11) :tak 11.
 }
 
-GRAPH _:bng_100 {
+_:bng_100 {
     (8 10 11) :tak 11.
 }
 
-GRAPH _:bng_101 {
+_:bng_101 {
     (12 1) math:difference 11 .
     (11 11 8) :tak 8 .
     (11 1) math:difference 10 .
@@ -753,11 +753,11 @@ GRAPH _:bng_101 {
     (8 10 11) :tak 11.
 }
 
-GRAPH _:bng_102 {
+_:bng_102 {
     (12 11 8) :tak 11.
 }
 
-GRAPH _:bng_103 {
+_:bng_103 {
     (10 1) math:difference 9 .
     (9 8 13) :tak 9 .
     (8 1) math:difference 7 .
@@ -767,27 +767,27 @@ GRAPH _:bng_103 {
     (9 10 9) :tak 9.
 }
 
-GRAPH _:bng_104 {
+_:bng_104 {
     (10 8 13) :tak 9.
 }
 
-GRAPH _:bng_105 {
+_:bng_105 {
     (7 13 11) :tak 11.
 }
 
-GRAPH _:bng_106 {
+_:bng_106 {
     (9 9 11) :tak 11.
 }
 
-GRAPH _:bng_107 {
+_:bng_107 {
     (8 11 10) :tak 10.
 }
 
-GRAPH _:bng_108 {
+_:bng_108 {
     (9 11 10) :tak 10.
 }
 
-GRAPH _:bng_109 {
+_:bng_109 {
     (11 1) math:difference 10 .
     (10 10 9) :tak 9 .
     (10 1) math:difference 9 .
@@ -797,11 +797,11 @@ GRAPH _:bng_109 {
     (9 11 10) :tak 10.
 }
 
-GRAPH _:bng_110 {
+_:bng_110 {
     (11 10 9) :tak 10.
 }
 
-GRAPH _:bng_111 {
+_:bng_111 {
     (10 1) math:difference 9 .
     (9 9 11) :tak 11 .
     (9 1) math:difference 8 .
@@ -811,24 +811,24 @@ GRAPH _:bng_111 {
     (11 10 9) :tak 10.
 }
 
-GRAPH _:bng_112 {
+_:bng_112 {
     (10 9 11) :tak 10.
 }
 
-GRAPH _:bng_113 {
+_:bng_113 {
     (8 11 11) :tak 11.
 }
 
-GRAPH _:bng_114 {
+_:bng_114 {
     _:bng_341 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_115 {
+_:bng_115 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_116 {
+_:bng_116 {
     (11 1) math:difference 10 .
     (10 9 11) :tak 10 .
     (9 1) math:difference 8 .
@@ -838,11 +838,11 @@ GRAPH _:bng_116 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_117 {
+_:bng_117 {
     (11 9 11) :tak 9.
 }
 
-GRAPH _:bng_118 {
+_:bng_118 {
     (13 1) math:difference 12 .
     (12 11 8) :tak 11 .
     (11 1) math:difference 10 .
@@ -852,11 +852,11 @@ GRAPH _:bng_118 {
     (11 9 11) :tak 9.
 }
 
-GRAPH _:bng_119 {
+_:bng_119 {
     (13 11 8) :tak 9.
 }
 
-GRAPH _:bng_120 {
+_:bng_120 {
     (11 1) math:difference 10 .
     (10 8 14) :tak 10 .
     (8 1) math:difference 7 .
@@ -866,28 +866,28 @@ GRAPH _:bng_120 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_121 {
+_:bng_121 {
     (11 8 14) :tak 9.
 }
 
-GRAPH _:bng_122 {
+_:bng_122 {
     (7 14 12) :tak 12.
 }
 
-GRAPH _:bng_123 {
+_:bng_123 {
     _:bng_342 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_124 {
+_:bng_124 {
     (12 12 8) :tak 8.
 }
 
-GRAPH _:bng_125 {
+_:bng_125 {
     (9 11 11) :tak 11.
 }
 
-GRAPH _:bng_126 {
+_:bng_126 {
     (11 1) math:difference 10 .
     (10 8 13) :tak 9 .
     (8 1) math:difference 7 .
@@ -897,19 +897,19 @@ GRAPH _:bng_126 {
     (9 11 11) :tak 11.
 }
 
-GRAPH _:bng_127 {
+_:bng_127 {
     (11 8 13) :tak 11.
 }
 
-GRAPH _:bng_128 {
+_:bng_128 {
     (7 13 12) :tak 12.
 }
 
-GRAPH _:bng_129 {
+_:bng_129 {
     (8 11 12) :tak 12.
 }
 
-GRAPH _:bng_130 {
+_:bng_130 {
     (13 1) math:difference 12 .
     (12 12 8) :tak 8 .
     (12 1) math:difference 11 .
@@ -919,15 +919,15 @@ GRAPH _:bng_130 {
     (8 11 12) :tak 12.
 }
 
-GRAPH _:bng_131 {
+_:bng_131 {
     (13 12 8) :tak 12.
 }
 
-GRAPH _:bng_132 {
+_:bng_132 {
     (9 12 12) :tak 12.
 }
 
-GRAPH _:bng_133 {
+_:bng_133 {
     (12 1) math:difference 11 .
     (11 8 14) :tak 9 .
     (8 1) math:difference 7 .
@@ -937,19 +937,19 @@ GRAPH _:bng_133 {
     (9 12 12) :tak 12.
 }
 
-GRAPH _:bng_134 {
+_:bng_134 {
     (12 8 14) :tak 12.
 }
 
-GRAPH _:bng_135 {
+_:bng_135 {
     (7 14 13) :tak 13.
 }
 
-GRAPH _:bng_136 {
+_:bng_136 {
     (8 12 13) :tak 13.
 }
 
-GRAPH _:bng_137 {
+_:bng_137 {
     (14 1) math:difference 13 .
     (13 13 8) :tak 8 .
     (13 1) math:difference 12 .
@@ -959,24 +959,24 @@ GRAPH _:bng_137 {
     (8 12 13) :tak 13.
 }
 
-GRAPH _:bng_138 {
+_:bng_138 {
     (14 13 8) :tak 13.
 }
 
-GRAPH _:bng_139 {
+_:bng_139 {
     (8 8 15) :tak 15.
 }
 
-GRAPH _:bng_140 {
+_:bng_140 {
     _:bng_343 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_141 {
+_:bng_141 {
     (7 15 9) :tak 9.
 }
 
-GRAPH _:bng_142 {
+_:bng_142 {
     (14 1) math:difference 13 .
     (13 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -986,33 +986,33 @@ GRAPH _:bng_142 {
     (9 14 9) :tak 9.
 }
 
-GRAPH _:bng_143 {
+_:bng_143 {
     (14 9 8) :tak 9.
 }
 
-GRAPH _:bng_144 {
+_:bng_144 {
     (8 9 15) :tak 15.
 }
 
-GRAPH _:bng_145 {
+_:bng_145 {
     _:bng_344 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_146 {
+_:bng_146 {
     (8 15 9) :tak 9.
 }
 
-GRAPH _:bng_147 {
+_:bng_147 {
     _:bng_345 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_148 {
+_:bng_148 {
     (9 15 9) :tak 9.
 }
 
-GRAPH _:bng_149 {
+_:bng_149 {
     (15 1) math:difference 14 .
     (14 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -1022,11 +1022,11 @@ GRAPH _:bng_149 {
     (9 15 9) :tak 9.
 }
 
-GRAPH _:bng_150 {
+_:bng_150 {
     (15 9 9) :tak 9.
 }
 
-GRAPH _:bng_151 {
+_:bng_151 {
     (9 1) math:difference 8 .
     (8 8 15) :tak 15 .
     (8 1) math:difference 7 .
@@ -1036,15 +1036,15 @@ GRAPH _:bng_151 {
     (15 9 9) :tak 9.
 }
 
-GRAPH _:bng_152 {
+_:bng_152 {
     (9 8 15) :tak 9.
 }
 
-GRAPH _:bng_153 {
+_:bng_153 {
     (7 15 10) :tak 10.
 }
 
-GRAPH _:bng_154 {
+_:bng_154 {
     (14 1) math:difference 13 .
     (13 10 8) :tak 10 .
     (10 1) math:difference 9 .
@@ -1054,11 +1054,11 @@ GRAPH _:bng_154 {
     (10 9 10) :tak 9.
 }
 
-GRAPH _:bng_155 {
+_:bng_155 {
     (14 10 8) :tak 9.
 }
 
-GRAPH _:bng_156 {
+_:bng_156 {
     (10 1) math:difference 9 .
     (9 8 15) :tak 9 .
     (8 1) math:difference 7 .
@@ -1068,19 +1068,19 @@ GRAPH _:bng_156 {
     (9 10 9) :tak 9.
 }
 
-GRAPH _:bng_157 {
+_:bng_157 {
     (10 8 15) :tak 9.
 }
 
-GRAPH _:bng_158 {
+_:bng_158 {
     (7 15 11) :tak 11.
 }
 
-GRAPH _:bng_159 {
+_:bng_159 {
     (9 10 11) :tak 11.
 }
 
-GRAPH _:bng_160 {
+_:bng_160 {
     (14 1) math:difference 13 .
     (13 11 8) :tak 9 .
     (11 1) math:difference 10 .
@@ -1090,11 +1090,11 @@ GRAPH _:bng_160 {
     (9 10 11) :tak 11.
 }
 
-GRAPH _:bng_161 {
+_:bng_161 {
     (14 11 8) :tak 11.
 }
 
-GRAPH _:bng_162 {
+_:bng_162 {
     (11 1) math:difference 10 .
     (10 8 15) :tak 9 .
     (8 1) math:difference 7 .
@@ -1104,31 +1104,31 @@ GRAPH _:bng_162 {
     (9 11 11) :tak 11.
 }
 
-GRAPH _:bng_163 {
+_:bng_163 {
     (11 8 15) :tak 11.
 }
 
-GRAPH _:bng_164 {
+_:bng_164 {
     (7 15 12) :tak 12.
 }
 
-GRAPH _:bng_165 {
+_:bng_165 {
     (9 9 12) :tak 12.
 }
 
-GRAPH _:bng_166 {
+_:bng_166 {
     (8 12 10) :tak 10.
 }
 
-GRAPH _:bng_167 {
+_:bng_167 {
     (10 10 10) :tak 10.
 }
 
-GRAPH _:bng_168 {
+_:bng_168 {
     (10 11 10) :tak 10.
 }
 
-GRAPH _:bng_169 {
+_:bng_169 {
     (11 1) math:difference 10 .
     (10 10 10) :tak 10 .
     (10 1) math:difference 9 .
@@ -1138,28 +1138,28 @@ GRAPH _:bng_169 {
     (10 11 10) :tak 10.
 }
 
-GRAPH _:bng_170 {
+_:bng_170 {
     (11 10 10) :tak 10.
 }
 
-GRAPH _:bng_171 {
+_:bng_171 {
     (9 10 12) :tak 12.
 }
 
-GRAPH _:bng_172 {
+_:bng_172 {
     (9 12 10) :tak 10.
 }
 
-GRAPH _:bng_173 {
+_:bng_173 {
     _:bng_346 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_174 {
+_:bng_174 {
     (10 12 10) :tak 10.
 }
 
-GRAPH _:bng_175 {
+_:bng_175 {
     (12 1) math:difference 11 .
     (11 10 10) :tak 10 .
     (10 1) math:difference 9 .
@@ -1169,11 +1169,11 @@ GRAPH _:bng_175 {
     (10 12 10) :tak 10.
 }
 
-GRAPH _:bng_176 {
+_:bng_176 {
     (12 10 10) :tak 10.
 }
 
-GRAPH _:bng_177 {
+_:bng_177 {
     (10 1) math:difference 9 .
     (9 9 12) :tak 12 .
     (9 1) math:difference 8 .
@@ -1183,19 +1183,19 @@ GRAPH _:bng_177 {
     (12 10 10) :tak 10.
 }
 
-GRAPH _:bng_178 {
+_:bng_178 {
     (10 9 12) :tak 10.
 }
 
-GRAPH _:bng_179 {
+_:bng_179 {
     (8 12 11) :tak 11.
 }
 
-GRAPH _:bng_180 {
+_:bng_180 {
     (11 11 9) :tak 9.
 }
 
-GRAPH _:bng_181 {
+_:bng_181 {
     (11 1) math:difference 10 .
     (10 9 12) :tak 10 .
     (9 1) math:difference 8 .
@@ -1205,24 +1205,24 @@ GRAPH _:bng_181 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_182 {
+_:bng_182 {
     (11 9 12) :tak 9.
 }
 
-GRAPH _:bng_183 {
+_:bng_183 {
     (8 12 12) :tak 12.
 }
 
-GRAPH _:bng_184 {
+_:bng_184 {
     _:bng_347 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_185 {
+_:bng_185 {
     (11 12 9) :tak 9.
 }
 
-GRAPH _:bng_186 {
+_:bng_186 {
     (12 1) math:difference 11 .
     (11 9 12) :tak 9 .
     (9 1) math:difference 8 .
@@ -1232,11 +1232,11 @@ GRAPH _:bng_186 {
     (9 12 9) :tak 9.
 }
 
-GRAPH _:bng_187 {
+_:bng_187 {
     (12 9 12) :tak 9.
 }
 
-GRAPH _:bng_188 {
+_:bng_188 {
     (14 1) math:difference 13 .
     (13 12 8) :tak 12 .
     (12 1) math:difference 11 .
@@ -1246,11 +1246,11 @@ GRAPH _:bng_188 {
     (12 9 12) :tak 9.
 }
 
-GRAPH _:bng_189 {
+_:bng_189 {
     (14 12 8) :tak 9.
 }
 
-GRAPH _:bng_190 {
+_:bng_190 {
     (12 1) math:difference 11 .
     (11 8 15) :tak 11 .
     (8 1) math:difference 7 .
@@ -1260,23 +1260,23 @@ GRAPH _:bng_190 {
     (11 12 9) :tak 9.
 }
 
-GRAPH _:bng_191 {
+_:bng_191 {
     (12 8 15) :tak 9.
 }
 
-GRAPH _:bng_192 {
+_:bng_192 {
     (7 15 13) :tak 13.
 }
 
-GRAPH _:bng_193 {
+_:bng_193 {
     (9 9 13) :tak 13.
 }
 
-GRAPH _:bng_194 {
+_:bng_194 {
     (8 13 10) :tak 10.
 }
 
-GRAPH _:bng_195 {
+_:bng_195 {
     (12 1) math:difference 11 .
     (11 10 9) :tak 10 .
     (10 1) math:difference 9 .
@@ -1286,28 +1286,28 @@ GRAPH _:bng_195 {
     (10 12 10) :tak 10.
 }
 
-GRAPH _:bng_196 {
+_:bng_196 {
     (12 10 9) :tak 10.
 }
 
-GRAPH _:bng_197 {
+_:bng_197 {
     (9 10 13) :tak 13.
 }
 
-GRAPH _:bng_198 {
+_:bng_198 {
     (9 13 10) :tak 10.
 }
 
-GRAPH _:bng_199 {
+_:bng_199 {
     _:bng_348 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_200 {
+_:bng_200 {
     (10 13 10) :tak 10.
 }
 
-GRAPH _:bng_201 {
+_:bng_201 {
     (13 1) math:difference 12 .
     (12 10 10) :tak 10 .
     (10 1) math:difference 9 .
@@ -1317,11 +1317,11 @@ GRAPH _:bng_201 {
     (10 13 10) :tak 10.
 }
 
-GRAPH _:bng_202 {
+_:bng_202 {
     (13 10 10) :tak 10.
 }
 
-GRAPH _:bng_203 {
+_:bng_203 {
     (10 1) math:difference 9 .
     (9 9 13) :tak 13 .
     (9 1) math:difference 8 .
@@ -1331,15 +1331,15 @@ GRAPH _:bng_203 {
     (13 10 10) :tak 10.
 }
 
-GRAPH _:bng_204 {
+_:bng_204 {
     (10 9 13) :tak 10.
 }
 
-GRAPH _:bng_205 {
+_:bng_205 {
     (8 13 11) :tak 11.
 }
 
-GRAPH _:bng_206 {
+_:bng_206 {
     (12 1) math:difference 11 .
     (11 11 9) :tak 9 .
     (11 1) math:difference 10 .
@@ -1349,15 +1349,15 @@ GRAPH _:bng_206 {
     (9 10 11) :tak 11.
 }
 
-GRAPH _:bng_207 {
+_:bng_207 {
     (12 11 9) :tak 11.
 }
 
-GRAPH _:bng_208 {
+_:bng_208 {
     (10 11 11) :tak 11.
 }
 
-GRAPH _:bng_209 {
+_:bng_209 {
     (11 1) math:difference 10 .
     (10 9 13) :tak 10 .
     (9 1) math:difference 8 .
@@ -1367,19 +1367,19 @@ GRAPH _:bng_209 {
     (10 11 11) :tak 11.
 }
 
-GRAPH _:bng_210 {
+_:bng_210 {
     (11 9 13) :tak 11.
 }
 
-GRAPH _:bng_211 {
+_:bng_211 {
     (8 13 12) :tak 12.
 }
 
-GRAPH _:bng_212 {
+_:bng_212 {
     (12 12 9) :tak 9.
 }
 
-GRAPH _:bng_213 {
+_:bng_213 {
     (12 1) math:difference 11 .
     (11 9 13) :tak 11 .
     (9 1) math:difference 8 .
@@ -1389,24 +1389,24 @@ GRAPH _:bng_213 {
     (11 12 9) :tak 9.
 }
 
-GRAPH _:bng_214 {
+_:bng_214 {
     (12 9 13) :tak 9.
 }
 
-GRAPH _:bng_215 {
+_:bng_215 {
     (8 13 13) :tak 13.
 }
 
-GRAPH _:bng_216 {
+_:bng_216 {
     _:bng_349 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_217 {
+_:bng_217 {
     (12 13 9) :tak 9.
 }
 
-GRAPH _:bng_218 {
+_:bng_218 {
     (13 1) math:difference 12 .
     (12 9 13) :tak 9 .
     (9 1) math:difference 8 .
@@ -1416,11 +1416,11 @@ GRAPH _:bng_218 {
     (9 13 9) :tak 9.
 }
 
-GRAPH _:bng_219 {
+_:bng_219 {
     (13 9 13) :tak 9.
 }
 
-GRAPH _:bng_220 {
+_:bng_220 {
     (15 1) math:difference 14 .
     (14 13 8) :tak 13 .
     (13 1) math:difference 12 .
@@ -1430,24 +1430,24 @@ GRAPH _:bng_220 {
     (13 9 13) :tak 9.
 }
 
-GRAPH _:bng_221 {
+_:bng_221 {
     (15 13 8) :tak 9.
 }
 
-GRAPH _:bng_222 {
+_:bng_222 {
     (8 8 16) :tak 16.
 }
 
-GRAPH _:bng_223 {
+_:bng_223 {
     _:bng_350 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_224 {
+_:bng_224 {
     (7 16 9) :tak 9.
 }
 
-GRAPH _:bng_225 {
+_:bng_225 {
     (15 1) math:difference 14 .
     (14 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -1457,33 +1457,33 @@ GRAPH _:bng_225 {
     (9 15 9) :tak 9.
 }
 
-GRAPH _:bng_226 {
+_:bng_226 {
     (15 9 8) :tak 9.
 }
 
-GRAPH _:bng_227 {
+_:bng_227 {
     (8 9 16) :tak 16.
 }
 
-GRAPH _:bng_228 {
+_:bng_228 {
     _:bng_351 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_229 {
+_:bng_229 {
     (8 16 9) :tak 9.
 }
 
-GRAPH _:bng_230 {
+_:bng_230 {
     _:bng_352 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_231 {
+_:bng_231 {
     (9 16 9) :tak 9.
 }
 
-GRAPH _:bng_232 {
+_:bng_232 {
     (16 1) math:difference 15 .
     (15 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -1493,11 +1493,11 @@ GRAPH _:bng_232 {
     (9 16 9) :tak 9.
 }
 
-GRAPH _:bng_233 {
+_:bng_233 {
     (16 9 9) :tak 9.
 }
 
-GRAPH _:bng_234 {
+_:bng_234 {
     (9 1) math:difference 8 .
     (8 8 16) :tak 16 .
     (8 1) math:difference 7 .
@@ -1507,15 +1507,15 @@ GRAPH _:bng_234 {
     (16 9 9) :tak 9.
 }
 
-GRAPH _:bng_235 {
+_:bng_235 {
     (9 8 16) :tak 9.
 }
 
-GRAPH _:bng_236 {
+_:bng_236 {
     (7 16 10) :tak 10.
 }
 
-GRAPH _:bng_237 {
+_:bng_237 {
     (15 1) math:difference 14 .
     (14 10 8) :tak 9 .
     (10 1) math:difference 9 .
@@ -1525,11 +1525,11 @@ GRAPH _:bng_237 {
     (9 9 10) :tak 10.
 }
 
-GRAPH _:bng_238 {
+_:bng_238 {
     (15 10 8) :tak 10.
 }
 
-GRAPH _:bng_239 {
+_:bng_239 {
     (10 1) math:difference 9 .
     (9 8 16) :tak 9 .
     (8 1) math:difference 7 .
@@ -1539,15 +1539,15 @@ GRAPH _:bng_239 {
     (9 10 10) :tak 10.
 }
 
-GRAPH _:bng_240 {
+_:bng_240 {
     (10 8 16) :tak 10.
 }
 
-GRAPH _:bng_241 {
+_:bng_241 {
     (7 16 11) :tak 11.
 }
 
-GRAPH _:bng_242 {
+_:bng_242 {
     (15 1) math:difference 14 .
     (14 11 8) :tak 11 .
     (11 1) math:difference 10 .
@@ -1557,11 +1557,11 @@ GRAPH _:bng_242 {
     (11 9 11) :tak 9.
 }
 
-GRAPH _:bng_243 {
+_:bng_243 {
     (15 11 8) :tak 9.
 }
 
-GRAPH _:bng_244 {
+_:bng_244 {
     (11 1) math:difference 10 .
     (10 8 16) :tak 10 .
     (8 1) math:difference 7 .
@@ -1571,19 +1571,19 @@ GRAPH _:bng_244 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_245 {
+_:bng_245 {
     (11 8 16) :tak 9.
 }
 
-GRAPH _:bng_246 {
+_:bng_246 {
     (7 16 12) :tak 12.
 }
 
-GRAPH _:bng_247 {
+_:bng_247 {
     (9 11 12) :tak 12.
 }
 
-GRAPH _:bng_248 {
+_:bng_248 {
     (15 1) math:difference 14 .
     (14 12 8) :tak 9 .
     (12 1) math:difference 11 .
@@ -1593,11 +1593,11 @@ GRAPH _:bng_248 {
     (9 11 12) :tak 12.
 }
 
-GRAPH _:bng_249 {
+_:bng_249 {
     (15 12 8) :tak 12.
 }
 
-GRAPH _:bng_250 {
+_:bng_250 {
     (12 1) math:difference 11 .
     (11 8 16) :tak 9 .
     (8 1) math:difference 7 .
@@ -1607,19 +1607,19 @@ GRAPH _:bng_250 {
     (9 12 12) :tak 12.
 }
 
-GRAPH _:bng_251 {
+_:bng_251 {
     (12 8 16) :tak 12.
 }
 
-GRAPH _:bng_252 {
+_:bng_252 {
     (7 16 13) :tak 13.
 }
 
-GRAPH _:bng_253 {
+_:bng_253 {
     (9 12 13) :tak 13.
 }
 
-GRAPH _:bng_254 {
+_:bng_254 {
     (16 1) math:difference 15 .
     (15 13 8) :tak 9 .
     (13 1) math:difference 12 .
@@ -1629,24 +1629,24 @@ GRAPH _:bng_254 {
     (9 12 13) :tak 13.
 }
 
-GRAPH _:bng_255 {
+_:bng_255 {
     (16 13 8) :tak 13.
 }
 
-GRAPH _:bng_256 {
+_:bng_256 {
     (8 8 17) :tak 17.
 }
 
-GRAPH _:bng_257 {
+_:bng_257 {
     _:bng_353 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_258 {
+_:bng_258 {
     (7 17 9) :tak 9.
 }
 
-GRAPH _:bng_259 {
+_:bng_259 {
     (16 1) math:difference 15 .
     (15 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -1656,33 +1656,33 @@ GRAPH _:bng_259 {
     (9 16 9) :tak 9.
 }
 
-GRAPH _:bng_260 {
+_:bng_260 {
     (16 9 8) :tak 9.
 }
 
-GRAPH _:bng_261 {
+_:bng_261 {
     (8 9 17) :tak 17.
 }
 
-GRAPH _:bng_262 {
+_:bng_262 {
     _:bng_354 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_263 {
+_:bng_263 {
     (8 17 9) :tak 9.
 }
 
-GRAPH _:bng_264 {
+_:bng_264 {
     _:bng_355 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_265 {
+_:bng_265 {
     (9 17 9) :tak 9.
 }
 
-GRAPH _:bng_266 {
+_:bng_266 {
     (17 1) math:difference 16 .
     (16 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -1692,11 +1692,11 @@ GRAPH _:bng_266 {
     (9 17 9) :tak 9.
 }
 
-GRAPH _:bng_267 {
+_:bng_267 {
     (17 9 9) :tak 9.
 }
 
-GRAPH _:bng_268 {
+_:bng_268 {
     (9 1) math:difference 8 .
     (8 8 17) :tak 17 .
     (8 1) math:difference 7 .
@@ -1706,15 +1706,15 @@ GRAPH _:bng_268 {
     (17 9 9) :tak 9.
 }
 
-GRAPH _:bng_269 {
+_:bng_269 {
     (9 8 17) :tak 9.
 }
 
-GRAPH _:bng_270 {
+_:bng_270 {
     (7 17 10) :tak 10.
 }
 
-GRAPH _:bng_271 {
+_:bng_271 {
     (16 1) math:difference 15 .
     (15 10 8) :tak 10 .
     (10 1) math:difference 9 .
@@ -1724,11 +1724,11 @@ GRAPH _:bng_271 {
     (10 9 10) :tak 9.
 }
 
-GRAPH _:bng_272 {
+_:bng_272 {
     (16 10 8) :tak 9.
 }
 
-GRAPH _:bng_273 {
+_:bng_273 {
     (10 1) math:difference 9 .
     (9 8 17) :tak 9 .
     (8 1) math:difference 7 .
@@ -1738,15 +1738,15 @@ GRAPH _:bng_273 {
     (9 10 9) :tak 9.
 }
 
-GRAPH _:bng_274 {
+_:bng_274 {
     (10 8 17) :tak 9.
 }
 
-GRAPH _:bng_275 {
+_:bng_275 {
     (7 17 11) :tak 11.
 }
 
-GRAPH _:bng_276 {
+_:bng_276 {
     (16 1) math:difference 15 .
     (15 11 8) :tak 9 .
     (11 1) math:difference 10 .
@@ -1756,11 +1756,11 @@ GRAPH _:bng_276 {
     (9 10 11) :tak 11.
 }
 
-GRAPH _:bng_277 {
+_:bng_277 {
     (16 11 8) :tak 11.
 }
 
-GRAPH _:bng_278 {
+_:bng_278 {
     (11 1) math:difference 10 .
     (10 8 17) :tak 9 .
     (8 1) math:difference 7 .
@@ -1770,15 +1770,15 @@ GRAPH _:bng_278 {
     (9 11 11) :tak 11.
 }
 
-GRAPH _:bng_279 {
+_:bng_279 {
     (11 8 17) :tak 11.
 }
 
-GRAPH _:bng_280 {
+_:bng_280 {
     (7 17 12) :tak 12.
 }
 
-GRAPH _:bng_281 {
+_:bng_281 {
     (16 1) math:difference 15 .
     (15 12 8) :tak 12 .
     (12 1) math:difference 11 .
@@ -1788,11 +1788,11 @@ GRAPH _:bng_281 {
     (12 9 12) :tak 9.
 }
 
-GRAPH _:bng_282 {
+_:bng_282 {
     (16 12 8) :tak 9.
 }
 
-GRAPH _:bng_283 {
+_:bng_283 {
     (12 1) math:difference 11 .
     (11 8 17) :tak 11 .
     (8 1) math:difference 7 .
@@ -1802,15 +1802,15 @@ GRAPH _:bng_283 {
     (11 12 9) :tak 9.
 }
 
-GRAPH _:bng_284 {
+_:bng_284 {
     (12 8 17) :tak 9.
 }
 
-GRAPH _:bng_285 {
+_:bng_285 {
     (7 17 13) :tak 13.
 }
 
-GRAPH _:bng_286 {
+_:bng_286 {
     (17 1) math:difference 16 .
     (16 13 8) :tak 13 .
     (13 1) math:difference 12 .
@@ -1820,24 +1820,24 @@ GRAPH _:bng_286 {
     (13 9 13) :tak 9.
 }
 
-GRAPH _:bng_287 {
+_:bng_287 {
     (17 13 8) :tak 9.
 }
 
-GRAPH _:bng_288 {
+_:bng_288 {
     (8 8 18) :tak 18.
 }
 
-GRAPH _:bng_289 {
+_:bng_289 {
     _:bng_356 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_290 {
+_:bng_290 {
     (7 18 9) :tak 9.
 }
 
-GRAPH _:bng_291 {
+_:bng_291 {
     (17 1) math:difference 16 .
     (16 9 8) :tak 9 .
     (9 1) math:difference 8 .
@@ -1847,33 +1847,33 @@ GRAPH _:bng_291 {
     (9 17 9) :tak 9.
 }
 
-GRAPH _:bng_292 {
+_:bng_292 {
     (17 9 8) :tak 9.
 }
 
-GRAPH _:bng_293 {
+_:bng_293 {
     (8 9 18) :tak 18.
 }
 
-GRAPH _:bng_294 {
+_:bng_294 {
     _:bng_357 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_295 {
+_:bng_295 {
     (8 18 9) :tak 9.
 }
 
-GRAPH _:bng_296 {
+_:bng_296 {
     _:bng_358 log:call true.
     [] rdf:value true; log:callWithCut true.
 }
 
-GRAPH _:bng_297 {
+_:bng_297 {
     (9 18 9) :tak 9.
 }
 
-GRAPH _:bng_298 {
+_:bng_298 {
     (18 1) math:difference 17 .
     (17 9 9) :tak 9 .
     (9 1) math:difference 8 .
@@ -1883,11 +1883,11 @@ GRAPH _:bng_298 {
     (9 18 9) :tak 9.
 }
 
-GRAPH _:bng_299 {
+_:bng_299 {
     (18 9 9) :tak 9.
 }
 
-GRAPH _:bng_300 {
+_:bng_300 {
     (9 1) math:difference 8 .
     (8 8 18) :tak 18 .
     (8 1) math:difference 7 .
@@ -1897,15 +1897,15 @@ GRAPH _:bng_300 {
     (18 9 9) :tak 9.
 }
 
-GRAPH _:bng_301 {
+_:bng_301 {
     (9 8 18) :tak 9.
 }
 
-GRAPH _:bng_302 {
+_:bng_302 {
     (7 18 10) :tak 10.
 }
 
-GRAPH _:bng_303 {
+_:bng_303 {
     (17 1) math:difference 16 .
     (16 10 8) :tak 9 .
     (10 1) math:difference 9 .
@@ -1915,11 +1915,11 @@ GRAPH _:bng_303 {
     (9 9 10) :tak 10.
 }
 
-GRAPH _:bng_304 {
+_:bng_304 {
     (17 10 8) :tak 10.
 }
 
-GRAPH _:bng_305 {
+_:bng_305 {
     (10 1) math:difference 9 .
     (9 8 18) :tak 9 .
     (8 1) math:difference 7 .
@@ -1929,15 +1929,15 @@ GRAPH _:bng_305 {
     (9 10 10) :tak 10.
 }
 
-GRAPH _:bng_306 {
+_:bng_306 {
     (10 8 18) :tak 10.
 }
 
-GRAPH _:bng_307 {
+_:bng_307 {
     (7 18 11) :tak 11.
 }
 
-GRAPH _:bng_308 {
+_:bng_308 {
     (17 1) math:difference 16 .
     (16 11 8) :tak 11 .
     (11 1) math:difference 10 .
@@ -1947,11 +1947,11 @@ GRAPH _:bng_308 {
     (11 9 11) :tak 9.
 }
 
-GRAPH _:bng_309 {
+_:bng_309 {
     (17 11 8) :tak 9.
 }
 
-GRAPH _:bng_310 {
+_:bng_310 {
     (11 1) math:difference 10 .
     (10 8 18) :tak 10 .
     (8 1) math:difference 7 .
@@ -1961,15 +1961,15 @@ GRAPH _:bng_310 {
     (10 11 9) :tak 9.
 }
 
-GRAPH _:bng_311 {
+_:bng_311 {
     (11 8 18) :tak 9.
 }
 
-GRAPH _:bng_312 {
+_:bng_312 {
     (7 18 12) :tak 12.
 }
 
-GRAPH _:bng_313 {
+_:bng_313 {
     (17 1) math:difference 16 .
     (16 12 8) :tak 9 .
     (12 1) math:difference 11 .
@@ -1979,11 +1979,11 @@ GRAPH _:bng_313 {
     (9 11 12) :tak 12.
 }
 
-GRAPH _:bng_314 {
+_:bng_314 {
     (17 12 8) :tak 12.
 }
 
-GRAPH _:bng_315 {
+_:bng_315 {
     (12 1) math:difference 11 .
     (11 8 18) :tak 9 .
     (8 1) math:difference 7 .
@@ -1993,15 +1993,15 @@ GRAPH _:bng_315 {
     (9 12 12) :tak 12.
 }
 
-GRAPH _:bng_316 {
+_:bng_316 {
     (12 8 18) :tak 12.
 }
 
-GRAPH _:bng_317 {
+_:bng_317 {
     (7 18 13) :tak 13.
 }
 
-GRAPH _:bng_318 {
+_:bng_318 {
     (18 1) math:difference 17 .
     (17 13 8) :tak 9 .
     (13 1) math:difference 12 .
@@ -2011,162 +2011,162 @@ GRAPH _:bng_318 {
     (9 12 13) :tak 13.
 }
 
-GRAPH _:bng_319 {
+_:bng_319 {
     (18 13 8) :tak 13.
 }
 
-GRAPH _:bng_320 {
+_:bng_320 {
     [] rdf:value 13; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_321 {
+_:bng_321 {
     [] rdf:value 8; math:notGreaterThan 8.
 }
 
-GRAPH _:bng_322 {
+_:bng_322 {
     [] rdf:value 7; math:notGreaterThan 14.
 }
 
-GRAPH _:bng_323 {
+_:bng_323 {
     [] rdf:value 9; math:notGreaterThan 9.
 }
 
-GRAPH _:bng_324 {
+_:bng_324 {
     [] rdf:value 7; math:notGreaterThan 10.
 }
 
-GRAPH _:bng_325 {
+_:bng_325 {
     [] rdf:value 8; math:notGreaterThan 10.
 }
 
-GRAPH _:bng_326 {
+_:bng_326 {
     [] rdf:value 7; math:notGreaterThan 11.
 }
 
-GRAPH _:bng_327 {
+_:bng_327 {
     [] rdf:value 9; math:notGreaterThan 11.
 }
 
-GRAPH _:bng_328 {
+_:bng_328 {
     [] rdf:value 7; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_329 {
+_:bng_329 {
     [] rdf:value 9; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_330 {
+_:bng_330 {
     [] rdf:value 7; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_331 {
+_:bng_331 {
     [] rdf:value 9; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_332 {
+_:bng_332 {
     [] rdf:value 8; math:notGreaterThan 9.
 }
 
-GRAPH _:bng_333 {
+_:bng_333 {
     [] rdf:value 9; math:notGreaterThan 10.
 }
 
-GRAPH _:bng_334 {
+_:bng_334 {
     [] rdf:value 8; math:notGreaterThan 11.
 }
 
-GRAPH _:bng_335 {
+_:bng_335 {
     [] rdf:value 8; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_336 {
+_:bng_336 {
     [] rdf:value 8; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_337 {
+_:bng_337 {
     [] rdf:value 8; math:notGreaterThan 14.
 }
 
-GRAPH _:bng_338 {
+_:bng_338 {
     [] rdf:value 9; math:notGreaterThan 14.
 }
 
-GRAPH _:bng_339 {
+_:bng_339 {
     [] rdf:value 10; math:notGreaterThan 10.
 }
 
-GRAPH _:bng_340 {
+_:bng_340 {
     [] rdf:value 11; math:notGreaterThan 11.
 }
 
-GRAPH _:bng_341 {
+_:bng_341 {
     [] rdf:value 10; math:notGreaterThan 11.
 }
 
-GRAPH _:bng_342 {
+_:bng_342 {
     [] rdf:value 12; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_343 {
+_:bng_343 {
     [] rdf:value 7; math:notGreaterThan 15.
 }
 
-GRAPH _:bng_344 {
+_:bng_344 {
     [] rdf:value 8; math:notGreaterThan 15.
 }
 
-GRAPH _:bng_345 {
+_:bng_345 {
     [] rdf:value 9; math:notGreaterThan 15.
 }
 
-GRAPH _:bng_346 {
+_:bng_346 {
     [] rdf:value 10; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_347 {
+_:bng_347 {
     [] rdf:value 11; math:notGreaterThan 12.
 }
 
-GRAPH _:bng_348 {
+_:bng_348 {
     [] rdf:value 10; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_349 {
+_:bng_349 {
     [] rdf:value 12; math:notGreaterThan 13.
 }
 
-GRAPH _:bng_350 {
+_:bng_350 {
     [] rdf:value 7; math:notGreaterThan 16.
 }
 
-GRAPH _:bng_351 {
+_:bng_351 {
     [] rdf:value 8; math:notGreaterThan 16.
 }
 
-GRAPH _:bng_352 {
+_:bng_352 {
     [] rdf:value 9; math:notGreaterThan 16.
 }
 
-GRAPH _:bng_353 {
+_:bng_353 {
     [] rdf:value 7; math:notGreaterThan 17.
 }
 
-GRAPH _:bng_354 {
+_:bng_354 {
     [] rdf:value 8; math:notGreaterThan 17.
 }
 
-GRAPH _:bng_355 {
+_:bng_355 {
     [] rdf:value 9; math:notGreaterThan 17.
 }
 
-GRAPH _:bng_356 {
+_:bng_356 {
     [] rdf:value 7; math:notGreaterThan 18.
 }
 
-GRAPH _:bng_357 {
+_:bng_357 {
     [] rdf:value 8; math:notGreaterThan 18.
 }
 
-GRAPH _:bng_358 {
+_:bng_358 {
     [] rdf:value 9; math:notGreaterThan 18.
 }

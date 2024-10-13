@@ -1,0 +1,23 @@
+@prefix : <https://eyereasoner.github.io/lingua/cases/snaf.trig#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+
+:Alice :hates :Nobody.
+
+#
+# lingua explanation
+#
+
+_:bng_1 log:explains _:node_2_1.
+
+_:bng_1 {
+    ((<https://eyereasoner.github.io/lingua/cases/snaf.trig>) 1) log:notIncludes _:bng_2.
+    :Bob a :Person.
+}
+
+_:node_2_1 {
+    :Alice :hates :Nobody.
+}
+
+_:bng_2 {
+    :Alice :hates :Bob.
+}

@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/acp.trig#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/acp.trig#>.
 
 :test :for :PolicyX.
 :test :is true.

@@ -1,4 +1,4 @@
-PREFIX : <https://eyereasoner.github.io/lingua/cases/age.trig#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix : <https://eyereasoner.github.io/lingua/cases/age.trig#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 
 :patH :ageAbove "P80Y"^^xsd:duration.

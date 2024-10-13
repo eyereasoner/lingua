@@ -1,10 +1,10 @@
-PREFIX skolem: <http://eyereasoner.github.io/.well-known/genid/8b98b360-9a70-4845-b52c-c675af60ad01#>
-PREFIX log: <http://www.w3.org/2000/10/swap/log#>
-PREFIX var: <http://www.w3.org/2000/10/swap/var#>
+@prefix skolem: <http://eyereasoner.github.io/.well-known/genid/8b98b360-9a70-4845-b52c-c675af60ad01#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix var: <http://www.w3.org/2000/10/swap/var#>.
 
 skolem:bng_1 log:implies false.
 
-GRAPH _:bng_1 {
+_:bng_1 {
     var:P log:complement var:C.
     var:S var:P var:O.
     var:S var:C var:O.
